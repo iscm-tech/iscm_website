@@ -1,0 +1,200 @@
+[
+  {
+    "module": "Môn chung của Đại học UEH",
+    "subjects": [
+      { "name": "Tư duy thiết kế", "credits": 2 },
+      { "name": "Phát triển Bền vững", "credits": 2 },
+      { "name": "Nhập môn Tâm lý học", "credits": 2 },
+      { "name": "Tiếng Anh tổng quát", "credits": 4 },
+      { "name": "Tiếng Anh chuyên ngành 1", "credits": 3 },
+      { "name": "Tiếng Anh chuyên ngành 2", "credits": 3 },
+      { "name": "Triết học Mác-Lênin", "credits": 3 },
+      { "name": "Kinh tế Chính trị Mác-Lênin", "credits": 2 },
+      { "name": "Chủ nghĩa Xã hội Khoa học", "credits": 2 },
+      { "name": "Luật và Pháp lý đô thị", "credits": 1 },
+      { "name": "Tư tưởng Hồ Chí Minh", "credits": 2 },
+      { "name": "Lịch sử Đảng cộng sản Việt Nam", "credits": 2 }
+    ]
+  },
+  {
+    "module": "Thành phố Thông minh",
+    "subjects": [
+      {
+        "name": "Thành phố thông minh",
+        "credits": 3,
+        "desc": "Khóa học này cung cấp một cái nhìn cơ bản và tổng quan về thành phố thông minh bao gồm khung lý thuyết, chính trị, kinh tế, hành chính, quy định và quản trị. Xuyên suốt khóa học, học viên sẽ tìm hiểu về thành phố thông minh qua các trường hợp thực tiễn tốt nhất trên thế giới trong phát triển thành phố thông minh bao gồm bối cảnh và đặc điểm hoạt động, cách tiếp cận, phương pháp xây dựng quy hoạch tổng thể để đạt được các mục tiêu trung và dài hạn. Khóa học sẽ cho phép những người tham gia khóa học tiến một bước trong việc phát triển một mô hình hoạt động cởi mở, hợp tác, lấy người dân làm trung tâm và hỗ trợ kỹ thuật số cho thành phố của họ, hiện thực hóa tầm nhìn của họ về thành phố thông minh hướng tới tương lai bền vững, kiên cường và thịnh vượng."
+      },
+      {
+        "name": "Toán cơ bản và Nhập môn Kiến trúc Thuật toán",
+        "credits": 3,
+        "desc": "Môn học 'Toán cơ bản và Nhập môn Kiến trúc Thuật toán' tập trung vào việc sử dụng các khái niệm hình học, đại số và phép biến hình để thiết kế không gian. Khóa học trang bị cho sinh viên kỹ năng toán học cần thiết nhằm tạo ra các mô hình không gian hiệu quả và sáng tạo. Sinh viên sẽ bắt đầu với nguyên tắc cơ bản của hình học, khám phá các hình khối, tỷ lệ và mối quan hệ không gian. Tiếp theo, sinh viên sẽ học cách áp dụng đại số để giải quyết các bài toán thiết kế cụ thể, từ việc xác định kích thước đến tính toán các yếu tố hình học phức tạp. Phép biến hình sẽ được giới thiệu như một công cụ để thay đổi và chuyển đổi các hình khối trong không gian. Sinh viên sẽ thực hành áp dụng các phép biến hình để tạo ra thiết kế độc đáo, khám phá khả năng sáng tạo của bản thân. Môn học bao gồm việc sử dụng phần mềm thiết kế để mô phỏng và trực quan hóa tư duy toán học thành không gian."
+      },
+      {
+        "name": "Công nghệ kỹ thuật số",
+        "credits": 3,
+        "desc": "Học phần này tập trung vào việc sử dụng máy tính và phần mềm như một phương tiện tư duy tham số thông qua vẽ, mô hình hóa và tạo mẫu. Trong suốt học phần, sinh viên sẽ học nhiều kỹ thuật khác nhau về cách nghiên cứu và đào sâu vào tài liệu thực tế trong bối cảnh môi trường chuyên nghiệp và tìm ra cách tốt nhất để truyền đạt các giải pháp thiết kế cho các bên liên quan khác bằng kỹ năng thiết kế của mình. Các bài tập sẽ được thực hiện với Revit. Bất kể công cụ phần mềm cụ thể nào, các nguyên tắc và kiến thức được giới thiệu và áp dụng trong học phần này có thể được áp dụng trong tất cả các phần mềm khác và các trường hợp thực tế."
+      },
+      {
+        "name": "Kiến trúc Thuật toán và Lập trình cơ bản",
+        "credits": 3,
+        "desc": "Học phần Lập trình cho Kiến trúc Thuật toán được thiết kế nhằm trang bị cho sinh viên ngành kiến trúc các kỹ năng lập trình tham số và thuật toán, từ đó mở ra những khả năng sáng tạo và giải quyết vấn đề thiết kế kiến trúc một cách hiệu quả. Trong bối cảnh kiến trúc hiện đại, việc sử dụng các công cụ lập trình để tạo ra các mô hình kiến trúc phức tạp và linh hoạt ngày càng trở nên quan trọng. Học phần này sẽ giới thiệu cho sinh viên các khái niệm cơ bản về lập trình tham số, các thuật toán thiết kế phổ biến, và các công cụ mô hình hóa và lập trình chuyên dụng (ví dụ: Grasshopper, Dynamo, R Programming). Sinh viên sẽ được học cách áp dụng các thuật toán và phương pháp lập trình để giải quyết các bài toán thiết kế kiến trúc cụ thể, từ việc tạo ra các hình khối cơ bản đến việc tối ưu hóa các giải pháp thiết kế. Học phần cũng chú trọng vào việc phát triển kỹ năng trực quan hóa dữ liệu thiết kế, giúp sinh viên trình bày và giao tiếp ý tưởng thiết kế một cách hiệu quả. Thông qua các bài tập thực hành và dự án cuối kỳ, sinh viên sẽ có cơ hội áp dụng kiến thức đã học vào thực tế, từ đó nâng cao khả năng sáng tạo và giải quyết vấn đề trong lĩnh vực thiết kế kiến trúc. Học phần này sẽ mang đến cho sinh viên những công cụ và kỹ năng cần thiết để trở thành những kiến trúc sư có khả năng tư duy thiết kế tham số một cách tối ưu và sử dụng công nghệ một cách hiệu quả."
+      },
+      {
+        "name": "Thuật toán và Xử lý dữ liệu đô thị",
+        "credits": 3,
+        "desc": "Học phần Thuật toán và Xử lý Dữ liệu Đô thị được thiết kế nhằm trang bị cho sinh viên ngành kiến trúc và quy hoạch đô thị các kỹ năng cần thiết để làm việc với dữ liệu đô thị. Trong bối cảnh đô thị hóa nhanh chóng, khả năng phân tích và sử dụng dữ liệu đô thị trở nên vô cùng quan trọng trong việc đưa ra các quyết định quy hoạch và thiết kế hiệu quả. Sinh viên sẽ được rèn luyện các kỹ thuật phân tích dữ liệu không gian và phi không gian, thông qua các công cụ QGIS, R, và Power BI. Sinh viên sẽ học cách thu thập, làm sạch, và trực quan hóa dữ liệu đô thị từ nhiều nguồn khác nhau, đồng thời áp dụng các phương pháp phân tích để giải quyết các vấn đề cụ thể trong quản lý đô thị. Học phần không chỉ tập trung vào việc nắm vững các công cụ và kỹ thuật, mà còn khuyến khích sinh viên phát triển tư duy phân tích và giải quyết vấn đề. Thông qua các bài tập thực hành và dự án nhóm, sinh viên sẽ có cơ hội áp dụng kiến thức đã học vào các tình huống thực tế, từ đó nâng cao khả năng làm việc độc lập và làm việc nhóm. Học phần này sẽ mang đến cho sinh viên những kiến thức và kỹ năng cần thiết để sử dụng dữ liệu đô thị một cách hiệu quả trong lĩnh vực kiến trúc và quản lý đô thị."
+      },
+      {
+        "name": "Seminar: Tư duy Doanh nghiệp và Khởi nghiệp",
+        "credits": 2,
+        "desc": "Học phần 'Tư duy doanh nhân & Khởi nghiệp' giảng dạy chuyên sâu về các chiến lược và khái niệm chính để quản lý các công ty khởi nghiệp kinh doanh. Các sinh viên sẽ học các phương pháp xây dựng mô hình kinh doanh và kế hoạch kinh doanh. Sinh viên được phát triển các năng lực quan trọng có thể được áp dụng trong quá trình hình thành và lập kế hoạch kinh doanh mới. Trong tiến trình của mô-đun, các trò chơi mô phỏng và workshop làm việc nhóm sẽ được giúp sinh viên vận dụng kiến thức lý thuyết để giải quyết các bài toán thực tế trong lĩnh vực đô thị thông minh. Ngoài ra, sinh viên sẽ có cơ hội tham gia và học hỏi kinh nghiệm từ các diễn giả, nhà sáng lập khởi nghiệp, nhà đầu tư trong hệ sinh thái khởi nghiệp trong và ngoài nước."
+      },
+      {
+        "name": "Quản lý Dự án",
+        "credits": 3,
+        "desc": "Học phần Quản lý Dự án cung cấp kiến thức về nguyên tắc, phương pháp thực tiễn trong quản lý dự án, giúp người học hiểu rõ toàn bộ vòng đời của một dự án từ khởi tạo đến kết thúc. Người học sẽ được trang bị những kỹ năng thiết yếu để lập kế hoạch, điều phối và kiểm soát dự án một cách hiệu quả. Ngoài ra, người học sẽ học cách nhận diện các rủi ro tiềm ẩn có thể ảnh hưởng đến quá trình thực hiện dự án và xây dựng chiến lược giảm thiểu những rủi ro đó, giúp tăng khả năng thành công khi triển khai dự án trong thực tế. Học viên được hướng dẫn cách áp dụng các quy trình kiểm soát chất lượng nhằm đảm bảo đầu ra của dự án đạt tiêu chuẩn cao nhất, đồng thời cung cấp kiến thức về cách xử lý các vấn đề đạo đức phát sinh trong quá trình quản lý dự án."
+      },
+      {
+        "name": "Đồng Sáng tạo",
+        "credits": 3,
+        "desc": "Môn học Co-Creation trang bị cho sinh viên kiến thức và kỹ năng về phương pháp đồng sáng tạo trong thiết kế và phát triển đô thị, dịch vụ công và các dự án cộng đồng. Co-Creation được hiểu là quá trình nhiều bên cùng tham gia xây dựng ý tưởng, thiết kế giải pháp và triển khai thực tế, nhằm tạo ra giá trị chung và phù hợp với nhu cầu thực tiễn. Thông qua môn học, sinh viên sẽ tìm hiểu các lý thuyết nền tảng về Co-Creation, ứng dụng trong các dự án Thành phố thông minh, phân tích vai trò và mối quan hệ giữa các nhóm đối tượng tham gia như chính quyền, doanh nghiệp, viện nghiên cứu và cộng đồng. Bên cạnh đó, học viên sẽ được hướng dẫn quy trình xây dựng dự án đồng sáng tạo, từ khảo sát nhu cầu, phân tích vấn đề đến đề xuất và thử nghiệm giải pháp. Môn học kết hợp lý thuyết với các hoạt động nhóm, tình huống thực tế và workshop nhằm phát triển tư duy thiết kế, kỹ năng làm việc đa ngành và khả năng tổ chức hoạt động cộng đồng. Đây là nền tảng quan trọng giúp sinh viên chủ động tham gia vào các dự án sáng tạo xã hội và phát triển bền vững."
+      },
+      {
+        "name": "Kinh tế Đô thị Mới & Marketing Thành phố",
+        "credits": 3,
+        "desc": "Kinh tế đô thị là học phần nghiên cứu về các vùng và đô thị, và các hoạt động kinh tế diễn ra trong đó. Kinh tế đô thị là sự giao thoa giữa địa lý và kinh tế, giới thiệu về vai trò của không gian trong mối tương quan với kinh tế. Sinh viên sẽ được học về các khái niệm và nguyên lý nền tảng, từ đó hình thành khả năng giải thích các hiện tượng hiện hữu, sự phát triển và tác động của các đô thị, cũng như đạt được sự hiểu biết sâu hơn về vai trò của các chính sách công và tư có thể tác động lên hình thái, cấu trúc và kinh tế đô thị. Môn học cung cấp các mô hình kinh tế mới bao gồm Kinh tế số, Kinh tế đại dương, Kinh tế đêm, Kinh tế hậu Covid-19, Khởi nghiệp, Kinh tế địa phương, Kinh tế tuần hoàn, Kinh tế phi chính thức,... Học phần cũng cung cấp cho sinh viên cơ hội để phát triển kiến thức về việc thương hiệu hóa một khu vực và quốc gia. Trong học phần này, sinh viên sẽ được nghiên cứu các ví dụ thực tiễn về việc thương hiệu hóa các khu vực trong bối cảnh hiện đại, cũng như thảo luận về nền tảng lý thuyết và lịch sử phía sau các ví dụ thực tiễn đó."
+      },
+      {
+        "name": "Quản lý và Bảo tồn Di sản Văn hóa",
+        "credits": 2,
+        "desc": "Nội dung môn học bao quát các kiến thức về bảo tồn kiến trúc và đô thị. Nội dung nghiên cứu tập trung vào (1) các nhân tố kỹ thuật, kinh tế xã hội và pháp lý ảnh hưởng đến sự bảo tồn của các công trình và di tích lịch sử; (2) giải pháp tái sử dụng thích ứng đối với các công trình lịch sử; và (3) các quy ước quốc tế liên quan đến bảo tồn công trình và di tích. Chương trình bao gồm một nhóm các bài giảng về các phương diện khác nhau của bảo tồn kiến trúc và đô thị và một dự án ứng dụng thực tế các nguyên tắc bảo tồn."
+      },
+      {
+        "name": "Tham quan Đô thị",
+        "credits": 1,
+        "desc": "Khóa học tham quan đô thị tập trung vào sự phát triển của kiến trúc, nội thất, thiết kế đô thị và đô thị hóa. Chương trình tạo cơ hội cho người học được tham quan các địa điểm có giá trị kiến trúc và văn hóa cao tại Việt Nam. Từ đó nguồn cảm hứng đó, người học sẽ thực hiện một bài báo cáo thu hoạch về một chủ đề nhất định được thông báo ở đầu chương trình."
+      },
+      {
+        "name": "Phòng Thí nghiệm đô thị",
+        "credits": 3,
+        "desc": "Phòng thí nghiệm đô thị được coi là một nền tảng nghiên cứu tích hợp để cùng nhau nghiên cứu, thử nghiệm, phát triển, tạo ra các sản phẩm/ dịch vụ/ hệ thống thực để giải quyết triệt để từng vấn đề của quá trình đô thị hoá bằng ứng dụng công nghệ và đổi mới sáng tạo tại mỗi một địa phương/ khu vực cụ thể. Nền tảng tích hợp này phải được hiểu là một khu vực vật lý cụ thể hoặc thực tế ảo, hoặc không gian tương tác, trong đó các bên liên quan hình thành mối quan hệ đối tác ba bên giữa khu vực công - khu vực tư nhân - các đối tác khác, chính là đại diện của các cơ quan nhà nước, trường đại học/ viện nghiên cứu, doanh nghiệp, người sử dụng và các đối tác liên quan khác. Mục đích của môn học này tiếp cận để sinh viên hiểu rõ được định nghĩa, quy trình và biết cách vận hành một dự án living lab từ khám phá, thực nghiệm cho đến đánh giá. Một số kinh nghiệm thực tiễn tốt nhất trong lĩnh vực trong vòng 2 thập kỷ trở lại đây trên thế giới này sẽ được phân tích, nhằm rút ra bài học cho các khu vực được lựa chọn tại TP HCM hoặc các thành phố Việt Nam khác tùy theo chủ đề từng năm và nhu cầu của xã hội. Đến cuối khóa học, sinh viên hiểu biết đầy đủ, có khả năng để phát triển các dự án living lab. Kỹ năng giao tiếp đa ngành, với các bên liên quan và làm việc nhóm cũng sẽ được phát triển trong các buổi giảng dạy."
+      },
+      {
+        "name": "Tiếp cận bền vững và Di chuyển Thông minh",
+        "credits": 3,
+        "desc": "Khóa học giới thiệu về các khái niệm quy hoạch giao thông thiết yếu và sự tiếp cận vấn đề về khả năng tiếp cận bền vững và di chuyển thông minh. Phương pháp, công cụ và tình huống sử dụng được đưa ra thảo luận để giúp sinh viên hiểu rõ hơn về các khái niệm giảng dạy trên thực tế."
+      },
+      {
+        "name": "Quản lý Hệ thống Đô thị có Khả năng Tự phục hồi",
+        "credits": 3,
+        "desc": "Học phần này giới thiệu các khái niệm căn bản về cảnh quan, kiến trúc cảnh quan và thiết kế tự phục hồi. Môn học sẽ giúp thay đổi nhận thức của sinh viên về cảnh quan như là một hệ quả của quá trình sống của con người trên nền đất tự nhiên. Môn học bàn luận về cách con người định cư, thích ứng hay thay đổi cảnh quan ở các tầng sinh thái. Nói cách khác, môn học sẽ tìm hiểu về cách con người sinh sống với nhiều loại cảnh quan khác nhau (như nước, rừng, vườn, công viên,….). Từ đó, những điểm mạnh và điểm yếu học được từ lịch sử sẽ là kiến thức nền tảng để phát triển tư duy về thiết kế tự phục hồi với từng loại cảnh quan. Học phần cũng giải thích vai trò của kiến trúc sư cảnh quan trong nhóm chuyên gia quy hoạch và thiết kế đô thị trong việc tạo ra các dự án có tính phục hồi cao hơn."
+      },
+      {
+        "name": "Mô hình Thông tin Xây dựng",
+        "credits": 3,
+        "desc": "Môn học này nhằm cung cấp kiến thức và các khái niệm nền tảng của mô hình thông tin xây dựng. Kết thúc học phần, sinh viên sẽ hiểu được các vấn đề mang tính lịch sử trong thi công xây dựng và cách mà BIM được ứng dụng để hỗ trợ quá trình chuyển đổi sang một phương pháp xây dựng hiệu quả hơn. Trong suốt chương trình học, sinh viên sẽ đạt được các kỹ năng cơ bản về BIM, tạo ra các dự án riêng, học được cách thiết lập các bản vẽ kiến trúc và thi công và phát triển các lịch trình thi công bằng cách sử dụng hệ thống phần mềm hiện đại."
+      },
+      { "name": "Seminar: Công nghệ Thành phố thông minh", "credits": 2 },
+      { "name": "Công nghệ Máy học cho Thành phố Thông minh", "credits": 3 },
+      { "name": "Mô hình hóa Đô thị với Dữ liệu lớn", "credits": 2 },
+      { "name": "Thực tập", "credits": 3 },
+      { "name": "Quản lý chiếu sáng", "credits": 3 }
+    ]
+  },
+  {
+    "module": "Lý thuyết thiết kế",
+    "subjects": [
+      {
+        "name": "Nguyên lý Thiết kế Kiến trúc",
+        "credits": 3,
+        "desc": "Nguyên lý thiết kế kiến trúc là học phần cơ bản giới thiệu cho sinh viên các khái niệm, phương pháp và quy trình thiết yếu liên quan đến thiết kế kiến trúc. Học phần bao gồm các nguyên tắc chủ đạo của kiến trúc, như: hình thể, không gian, công năng và thẩm mỹ, đồng thời nhấn mạnh mối quan hệ giữa môi trường và các trải nghiệm của con người bên trong công trình. Học phần bao gồm cả các bài học lý thuyết và các ứng dụng công trình thực tế, giúp sinh viên hiểu được các giải pháp thiết kế thông qua việc vẽ phác thảo, vẽ phân tích. Học phần nhằm mục đích phát triển tư duy phản biện và hiểu biết toàn diện về vai trò của kiến trúc trong bối cảnh môi trường, đô thị và xã hội."
+      },
+      {
+        "name": "Cấu tạo Công trình",
+        "credits": 3,
+        "desc": "Môn học 'Cấu tạo công trình' trình bày những kiến thức chung về hệ thống kết cấu, vật liệu xây dựng và các giải pháp thiết kế thực tế cho các cấu trúc xây dựng đương đại. Môn học tập trung vào việc phát triển năng lực của sinh viên để giải thích và diễn giải thông tin liên quan đến các nguyên tắc cơ bản và hành vi cấu trúc của các tòa nhà hiện đại chịu được trọng lực, gió, động đất và các lực môi trường khác. Phân tích các đặc điểm cấu trúc của vật liệu xây dựng thông thường và tìm hiểu để tích hợp các yếu tố cấu trúc thành hệ thống cấu trúc hoàn chỉnh trong các tòa nhà hiện đại."
+      },
+      {
+        "name": "Lịch sử Kiến trúc và Đô thị",
+        "credits": 3,
+        "desc": "Môn học là một phần giới thiệu tổng quan về lịch sử kiến trúc và đô thị. Lĩnh vực này đã có lịch sử hàng ngàn năm. Lịch sử của ngành đã bắt đầu kể từ khi hình thức định cư đầu tiên của con người được thành lập. Do đó, mục đích của môn học này không phải là để bao quát toàn bộ lịch sử, mà là diễn giải lại lịch sử thông qua các chủ đề và góc nhìn cụ thể. Ý tưởng là hiểu lịch sử kiến trúc và đô thị liên quan đến những thay đổi về mặt xã hội - sinh thái. Nói cách khác, mục đích là hiểu được lý do đằng sau những thay đổi về kiến trúc và quy hoạch đô thị theo thời gian. Sinh viên sẽ học cách đánh giá và phân tích các nghiên cứu điển hình trong từng thời đại quan trọng. Sinh viên sẽ nghiên cứu cách cấu trúc của kiến trúc và đô thị đã thay đổi như thế nào trong các hoàn cảnh khác nhau để thích ứng với những thay đổi về mặt xã hội - sinh thái. Vào cuối khóa học, sinh viên có thể suy ngẫm về quan điểm của mình về lịch sử kiến trúc và đô thị."
+      },
+      {
+        "name": "Vật lý Kiến trúc",
+        "credits": 3,
+        "desc": "Môn học Vật lý Kiến trúc sẽ trình bày về các kiến thức tổng quát về sóng, âm thanh, địa chấn học, quy luật của chuyển động, lực, trọng lực, năng lượng, nhiệt động lực học, chất lỏng, đặc tính của nguyên liệu và ánh sáng trong kiến trúc. Kết thúc môn học này, sinh viên sẽ đạt được: Lựa chọn công trình và nguyên liệu phù hợp với yêu cầu kỹ thuật. Áp dụng vật lý vào xây dựng để thiết kế các tòa nhà bền vững và an toàn với môi trường ẩm."
+      },
+      {
+        "name": "Phân tích và Thiết kế Kiến trúc",
+        "credits": 2,
+        "desc": "Học phần 'Phân tích và Thiết kế Kiến trúc' giới thiệu những điều cơ bản và hướng dẫn về khái niệm/chiến lược phân tích kiến trúc và thiết kế trong bối cảnh đô thị. Môn học này không nhằm mục đích chỉ giảng dạy toàn bộ quá trình thiết kế mà tập trung vào cách phân tích và hiểu hiện trạng của công trình. Môn học yêu cầu sinh viên đọc kiến trúc như một phần hoặc một yếu tố của các hệ thống hiện hữu. Sinh viên cần học cách phân tích công trình tại địa điểm đã cho trong bối cảnh hình thái đô thị, địa hình, cảnh quan, thời tiết và khí hậu địa phương, cũng như bối cảnh xã hội hiện hữu để đề xuất một khái niệm kiến trúc bền vững và thích ứng với xã hội."
+      },
+      {
+        "name": "Thiết kế Cảnh quan Thông minh và Bền vững",
+        "credits": 3,
+        "desc": "Học phần này giới thiệu các khái niệm căn bản về cảnh quan, kiến trúc cảnh quan và thiết kế tự phục hồi. Môn học sẽ giúp thay đổi nhận thức của sinh viên về cảnh quan như là một hệ quả của quá trình sống của con người trên nền đất tự nhiên. Môn học bàn luận về cách con người định cư, thích ứng hay thay đổi cảnh quan ở các tầng sinh thái. Nói cách khác, môn học sẽ tìm hiểu về cách con người sinh sống với nhiều loại cảnh quan khác nhau (như nước, rừng, vườn, công viên,….). Từ đó, những điểm mạnh và điểm yếu học được từ lịch sử sẽ là kiến thức nền tảng để phát triển tư duy về thiết kế tự phục hồi với từng loại cảnh quan. Học phần cũng giải thích vai trò của kiến trúc sư cảnh quan trong nhóm chuyên gia quy hoạch và thiết kế đô thị trong việc tạo ra các dự án có tính phục hồi cao hơn."
+      },
+      {
+        "name": "Thiết kế Đô thị Thông minh",
+        "credits": 3,
+        "desc": "Môn học 'Thiết kế Đô thị' là lĩnh vực trung gian kết nối giữa kiến trúc, quy hoạch đô thị, cơ sở hạ tầng, hệ thống môi trường, nghiên cứu và thực hành. Môn học tập trung vào việc hiểu và định hình các thành phố—xem xét cả các lớp lịch sử và hình thái của chúng, như địa hình, hình thái đô thị, kiểu kiến trúc, thảm thực vật, nguồn nước, cơ sở hạ tầng, văn hóa và khí hậu. Thiết kế đô thị thông minh nhằm củng cố và tái cấu trúc hệ thống đô thị và xã hội - sinh thái để phản ứng hiệu quả với các biến đổi về văn hóa, xã hội, khí hậu và kinh tế. Môn học giới thiệu cho sinh viên về định nghĩa của thành phố và khu định cư, đồng thời đề cập đến ít nhất chín thuật ngữ chính của đô thị hóa. Các khái niệm này được khám phá thông qua các nghiên cứu điển hình về các tiền lệ ở Việt Nam và trên thế giới, nhằm giải quyết các thách thức đô thị đương đại như khủng hoảng, đại dịch, nóng lên toàn cầu và đô thị hóa. Khóa học bao gồm các bài giảng của khách mời từ những chuyên gia trong ngành và các chuyến thực địa tại Thành phố Hồ Chí Minh để cung cấp những hiểu biết thực tiễn."
+      },
+      { "name": "Seminar: Kiến tạo Nơi chốn Thông minh", "credits": 2 },
+      {
+        "name": "Quy hoạch Đô thị",
+        "credits": 3,
+        "desc": "Môn học này giới thiệu cho sinh viên lý thuyết và thực hành quy hoạch đô thị. Khóa học bao quát các xu hướng và thách thức trong quy hoạch thành phố ở nhiều quy mô khác nhau, từ quy hoạch vùng đến khu vực lân cận. Đồng thời, sinh viên sẽ có thêm kiến thức nền tảng về các vấn đề lịch sử và đương đại, các cuộc tranh luận và những vấn đề gây tranh cãi trong lĩnh vực quy hoạch thông qua nhiều tình huống thực tế. Hoàn thành môn học, sinh viên sẽ có hiểu biết rõ ràng về 'quy hoạch là gì' và những thách thức trong việc định hình các thành phố và khu dân cư."
+      },
+      { "name": "Thiết kế Bền vững Với Môi trường", "credits": 2 }
+    ]
+  },
+  {
+    "module": "Đồ án thiết kế",
+    "subjects": [
+      {
+        "name": "Đồ án cơ bản 1",
+        "credits": 6,
+        "desc": "Môn học này trình bày về thực hành biểu diễn hình ảnh, phát triển các kỹ năng cơ bản về vẽ, mô hình và tư duy thiết kế kiến trúc. Thông qua các bài tập thiết kế thực hành cần thiết, chương trình học cơ bản đầu tiên tập trung vào việc phát triển phương pháp thiết kế của sinh viên dựa trên các phương pháp làm việc cẩn trọng, sáng tạo, đạo đức và nghiêm túc để phục vụ cho việc khám phá các mệnh đề hình thức và không gian có ý nghĩa. Các kỹ thuật biểu diễn và kỹ năng sẽ được dạy trong hai phần suốt học kỳ, bao gồm vẽ cơ bản và vẽ dự án & phối cảnh. Phương pháp hướng dẫn nhấn mạnh việc áp dụng các kỹ năng đại diện để đáp ứng yêu cầu của dự án. Mỗi phần sẽ được kết thúc bằng một bài tập tích lũy, và một dự án cuối học kỳ sẽ yêu cầu sinh viên thể hiện phân tích đồ họa toàn diện cùng kết quả vẽ và mô hình hóa tinh chỉnh."
+      },
+      {
+        "name": "Đồ án Kiến trúc 1",
+        "credits": 4,
+        "desc": "Đồ án Kiến trúc 1 là học phần trọng tâm của cả chương trình đào tạo. Học phần tập trung vào phân tích các dạng và đặc trưng quan trọng của công trình nhà ở. Xuyên suốt đồ án, sinh viên được khuyến khích nghiên cứu mối tương quan giữa hành vi con người và không gian trong một công trình nhà ở dành cho một hộ gia đình. Đồ án sẽ nghiên cứu hình khối, chức năng, hoạt động và mối liên hệ của công trình với khu đất và các yếu tố bên ngoài. Sản phẩm của Đồ án Kiến trúc 1 bao gồm sản phẩm nhóm và cá nhân."
+      },
+      {
+        "name": "Đồ án cơ bản 2",
+        "credits": 3,
+        "desc": "Môn học 'Hình ảnh Đô thị' sẽ cung cấp cho sinh viên các phương pháp cơ bản để thể hiện sự hiểu biết về cấu trúc đô thị và cảnh quan trong mối quan hệ với các điều kiện xã hội và sinh thái. Khóa học giới thiệu các kỹ thuật biểu diễn mạnh mẽ cần thiết để phân tích mối quan hệ giữa khu định cư, địa hình, cảnh quan và khí hậu. Môn học này chuẩn bị cho sinh viên tiếp cận với khóa học 'Bản đồ Thành phố' và các dự án nghiên cứu lớn hơn. Đồng thời, trong suốt khóa học, sinh viên cũng sẽ được học về một số phần mềm cần thiết, giúp ích cho sự nghiệp tương lai của họ."
+      },
+      {
+        "name": "Đồ án Kiến trúc 2",
+        "credits": 4,
+        "desc": "Đồ án Kiến trúc 2 được tổ chức dưới dạng studio thiết kế kiến trúc. Trong học phần này, sinh viên sẽ học về quá trình hoàn thiện thiết kế một công trình thương mại, từ việc hình thành công năng cơ sở đến thiết kế kỹ thuật. Học phần tập trung vào các khái niệm cơ bản về thiết kế bền vững, nhằm giúp sinh viên thực hành phát triển một thiết kế hoàn chỉnh cho công trình thương mại. Sinh viên sẽ làm việc cả cá nhân và nhóm trong suốt quá trình thiết kế. Ngoài ra, họ sẽ được giới thiệu về quy trình thiết kế dựa trên các ý tưởng nền tảng, từ đó tổng hợp thông tin và đưa ra kết luận dựa trên những tiền đề đã thiết lập. Học phần cũng hướng dẫn cách tạo ra các phương án thiết kế, phương pháp đánh giá và lựa chọn giải pháp tối ưu. Vị trí và chủ đề của đồ án sẽ được lựa chọn khác nhau mỗi năm, dựa trên các vấn đề và thách thức hiện hữu của đô thị."
+      },
+      {
+        "name": "Đồ án cơ bản 3: Bản đồ Hóa Thành phố",
+        "credits": 3,
+        "desc": "Môn học này hướng dẫn sinh viên cách sử dụng bản đồ hóa như một công cụ mạnh mẽ để phân tích đô thị. Bản đồ hóa không chỉ đơn thuần là việc tái hiện hiện thực mà là quá trình trích xuất các yếu tố thiết yếu hiện có và diễn giải chúng để kể một câu chuyện về các địa điểm và thành phố. Sinh viên sẽ tiến hành khảo sát thực địa để quan sát, cảm nhận, trao đổi và suy đoán về các hiện tượng đang diễn ra tại một địa điểm nhất định. Kết quả từ quá trình phân tích bản đồ hóa này sẽ trở thành nền tảng cho các nghiên cứu hoặc thiết kế trong tương lai."
+      },
+      {
+        "name": "Đồ án Cảnh quan Đô thị",
+        "credits": 6,
+        "desc": "Chủ đề của đồ án này là khám phá cảnh quan hữu hình như một đối tượng của thiết kế tự phục hồi. Học phần cung cấp các công cụ và kỹ năng dành cho việc nghiên cứu và thiết kế kiến trúc cảnh quan, dưới quy mô một khu vực công cộng trong bối cảnh đô thị hiện hữu hoặc phát triển mới. Trong đề án thiết kế, kiến thức lý thuyết từ học phần này sẽ được áp dụng với các giải pháp thiết kế cảnh quan có khả năng tự phục hồi khác nhau để giải quyết các sự kiện cực đoan và thích ứng với biến đổi khí hậu. Học phần cũng cung cấp các kiến thức về phát triển không gian cảnh quan một cách hệ thống, phù hợp với bối cảnh địa phương, lấy con người làm trung tâm, đảm bảo đa dạng sinh học, bền vững. Việc nghiên cứu thiết kế không chỉ giúp người học phát triển tư duy trong thiết kế cảnh quan đô thị, mà còn được rèn luyện các kỹ năng cần thiết cho công việc tương lai."
+      },
+      {
+        "name": "Đồ án Thiết kế Đô thị Thông minh",
+        "credits": 6,
+        "desc": "Đây là một khóa học thực hành toàn diện về thiết kế đô thị. Khóa học được phát triển dựa trên định nghĩa về thiết kế đô thị trong khóa học lý thuyết trước đó. Nó tập trung vào việc nghiên cứu và tác động đến các thành phố; là khoa học về đô thị và cách hành động thông minh trên cấu trúc đô thị ở nhiều quy mô khác nhau. Những hành động này dựa trên việc hiểu và phân tích lịch sử cũng như hình thái của các thành phố và khu định cư theo từng lớp (địa hình, hình thái đô thị, kiểu kiến trúc, thảm thực vật, nguồn nước, cơ sở hạ tầng, văn hóa, khí hậu, v.v.). Thiết kế đô thị thông minh hướng đến việc củng cố và tái cấu trúc hệ thống đô thị cũng như xã hội - sinh thái để thích ứng với sự thay đổi của văn hóa, xã hội, khí hậu và kinh tế. Trong studio này, sinh viên sẽ cùng các giảng viên phát triển chiến lược thiết kế đô thị cho một thành phố nhằm giải quyết những thách thức xã hội - sinh thái đương đại."
+      },
+      {
+        "name": "Đồ án Kiến trúc và Thiết kế Đô thị Thông minh",
+        "credits": 6,
+        "desc": "Học phần này được tổ chức dưới dạng studio thiết kế không gian. Thiết kế không gian là quá trình thiết kế môi trường bao quanh của một dự án mới phát triển như một công trình, một nhóm công trình hoặc một phức hợp lớn. Quá trình này liên quan đến việc thiết kế, đôi khi là quy hoạch không gian vật lý xung quanh khối kiến trúc chính, bao gồm thiết kế cảnh quan, không gian mở, các kết nối về khả năng tiếp cận, các kết nối về không gian và giao thông, địa hình, hình thái, chất lượng sử dụng, nội dung hoạt động,… Nó liên quan đến việc xem xét bối cảnh, phân tích và bản đồ hóa, phân khu chức năng sử dụng, cơ sở hạ tầng, khả năng tiếp cận và lưu thông, môi trường văn hóa, tự nhiên và xã hội, bản sắc địa phương, ý thức về nơi chốn và đặc trưng của địa điểm đó, kiến tạo nơi chốn có sự tham gia của cộng đồng, và các yếu tố liên quan đến sự bền vững và đáng sống trong mối tương quan với dự án. Học phần này nhằm thiết kế một khu vực theo cách thông minh và bền vững nhất có thể, từ đó đóng góp vào sự phát triển chung của đô thị thông minh. Nhiều yếu tố của đô thị thông minh sẽ được giới thiệu và khuyến khích tích hợp và trong quá trình thiết kế. 3 giai đoạn cấu thành nên thiết kế của dự án bao gồm khảo sát và phân tích thực địa, tổng hợp và khái quát hóa, các bước hình thành và hoàn thiện ý tưởng thiết kế trong mối tương quan với dự án. Học phần này sẽ tập trung vào một dự án có quy mô cỡ vừa, nằm giữa quy mô của một thiết kế kiến trúc và thiết kế đô thị."
+      }
+    ]
+  },
+  {
+    "module": "Thực tập & <br/> Đồ án tốt nghiệp",
+    "subjects": [{ "name": "Thực tập & Đồ án tốt nghiệp", "credits": 10 }]
+  }
+]

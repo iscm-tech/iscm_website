@@ -1,0 +1,131 @@
+@import "variables";
+@import "mixins";
+@import "typography";
+
+.tiptap__wrapper {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.tiptap {
+    border: none !important;
+    outline: none !important;
+    cursor: inherit !important;
+
+    *::selection {
+        background: #c3d3ef !important;
+        color: #000 !important;
+    }
+
+    figure {
+        &.has-focus {
+            img {
+                border-radius: 3px;
+                border: solid 3px #ce2027;
+            }
+        }
+    }
+
+    p.is-editor-empty:first-child::before {
+        color: #b0b0b0;
+        content: attr(data-placeholder);
+        float: left;
+        height: 0;
+        font-style: italic;
+        pointer-events: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        overflow: hidden;
+        table-layout: fixed;
+        width: 100%;
+        border: 1px solid black;
+
+        td,
+        th {
+            border: 1px solid rgba(61, 37, 20, 0.12);
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+
+            > * {
+                margin-bottom: 0;
+            }
+        }
+
+        th {
+            background-color: #f5f4f3;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .selectedCell {
+            p {
+                position: relative;
+                z-index: 99999;
+                color: #000;
+            }
+        }
+
+        .selectedCell:after {
+            background: #f0eeed;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            pointer-events: none;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .column-resize-handle {
+            background-color: #6a00f5;
+            bottom: -2px;
+            cursor: col-resize;
+            position: absolute;
+            right: -2px;
+            top: 0;
+            width: 4px;
+        }
+    }
+
+    .tableWrapper {
+        margin: 1.5rem 0;
+        overflow-x: auto;
+    }
+
+    &.resize-cursor {
+        cursor: ew-resize;
+        cursor: col-resize;
+    }
+}
+
+.menubar__group button {
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+
+    &:disabled {
+        color: #ccc !important;
+        user-select: none;
+    }
+
+    &:hover {
+        color: #ce2027;
+    }
+
+    &.is-active {
+        color: #ce2027;
+    }
+}
+
+.editor__sidebar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

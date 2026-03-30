@@ -1,0 +1,32 @@
+[
+  {
+    "position": "Railway/Metro Operations and Exploitation Specialist/Manager",
+    "company": "Vietnam Railways Corporation, metro companies, or PPP consortia for urban railways and high-speed rail",
+    "desc": "Organize and supervise line operations, develop scheduling plans, manage safety and technical aspects, analyze operational data, and optimize system capacity."
+  },
+  {
+    "position": "Intelligent Mobility System Planning and Analysis Specialist",
+    "company": "State transport management agencies, Departments of Transport, research institutes/centers, smart city operation centers",
+    "desc": "Conduct research, collect and analyze traffic data; propose policies, planning, and intelligent traffic coordination solutions for urban and regional areas."
+  },
+  {
+    "position": "Operations Management Specialist",
+    "company": "Airlines, airports, or multimodal transport companies",
+    "desc": "Manage flight/operation schedules, coordinate aircraft fleets or passenger/cargo flows; monitor service quality, safety, and regulatory compliance."
+  },
+  {
+    "position": "Smart Mobility Product, Data, and Technology Development Specialist",
+    "company": "Logistics companies, transportation technology firms, Mobility-as-a-Service (MaaS) startups",
+    "desc": "Develop digital platforms for smart mobility; exploit journey data, optimize user experience, and improve operational efficiency."
+  },
+  {
+    "position": "Urban Transport & Smart Infrastructure Project Manager",
+    "company": "Local governments, project management boards, public infrastructure units, PPP partners",
+    "desc": "Organize and monitor project progress and budget for smart transport infrastructure, coordinate stakeholders, and ensure compliance with technical, environmental, and social standards."
+  },
+  {
+    "position": "Researcher or Project Assistant in Sustainable Transport Development",
+    "company": "International organizations, research institutes, training institutions in transport – urban – sustainability fields",
+    "desc": "Participate in research, policy implementation, and international cooperation projects on sustainable mobility, smart cities, or green transformation in transportation."
+  }
+]

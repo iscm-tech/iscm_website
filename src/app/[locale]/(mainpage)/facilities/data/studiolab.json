@@ -1,0 +1,202 @@
+[
+  {
+    "en": {
+      "title": "StudioLab",
+      "location": [
+        {
+          "campus": "UEH Campus B",
+          "addr": "279 Nguyen Tri Phuong St., Dien Hong Ward, Ho Chi Minh City, Vietnam"
+        },
+        {
+          "campus": "UEH Campus V",
+          "addr": "232/6 Vo Thi Sau St., Xuan Hoa Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "StudioLab offers open and in-house spaces with advanced technology, enabling interactive learning, research, and simulation."
+    },
+    "vi": {
+      "title": "StudioLab",
+      "location": [
+        {
+          "campus": "UEH Cơ sở B",
+          "addr": "279 Nguyễn Tri Phương, phường Diên Hồng, TP. HCM"
+        },
+        {
+          "campus": "UEH Cơ sở V",
+          "addr": "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. HCM"
+        }
+      ],
+      "introduction": "StudioLab mang đến không gian linh hoạt, từ mở đến trong nhà, được trang bị công nghệ tiên tiến nhằm thúc đẩy trải nghiệm tương tác, nghiên cứu và mô phỏng chuyên sâu."
+    },
+    "thumb": "/images/backgrounds/studiolab-thumb.jpg",
+    "path": "/facilities/studiolab"
+  },
+  {
+    "en": {
+      "title": "Gallery",
+      "location": [
+        {
+          "campus": "UEH Campus V",
+          "addr": "232/6 Vo Thi Sau St., Xuan Hoa Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "Gallery is a space for showcasing creative works and projects developed within the StudioLab."
+    },
+    "vi": {
+      "title": "Gallery",
+      "location": [
+        {
+          "campus": "UEH Cơ sở V",
+          "addr": "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. HCM"
+        }
+      ],
+      "introduction": "Gallery là không gian trưng bày các tác phẩm sáng tạo và dự án được phát triển trong StudioLab."
+    },
+    "thumb": "/images/studiolab/gallery.png",
+    "path": "/facilities/gallery"
+  },
+  {
+    "en": {
+      "title": "MakerSpace",
+      "location": [
+        {
+          "campus": "UEH Campus B",
+          "addr": "279 Nguyen Tri Phuong St., Dien Hong Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "UEH Makerspace is a creative hub under the School of Technology and Design at the University of Economics Ho Chi Minh City. It brings ideas to life with cutting-edge equipment, expert guidance, and the vibrant creativity of future makers."
+    },
+    "vi": {
+      "title": "MakerSpace",
+      "location": [
+        {
+          "campus": "UEH Cơ sở B",
+          "addr": "279 Nguyễn Tri Phương, phường Diên Hồng, TP. HCM"
+        }
+      ],
+      "introduction": "UEH Makerspace là tổ hợp không gian sáng tạo thuộc Trường Công nghệ và Thiết kế – Đại học Kinh tế TP.HCM. Nơi đây giúp biến ý tưởng thành hiện thực với máy móc hiện đại, đội ngũ hướng dẫn chuyên nghiệp và nguồn sáng tạo mạnh mẽ từ những nhà sáng tạo tương lai."
+    },
+    "thumb": "/images/studiolab/makerspace.png",
+    "path": "/facilities/makerspace"
+  },
+  {
+    "en": {
+      "title": "Design Cell",
+      "location": [
+        {
+          "campus": "UEH Campus V",
+          "addr": "232/6 Vo Thi Sau St., Xuan Hoa Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "Design Cell is a space for design and innovation activities, where students can collaborate on projects and develop their creative skills."
+    },
+    "vi": {
+      "title": "Design Cell",
+      "location": [
+        {
+          "campus": "UEH Cơ sở V",
+          "addr": "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. HCM"
+        }
+      ],
+      "introduction": "Design Cell là không gian dành cho các hoạt động thiết kế và đổi mới sáng tạo, nơi sinh viên có thể hợp tác trong các dự án và phát triển kỹ năng sáng tạo của mình."
+    },
+    "thumb": "/images/studiolab/design_cell.jpg",
+    "path": "/facilities/design_cell"
+  },
+  {
+    "en": {
+      "title": "Living Lab",
+      "location": [
+        {
+          "campus": "UEH Campus V",
+          "addr": "232/6 Vo Thi Sau St., Xuan Hoa Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "Living Lab is an open innovation ecosystem centered on users, where users, businesses, researchers, and government collaboratively co-create and test solutions within real-life everyday environments, aiming to generate user value and sustainable business models."
+    },
+    "vi": {
+      "title": "Living Lab",
+      "location": [
+        {
+          "campus": "UEH Cơ sở V",
+          "addr": "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. HCM"
+        }
+      ],
+      "introduction": "Phòng Thí Nghiệm Sống (Living Lab) là hệ sinh thái đổi mới mở, lấy người dùng làm trung tâm, trong đó người dùng, doanh nghiệp, nhà nghiên cứu và chính quyền cùng đồng sáng tạo (co-creation) và thử nghiệm giải pháp ngay trong môi trường đời sống thực tế hàng ngày, nhằm tạo ra giá trị người dùng và mô hình kinh doanh bền vững."
+    },
+    "thumb": "/images/studiolab/livinglab.jpg",
+    "path": "/facilities/living_lab"
+  },
+  {
+    "en": {
+      "title": "Testbed",
+      "location": [
+        {
+          "campus": "UEH Campus E",
+          "addr": "54 Nguyen Van Thu St., Tan Dinh Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "Testbed is a controlled (or semi-controlled) environment specifically designed for technical experimentation, performance measurement, stability assessment, and compatibility testing of technologies or products, where users primarily serve as test subjects rather than co-creators."
+    },
+    "vi": {
+      "title": "Testbed",
+      "location": [
+        {
+          "campus": "UEH Cơ sở E",
+          "addr": "54 Nguyễn Văn Thủ, phường Tân Định, Thành phố Hồ Chí Minh"
+        }
+      ],
+      "introduction": "Testbed là môi trường kiểm soát (hoặc bán kiểm soát) chuyên dùng để thử nghiệm kỹ thuật, đo lường hiệu suất, độ ổn định và tính tương thích của công nghệ/sản phẩm, trong đó người dùng chủ yếu đóng vai trò đối tượng thử nghiệm chứ không phải người đồng sáng tạo."
+    },
+    "thumb": "/images/studiolab/test_bed.jpg",
+    "path": "/facilities/testbed"
+  },
+  {
+    "en": {
+      "title": "Immersive Center",
+      "location": [
+        {
+          "campus": "UEH Campus E",
+          "addr": "54 Nguyen Van Thu St., Tan Dinh Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "Immersive Center is a space for simulating real-world scenarios and conducting experiments in a controlled environment."
+    },
+    "vi": {
+      "title": "Immersive Center",
+      "location": [
+        {
+          "campus": "UEH Cơ sở E",
+          "addr": "54 Nguyễn Văn Thủ, phường Tân Định, Thành phố Hồ Chí Minh"
+        }
+      ],
+      "introduction": "Immersive Center là trung tâm nghiên cứu các nền tảng hội tụ công nghệ mô phỏng và trình diễn."
+    },
+    "thumb": "/images/studiolab/sim_lab.png",
+    "path": "/facilities/immersive_center"
+  },
+  {
+    "en": {
+      "title": "MetaLab",
+      "location": [
+        {
+          "campus": "UEH Campus E",
+          "addr": "54 Nguyen Van Thu St., Tan Dinh Ward, Ho Chi Minh City, Vietnam"
+        }
+      ],
+      "introduction": "MetaLab is a space for exploring and developing new ideas and concepts in the field of design and technology."
+    },
+    "vi": {
+      "title": "MetaLab",
+      "location": [
+        {
+          "campus": "UEH Cơ sở E",
+          "addr": "54 Nguyễn Văn Thủ, phường Tân Định, Thành phố Hồ Chí Minh"
+        }
+      ],
+      "introduction": "MetaLab là không gian dành cho việc khám phá và phát triển các ý tưởng và khái niệm mới trong lĩnh vực thiết kế và công nghệ."
+    },
+    "thumb": "/images/studiolab/meta_lab.png",
+    "path": "/facilities/metalab"
+  }
+]

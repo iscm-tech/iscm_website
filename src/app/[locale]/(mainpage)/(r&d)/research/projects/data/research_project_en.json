@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Developing the Living Lab model in the eastern high-interaction urban area (Truong Tho)",
+    "progress": "done",
+    "objective": "Based on the analysis of the current situation in the Truong Tho area, Thu Duc City, Ho Chi Minh City, and Vietnam, as well as successful lessons learned, processes, and the relationship between smart city development and the LivingLab model globally, the research team proposes a framework for implementing, developing, and scaling the LivingLab model in Vietnam. The framework is presented at two levels: macro (city/business) and micro (project).",
+    "partners": ["Ho Chi Minh City Department of Science and Technology"],
+    "years": "2022 - 2023",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/truong tho.png"
+  },
+  {
+    "id": 2,
+    "name": "Developing Vung Tau City into a High-quality, World-class Tourism City",
+    "progress": "done",
+    "objective": "Based on the analysis and synthesis of Vũng Tàu’s tourism development in the local, regional, and international context, the project aims to propose solutions that transform Vũng Tàu into a high-quality, internationally recognized tourism city. These solutions go beyond simply increasing tourist numbers or developing infrastructure and the local economy; they focus on building an open local business ecosystem with high-quality, internationally standardized experiences, thereby attracting high-caliber human resources to live, work, and contribute to long-term development in Vũng Tàu.",
+    "partners": [
+      "People's Committee of Vũng Tàu City and relevant departments and agencies"
+    ],
+    "years": "2023 - 2024",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/2407.phuong_vung_tau.jpg",
+    "thumbnailCredit": "vietnamtourism.gov.vn"
+  },
+  {
+    "id": 3,
+    "name": "Provision of Resident Survey on Citizen Well-Being in Ho Chi Minh City, Vietnam",
+    "progress": "done",
+    "objective": "As part of an international project evaluating citizens' satisfaction with urban management and development in Asian cities, this initiative is implemented with the primary objective of gathering feedback from residents living in various districts of Ho Chi Minh City regarding the challenges they face and their current access to modern technological applications. Based on these insights, appropriate solutions are proposed to enhance the quality of life for the citizens.",
+    "partners": [
+      "Trung tâm Thành phố Sáng tạo Lee Kuan Yew (thuộc Đại học Công nghệ và Thiết kế Singapore)"
+    ],
+    "years": "2023",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/gia-dinh-yeu-thuong.jpg",
+    "thumbnailCredit": "baochinhphu.vn"
+  },
+  {
+    "id": 4,
+    "name": "Enhance Traffic Safety for Asian Children Using Route2school Education Platform",
+    "progress": "ongoing",
+    "objective": "\"Based on robust theoretical foundations and empirical evidence collected from relevant stakeholder groups, the project aims to investigate dangerous travel behaviors of students commuting between home and school in selected Asian countries, namely: Vietnam, Thailand, the Philippines, India, and Sri Lanka.\nBuilding on these findings, an innovative road-safety education platform incorporating gamification elements, named Route2School, has been developed. The platform is available in multiple local languages and is specifically designed to teach traffic safety knowledge and essential skills to students across the aforementioned Asian countries.\"",
+    "partners": [
+      "Thammasat University (Thailand)",
+      "National Institute of Technology (NIT) Calicut (India)",
+      "University of the Philippines (Philippines)",
+      "University of Peradeniya (Sri Lanka)",
+      "Hasselt University (Belgium)"
+    ],
+    "years": "2023-present",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/r2s.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Route2school VR Cycling Platform",
+    "progress": "done",
+    "objective": "The Route2school Virtual Reality (VR) Cycling platform has been systematically designed and developed on a solid scientific foundation, drawing from contemporary theories of traffic behavior and empirical evidence gathered from diverse stakeholder groups. Its core objective is to enhance the traffic safety knowledge and  skills of high school students in Vietnam. Through immersive and highly interactive VR experiences, students are not only educate traffic safety knowledge but also train their skills to handle risky traffic situations while cycling from home to school in a completely safe virtual environment. This approach helps cultivate awareness and responsible traffic behaviours for Vietnamese adolescents.",
+    "partners": ["Hasselt University (Belgium)"],
+    "years": "2020-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/r2s_vr.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Solutions for Developing the Digital Economy in Ho Chi Minh City",
+    "progress": "done",
+    "objective": "\"The study conducts an in-depth analysis of the current state and exemplary digital economy development strategies in both advanced economies and emerging countries worldwide. At the same time, it carefully examines the indicators and measurement frameworks for the digital economy established by reputable international organizations (OECD, ADB, DESI, etc.), as well as the methodologies that various countries employ to timely forecast digital economy growth.\nDrawing on these insights, the research team proposes a long-term strategy for digital economy development tailored to Vietnam, along with a practical measurement methodology designed to accurately determine the value-added contribution of the digital economy to GDP at the provincial and municipal levels under conditions of data scarcity. The proposed approach also incorporates mechanisms for timely reporting and forecasting to ensure that localities can effectively monitor progress and achieve the national targets set for the digital economy’s share in GDP.\"",
+    "partners": ["International and national partners"],
+    "years": "2023-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/2404-CONFERENCE-DigitalEconomy.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Exploring Circular Economy Practices of SMEs in Vietnam and Australia",
+    "progress": "ongoing",
+    "objective": "The project aims to gain a deep understanding of the actions that small and medium-sized enterprises (SMEs) in Australia and Vietnam are taking to overcome challenges and capitalize on opportunities presented by the Circular Economy (CE). The project focuses on identifying the specific Circular Economy practices that SMEs are adopting, the primary drivers motivating their adoption, and the key barriers they encounter in implementing these practices. It also seeks to explore the relationship between Circular Economy principles, business strategies, and overall business performance within the agriculture and construction sectors.",
+    "partners": ["Western Sydney University"],
+    "years": "2023-present",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/kinh-te-tuan-hoan-vn.jpg",
+    "thumbnailCredit": "vneconomy.vn"
+  },
+  {
+    "id": 8,
+    "name": "Hologram Walk: Digital Co-Creation Platform for Architectural and Urban Design Project",
+    "progress": "done",
+    "objective": "To develop innovative solutions to urban challenges via a co-creation platform involving collaboration among all stakeholders–government authorities, designers, businesses, and local communities–technological applications that facilitate interactions must be integrated from the earliest stages of urban development projects. However, such collaboration is often hampered by the lack of effective platforms for communication and exchange, particularly given the difficulty of achieving consensus between experts and non-experts. Local communities often struggle to comprehend technical architectural and urban designs and clearly express their needs and ideas. This study applied hologram technology and computer vision to create an interactive platform that enhances engagement among stakeholders in architectural and urban design projects. The proposed system was implemented as a digital co-creation platform on a university campus in Vinh Long, Vietnam. This technology-driven platform allows users to experience and interact with new designs, communicate their opinions and needs, and enables the design team to make responsive adjustments. This proposed approach optimizes collaboration, fosters innovative designs outcomes, and can be easily replicated in future architectural and urban projects.",
+    "partners": ["Immersive Content Display Center", "Kwangwoon University"],
+    "years": "2024-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/hologram.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Drone and GIS Application in Urban Infrastructure Degradation",
+    "progress": "done",
+    "objective": "This ministerial-level scientific research project integrates drone technology and Geographic Information Systems (GIS) to support the transition from reactive maintenance strategies to proactive maintenance approaches, thereby optimizing infrastructure performance while reducing operational costs. The project aims to deliver a cost-effective and scalable solution to address key challenges in road surface monitoring, enhance traffic safety, and improve infrastructure asset management efficiency, particularly in developing countries.",
+    "partners": ["International and national partners"],
+    "years": "2023-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/Truong-tho-khong-anh.png"
+  },
+  {
+    "id": 10,
+    "name": "Developing Strategies to Improve Economy, Tourism and Community Art at Tam Thanh, Tam Ky",
+    "progress": "done",
+    "objective": "This project aims to demonstrate that when we work closely with the community and have a clear plan, local development can be truly sustainable and widely supported by the people. The project expands mural art, creating beautiful, creative public spaces that blend seamlessly with river and sea landscapes; diversifies tourism, entertainment, and eco-friendly services to better meet visitors’ needs. At the same time, it focuses on reducing plastic waste and keeping the environment clean and healthy for both residents and tourists. Finally, an eco-friendly transport system with minimal motor vehicles will smoothly connect mural sites and parks, while strengthening links with neighboring communes and cities, making it easier for everyone to participate and benefit.",
+    "partners": ["UN-Habitat", "ISCB"],
+    "years": "2023-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/lang-bich-hoa-tam-thanh.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Strategic planning proposal for urban regeneration in Ben Tre downtown area",
+    "progress": "done",
+    "objective": "The project aims to propose a strategic master plan for the urban regeneration of downtown Ben Tre City, marking a critical starting point in the process of transforming the Đồng Khởi corridor and its surrounding areas into a vibrant and livable urban center. The project is implemented to establish the foundation for a strategic vision proposal, based on the Our City Plans methodology that has been adapted to fit the Vietnamese context. Community mobilization, expert involvement, and technical-cultural resources were organized through a showcase event titled “Participatory Planning Week”, with the theme “Dreaming Downtown Ben Tre”.",
+    "partners": ["UN-Habitat", "ISCB"],
+    "years": "2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/ben-tre-urban-regeneration.jpg"
+  },
+  {
+    "id": 12,
+    "name": "smART Hub Living Lab",
+    "progress": "ongoing",
+    "objective": "At the University of Economics Ho Chi Minh City (UEH), sustainable development is not just a strategy but the core foundation of all innovation and creativity. Carrying forward this spirit, the smART Hub Living Labs was established at Campus V – Võ Thị Sáu, creating a vibrant co-creation space where research, art, design, technology, and the community converge to experiment with green urban solutions and pursue the vision of a Net-Zero Campus with zero net emissions. The initiative revolves around four key action packages: the Journey Toward Zero Single-Use Plastic, Glocal Design—from local roots to global reach, Toward Net-Zero, and Art for All. Supported by the Co-Creation Platform, lecturers, students, administrators, businesses, and the wider community come together to co-design, co-implement, and co-learn, forming a continuous cycle of innovation that drives UEH toward its ambitious Net-Zero Campus goal.",
+    "partners": ["International and national partners"],
+    "years": "2025-present",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/smarthub.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Adjustment of the Dong Nai Provincial Master Plan for the 2021–2030 Period, with a Vision to 2050",
+    "progress": "ongoing",
+    "objective": "<p>The adjustment of the Dong Nai Provincial Master Plan for the period 2021–2030, with a vision extending to 2050, aims to ensure full alignment and coherence with the strategic orientations of the Party and the State, national-level master plans, the Southeast Region Master Plan, and the Resolution of the Dong Nai Provincial Party Congress for the 2025–2030 term.<p>The plan seeks to maximize Dong Nai’s strategic positioning at both regional and international levels, with particular emphasis on the transformative momentum generated by Long Thanh International Airport and the Dong Nai River system. It is oriented toward rapid, sustainable, and comprehensive development across economic, social, environmental, and spatial dimensions.<h5>Targets by 2030</h5><p>By 2030, Dong Nai is expected to essentially meet the criteria for becoming a centrally governed city characterized by modernity, civilization, and sustainability. Key targets include:<p>- Average annual GRDP growth of 10–12%<p>- GRDP per capita exceeding 250 million VND<p>- The digital economy contributing more than 30% of GRDP<p>- An urbanization rate reaching 55%<p>The province will prioritize strong development in high-technology industry, eco-industrial activities, logistics, airport-related economy, green economy, circular economy, and digital economy, while simultaneously ensuring social welfare, improving quality of life, and leaving no one behind.<h5>Long-term Vision to 2050</h5><p>Dong Nai aspires to attain the status of a centrally governed city before 2035 and to emerge as an international trade hub, a center for high-technology industry, innovation and creativity, and high-quality services. It will feature a fully integrated and intelligent infrastructure system, advance a green and low-carbon economy, and contribute meaningfully to achieving net-zero greenhouse gas emissions. At the same time, the plan will firmly safeguard national defense, security, and territorial sovereignty.",
+    "partners": [
+      "BCG, HIDS, VIUP, Đồng Tiến, Institute of Transport Science and Technology, Center for Environmental Technology Techniques"
+    ],
+    "years": "2025-present",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/dieu_chinh_quy_hoach_tinh_DN.jpg"
+  }
+]

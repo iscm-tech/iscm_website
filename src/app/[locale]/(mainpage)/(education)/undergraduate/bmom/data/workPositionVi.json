@@ -1,0 +1,32 @@
+[
+  {
+    "position": "Chuyên viên/Quản lý khai thác và vận hành đường sắt, metro",
+    "company": "Doanh nghiệp và Tổng công ty Đường sắt Việt Nam, Metro, hoặc các liên danh PPP đường sắt đô thị và cao tốc",
+    "desc": "Tổ chức và giám sát hoạt động vận hành tuyến, lập kế hoạch điều độ, quản lý an toàn – kỹ thuật, phân tích dữ liệu khai thác và tối ưu hóa năng lực hệ thống"
+  },
+  {
+    "position": "Chuyên viên quy hoạch – phân tích hệ thống di chuyển thông minh",
+    "company": "Cơ quan quản lý nhà nước về giao thông, sở GTVT, cục/viện nghiên cứu, trung tâm điều hành đô thị thông minh",
+    "desc": "Nghiên cứu, thu thập và phân tích dữ liệu giao thông; đề xuất chính sách, quy hoạch và giải pháp điều phối thông minh trong đô thị và vùng."
+  },
+  {
+    "position": "Chuyên viên <br /> quản trị vận hành",
+    "company": "Doanh nghiệp hàng không, cảng hàng không, hoặc công ty vận tải đa phương thức",
+    "desc": "Quản lý lịch trình, điều phối đội bay hoặc luồng hàng – hành khách; giám sát chất lượng dịch vụ, an toàn và tuân thủ quy trình"
+  },
+  {
+    "position": "Chuyên viên phát triển sản phẩm, dữ liệu và công nghệ di chuyển thông minh",
+    "company": "Doanh nghiệp logistics, công nghệ giao thông, startup về Mobility-as-a-Service (MaaS)",
+    "desc": "Phát triển nền tảng số cho di chuyển thông minh; khai thác dữ liệu hành trình, tối ưu hóa trải nghiệm người dùng và hiệu quả vận hành"
+  },
+  {
+    "position": "Quản lý dự án <br/>giao thông đô thị – <br />hạ tầng thông minh",
+    "company": "Chính quyền địa phương, các ban quản lý dự án, đơn vị hạ tầng công cộng, đối tác PPP",
+    "desc": "Tổ chức, giám sát tiến độ và ngân sách dự án hạ tầng giao thông thông minh, điều phối các bên liên quan và đảm bảo tuân thủ tiêu chuẩn kỹ thuật, môi trường và xã hội"
+  },
+  {
+    "position": "Nghiên cứu viên hoặc trợ lý dự án phát triển giao thông bền vững",
+    "company": "Tổ chức quốc tế, viện nghiên cứu, cơ sở đào tạo về giao thông – đô thị – bền vững",
+    "desc": "Tham gia nghiên cứu, triển khai chính sách, dự án hợp tác quốc tế về di chuyển bền vững, đô thị thông minh, hoặc chuyển đổi xanh trong giao thông"
+  }
+]

@@ -1,0 +1,116 @@
+import { ibm_plex_sans } from "@/app/fontDeclare";
+import Mansory from "@/components/mansory";
+import NotFound from "@/components/not-found";
+import PageHeader from "@/components/partials/pageHeader";
+import { Separator } from "@/components/ui/separator";
+import { CollaborationStudioProject } from "@/schemaValidations/studiolab.schema";
+import { getCollaborationServices } from "@/services/studiolab.service";
+import { RequestProps } from "@/types/page.type";
+import { format } from "date-fns";
+import { getLocale } from "next-intl/server";
+import Image from "next/image";
+import React from "react";
+
+export default async function page({ params }: RequestProps) {
+  const locale = await getLocale();
+  const para = await params;
+
+  try {
+    const {
+      payload: { data },
+    } = await getCollaborationServices.getProject(para.id, "en");
+
+    const parse = CollaborationStudioProject.safeParse(data);
+
+    if (parse.error) {
+      console.log(parse.error);
+      return null;
+    }
+
+    const content = parse.data;
+
+    return (
+      <>
+        <PageHeader />
+        <section className="container py-8">
+          <h1 className={`text-center ${ibm_plex_sans.className}`}>
+            {content.title}
+          </h1>
+          <div className="row mt-20">
+            <div className="col-lg-5 col-12 h-full">
+              <Separator className="bg-black h-[1.5px] mb-3" />
+              <div className="px-3">
+                <span className="flex">
+                  <p className="font-bold mb-0">
+                    {locale === "en" ? "Date" : "Thời gian"}:
+                  </p>
+                  <p>{format(new Date(), "dd/MM/yyyy")}.</p>
+                </span>
+                <span className="flex">
+                  <p className="font-bold mb-0">
+                    {locale === "en" ? "Location" : "Vị trí"}:
+                  </p>
+                  <p>{content.location}.</p>
+                </span>
+                <span>
+                  <p className="font-bold mb-0">
+                    {locale === "en"
+                      ? "Supervisor Team"
+                      : "Đội ngũ Giảng viên Hướng dẫn"}
+                    :
+                  </p>
+                  <div className="flex flex-wrap">
+                    {content.supervisor.map((supervisor) => (
+                      <p
+                        key={supervisor}
+                        className="mb-2 w-1/2 text-center col-12 col-lg-6"
+                      >
+                        {supervisor}
+                      </p>
+                    ))}
+                  </div>
+                </span>
+                <span>
+                  <p className="font-bold mb-0">
+                    {locale === "en"
+                      ? "Student List"
+                      : "Nhóm sinh viên thực hiện"}
+                    :
+                  </p>
+                  <div className="flex flex-wrap row">
+                    {content?.members &&
+                      content.members.map((member) => (
+                        <p
+                          key={member}
+                          className="mb-2 w-1/2 text-center col-12 col-lg-6"
+                        >
+                          {member}
+                        </p>
+                      ))}
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div className="col-1 d-lg-block d-none"></div>
+            <div className="col-lg-6 col-12">
+              <figure className="w-full mt-2 mt-lg-0 mb-5 mb-lg-0">
+                <Image
+                  src={content.thumbnail}
+                  alt={para.id}
+                  width={1000}
+                  height={800}
+                  quality={100}
+                  className="w-full h-full object-contain object-top"
+                />
+              </figure>
+              <Mansory listItems={content.gallery} />
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  } catch (error) {
+    console.log(error);
+    return <NotFound />;
+  }
+}

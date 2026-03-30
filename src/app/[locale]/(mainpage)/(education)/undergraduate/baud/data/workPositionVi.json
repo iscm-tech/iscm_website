@@ -1,0 +1,120 @@
+[
+  {
+    "position": "Nhà thiết kế <br/> thiết kế đô thị",
+    "details": {
+      "desc": "Thiết kế đô thị là là người chịu trách nhiệm sáng tạo các ý tưởng và định hướng thiết kế tổng thể cho các khu đô thị, không gian công cộng, đảm bảo sự hài hòa giữa chức năng, thẩm mỹ, bền vững và trải nghiệm sống của cộng đồng",
+      "missions": [
+        "Nghiên cứu và phân tích yêu cầu khách hàng",
+        "Phát triển ý tưởng thiết kế sáng tạo",
+        "Tạo dựng bản vẽ và mô hình 3D",
+        "Lựa chọn vật liệu và công nghệ phù hợp",
+        "Phối hợp với các nhóm kỹ thuật và nhà thầu",
+        "Đảm bảo tính pháp lý và quy định xây dựng",
+        "Trình bày và thuyết trình ý tưởng thiết kế",
+        "Giám sát và điều chỉnh thiết kế trong quá trình thi công"
+      ]
+    }
+  },
+  {
+    "position": "Nhà thiết kế <br/> thiết kế kiến trúc",
+    "details": {
+      "desc": "Nhà thiết kế kiến trúc là người chịu trách nhiệm biến các ý tưởng thiết kế thành các bản vẽ kỹ thuật chi tiết và hướng dẫn thực thi công trình",
+      "missions": [
+        "Chuyển đổi ý tưởng thiết kế thành bản vẽ kỹ thuật chi tiết",
+        "Lập kế hoạch thi công và xác định vật liệu cần sử dụng",
+        "Phối hợp với các kỹ sư và nhà thầu để đảm bảo tính khả thi của thiết kế",
+        "Kiểm tra và giám sát công trình trong quá trình thi công",
+        "Đảm bảo tuân thủ các quy chuẩn và quy định xây dựng",
+        "Giải quyết các vấn đề phát sinh trong quá trình triển khai",
+        "Điều chỉnh thiết kế để phù hợp với thực tế công trình"
+      ]
+    }
+  },
+  {
+    "position": "Nhà thiết kế <br/> thiết kế cảnh quan",
+    "details": {
+      "desc": "Nhà thiết kế cảnh quan là người chuyên tạo ra không gian ngoài trời hài hòa và thẩm mỹ, kết hợp giữa yếu tố tự nhiên và nhân tạo",
+      "missions": [
+        "Nghiên cứu và phân tích môi trường tự nhiên, khí hậu và nhu cầu sử dụng của khách hàng",
+        "Phát triển ý tưởng thiết kế không gian ngoài trời (vườn, công viên, khu vực công cộng)",
+        "Lựa chọn và bố trí cây xanh, vật liệu cảnh quan, nước, ánh sáng",
+        "Tạo dựng bản vẽ thiết kế và mô hình 3D cho không gian ngoài trời",
+        "Đảm bảo thiết kế phù hợp với yêu cầu về bền vững, bảo vệ môi trường và tiết kiệm tài nguyên",
+        "Phối hợp với các kỹ sư và nhà thầu để triển khai thiết kế",
+        "Giám sát và điều chỉnh công trình trong quá trình thi công để đảm bảo chất lượng"
+      ]
+    }
+  },
+  {
+    "position": "Chuyên gia về thuật toán trong đô thị thông minh",
+    "details": {
+      "desc": "Chuyên gia về thuật toán trong đô thị thông minh là người ứng dụng công nghệ và các công cụ tính toán trong thiết kế kiến trúc, nhằm tối ưu hóa quá trình thiết kế và xây dựng",
+      "missions": [
+        "Phát triển và áp dụng các phần mềm mô phỏng, mô hình hóa và phân tích trong thiết kế kiến trúc",
+        "Sử dụng công nghệ BIM (Building Information Modeling) để quản lý dữ liệu và thông tin trong quá trình thiết kế và thi công",
+        "Tạo ra các hệ thống tự động hóa trong thiết kế để tăng hiệu quả và giảm thiểu sai sót",
+        "Nghiên cứu và ứng dụng các thuật toán tính toán, mô phỏng và tối ưu hóa trong thiết kế kiến trúc",
+        "Phối hợp với các kiến trúc sư và kỹ sư để đảm bảo tính khả thi và hiệu quả của thiết kế công trình",
+        "Đảm bảo công trình có thể tích hợp các công nghệ mới, như hệ thống thông minh, tự động hóa, và năng lượng tái tạo",
+        "Giám sát và hỗ trợ triển khai các công nghệ trong quá trình xây dựng"
+      ]
+    }
+  },
+  {
+    "position": "Chuyên viên <br /> gắn kết cộng đồng và hòa nhập Kỹ thuật số",
+    "details": {
+      "desc": "Chuyên viên gắn kết cộng đồng và hòa nhập kỹ thuật số là người chịu trách nhiệm thúc đẩy sự kết nối giữa cộng đồng và công nghệ, đặc biệt trong các dự án hoặc chương trình nhằm tạo ra sự hòa nhập và tiếp cận công nghệ cho tất cả mọi người",
+      "missions": [
+        "Xây dựng và triển khai các chương trình đào tạo công nghệ cho cộng đồng: Giúp các cá nhân và nhóm trong cộng đồng tiếp cận và sử dụng công nghệ, đặc biệt là những người chưa có nhiều kiến thức về kỹ thuật số.",
+        "Khuyến khích sự tham gia của cộng đồng vào các sáng kiến công nghệ: Tổ chức các sự kiện, hội thảo hoặc nhóm thảo luận để cộng đồng có thể học hỏi và trao đổi kinh nghiệm về việc sử dụng công nghệ.",
+        "Đảm bảo sự hòa nhập kỹ thuật số: Phát triển các chiến lược và phương pháp để giảm thiểu khoảng cách kỹ thuật số giữa các nhóm trong cộng đồng, đặc biệt là với những nhóm yếu thế như người già, người khuyết tật, hay những người sống ở vùng nông thôn.",
+        "Xây dựng mối quan hệ với các tổ chức, đối tác và chính quyền địa phương: Phối hợp với các bên liên quan để triển khai các chương trình gắn kết cộng đồng và cải thiện việc tiếp cận công nghệ.",
+        "Tư vấn và hỗ trợ người dân trong việc sử dụng các công nghệ mới: Hướng dẫn cách sử dụng các dịch vụ, ứng dụng, và nền tảng kỹ thuật số để người dân có thể áp dụng vào đời sống hàng ngày.",
+        "Theo dõi và đánh giá hiệu quả của các chương trình hòa nhập kỹ thuật số: Đảm bảo các sáng kiến đã triển khai thực sự mang lại lợi ích và giúp cộng đồng tiến bộ trong việc sử dụng công nghệ."
+      ]
+    }
+  },
+  {
+    "position": "Chuyên gia <br /> dữ liệu đô thị",
+    "details": {
+      "desc": "Chuyên gia dữ liệu đô thị là người tập trung vào việc nghiên cứu, phân tích và ứng dụng dữ liệu để giúp cải thiện quản lý đô thị và phát triển các thành phố thông minh, bền vững. Họ sử dụng dữ liệu lớn (big data), các công nghệ phân tích tiên tiến và các hệ thống thông minh để hỗ trợ quy hoạch, tối ưu hóa các dịch vụ công cộng, và cải thiện chất lượng sống trong thành phố.",
+      "missions": [
+        "Thu thập và phân tích dữ liệu đô thị: Bao gồm các thông tin về giao thông, dân số, môi trường, năng lượng, và cơ sở hạ tầng.",
+        "Phát triển mô hình phân tích và dự báo: Sử dụng các công cụ phân tích dữ liệu để dự đoán xu hướng phát triển đô thị và đề xuất các giải pháp tối ưu.",
+        "Quản lý cơ sở dữ liệu đô thị: Xây dựng và duy trì các hệ thống cơ sở dữ liệu để lưu trữ và truy cập các thông tin liên quan đến thành phố.",
+        "Đề xuất giải pháp cải thiện hạ tầng và dịch vụ công: Dựa trên phân tích dữ liệu để cải thiện các lĩnh vực như giao thông, cấp thoát nước, điện năng, và các dịch vụ công cộng khác.",
+        "Tư vấn cho các cơ quan quản lý đô thị: Cung cấp các thông tin chi tiết và phân tích để hỗ trợ quyết định chính sách và quy hoạch.",
+        "Nghiên cứu và phát triển các sáng kiến thành phố thông minh: Đề xuất ứng dụng công nghệ mới như Internet vạn vật (IoT) và hệ thống cảm biến để cải thiện hiệu quả hoạt động của thành phố."
+      ]
+    }
+  },
+  {
+    "position": "Chuyên viên Quản lý dự án phát triển Thành phố thông minh",
+    "details": {
+      "desc": "Quản lý dự án phát triển thành phố thông minh là công việc liên quan đến việc lập kế hoạch, triển khai và giám sát các dự án nhằm xây dựng và phát triển các thành phố thông minh, ứng dụng công nghệ và dữ liệu để cải thiện chất lượng sống và hiệu quả hoạt động của đô thị",
+      "missions": [
+        "Lập kế hoạch và xây dựng chiến lược dự án: Xác định mục tiêu, phạm vi, và các giai đoạn của dự án phát triển thành phố thông minh, bao gồm các yếu tố như giao thông thông minh, năng lượng bền vững, và hạ tầng kỹ thuật số.",
+        "Quản lý ngân sách và tài nguyên: Dự toán chi phí, lập kế hoạch tài chính và phân bổ nguồn lực cho các giai đoạn triển khai dự án, đảm bảo sự hiệu quả về chi phí và thời gian.",
+        "Giám sát tiến độ và chất lượng công việc: Theo dõi việc thực hiện các giai đoạn dự án, đảm bảo rằng các công nghệ, hệ thống và hạ tầng được triển khai đúng theo kế hoạch và đạt tiêu chuẩn chất lượng.",
+        "Tổ chức và phối hợp các bên liên quan: Làm việc với các nhà thầu, nhà cung cấp công nghệ, chính quyền địa phương, và các tổ chức khác để đảm bảo sự phối hợp suôn sẻ giữa các bên trong quá trình triển khai dự án.",
+        "Đánh giá và kiểm tra tính khả thi của công nghệ: Đảm bảo các công nghệ được lựa chọn phù hợp với mục tiêu của thành phố thông minh, có thể tích hợp với các hệ thống hiện có và có khả năng phát triển trong tương lai.",
+        "Giải quyết các vấn đề phát sinh trong quá trình triển khai: Xử lý kịp thời các vấn đề kỹ thuật, tài chính hoặc pháp lý có thể ảnh hưởng đến tiến độ và kết quả của dự án.",
+        "Truyền thông và báo cáo kết quả: Cung cấp thông tin về tiến độ, kết quả và tác động của dự án cho các bên liên quan, đặc biệt là chính quyền, cộng đồng và các nhà đầu tư."
+      ]
+    }
+  },
+  {
+    "position": "Chuyên viên <br /> gắn kết cộng đồng",
+    "details": {
+      "desc": "Chuyên viên gắn kết cộng đồng là người chịu trách nhiệm xây dựng mối quan hệ giữa các tổ chức, cơ quan chính quyền và cộng đồng, nhằm thúc đẩy sự tham gia tích cực của cộng đồng vào các hoạt động xã hội, phát triển địa phương",
+      "missions": [
+        "Xây dựng và duy trì mối quan hệ với cộng đồng: Tạo dựng lòng tin và sự hợp tác giữa cộng đồng và các tổ chức, cơ quan chức năng thông qua các chương trình, sự kiện và hoạt động giao lưu.",
+        "Tổ chức các chương trình, sự kiện cộng đồng: Lên kế hoạch, triển khai các hoạt động nhằm nâng cao nhận thức, gắn kết các thành viên trong cộng đồng và thúc đẩy sự tham gia vào các sáng kiến xã hội.",
+        "Tư vấn và hỗ trợ cộng đồng: Cung cấp thông tin, giải đáp thắc mắc, và hỗ trợ người dân trong việc tiếp cận các dịch vụ công cộng, các chương trình hỗ trợ của chính quyền.",
+        "Lắng nghe và phản hồi ý kiến cộng đồng: Thu thập và xử lý ý kiến, phản ánh của cộng đồng để chuyển đến các cơ quan có thẩm quyền, từ đó cải thiện các chính sách, dịch vụ công.",
+        "Giám sát và đánh giá tác động của các chương trình cộng đồng: Theo dõi và đánh giá kết quả các chương trình, dự án gắn kết cộng đồng để đảm bảo hiệu quả và điều chỉnh kịp thời nếu cần.",
+        "Thúc đẩy sự hòa nhập và bình đẳng: Làm việc với các nhóm yếu thế để đảm bảo họ có thể tham gia và hưởng lợi từ các chương trình phát triển cộng đồng."
+      ]
+    }
+  }
+]

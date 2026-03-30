@@ -1,0 +1,109 @@
+#mouse-scroll {
+    display: block;
+}
+#mouse-scroll {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+}
+#mouse-scroll span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+    height: 25px;
+    width: 15px;
+    border-radius: 10px;
+    transform: none;
+    transform: none;
+    border: 2px solid #ffffff;
+    top: 170px;
+}
+#mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1,
+#mouse-scroll .down-arrow-2,
+#mouse-scroll .down-arrow-3 {
+    animation: mouse-scroll 1s infinite;
+}
+#mouse-croll .down-arrow-1 {
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #ffffff;
+    position: relative;
+}
+#mouse-scroll .mouse-in {
+    animation: animated-mouse 1.2s ease infinite;
+}
+
+@keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+@keyframes mouse-scroll {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.course_undergraduate {
+    .jobDesc {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+.ant-image-preview-wrap {
+    top: 90px !important;
+    height: calc(100vh - 90px);
+}

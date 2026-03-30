@@ -1,0 +1,208 @@
+#mouse-scroll {
+  display: block;
+}
+#mouse-scroll {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+}
+#mouse-scroll span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+  height: 25px;
+  width: 15px;
+  border-radius: 10px;
+  transform: none;
+  transform: none;
+  border: 2px solid #ffffff;
+  top: 170px;
+}
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1,
+#mouse-scroll .down-arrow-2,
+#mouse-scroll .down-arrow-3 {
+  animation: mouse-scroll 1s infinite;
+}
+#mouse-croll .down-arrow-1 {
+  animation-delay: 0.1s;
+  animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #ffffff;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+  animation: animated-mouse 1.2s ease infinite;
+}
+
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.course_undergraduate {
+  .jobDesc {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.ant-image-preview-wrap {
+  top: 90px !important;
+  height: calc(100vh - 90px);
+}
+
+.course_undergraduate-bmom {
+  .strengths-section {
+    width: 100%;
+    position: relative;
+
+    .wrapper {
+      position: sticky;
+      top: 80px;
+    }
+
+    .boxWrapper {
+      perspective: 2000px;
+      transform-style: preserve-3d;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: relative;
+      overflow: visible;
+      transform: scale(0.85) rotateX(1deg) rotateY(0) rotateZ(0);
+    }
+
+    .box {
+      width: 100%;
+      height: 70vh;
+      position: relative;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+
+    .face {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 56px;
+      font-weight: 800;
+      background: #1e272e;
+      border: 2px solid #fff;
+      // backface-visibility: hidden;
+    }
+
+    .front {
+      transform: translate3d(0, 0, 35vh);
+    }
+    .back {
+      transform: rotateX(-90deg) rotateY(0) rotateZ(0) translate3d(0, 0, 35vh);
+    }
+    .top {
+      transform: translate3d(0, 0, -35vh) rotateX(180deg) rotateY(0) rotateZ(0);
+    }
+    .bottom {
+      transform: translate3d(0, -35vh, 0) rotateX(90deg) rotateY(0) rotateZ(0);
+    }
+  }
+
+  .career-section {
+    height: 300vh;
+
+    .card__wrapper {
+      display: flex;
+      gap: 24px;
+      will-change: "transform";
+    }
+
+    .card__item {
+      flex-flow: column;
+      flex: none;
+      justify-content: space-between;
+      width: 34%;
+      height: 455px;
+      display: flex;
+      box-shadow: -10px 10px 15px #0000000f;
+    }
+  }
+}
+
+// .course_undergraduate-baud-arch {
+//   .career-section {
+//     height: 300vh;
+
+//     .card__wrapper {
+//       display: flex;
+//       gap: 24px;
+//       will-change: "transform";
+//     }
+
+//     .card__item {
+//       flex-flow: column;
+//       flex: none;
+//       justify-content: space-between;
+//       width: 34%;
+//       height: 455px;
+//       display: flex;
+//       box-shadow: -10px 10px 15px #0000000f;
+//     }
+//   }
+// }

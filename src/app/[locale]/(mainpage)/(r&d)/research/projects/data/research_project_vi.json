@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Xây dựng mô hình Living Lab cho khu đô thị tương tác cao phía Đông thành phố",
+    "progress": "done",
+    "objective": "Dựa trên phân tích hiện trạng khu vực Trường Thọ, Thành phố Thủ Đức, Thành phố Hồ Chí Minh và Việt Nam, cũng như bài học thành công, quy trình và mối tương quan giữa phát triển thành phố thông minh và mô hình LivingLab trên toàn cầu, nhóm nghiên cứu đề xuất một khung triển khai, phát triển và mở rộng mô hình LivingLab tại Việt Nam. Khung thể hiện ở các cấp độ: vĩ mô (thành phố/doanh nghiệp) và vi mô (dự án).",
+    "partners": ["Sở KHCN TPHCM"],
+    "years": "2022 - 2023",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/truong tho.png"
+  },
+  {
+    "id": 2,
+    "name": "Phát triển Thành phố Vũng Tàu trở thành thành phố du lịch chất lượng cao, đẳng cấp quốc tế",
+    "progress": "done",
+    "objective": "Từ những phân tích và tổng hợp tình hình phát triển du lịch của thành phố Vũng Tàu trong bối cảnh địa phương, khu vực và quốc tế, đề án nhằm mục tiêu đưa ra những đề xuất phát triển Vũng Tàu trở thành thành phố du lịch chất lượng cao, đẳng cấp quốc tế. Các  đề xuất, giải pháp  không chỉ nhằm gia tăng khách du lịch hay phát triển cơ sở hạ tầng, kinh tế địa phương mà còn nhằm  xây dựng một hệ sinh thái kinh doanh địa phương mở, trải nghiệm chất lượng cao và đạt chuẩn quốc tế để thu hút nguồn nhân lực có chất lượng cao tới sinh sống, làm việc và phát triển tại Vũng Tàu.",
+    "partners": [
+      "Ủy ban Nhân dân Thành phố Vũng Tàu và các sở, ban ngành liên quan"
+    ],
+    "years": "2023 - 2024",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/2407.phuong_vung_tau.jpg",
+    "thumbnailCredit": "vietnamtourism.gov.vn"
+  },
+  {
+    "id": 3,
+    "name": "Khảo sát mức độ hạnh phúc và chất lượng sống của người dân tại TP. Hồ Chí Minh, Việt Nam",
+    "progress": "done",
+    "objective": "Là một phần của dự án quốc tế đánh giá mức độ hài lòng của người dân đối với công tác quản lý và phát triển đô thị tại các thành phố châu Á, dự án được thực hiện nhằm mục tiêu thu thập ý kiến từ cư dân đang sinh sống tại các khu vực thuộc TP. Hồ Chí Minh về những khó khăn họ gặp phải và khả năng tiếp cận các ứng dụng công nghệ hiện nay. Từ đó, các giải pháp phù hợp được đề xuất nhằm nâng cao chất lượng cuộc sống của người dân.",
+    "partners": [
+      "Trung tâm Nghiên cứu Đô thị Sáng tạo Lý Quang Diệu (LKYCIC - Lee Kuan Yew Centre for Innovative Cities) thuộc trường Đại học Công nghệ và Thiết kế Singapore (SUTD - Singapore University of Technology and Design)"
+    ],
+    "years": "2023",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/gia-dinh-yeu-thuong.jpg",
+    "thumbnailCredit": "baochinhphu.vn"
+  },
+  {
+    "id": 4,
+    "name": "Nâng cao an toàn giao thông cho trẻ em Châu Á thông qua nền tảng giáo dục Route2school",
+    "progress": "ongoing",
+    "objective": "Dựa trên cơ sở lý thuyết và bằng chứng thực nghiệm thu được từ các nhóm đối tượng liên quan, dự án nhằm mục tiêu khám phá hành vi nguy hiểm của học sinh khi di chuyển từ nhà đến trường tại các quốc gia Châu Á bao gồm: Việt Nam, Thái Lan, Philippines, Ấn Độ, Sri Lanka. Từ đó, nền tảng giáo dục an toàn giao thông tích hợp yếu tố game hoá (gamification) mang tên Route2school được xây dựng với các phiên bản ngôn ngữ khác nhau để giảng dạy kiến thức và kỹ năng an toàn giao thông cho học sinh tại các quốc gia Châu Á nêu trên.",
+    "partners": [
+      "Đại học Thammasat (Thái Lan)",
+      "Viện Công nghệ Quốc gia (NIT) Calicut (Ấn Độ)",
+      "Đại học Philippines (Philippines)",
+      "Đại học Peradeniya (Sri Lanka)",
+      "Đại học Hasselt (Bỉ)"
+    ],
+    "years": "2023-hiện tại",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/r2s.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Nền tảng giáo dục an toàn giao thông thực tế ảo Route2school VR Cycling",
+    "progress": "done",
+    "objective": "Nền tảng giáo dục an toàn giao thông dựa trên công nghệ thực tế ảo (VR) được thiết kế và phát triển một cách có hệ thống, dựa trên nền tảng khoa học vững chắc từ các lý thuyết hành vi giao thông hiện đại kết hợp với bằng chứng thực nghiệm thu thập từ nhiều nhóm đối tượng liên quan. Mục tiêu cốt lõi là nâng cao kiến thức và kỹ năng tham gia giao thông của học sinh THPT tại Việt Nam. Thông qua trải nghiệm nhập vai sống động mà công nghệ VR mang lại, học sinh không chỉ tiếp thu kiến thức lý thuyết mà còn được rèn luyện phản xạ, kỹ năng xử lý tình huống nguy hiểm khi đạp xe từ nhà đến trường trong môi trường thực tế ảo, từ đó hình thành ý thức và thói quen tham gia giao thông có trách nhiệm ngay từ khi còn ngồi trên ghế nhà trường.",
+    "partners": ["Viện nghiên cứu giao thông (IMOB) - Đại học Hasselt (Bỉ)"],
+    "years": "2020-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/r2s_vr.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Các giải pháp phát triển kinh tế số tại TP. Hồ Chí Minh",
+    "progress": "done",
+    "objective": "Nghiên cứu tiến hành phân tích thực trạng và các chiến lược phát triển kinh tế số điển hình tại các quốc gia phát triển và đang phát triển trên thế giới. Đồng thời, xem xét kỹ lưỡng các chỉ số và khung đo lường kinh tế số được thực hiện bởi các tổ chức quốc tế uy tín (OECD, ADB, DESI, v.v...) cũng như cách thức mà các quốc gia dự báo kịp thời sự phát triển của nền kinh tế số. Từ đó, nhóm nghiên cứu đề xuất chiến lược dài hạn để phát triển kinh tế số và phương pháp đo lường nhằm xác định tỷ trọng giá trị tăng thêm của kinh tế số trong GDP tại các địa phương trong nước trong bối cảnh khan hiếm dữ liệu cùng các báo cáo và dự báo cần được thực hiện kịp thời nhằm đảm bảo đạt được mục tiêu tỷ trọng kinh tế số đã đề ra.",
+    "partners": ["Các đối tác từ trong và ngoài nước"],
+    "years": "2023-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/2404-CONFERENCE-DigitalEconomy.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Khám phá thực hành Kinh tế Tuần hoàn của các Doanh nghiệp Vừa và Nhỏ (SMEs) tại Việt Nam và Australia",
+    "progress": "ongoing",
+    "objective": "Mục tiêu của dự án là hiểu rõ những hành động mà các doanh nghiệp vừa và nhỏ (SMEs) ở Australia và Việt Nam đang thực hiện để vượt qua những thách thức và khai thác cơ hội từ Kinh tế Tuần hoàn (CE). Dự tập trung vào việc nhận diện các thực hành CE mà các SMEs áp dụng, các yếu tố thúc đẩy chính, và những rào cản trong việc áp dụng các thực hành này, cũng như hiểu mối quan hệ giữa CE, chiến lược và hiệu quả kinh doanh trong ngành nông nghiệp và xây dựng.",
+    "partners": ["Trường đại học Western Sydney"],
+    "years": "2023-hiện tại",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/kinh-te-tuan-hoan-vn.jpg",
+    "thumbnailCredit": "vneconomy.vn"
+  },
+  {
+    "id": 8,
+    "name": "Hologram Walk: Nền tảng Đồng sáng tạo số cho Dự án Thiết kế Kiến trúc và Đô thị",
+    "progress": "done",
+    "objective": "Để phát triển các giải pháp đổi mới cho những thách thức đô thị thông qua một nền tảng đồng sáng tạo có sự tham gia của tất cả các bên liên quan – cơ quan quản lý nhà nước, nhà thiết kế, doanh nghiệp và cộng đồng địa phương – việc tích hợp các ứng dụng công nghệ hỗ trợ tương tác cần được thực hiện ngay từ những giai đoạn đầu của dự án phát triển đô thị. Tuy nhiên, quá trình hợp tác này thường gặp trở ngại do thiếu các nền tảng giao tiếp và trao đổi hiệu quả, đặc biệt trong bối cảnh khó đạt được sự đồng thuận giữa nhóm chuyên gia và không chuyên gia. Cộng đồng địa phương thường gặp khó khăn trong việc hiểu các bản vẽ, phương án thiết kế kiến trúc – đô thị mang tính kỹ thuật, cũng như trong việc diễn đạt rõ ràng nhu cầu và ý tưởng của mình. <br/><br/> Nghiên cứu này đã ứng dụng công nghệ hologram và thị giác máy tính để xây dựng một nền tảng tương tác nhằm tăng cường sự tham gia giữa các bên liên quan trong các dự án thiết kế kiến trúc và đô thị. Hệ thống đề xuất được triển khai như một nền tảng đồng sáng tạo số tại khuôn viên một trường đại học ở Vĩnh Long, Việt Nam. Nền tảng công nghệ này cho phép người dùng trải nghiệm và tương tác với các phương án thiết kế mới, truyền đạt ý kiến và nhu cầu của mình, đồng thời hỗ trợ nhóm thiết kế điều chỉnh phương án một cách linh hoạt, kịp thời. Cách tiếp cận này tối ưu hóa quá trình hợp tác, thúc đẩy các kết quả thiết kế đổi mới và có thể dễ dàng nhân rộng cho các dự án kiến trúc và đô thị trong tương lai.",
+    "partners": [
+      "Immersive Content Display Center",
+      "Đại học Kwangwoon (Hàn Quốc)"
+    ],
+    "years": "2024-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/hologram.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ứng dụng Drone và GIS trong đánh giá suy thoái hạ tầng đô thị",
+    "progress": "done",
+    "objective": "Đây là đề tài nghiên cứu khoa học cấp bộ với sự kết hợp giữa drone và GIS hỗ trợ chuyển đổi từ chiến lược bảo trì phản ứng sang bảo trì chủ động, tối ưu hóa hiệu suất hạ tầng đồng thời giảm chi phí. Dự án nhằm cung cấp giải pháp vừa tiết kiệm chi phí vừa có khả năng mở rộng, giúp giải quyết hiệu quả các thách thức trong việc giám sát mặt đường, đảm bảo an toàn giao thông và quản lý tài sản hạ tầng một cách hiệu quả, đặc biệt đối với các quốc gia đang phát triển.",
+    "partners": ["Các đối tác từ trong và ngoài nước"],
+    "years": "2023-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/Truong-tho-khong-anh.png"
+  },
+  {
+    "id": 10,
+    "name": "Phát triển chiến lược nâng cao kinh tế, du lịch và nghệ thuật cộng đồng tại làng bích họa Tam Thanh, Thành phố Tam Kỳ",
+    "progress": "done",
+    "objective": "Dự án này cho thấy rằng khi cùng làm việc với cộng đồng và có kế hoạch rõ ràng, chúng ta có thể phát triển địa phương một cách bền vững và được sự đồng thuận của người dân. Dự án  mở rộng nghệ thuật tranh tường, tạo ra những không gian công cộng đẹp, sáng tạo, hòa mình vào cảnh quan sông biển; đa dạng các hoạt động du lịch, giải trí và dịch vụ sạch - xanh để đáp ứng tốt nhu cầu du khách. Đồng thời, dự án tập trung giảm rác nhựa, giữ môi trường trong lành cho cả người dân lẫn khách thăm quan. Cuối cùng, hệ thống giao thông thân thiện môi trường với ít xe cơ giới sẽ kết nối liền mạch các điểm tranh tường, công viên, đồng thời liên kết tốt hơn với các xã và thành phố lân cận, giúp mọi người dễ dàng tham gia và cùng hưởng lợi.",
+    "partners": ["UN-Habitat", "ISCB"],
+    "years": "2023-2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/lang-bich-hoa-tam-thanh.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Đề xuất quy hoạch chiến lược cho tái thiết đô thị tại khu vực trung tâm thành phố Bến Tre",
+    "progress": "done",
+    "objective": "Dự án nhằm đề xuất quy hoạch chiến lược cho tái thiết đô thị khu trung tâm TP. Bến Tre đánh dấu bước khởi đầu then chốt trong tiến trình chuyển hóa hành lang Đồng Khởi và vùng phụ cận thành một trung tâm đô thị năng động và đáng sống. Dự án được thực hiện nhằm xây dựng nền tảng cho đề xuất tầm nhìn chiến lược, dựa trên phương pháp Our City Plans, đã được điều chỉnh để phù hợp với bối cảnh Việt Nam. Quá trình huy động cộng đồng, chuyên gia và các nguồn lực kỹ thuật – văn hóa  được tổ chức thông qua sự kiện trình diễn mang tên “Tuần lễ Lập Quy hoạch có sự tham gia”, với chủ đề “Thành phố Bến Tre trong mơ” (Dreaming Downtown Ben Tre).",
+    "partners": ["UN-Habitat", "ISCB"],
+    "years": "2025",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/ben-tre-urban-regeneration.jpg"
+  },
+  {
+    "id": 12,
+    "name": "smART Hub Living Lab",
+    "progress": "ongoing",
+    "objective": "Tại Đại học Kinh tế TP. Hồ Chí Minh (UEH), định hướng phát triển bền vững không chỉ là chiến lược, mà còn là nền tảng cho mọi hoạt động đổi mới sáng tạo. Tiếp nối tinh thần đó, smART Hub Living Labs ra đời tại Cơ sở V – Võ Thị Sáu, đóng vai trò là không gian đồng sáng tạo (co-creation space), nơi nghiên cứu, nghệ thuật, thiết kế, công nghệ và cộng đồng giao thoa để thử nghiệm các giải pháp đô thị xanh, hướng tới Net-Zero Campus – khuôn viên phát thải ròng bằng 0. Dự án phát triển xoay quanh bốn gói hành động (packages), mỗi gói tập trung vào một hướng chuyển đổi khác nhau, nhưng cùng hướng tới mục tiêu chung là xây dựng môi trường học tập – nghiên cứu – sống bền vững: Towards No Single-Use Plastic Journey – Hành trình hướng tới không nhựa sử dụng một lần, Glocal Design – Thiết kế GLOCAL: Từ địa phương đến toàn cầu, Towards Net-Zero – Hướng tới phát thải ròng bằng 0, Art for All – Nghệ thuật cho mọi người. Mô hình này được hỗ trợ bởi Co-Creation Platform – nền tảng kết nối các bên liên quan: giảng viên, sinh viên, nhà quản lý, doanh nghiệp và cộng đồng.\n Tại đây, các bên cùng đồng thiết kế, đồng thực hiện và đồng học hỏi, tạo nên chu trình đổi mới liên tục cho mục tiêu Net-Zero Campus của UEH.",
+    "partners": ["Các đối tác từ trong và ngoài nước"],
+    "years": "2025-hiện tại",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/smarthub.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Điều chỉnh Quy hoạch tỉnh Đồng Nai thời kỳ 2021-2030, tầm nhìn đến 2050",
+    "progress": "ongoing",
+    "objective": "Điều chỉnh Quy hoạch tỉnh Đồng Nai thời kỳ 2021–2030, tầm nhìn đến năm 2050 nhằm bảo đảm phù hợp, đồng bộ với các định hướng chiến lược của Đảng và Nhà nước, Quy hoạch cấp quốc gia, Quy hoạch vùng Đông Nam Bộ và Nghị quyết Đại hội Đảng bộ tỉnh nhiệm kỳ 2025–2030. Quy hoạch xác lập mục tiêu phát huy tối đa vị thế chiến lược của Đồng Nai trong vùng và quốc tế, đặc biệt dựa trên động lực đột phá từ Cảng hàng không quốc tế Long Thành và hệ thống sông Đồng Nai, hướng tới phát triển nhanh, bền vững, toàn diện về kinh tế, xã hội, môi trường và không gian. <br/><br/> Đến năm 2030, Đồng Nai cơ bản đạt tiêu chuẩn thành phố trực thuộc Trung ương theo hướng văn minh, hiện đại, bền vững; duy trì tốc độ tăng trưởng GRDP bình quân 10–12%/năm, GRDP bình quân đầu người trên 250 triệu đồng; kinh tế số chiếm trên 30% GRDP; tỷ lệ đô thị hóa đạt 55%. Phát triển mạnh công nghiệp công nghệ cao, công nghiệp sinh thái, logistics, kinh tế hàng không, kinh tế xanh, tuần hoàn và số; đồng thời bảo đảm an sinh xã hội, nâng cao chất lượng sống, không để ai bị bỏ lại phía sau. <br/><br/> Tầm nhìn đến năm 2050, Đồng Nai trở thành thành phố trực thuộc Trung ương trước năm 2035, là trung tâm giao thương quốc tế, công nghiệp công nghệ cao, đổi mới sáng tạo và dịch vụ chất lượng cao; có hệ thống hạ tầng đồng bộ, thông minh; phát triển kinh tế xanh, các-bon thấp, góp phần thực hiện cam kết phát thải ròng bằng “0”; bảo đảm vững chắc quốc phòng, an ninh và chủ quyền quốc gia.",
+    "partners": [
+      "BCG, HIDS, VIUP, Đồng Tiến, Viện Giao thông Vận tải, Trung Tâm Kỹ thuật Tài Nguyên Môi trường"
+    ],
+    "years": "2025-hiện tại",
+    "thumbnail": "https://iscm-api.ueh.edu.vn/public/static/images/research/projects/dieu_chinh_quy_hoach_tinh_DN.jpg"
+  }
+]

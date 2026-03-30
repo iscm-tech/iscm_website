@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2022,
+    "years": "K47 - K48",
+    "credits": 125,
+    "programCourse": "/images/courses/structure/K47 + K48_Program diagram.jpg"
+  },
+  {
+    "id": 2023,
+    "years": "K49 - K50",
+    "credits": 125,
+    "programCourse": "/images/courses/structure/K49_Program diagram.jpg"
+  },
+  {
+    "id": 2025,
+    "years": "K51",
+    "credits": 123,
+    "programCourse": "/images/courses/structure/SO DO DAO TAO K51.jpg"
+  }
+]

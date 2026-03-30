@@ -1,0 +1,215 @@
+[
+  {
+    "module": "UEH General Course",
+    "subjects": [
+      { "name": "Desgin Thinking", "credits": 2 },
+      { "name": "Sustainable Development", "credits": 2 },
+      { "name": "Introduction to Psychology", "credits": 2 }
+    ]
+  },
+  {
+    "module": "Smart City",
+    "subjects": [
+      {
+        "name": "Smart City",
+        "credits": 3,
+        "desc": "This course provides a fundamental overview of smart cities, including their theoretical, political, economic, administrative, regulatory, and governance frameworks. Throughout the course, students will explore smart city concepts through global best-practice cases in smart city development, analyzing operational characteristics, approaches, and methods for creating a master plan to achieve mid-to-long-term goals. The course enables participants to advance toward building an open, collaborative, citizen-centric, and digitally enabled operating model for their city—one that aligns with their vision for a sustainable, resilient, and prosperous future."
+      },
+      {
+        "name": "Basic Mathematic and Introduction to Computational Design",
+        "credits": 3,
+        "desc": "The course 'Mathematics and Introduction to Computational Design' focuses on using geometric, algebraic, and transformational concepts to design spaces. The course equips students with the mathematical skills needed to initiate effective and creative spatial models. Students will begin with the fundamentals of geometry, exploring shapes, proportions, and spatial relationships. Next, students will learn how to apply algebra to solve specific design problems, from determining dimensions to calculating complex geometric elements. Transformations will be introduced as a tool for changing and transforming shapes in space. Students will practice using allowed variables to create unique designs, exploring the possibility of self-creation. The course includes the use of design software to simulate and visualize mathematical thinking into space."
+      },
+      {
+        "name": "Digital Tools",
+        "credits": 3,
+        "desc": "This course focuses on using computers and software as a means of parametric thinking through drawing, modeling, and prototyping. Throughout the course, students will learn a variety of techniques on how to study and investigate real-world materials in the context of a professional environment and figure out the best way to communicate their design solutions to other stakeholders with their design skills. The exercises will be performed with Revit. Regardless of the specific software tool, the principles and knowledge introduced and applied in this course can be applied in all other software and practical cases."
+      },
+      {
+        "name": "Basic Computational Design and Programming Practice",
+        "credits": 3,
+        "desc": "The module Programming for Computational Design is designed to equip architecture students with parametric and algorithmic programming skills, thereby opening up creative possibilities and solving architectural design problems effectively. In the context of modern architecture, the use of programming tools to create complex and flexible architectural models is becoming increasingly important. This module will introduce students to the basic concepts of parametric programming, common design algorithms, and specialized modeling and programming tools (e.g. Grasshopper, Dynamo, R Programming). Students will learn how to apply algorithms and programming methods to solve specific architectural design problems, from creating basic shapes to optimizing design solutions. The module also focuses on developing design data visualization skills, helping students present and communicate design ideas effectively. Through practical exercises and final projects, students will have the opportunity to apply their knowledge in practice, thereby enhancing their creativity and problem-solving skills in the field of architectural design. This module will provide students with the tools and skills needed to become architects who can think optimally about parametric design and use technology effectively."
+      },
+      {
+        "name": "Urban Computation and Spatial Data Analysis",
+        "credits": 3,
+        "desc": "This module Urban Computation and Spatial Data Analysis is designed to equip students of architecture and urban planning with the skills needed to work with urban data. In the context of rapid urbanization, the ability to analyze and use urban data becomes extremely important in making effective planning and design decisions. Students will be trained in spatial and non-spatial data analysis techniques, through QGIS, R, and Power BI tools. Students will learn how to collect, clean, and visualize urban data from various sources, and apply analytical methods to solve specific problems in urban management. The module not only focuses on mastering tools and techniques, but also encourages students to develop analytical thinking and problem-solving skills. Through practical exercises and group projects, students will have the opportunity to apply the knowledge they have learned to real-life situations, thereby improving their ability to work independently and in teams. This module will provide students with the knowledge and skills necessary to use urban data effectively in the fields of architecture and urban management."
+      },
+      {
+        "name": "Entrepreneur and Startup",
+        "credits": 2,
+        "desc": "The course 'Entrepreneurship & Startup' illustrates in depth the main strategies and concepts for the management of business startups. The students will learn the methodologies for elaborating a business model and a business plan. In this way, they develop important competences which can be applied in the conception and planning of new business. In the progress of the module, the simulation games and workshop will be carried out, using the acquired knowledge to excuse the case study. In addition, students will have opportunities to engage and learn from inviting speakers, startup founders, investors of local and international Startup Ecosystem."
+      },
+      {
+        "name": "Project Management",
+        "credits": 3,
+        "desc": "The Project Management course provides knowledge of principles and practical methods in project management, helping learners understand the entire life cycle of a project from initiation to completion. Learners will be equipped with essential skills to plan, coordinate, and control projects effectively. In addition, learners will learn how to identify potential risks that may affect the project implementation process and develop strategies to minimize those risks, helping to increase the likelihood of success when implementing the project in practice. Learners are guided on how to apply quality control processes to ensure that project outputs meet the highest standards, while also providing knowledge on how to handle ethical issues that arise during the project management process."
+      },
+      {
+        "name": "Machine Learning for Smart City",
+        "credits": 3,
+        "desc": "The Machine Learning for Smart City course equips students with foundational knowledge and skills in applying machine learning techniques to the design and management of smart cities. The course introduces fundamental concepts of machine learning, data collection and processing methods, and guides students through essential algorithms such as regression, classification, clustering, neural networks, and deep learning. Beyond core knowledge, students will explore machine learning techniques applied to spatial data, urban information systems, and smart infrastructures. The course also covers basic principles of reinforcement learning and its potential applications in urban management, transportation, environmental monitoring, and improving quality of life. Importantly, the course is designed based on the harmony of three key elements: city (urban context), science (data science), and design (solution design). Through group exercises and practical application projects, students will develop competencies in data analysis, technological solution design, and the ability to address urban challenges using contemporary scientific and technological approaches."
+      },
+      {
+        "name": "Co-Creation",
+        "credits": 3,
+        "desc": "The Co-Creation course equips students with knowledge and skills in collaborative innovation methods for urban design, public services, and community development projects. Co-Creation is understood as a process where multiple stakeholders participate in generating ideas, designing solutions, and implementing them in practice to create shared value and address real-world needs. Through this course, students will explore fundamental theories of Co-Creation, implementing in Smart City projects, and analyze the roles and relationships between key stakeholders including government, businesses, research institutions, and communities. In addition, students will be guided through the process of developing a co-creation project — from needs assessment and problem analysis to proposing and testing solutions. The course integrates theory with group activities, real-life case studies, and hands-on workshops to develop design thinking, interdisciplinary collaboration, and community engagement skills. It serves as a solid foundation for students to actively participate in social innovation and sustainable development initiatives."
+      },
+      {
+        "name": "New Urban Economics & City Marketing",
+        "credits": 3,
+        "desc": "Urban economics is the study of cities and regions, and the economic activities therein. As a discipline, urban economics lies at the intersection of geography and economics introducing the role of space into economic considerations. Students will be exposed to the theories and concepts that help to explain the existence, growth and impact of cities, as well as gain a deeper understanding about the role of public and private policies that impact the urban form, structure and economy. The course provides knowledge about new economy models like Digital economy, Blue economy, Night economy, Post Covid-19 economy, Startups, Local economy, Circular economy, Informal economy. The course also offers students the opportunity to develop their knowledge about place- and nation branding. During the course, we will critically explore different facets of contemporary place branding practices, as well as discussing historical and theoretical foundations."
+      },
+      {
+        "name": "Cultural Heritage Management & Conservation",
+        "credits": 2,
+        "desc": "This course covers general knowledge about architecture and urban conservation. The study focuses on (1) technical, socioeconomic, and legal factors affecting the conservation of historic buildings and sites; (2) adaptive reuse of historic buildings; and (3) international charters concerning the conservation of historic buildings and sites. The course consists of a series of lectures covering the architectural and urban conservation aspects and a project as a practical application on the conservation of a historic building and areas."
+      },
+      {
+        "name": "Study Trip",
+        "credits": 1,
+        "desc": "The study visits course focuses on developments in interior architecture and architecture, design, and urbanism. The trip is offered with a lot of places of architectural and cultural interests in Vietnam. Inspired by the day trips, students have to make an individual presentation in a given format."
+      },
+      {
+        "name": "Urban Living Lab",
+        "credits": 3,
+        "desc": "Urban Living Lab is considered an integrated research platform to jointly research, test, develop, and create real products/services/systems to thoroughly solve each problem of the urbanization process by applying technology and innovation in each specific locality/region. This integrated platform must be understood as a specific physical or virtual reality, or interactive space, in which stakeholders form a tripartite partnership between the public and private sectors, individuals, and other partners, which are representatives of government agencies, universities/research institutes, businesses, users, and other relevant partners. The purpose of this course is to help students understand the definition, process, and know how to operate a living lab project from discovery, experiment, to evaluation. Some of the best practices in the field over the past two decades around the world will be analyzed to draw lessons for selected areas in HCMC or other Vietnamese cities, depending on the theme of each year and the needs of society. By the end of the course, students will fully understand and have the ability to develop living lab projects. Multidisciplinary, stakeholder, and teamwork skills will also be developed during the teaching sessions."
+      },
+      {
+        "name": "Sustainable Accessibility and Smart Mobility",
+        "credits": 3,
+        "desc": "The course introduces essential transport planning concepts and approaches of sustainable accessibility and smart mobility. Methods, tools, and usage scenarios are discussed to help students have a better understanding of these concepts in practice."
+      },
+      {
+        "name": "Resilience Urban Infrastructure Management",
+        "credits": 3,
+        "desc": "This course introduces the fundamental concepts of landscape, landscape architecture, and resilience design. It will help students understand landscape as a consequence of settling on natural land. It will explore how humans inhabit, adapt to, or impose themselves on ecological floors. In other words, it will explore how humans settle with and within different types of landscapes (such as water, forests, gardens, parks, etc.). The strengths and weaknesses learned from history will be the foundation for developing resilience design thinking for each type of landscape. This course includes case studies and resources that illustrate multi-benefit systems and multiscale solutions. It will also explain the role of landscape architects within the planning and urban design team in creating more resilient projects."
+      },
+      {
+        "name": "Building Information Model",
+        "credits": 3,
+        "desc": "This course aims to provide fundamental knowledge and concepts of building information modeling. Students will understand the historical issues in construction and how BIM can be used to support a transition to more efficient construction. During the course, students will acquire basic building information modeling skills, create their own project, learn how to draw up architectural and construction drawings, and develop a construction schedule using modern software systems."
+      },
+      { "name": "Seminar: Technology and the Smart City", "credits": 2 },
+      { "name": "Urban Modeling with Big Data", "credits": 2 },
+      { "name": "Lighting Management", "credits": 3 },
+      { "name": "Internship", "credits": 3 }
+    ]
+  },
+  {
+    "module": "Design Theory",
+    "subjects": [
+      {
+        "name": "Theories of Architecture Design",
+        "credits": 3,
+        "desc": "'Theories of Architectural Design' is a fundamental course that introduces students to essential concepts, methods, and processes related to architectural design. The course covers core principles of architecture, such as form, space, function, and aesthetics, while emphasizing the relationship between the built environment and human experience within it. It includes both theoretical lessons and real-world design applications, enabling students to understand design solutions through sketching and analytical drawing. The course aims to develop critical thinking and a comprehensive understanding of the role of architecture within environmental, urban, and social contexts."
+      },
+      {
+        "name": "Building Structure",
+        "credits": 3,
+        "desc": "The course 'Building Structure' introduces general knowledge of structural systems, construction materials, and practical design solutions for contemporary building structures. The course focuses on developing the student’s capacity to explain and interpret information related to the fundamental principles and structural behavior of modern buildings in withstanding gravity, wind, earthquakes, and other environmental forces. Students will analyze the structural characteristics of common construction materials and learn to integrate structural elements into complete structural systems in modern buildings."
+      },
+      {
+        "name": "History of Architecture and Urbanism",
+        "credits": 3,
+        "desc": "The course is an overall introduction to the history of architecture and urbanism. The field has a history of thousands of years. It has been going on since the very first form of human settlement was established. Therefore, the purpose of the course is not to comprehensively cover the entirety of history, but rather to reinterpret it through specific themes and perspectives. The idea is to understand architectural and urban history in relation to socio-ecological changes. In other words, the aim is to comprehend the reasons behind the shifts in architecture and urbanism over time. Students will learn how to critically review and analyze case studies in each important era. They will study how the structure of architecture and urbanism has shifted in different circumstances to adapt to socio-ecological changes. At the end of the course, students are able to reflect on their perspectives about the history of architecture and urbanism."
+      },
+      {
+        "name": "Architectural Physics",
+        "credits": 3,
+        "desc": "The course 'Architectural Physics' introduces general knowledge of waves, sound, seismology, laws of motion, forces, gravity, energy, thermodynamics, fluids, properties of materials, and light to architecture. At the end of the course, students will have competence to select proper constructions and materials based on technical requirements and to apply building physics to design sustainable and moisture-safe buildings."
+      },
+      {
+        "name": "Analysis and Architecture Design",
+        "credits": 2,
+        "desc": "The subject 'Analysis and Architecture Design' introduces the basics and guidelines for architectural analysis and design concept/strategy within an urban context. It is not meant to teach only the whole design process but rather focuses on how to analyze and understand the existing environment. It encourages students to interpret architecture as a component of existing systems. Students must learn to analyze a given site within its urban morphology, topography, landscapes, local weather and climate patterns, and social context in order to propose an ecological and socially responsive architectural concept."
+      },
+      {
+        "name": "Smart and Resilient Landscape Design",
+        "credits": 3,
+        "desc": "This course introduces the fundamental concepts of landscape, landscape architecture, and resilience design. It will help students understand landscape as a consequence of settling on natural land. It will explore how humans inhabit, adapt to, or impose themselves on ecological floors. In other words, it will explore how humans settle with and within different types of landscapes (such as water, forests, gardens, parks, etc.). The strengths and weaknesses learned from history will be the foundation for developing resilience design thinking for each type of landscape. This course includes case studies and resources that illustrate multi-benefit systems and multiscale solutions. It will also explain the role of landscape architects within the planning and urban design team in creating more resilient projects."
+      },
+      {
+        "name": "Smart Urban Design",
+        "credits": 3,
+        "desc": "The course 'Urban Design' is an intermediate field bridging architecture, urban planning, infrastructure, environmental systems, research, and practice. It focuses on understanding and shaping cities—considering both their historical and morphological layers, such as topography, urban morphology, typology, vegetation, water, infrastructure, culture, and climate. Smart urban design aims to strengthen and restructure urban and social-ecological systems to respond effectively to cultural, societal, climatic, and economic changes. The course introduces students to the definition of cities and settlements and covers at least nine key terminologies of urbanism. These concepts are explored through case studies of precedents in Vietnam and globally, addressing contemporary urban challenges such as crises, pandemics, global warming, and urbanization. The course includes guest lectures from professionals and field trips in Ho Chi Minh City to provide practical insights."
+      },
+      {
+        "name": "Urban Planning",
+        "credits": 3,
+        "desc": "This course introduces students to the theories and disciplinary practice of urban planning. The course covers trends and challenges in city planning at various scales, from regional to neighborhood planning. Students will also gain fundamental knowledge of historical and contemporary issues, debates, and contentious topics in planning through multiple case studies. Completing the course will provide students with a clear understanding of 'what is planning' and the numerous challenges involved in shaping cities and neighborhoods."
+      },
+      { "name": "Seminar: Smart Placemaking", "credits": 2 },
+      { "name": "Smart Climate Design", "credits": 2 }
+    ]
+  },
+  {
+    "module": "Design Studio Lab",
+    "subjects": [
+      {
+        "name": "Basic StudioLab 1",
+        "credits": 6,
+        "desc": "This course introduces the practice of visual representation and the development of basic skills in architectural design drawing, modeling, and thinking. Through essential hands-on design exercises, the first basic StudioLab focuses on building a strong design methodology for beginning students—grounded in thoughtful, creative, ethical, and rigorous work practices to explore meaningful formal and spatial propositions. Representation techniques and skill assets will be introduced in two parts throughout the semester, covering fundamental and projective drawing & perspective. Instruction will emphasize applying representation skills to project assignments. Each section will culminate in a cumulative assignment, and the final project at the end of the semester will require students to demonstrate a comprehensive graphic analysis along with refined drawing and modeling output."
+      },
+      {
+        "name": "Living Space StudioLab 1",
+        "credits": 4,
+        "desc": "The Architecture Studiolab 1 is the core course of the program. This course will focus on analyzing the types and key characteristics of residential buildings. Through the Studiolab, students are encouraged to understand the interrelationship between human behavior and space in a detached residential building for a small joint family. The projects investigate the study of built form, function, activity, and its relationship to the site and surroundings. The Architecture Studiolab 1 work will be done both individually and in teams."
+      },
+      {
+        "name": "Basic StudioLab 2: Urban Visualization",
+        "credits": 3,
+        "desc": "The course 'Urban Visualization' will provide students with basic methods to represent their understanding of urban and landscape structures in relation to social and ecological conditions. It introduces powerful representation techniques needed to analyze the relationships between settlements, topography, landscapes, and climate. This course prepares students for the 'Mapping the City' course and larger studio projects. Additionally, students will learn essential software skills that will be beneficial for their future careers."
+      },
+      {
+        "name": "Living Space StudioLab 2",
+        "credits": 4,
+        "desc": "This course is a studio-type class for architectural design. Students will learn the full process of designing a commercial building, from initial programming to technical design. The course emphasizes sustainable design, providing hands-on practice for developing comprehensive commercial building designs. Students will work both individually and in teams throughout the design process. They will be introduced to a methodology based on original thinking, where they synthesize collected information and draw conclusions based on established premises. The course also demonstrates how to generate multiple design alternatives and evaluate them to select the most appropriate one. Each year, the site and studio topic will be chosen based on current urban issues and challenges."
+      },
+      {
+        "name": "Basic StudioLab 3: Mapping the City",
+        "credits": 3,
+        "desc": "This course teaches students how to conduct mapping and utilize it as a powerful tool for urban analysis. Mapping here is not about simple tracing; rather, it focuses on extracting essential existing elements and interpreting them to tell a story about places and cities. To achieve this, deep fieldwork is required—observing, experiencing, conversing, and speculating about locations. The insights gained from these speculations will serve as a foundation for deeper research or design development."
+      },
+      {
+        "name": "Urban Landscape StudioLab",
+        "credits": 6,
+        "desc": "This studio project explores tangible landscapes as subjects of self-healing design. The course equips students with tools and methodologies essential for research and design in landscape architecture, focusing on public spaces within existing or newly developed urban contexts. Throughout the project, theoretical knowledge introduced in the course will be applied to formulate landscape design solutions that embody self-healing capabilities, aiming to address extreme environmental events and adapt to the impacts of climate change. Students will engage with strategies that support the regeneration of ecological systems, enhance climate resilience, and promote long-term sustainability.The course also introduces a systematic approach to spatial development that is context-sensitive, human-centered, and grounded in the principles of biodiversity and environmental stewardship. Emphasis is placed on the integration of local ecological, cultural, and social conditions into the design process. By undertaking this design-based research, students will not only develop a critical and reflective design mindset but also build a portfolio of practical skills essential for professional practice in urban landscape architecture."
+      },
+      {
+        "name": "Smart Urban Design StudioLab",
+        "credits": 6,
+        "desc": "This is a comprehensive practical course on what urban design is. The course is further developed based on the definition of urban design in the previous theoretical course. It is about dealing with cities; it is the science of the city and acting smartly on the city's structure at multiple scales. Such actions are based on an understanding and reading, both historical and morphological, of cities and settlements layer by layer (topography, urban morphology, typology, vegetation, water, infrastructure, culture, climate, etc.). Smart urban design seeks to strengthen and (re)structure urban and social-ecological systems in order to respond to changes in cultures, societies, climates, and economies. In this studio, students, together with lecturers, will develop urban design strategies for a city to address contemporary social-ecological challenges."
+      },
+      {
+        "name": "Architecture and Smart Urban Design StudioLab",
+        "credits": 6,
+        "desc": "This course is a studio type class for physical site design. The site design is the design process of the surrounding environment of a new development project such as a building, group of buildings or a large complex. It refers to the design, and in some cases, the planning of the exterior physical environments around the main architecture, including the design of landscape, open spaces, connectivity, accessibility, spatial connection and transportation connection, topography, morphology, livability, programs, etc. It involves the considerations of site context, site mapping and analysis, land use zoning, infrastructure, access and circulation, natural and cultural and social environments, local identity, sense of place and genius loci, participatory place making, and other sustainability and livability factors in relationship with the development. This course aims to design sites in a smart and sustainable way, thereby contributing to the overall development of a smart city. Various smart city elements will be introduced and encouraged to be integrated in the design processes. Three stages constitute the compositional arrangement of the site design include site survey and analysis, synthesis and conceptualization, and design ideation phases in relationship with the development. In this studio type course, an intermediate scale in between architectural design and urban design will be focused."
+      },
+      {
+        "name": "Graduation Project/Thesis",
+        "credits": 10,
+        "desc": "Graduation project in Architectural and Urban Design Inclusive Smart City - Architecture and Smart Urban Design is a final project that integrating knowledge learned and practiced from previous semesters. This project does not go into designing a building, a park, a resort or hotel... It is a design project that needs to be approached from the perspective of: (1) understanding the urban and landscape system and then acting smartly on the system in multiscale; (2) (re)position new urban architecture within a large structure; (3) creation of an urban and landscape framework to solve/mitigate problems in the urbanization process. Hence, Urban design is the framework to connect architecture and landscape. In other words, this final project/thesis uses urban design approach to strengthen and (re)-structure urban and social-ecological systems to seek for strengthening and (re)structuring urban and social-ecological systems in order to respond to urban challenges in cultures, societies, climates, and economies. The graduation project will have a structure of 7 parts: 1. Framing issues, 2. Concept & Hypothesis, 3. Methodology, 4. Reading the existing, 5. Case studies’ reflection, 6. Research by design, 7. Conclusion. The analysis and design assignment in part 4 and 6 will be carried out in three scales: territory, project and strategic site."
+      }
+    ]
+  },
+  {
+    "module": "English Course",
+    "subjects": [
+      { "name": "Business English", "credits": 4 },
+      { "name": "English for Technology and Design 1", "credits": 3 },
+      { "name": "English for Technology and Design 2", "credits": 3 }
+    ]
+  },
+  {
+    "module": "Social Science, Political Science and Law Course",
+    "subjects": [
+      { "name": "Marxist-Leninist Philosophy", "credits": 3 },
+      { "name": "Marxist-Leninist Political Economics", "credits": 2 },
+      { "name": "Scientific socialism", "credits": 2 },
+      { "name": "Urban Law and Legislation", "credits": 1 },
+      { "name": "Ho Chi Minh's Ideology", "credits": 2 },
+      { "name": "History of Vietnamese Communist Party", "credits": 2 }
+    ]
+  }
+]

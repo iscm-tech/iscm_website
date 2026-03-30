@@ -1,0 +1,39 @@
+[
+  {
+    "position": "Lead Architect & Urban Designer",
+    "details": {
+      "desc": "Responsible for the primary design of complex architectural projects and urban areas, ensuring harmony between functionality, aesthetics, and sustainability."
+    }
+  },
+  {
+    "position": "Computational Architect & BIM Specialist",
+
+    "details": {
+      "desc": "Utilizing simulation tools and Building Information Modeling (BIM) to optimize design and construction efficiency"
+    }
+  },
+  {
+    "position": "Design Project Manager",
+    "details": {
+      "desc": "Coordinating and controlling the entire project lifecycle from the conceptual stage to site handover, ensuring technical quality and schedule compliance"
+    }
+  },
+  {
+    "position": "Urban Data Scientist",
+    "details": {
+      "desc": "Leveraging Big Data and IoT technology to provide scientific evidence for urban planning and management."
+    }
+  },
+  {
+    "position": "Digital Transformation Specialist in Construction",
+    "details": {
+      "desc": "Consulting and implementing digital technology roadmaps to enhance productivity and management efficiency."
+    }
+  },
+  {
+    "position": "Academic Researcher & Lecturer",
+    "details": {
+      "desc": "Engaging in teaching and research at higher education institutions focused on architecture and sustainable urbanism."
+    }
+  }
+]

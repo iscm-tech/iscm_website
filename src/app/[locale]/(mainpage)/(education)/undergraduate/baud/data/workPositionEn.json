@@ -1,0 +1,120 @@
+[
+  {
+    "position": "Urban Designer",
+    "details": {
+      "desc": "Urban Designer is responsible for developing concepts, visions, and overall design directions for urban areas and public spaces, ensuring harmony between functionality, aesthetics, sustainability, and community living experience.",
+      "missions": [
+        "Research and analyze client requirements",
+        "Develop creative design concepts",
+        "Create drawings and 3D models",
+        "Select appropriate materials and technologies",
+        "Collaborate with technical teams and contractors",
+        "Ensure legal compliance and building regulations",
+        "Present and pitch design ideas",
+        "Supervise and adjust designs during construction"
+      ]
+    }
+  },
+  {
+    "position": "Implementation Architect",
+    "details": {
+      "desc": "An Implementation Architect is responsible for transforming design concepts into detailed technical drawings and execution guidelines for construction.",
+      "missions": [
+        "Convert design ideas into detailed technical drawings",
+        "Develop construction plans and determine necessary materials",
+        "Collaborate with engineers and contractors to ensure design feasibility",
+        "Inspect and oversee construction progress",
+        "Ensure compliance with building codes and regulations",
+        "Resolve emerging issues during implementation",
+        "Adjust designs to align with real-world construction requirements"
+      ]
+    }
+  },
+  {
+    "position": "Project Landscape Designer",
+    "details": {
+      "desc": "A Project Landscape Designer specializes in creating harmonious and aesthetic outdoor spaces, integrating natural and artificial elements.",
+      "missions": [
+        "Research and analyze the natural environment, climate, and client needs",
+        "Develop design concepts for outdoor spaces (gardens, parks, public areas)",
+        "Select and arrange greenery, landscape materials, water features, and lighting",
+        "Create design drawings and 3D models for outdoor spaces",
+        "Ensure designs align with sustainability, environmental protection, and resource efficiency requirements",
+        "Collaborate with engineers and contractors to implement the designs",
+        "Supervise and adjust the project during construction to ensure quality"
+      ]
+    }
+  },
+  {
+    "position": "IT/Computational Architect",
+    "details": {
+      "desc": "An IT/Computational Architect applies technology and computational tools in architectural design to optimize the design and construction process.",
+      "missions": [
+        "Develop and apply simulation, modeling, and analysis software in architectural design",
+        "Utilize BIM (Building Information Modeling) technology to manage data and information throughout the design and construction process",
+        "Create automated systems in design to enhance efficiency and minimize errors",
+        "Research and apply computational algorithms, simulations, and optimization methods in architectural design",
+        "Collaborate with architects and engineers to ensure feasibility and effectiveness of building designs",
+        "Ensure integration of new technologies such as smart systems, automation, and renewable energy in construction projects",
+        "Supervise and support the implementation of technologies during construction"
+      ]
+    }
+  },
+  {
+    "position": "Community Engagement & Digital Inclusion Specialists",
+    "details": {
+      "desc": "A Community Engagement and Digital Inclusion Specialist is responsible for fostering connections between communities and technology, particularly through projects or initiatives that promote inclusivity and accessibility for all.",
+      "missions": [
+        "Develop and implement technology training programs for communities: Help individuals and groups access and use technology, especially those with limited digital knowledge.",
+        "Encourage community participation in technology initiatives: Organize events, workshops, or discussion groups where communities can learn and share experiences in using technology.",
+        "Ensure digital inclusion: Develop strategies and methods to reduce the digital divide among different community groups, especially vulnerable populations such as the elderly, disabled individuals, and rural residents.",
+        "Build relationships with organizations, partners, and local governments: Collaborate with stakeholders to implement community engagement programs and improve technology accessibility.",
+        "Advise and support citizens in adopting new technologies: Guide people in using digital services, applications, and platforms to integrate technology into their daily lives.",
+        "Monitor and evaluate the effectiveness of digital inclusion programs: Ensure that initiatives provide tangible benefits and help communities progress in technology adoption."
+      ]
+    }
+  },
+  {
+    "position": "Urban Data Scientist",
+    "details": {
+      "desc": "An Urban Data Scientist focuses on researching, analyzing, and applying data to enhance urban management and develop smart, sustainable cities. They utilize big data, advanced analytics, and intelligent systems to support planning, optimize public services, and improve the quality of urban life.",
+      "missions": [
+        "Collect and analyze urban data, including information on transportation, population, environment, energy, and infrastructure.",
+        "Develop analytical and predictive models: Use data analysis tools to forecast urban development trends and propose optimal solutions.",
+        "Manage urban databases: Build and maintain database systems to store and access city-related information.",
+        "Propose solutions to improve infrastructure and public services: Use data insights to enhance transportation, water supply, energy efficiency, and other public utilities.",
+        "Advise urban management agencies: Provide detailed information and analysis to support policy decisions and planning.",
+        "Research and develop smart city initiatives: Recommend the application of new technologies such as the Internet of Things (IoT) and sensor systems to improve city operations."
+      ]
+    }
+  },
+  {
+    "position": "Smart City Project Manager",
+    "details": {
+      "desc": "A Smart City Project Manager is responsible for planning, implementing, and overseeing projects aimed at building and developing smart cities, leveraging technology and data to enhance urban living quality and operational efficiency.",
+      "missions": [
+        "Plan and develop project strategies: Define objectives, scope, and phases of smart city projects, including aspects such as smart transportation, sustainable energy, and digital infrastructure.",
+        "Manage budgets and resources: Estimate costs, create financial plans, and allocate resources throughout project implementation to ensure cost and time efficiency.",
+        "Monitor progress and work quality: Track project phases to ensure technologies, systems, and infrastructure are deployed according to plan and meet quality standards.",
+        "Organize and coordinate stakeholders: Work with contractors, technology providers, local governments, and organizations to ensure smooth collaboration in project execution.",
+        "Evaluate and assess technological feasibility: Ensure selected technologies align with smart city goals, integrate with existing systems, and allow for future scalability.",
+        "Resolve issues arising during implementation: Address technical, financial, or legal challenges promptly to avoid delays and disruptions.",
+        "Communicate and report outcomes: Provide updates on progress, results, and project impact to stakeholders, particularly government bodies, communities, and investors."
+      ]
+    }
+  },
+  {
+    "position": "Community Engagement Officer",
+    "details": {
+      "desc": "A Community Engagement Officer is responsible for building relationships between organizations, government agencies, and the community to promote active participation in social activities and local development.",
+      "missions": [
+        "Establish and maintain relationships with the community: Foster trust and collaboration between the community and organizations or authorities through programs, events, and engagement activities.",
+        "Organize community programs and events: Plan and implement activities to raise awareness, connect community members, and encourage participation in social initiatives.",
+        "Advise and support the community: Provide information, answer questions, and assist residents in accessing public services and government support programs.",
+        "Listen to and respond to community feedback: Gather and address community opinions and concerns to relay them to relevant authorities, improving policies and public services.",
+        "Monitor and evaluate the impact of community programs: Track and assess the effectiveness of engagement projects to ensure they meet objectives and make timely adjustments if needed.",
+        "Promote inclusion and equality: Work with vulnerable groups to ensure they can participate in and benefit from community development programs."
+      ]
+    }
+  }
+]

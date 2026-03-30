@@ -1,0 +1,39 @@
+[
+  {
+    "position": "Kiến trúc sư Chủ trì & Thiết kế Đô thị",
+    "details": {
+      "desc": "Chịu trách nhiệm thiết kế chính cho các công trình phức hợp và khu vực đô thị, đảm bảo sự hài hòa giữa công năng, thẩm mỹ và tính bền vững."
+    }
+  },
+  {
+    "position": "Kiến trúc sư Thuật toán & Chuyên gia BIM",
+
+    "details": {
+      "desc": "Sử dụng các công cụ mô phỏng và mô hình thông tin công trình (BIM) để tối ưu hóa hiệu quả thiết kế và thi công."
+    }
+  },
+  {
+    "position": "Quản lý dự án Thiết kế",
+    "details": {
+      "desc": "Điều phối và kiểm soát toàn bộ vòng đời dự án từ giai đoạn ý tưởng đến khi bàn giao thực địa, đảm bảo chất lượng kỹ thuật và tiến độ."
+    }
+  },
+  {
+    "position": "Chuyên gia <br/> Dữ liệu Đô thị",
+    "details": {
+      "desc": "Khai thác Dữ liệu lớn (Big Data) và công nghệ IoT để cung cấp căn cứ khoa học cho việc quy hoạch và quản lý đô thị."
+    }
+  },
+  {
+    "position": "Chuyên gia Chuyển đổi số trong Xây dựng",
+    "details": {
+      "desc": "Tư vấn và triển khai lộ trình công nghệ số nhằm nâng cao năng suất và hiệu quả quản lý trong doanh nghiệp."
+    }
+  },
+  {
+    "position": "Giảng viên & Nhà nghiên cứu <br/> chuyên sâu",
+    "details": {
+      "desc": "Tham gia giảng dạy và nghiên cứu tại các cơ sở giáo dục đại học về kiến trúc và đô thị bền vững."
+    }
+  }
+]
