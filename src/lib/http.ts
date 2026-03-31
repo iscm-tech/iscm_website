@@ -1,4 +1,5 @@
 import envConfig from "@/config";
+import { getCookie } from "./cookies";
 
 type CustomOptions = RequestInit & {
   baseUrl?: string | undefined;
@@ -41,7 +42,7 @@ export const isClient = () => typeof window !== "undefined";
 const request = async <Response>(
   method: "GET" | "POST" | "PUT" | "DELETE",
   url: string,
-  options?: CustomOptions | undefined
+  options?: CustomOptions | undefined,
 ) => {
   let body: FormData | string | undefined = undefined;
   if (options?.body instanceof FormData) {
@@ -58,27 +59,20 @@ const request = async <Response>(
           "Content-Type": "application/json",
         };
 
-  // console.log(body);
   if (isClient()) {
-    // const cookie = await getCookie("sessionToken");
-    const localToken = localStorage.getItem("sessionToken");
-    if (localToken) {
-      const cookie = JSON.parse(localToken);
-      baseHeaders["authorization"] = cookie.token;
-    }
+    const cookie = await getCookie("sessionToken");
+    if (cookie?.value) baseHeaders["authorization"] = cookie.value;
   }
 
   // If baseUrl is not specified, envConfig.NEXT_PUBLIC_API_ENDPOINT will be used instead
   const baseUrl =
-    options?.baseUrl === undefined
-      ? envConfig.API_ENDPOINT
-      : options?.baseUrl;
+    options?.baseUrl === undefined ? envConfig.API_ENDPOINT : options?.baseUrl;
 
   const fullUrl = url.startsWith("http")
     ? url
     : url.startsWith("/")
-    ? `${baseUrl}${url}`
-    : `${baseUrl}/${url}`;
+      ? `${baseUrl}${url}`
+      : `${baseUrl}/${url}`;
 
   const res = await fetch(fullUrl, {
     ...options,
@@ -104,7 +98,7 @@ const request = async <Response>(
         data as {
           status: 422;
           payload: EntityErrorPayload;
-        }
+        },
       );
     } else {
       throw new HttpError(data);
@@ -117,27 +111,27 @@ const request = async <Response>(
 const http = {
   get<Response>(
     url: string,
-    options?: Omit<CustomOptions, "body"> | undefined
+    options?: Omit<CustomOptions, "body"> | undefined,
   ) {
     return request<Response>("GET", url, options);
   },
   post<Response>(
     url: string,
     body: any,
-    options?: Omit<CustomOptions, "body"> | undefined
+    options?: Omit<CustomOptions, "body"> | undefined,
   ) {
     return request<Response>("POST", url, { ...options, body });
   },
   put<Response>(
     url: string,
     body: any,
-    options?: Omit<CustomOptions, "body"> | undefined
+    options?: Omit<CustomOptions, "body"> | undefined,
   ) {
     return request<Response>("PUT", url, { ...options, body });
   },
   delete<Response>(
     url: string,
-    options?: Omit<CustomOptions, "body"> | undefined
+    options?: Omit<CustomOptions, "body"> | undefined,
   ) {
     return request<Response>("DELETE", url, { ...options, body: "{}" });
   },

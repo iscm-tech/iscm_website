@@ -169,10 +169,8 @@ export default function RichtextEditor({
         ) {
           event.preventDefault();
           const files: FileList = event.dataTransfer.files;
-
           for (let i = 0; i < files.length; i++) {
             const file: File = normalizeFile(files[i]);
-
             if (/^image\/(jpeg|png|gif|webp?)$/.test(file.type)) {
               setImageUploads((prev) => [...prev, file]);
 
@@ -254,6 +252,8 @@ export default function RichtextEditor({
           categories.category,
           categories.slug,
         );
+
+        // console.log(content);
 
         await onSubmit(imageUploads, content, description.innerHTML);
       } else {

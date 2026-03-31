@@ -5,9 +5,9 @@ const authServices = {
   login: (body: LoginBodyType) =>
     http.post<LoginResType>("api/users/login", body),
   checkToken: () =>
-    http.post<{ message: string; token: string; expireAt: string }>(
+    http.post<{ message: string; token: string; expires: string }>(
       "api/users/checked-valid-session",
-      {}
+      {},
     ),
 };
 

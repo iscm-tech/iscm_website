@@ -18,7 +18,7 @@ const infoVi = {
 
         <ul className="!pl-4">
           {[
-            "Trình độ đào tạo: <b>Thạc sĩ - Đại trà - Hướng Ứng dụng</b>",
+            "Trình độ đào tạo: <b>Thạc sĩ - Hệ chính quy - Hướng Ứng dụng</b>",
             "Ngành, Chuyên ngành đào tạo: Quản lý công, Quản trị đô thị thông minh và sáng tạo",
             "Mã ngành: 8340403",
             "Học phí dự kiến: 1,650,000VND/tín chỉ",
@@ -50,12 +50,12 @@ const infoVi = {
               <li className="list-item relative before:content-['-'] before:absolute before:left-0 before:text-black">
                 Đã tốt nghiệp hoặc đã đủ điều kiện công nhận tốt nghiệp đại học
                 (hoặc trình độ tương đương trở lên) ngành phù hợp; đối với
-                chương trình định hướng Ứng dụng yêu cầu hạng tốt nghiệp
-                từ khá trở lên hoặc có bài báo (có ISSN), bài hội thảo khoa học
-                có xuất bản (có ISBN) hoặc tham gia đề tài nghiên cứu khoa học
-                cấp cơ sở trở lên đã được nghiệm thu liên quan đến lĩnh vực sẽ
-                học tập, nghiên cứu. Tất cả những công trình nêu trên được xuất
-                bản không quá 5 năm tính đến ngày nộp hồ sơ dự tuyển;
+                chương trình định hướng Ứng dụng yêu cầu hạng tốt nghiệp từ khá
+                trở lên hoặc có bài báo (có ISSN), bài hội thảo khoa học có xuất
+                bản (có ISBN) hoặc tham gia đề tài nghiên cứu khoa học cấp cơ sở
+                trở lên đã được nghiệm thu liên quan đến lĩnh vực sẽ học tập,
+                nghiên cứu. Tất cả những công trình nêu trên được xuất bản không
+                quá 5 năm tính đến ngày nộp hồ sơ dự tuyển;
               </li>
               <li className="list-item relative before:content-['-'] before:absolute before:left-0 before:text-black">
                 Có năng lực ngoại ngữ từ Bậc 3 trở lên theo Khung năng lực ngoại

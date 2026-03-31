@@ -39,14 +39,7 @@ const LogIn = () => {
         payload: { data, message },
       } = await authServices.login(loginBodyParse.data);
 
-      console.log(data.token, "login token");
-
-      await setCookie("sessionToken", data.token, data.exprs.toString());
-
-      localStorage.setItem(
-        "sessionToken",
-        JSON.stringify({ token: data.token, expires: data.exprs }),
-      );
+      await setCookie("sessionToken", data.token, data.expires.toString());
 
       router.push("/admins/dashboard");
       toast({

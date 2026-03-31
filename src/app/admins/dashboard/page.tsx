@@ -37,7 +37,7 @@ export default async function page() {
 
     data.sort(
       (a, b) =>
-        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
     );
 
     return (
@@ -79,12 +79,12 @@ export default async function page() {
                         key={cate}
                         color={
                           postCateTagColors.filter(
-                            (tag) => tag.name !== iscmCates[cate]
+                            (tag) => tag.name !== iscmCates[cate],
                           )[0].hex
                         }
                         className="capitalize"
                       >
-                        {i18n(portalCatesVi[cate])}
+                        {portalCatesVi[cate]}
                       </Tag>
                     ))}
                   </div>

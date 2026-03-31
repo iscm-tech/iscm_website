@@ -16,7 +16,7 @@ export type LoginBodyType = z.TypeOf<typeof LoginBodySchema>;
 export const LoginRes = z.object({
   data: z.object({
     token: z.string(),
-    exprs: z.date(),
+    expires: z.date(),
   }),
   message: z.string(),
 });

@@ -132,9 +132,9 @@ export default async function page({
                 : `Chương trình Thạc sĩ Quản trị Đô thị thông minh và sáng tạo (MSCIM) của Viện Đô thị thông minh và Quản lý (ISCM), Đại học Kinh tế TP. Hồ Chí Minh (UEH) là một chương trình đào tạo liên ngành, định hướng tương lai, được thiết kế nhằm đào tạo những nhà quản trị đô thị đổi mới sáng tạo. Với 2 năm học, chương trình sẽ cung cấp kiến thức tiên tiến về công nghệ, quy hoạch đô thị và quản lý, giúp người học có khả năng giải quyết các thách thức thực tiễn và góp phần xây dựng các thành phố thông minh, bền vững.`}
               <p className="mt-2">
                 {locale === "en"
-                  ? `SCIM offers two learning tracks tailored to different career
+                  ? `MSCIM offers two learning tracks tailored to different career
                 paths and experience levels:`
-                  : `SCIM cung cấp hai lộ trình học tập phù hợp với các định hướng nghề nghiệp và trình độ kinh nghiệm khác nhau:`}
+                  : `MSCIM cung cấp hai lộ trình học tập phù hợp với các định hướng nghề nghiệp và trình độ kinh nghiệm khác nhau:`}
               </p>
               <ul className="mt-2 !pl-10">
                 <li className="list-item !list-disc">
@@ -146,7 +146,7 @@ export default async function page({
                     </p>
                   ) : (
                     <p>
-                      <b>Chương trình Thạc sĩ hệ đại trà</b> – Dành cho người
+                      <b>Chương trình Thạc sĩ hệ chính quy</b> – Dành cho người
                       học mong muốn được đào tạo toàn diện về phát triển đô thị
                       thông minh, đổi mới sáng tạo và quản trị.
                     </p>

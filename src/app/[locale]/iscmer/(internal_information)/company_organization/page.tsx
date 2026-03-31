@@ -9,8 +9,8 @@ export default function page() {
         <Image
           src={"/images/about/company_organization.jpg"}
           alt="Company Organization"
-          width={800}
-          height={600}
+          width={2400}
+          height={1200}
           className="w-full object-contain"
           quality={100}
         />

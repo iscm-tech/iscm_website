@@ -5,10 +5,10 @@ import { cookies } from "next/headers";
 export async function setCookie(
   name: string,
   token: string,
-  expiresAt: string
+  expires: string
 ): Promise<void> {
   const cookiesStore = await cookies();
-  cookiesStore.set(name, token, { expires: new Date(expiresAt) });
+  cookiesStore.set(name, token, { expires: new Date(expires) });
 }
 
 export async function getCookie(

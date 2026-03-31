@@ -12,10 +12,10 @@ export default function CMSPageLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <body className="antialiased h-screen overflow-hidden">
+    <section className="antialiased h-screen overflow-hidden">
       <CheckToken />
       <main>{children}</main>
       <Toaster />
-    </body>
+    </section>
   );
 }

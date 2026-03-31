@@ -31,6 +31,7 @@ const LoginWithUsernameAndPassword = () => {
       const loginBodyParse = LoginBodySchema.safeParse({
         username: email,
         password: password,
+        auth_provider: "password",
       });
 
       if (loginBodyParse.error) {
@@ -42,14 +43,7 @@ const LoginWithUsernameAndPassword = () => {
         payload: { data, message },
       } = await authServices.login(loginBodyParse.data);
 
-      console.log(data.token, "login token");
-
-      await setCookie("sessionToken", data.token, data.exprs.toString());
-
-      localStorage.setItem(
-        "sessionToken",
-        JSON.stringify({ token: data.token, expires: data.exprs }),
-      );
+      await setCookie("sessionToken", data.token, data.expires.toString());
 
       router.push("/admins/dashboard");
       toast({
@@ -119,7 +113,7 @@ const LoginWithUsernameAndPassword = () => {
           </p>
         )}
         <button className="w-full bg-black text-white text-base py-2 rounded-lg">
-          Submit
+          Login
         </button>
       </form>
     </div>

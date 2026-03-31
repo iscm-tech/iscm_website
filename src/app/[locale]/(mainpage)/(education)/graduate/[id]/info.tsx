@@ -34,7 +34,7 @@ export default function Info({ data }: { data: CourseType }) {
           onClick={() => setType("standard")}
         >
           <p className="w-full h-full p-2 flex items-center justify-center font-bold text-inherit hover:text-[#ce2027] ">
-            {locale === "en" ? "Standard" : "Hệ đại trà"}
+            {locale === "en" ? "Standard" : "Hệ chính quy"}
           </p>
         </li>
         <li
