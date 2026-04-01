@@ -28,10 +28,10 @@ export default async function page({
             <Image
               alt=""
               width={1200}
-              height={500}
+              height={800}
               src={data.thumbnail}
-              className="w-full object-cover max-h-[500px]"
-              quality={80}
+              className="w-full object-contain"
+              quality={90}
             />
           </div>
         </div>
@@ -39,55 +39,18 @@ export default async function page({
         <div className="row align-items-center mb-5">
           <div className="col-12 order-1 mb-4 mb-xl-0">
             <div className="row">
-              <div className="col-lg-7 flex items-center">
+              <div className="col-lg-9 flex items-center">
                 <h2 className="w-full uppercase">{data.title}</h2>
               </div>
 
-              <div className="col-lg-5">
+              <div className="col-lg-3">
                 <div className="flex gap-3 items-center">
                   <div>
-                    {/* <h3 className="mb-0 text-base text-[#ce2027]">
-                      {locale === "en"
-                        ? "The program is currently enrolling for the first intake of 2026"
-                        : "Hiện tại chương trình đang tuyển sinh đợt 1 2026"}
-                    </h3>
-                    <p className="text-base mb-0">
-                      {locale === "vi"
-                        ? "Hạn nộp hồ sơ: 15/12/2025"
-                        : "Deadline: 15/12/2025"}
-                    </p>
-                    <p className="text-base mb-0">
-                      {locale === "vi" ? (
-                        <>
-                          Hình thức đăng ký: trực tuyến trên hệ thống{" "}
-                          <a
-                            href="https://xettuyen.ueh.edu.vn/thacsi"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline"
-                          >
-                            https://xettuyen.ueh.edu.vn/thacsi
-                          </a>
-                        </>
-                      ) : (
-                        <>
-                          Online via:{" "}
-                          <a
-                            href="https://xettuyen.ueh.edu.vn/thacsi"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline"
-                          >
-                            https://xettuyen.ueh.edu.vn/thacsi
-                          </a>
-                        </>
-                      )}
-                    </p> */}
                     <p className="text-base mb-0">
                       <span className="text-base text-[#ce2027]">
                         {locale === "vi" ? "Đợt 1" : "Period 1"}
                       </span>
-                      : 15/12/2025 ({locale === "vi" ? "Đã đóng" : "Closed"})
+                      : 12/2025
                     </p>
                     <p className="text-base mb-0">
                       <span className="text-base text-[#ce2027]">

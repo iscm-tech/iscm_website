@@ -27,34 +27,34 @@ const getPostServices = {
       | "iscm_in_the_media",
     page: number | undefined = undefined,
     lang: string,
-    options?: { [key: string]: any }
+    options?: { [key: string]: any },
   ) => {
     return http.get<PostListResType<T>>(
       `/api/${dirName}?${lang ? `lang=${lang}` : ""}${
         page ? `&page=${page}` : ""
       }`,
-      options
+      options,
     );
   },
 
   getLatestAdmission: (lang: string) =>
     http.get<PostListResType<LatestAdmissionCardType>>(
-      `api/open-admission/latest-posts${lang ? "?lang=" + lang : ""}`
+      `api/open-admission/latest-posts${lang ? "?lang=" + lang : ""}`,
     ),
 
   getFeatureEvent: (lang: string) =>
     http.get<PostListResType<EventCardType>>(
-      `api/events/latest-posts${lang ? "?lang=" + lang : ""}`
+      `api/events/latest-posts${lang ? "?lang=" + lang : ""}`,
     ),
 
   getLatestPost: (lang: string) =>
     http.get<LatestPostListResType>(
-      `api/utils/latest-posts${lang ? "?lang=" + lang : ""}`
+      `api/utils/latest-posts${lang ? "?lang=" + lang : ""}`,
     ),
 
   getLatestPortal: (lang: string) =>
     http.get<PostListResType<LatestAdmissionCardType>>(
-      `api/utils/latest-portal${lang ? "?lang=" + lang : ""}`
+      `api/utils/latest-portal${lang ? "?lang=" + lang : ""}`,
     ),
 
   getLatestPostByCategory: (
@@ -65,10 +65,10 @@ const getPostServices = {
       | "open-admission"
       | "events"
       | "evolving-research"
-      | "iscm_in_the_media"
+      | "iscm_in_the_media",
   ) =>
     http.get<LatestPostListResType>(
-      `api/${category}/latest-posts${lang ? "?lang=" + lang : ""}`
+      `api/${category}/latest-posts${lang ? "?lang=" + lang : ""}`,
     ),
 
   getPost: <T = PostResType>(
@@ -81,13 +81,13 @@ const getPostServices = {
       | "iscm_in_the_media",
     idPost: string | null,
     lang: string,
-    options?: { [key: string]: any }
+    options?: { [key: string]: any },
   ) =>
     http.get<T>(
       `/api/${dirName}${idPost !== null ? `/${idPost}` : ""}${
         lang ? `?lang=${lang}` : ""
       }`,
-      options
+      options,
     ),
 };
 
@@ -102,13 +102,13 @@ const createUpdatePostServices = {
       | "iscm_in_the_media",
     idPost: string,
     lang: string,
-    body: CreatePostBodyType | CreateEventBodyType
+    body: CreatePostBodyType | CreateEventBodyType,
   ) =>
     http.post<CreateUpdateResType>(
       `/api/${dirName}${idPost ? `/${idPost}` : ""}${
         lang ? `?lang=${lang}` : ""
       }`,
-      body
+      body,
     ),
 
   createPostPortal: (body: CreatePortalPostBodyType) =>
@@ -120,17 +120,16 @@ const createUpdatePostServices = {
       | "student_life"
       | "open-admission"
       | "events"
-      | "evolving-research"
-      | "iscm_in_the_media",
+      | "evolving-research",
     idPost: string,
     lang: string,
-    body: UpdatePostBodyType
+    body: UpdatePostBodyType,
   ) => {
     return http.put<CreateUpdateResType>(
       `/api/${dirName}${idPost !== null ? `/${idPost}` : ""}${
         lang ? `?lang=${lang}` : ""
       }`,
-      body
+      body,
     );
   },
 };
@@ -145,10 +144,10 @@ const deletePostServices = {
       | "evolving-research"
       | "iscm_in_the_media",
     idPost: string,
-    lang: string
+    lang: string,
   ) => {
     return http.delete<{ message: string; data: PostCardType }>(
-      `/api/${dirName}/${idPost}${lang ? `?lang=${lang}` : ""}`
+      `/api/${dirName}/${idPost}${lang ? `?lang=${lang}` : ""}`,
     );
   },
 };
@@ -157,7 +156,7 @@ const getPendingPost = {
   getList: (lang: string, options?: { [key: string]: any }) => {
     return http.get<AllPendingPostResType>(
       `api/portal${lang ? `?lang=${lang}` : ""}`,
-      { ...options }
+      { ...options },
     );
   },
 
@@ -170,23 +169,23 @@ const acceptPendingPost = (
   lang: string,
   idPost: string,
   category: string,
-  options?: { [key: string]: any }
+  options?: { [key: string]: any },
 ) => {
   return http.put(
     `api/portal/accept/${category}/${idPost}${lang ? `?lang=${lang}` : ""}`,
     {},
-    { ...options }
+    { ...options },
   );
 };
 
 const rejectPendingPost = (
   lang: string,
   idPost: string,
-  options?: { [key: string]: any }
+  options?: { [key: string]: any },
 ) => {
   return http.delete(
     `api/portal/reject/${idPost}${lang ? `?lang=${lang}` : ""}`,
-    { ...options }
+    { ...options },
   );
 };
 
