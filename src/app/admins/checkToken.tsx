@@ -20,7 +20,7 @@ export default function CheckToken() {
         console.log("Error checking token:", error);
         // Handle the error as needed, e.g., redirect to login or show an error message
         await deleteCookie("sessionToken"); // Delete the session token cookie
-        redirect.replace("/admins/auth/login"); // Redirect to the login page
+        redirect.replace("/auth/login"); // Redirect to the login page
       }
     }
 

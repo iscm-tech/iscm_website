@@ -2,6 +2,7 @@ import envConfig from "@/config";
 import authServices from "@/services/auth.service";
 import GoogleProvider from "next-auth/providers/google";
 import { AuthOptions } from "next-auth";
+import { deleteCookie } from "./cookies";
 
 export const authOpts: AuthOptions = {
   providers: [
@@ -11,7 +12,7 @@ export const authOpts: AuthOptions = {
     }),
   ],
   session: {
-    strategy: "jwt", // important
+    strategy: "jwt",
   },
   secret: envConfig.NEXTAUTH_SECRET,
   callbacks: {
@@ -61,6 +62,11 @@ export const authOpts: AuthOptions = {
       session.authError = token.authError as string | undefined;
 
       return session;
+    },
+  },
+  events: {
+    async signOut({ session, token }) {
+      await deleteCookie("sessionToken"); // Delete the session token cookie on sign out
     },
   },
 };

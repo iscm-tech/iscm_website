@@ -209,9 +209,8 @@ export const CreatePortalPostBody = z.object({
   publishDate: z.string().default(new Date().toISOString()),
   local_cate: z.enum([
     "news",
-    "events",
+    "student_life",
     "evolving_research",
-    "iscm_in_the_media",
     "open_admission",
   ]),
 });

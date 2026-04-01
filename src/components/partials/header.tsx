@@ -210,18 +210,20 @@ export default function Header() {
                     )}
                   </Fragment>
                 ))}
+
+                {/* ISCMer Menu */}
                 <Fragment>
-                  {!(localStorage.getItem("sessionToken") || session?.AT) && (
+                  {!(session?.AT) && (
                     <NavMenuItemWithoutSubMenu name="ISCMer" url="iscmer" />
                   )}
-                  {(localStorage.getItem("sessionToken") || session?.AT) &&
+                  {(session?.AT) &&
                     iscmerMenu?.subMenu && (
                       <NavMenuItemWithSubMenu
                         name={iscmerMenu.name}
                         subMenu={iscmerMenu.subMenu}
                       />
                     )}
-                  {(localStorage.getItem("sessionToken") || session?.AT) &&
+                  {(session?.AT) &&
                     iscmerMenu?.subMenu && (
                       <li
                         className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
