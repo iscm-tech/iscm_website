@@ -483,7 +483,7 @@ export default function UndergraduateCoursePage() {
 
             <div className="flex justify-center">
               <Image
-                src={`/images/courses/undergraduate/PLO matrix-new.jpg`}
+                src={`/images/courses/undergraduate/PLO matrix-new(1).jpg`}
                 alt=""
                 width="70%"
                 className="w-1/2"

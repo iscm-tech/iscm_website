@@ -3,7 +3,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="pt-4">
+    <div>
       <h1 className="text-center uppercase">Nội quy làm việc</h1>
       <h1>⏰ Giờ làm việc:</h1>
       <table className="table">

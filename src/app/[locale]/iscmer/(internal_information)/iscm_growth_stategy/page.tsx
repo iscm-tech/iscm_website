@@ -3,7 +3,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="py-4">
+    <div>
       <h1 className="text-center uppercase">Chiến lược phát triển ISCM</h1>
       <ComingSoon />
     </div>
