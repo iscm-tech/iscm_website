@@ -10,7 +10,7 @@ export const description =
   "Institute of Smart City and Management, University of Economics Ho Chi Minh";
 
 export const ueh_link_recruit = "/images/footer/recruitment.png";
-export const ueh_link_future = "/images/footer/giving UEH-01.png";
+export const ueh_link_future = "/images/footer/ueh_su.png";
 export const ueh_link_global = "/images/footer/global.png";
 export const ueh_link_elearning = "/images/footer/elearning.png";
 export const ueh_link_job = "/images/footer/job.png";

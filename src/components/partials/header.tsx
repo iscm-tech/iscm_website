@@ -7,7 +7,7 @@ import { useLocale } from "next-intl";
 import { iscmerMenuEn, mainMenuEn } from "../../constants/en/index";
 import { mainMenuVi } from "@/constants/vi";
 import { Fragment } from "react";
-import { Switch } from "antd";
+import { ConfigProvider, Switch } from "antd";
 import styled from "styled-components";
 import { ibm_plex_sans } from "@/app/fontDeclare";
 import { useSearchParams } from "next/navigation";
@@ -22,13 +22,13 @@ const HeaderStyled = styled.header`
 
   .ant-switch-handle {
     &::before {
-      background-color: #ffcd00;
+      background-color: #ffcd00 !important;
     }
   }
 
   .ant-switch-checked .ant-switch-handle {
     &::before {
-      background-color: #fff;
+      background-color: #fff !important;
     }
   }
 
@@ -213,25 +213,23 @@ export default function Header() {
 
                 {/* ISCMer Menu */}
                 <Fragment>
-                  {!(session?.AT) && (
+                  {!session?.AT && (
                     <NavMenuItemWithoutSubMenu name="ISCMer" url="iscmer" />
                   )}
-                  {(session?.AT) &&
-                    iscmerMenu?.subMenu && (
-                      <NavMenuItemWithSubMenu
-                        name={iscmerMenu.name}
-                        subMenu={iscmerMenu.subMenu}
-                      />
-                    )}
-                  {(session?.AT) &&
-                    iscmerMenu?.subMenu && (
-                      <li
-                        className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
-                        onClick={() => signOut({ callbackUrl: "/" })}
-                      >
-                        <LogOut color="#fff" />
-                      </li>
-                    )}
+                  {session?.AT && iscmerMenu?.subMenu && (
+                    <NavMenuItemWithSubMenu
+                      name={iscmerMenu.name}
+                      subMenu={iscmerMenu.subMenu}
+                    />
+                  )}
+                  {session?.AT && iscmerMenu?.subMenu && (
+                    <li
+                      className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
+                      onClick={() => signOut({ callbackUrl: "/" })}
+                    >
+                      <LogOut color="#fff" />
+                    </li>
+                  )}
                 </Fragment>
               </ul>
               <Switch

@@ -1,7 +1,6 @@
 import { getCourseServices } from "@/services/course.service";
 import { getLocale } from "next-intl/server";
 import Image from "next/image";
-import ContactForm from "../../components/contactForm";
 import Link from "next/link";
 import Info from "./info";
 import { CalendarDays } from "lucide-react";
@@ -291,8 +290,6 @@ export default async function page({
             </p>
           </div>
         </div>
-        {/* Form Contact */}
-        <ContactForm category={`chương trình ${data.title}`} />
       </div>
     </section>
   );

@@ -88,7 +88,7 @@ export default function ContactForm({
   return (
     <div
       id="contact"
-      className="container pb-20 mt-11"
+      className="container !shadow-xl !shadow-black"
       style={{ "--primaryColor": primaryColor } as CSSProperties}
     >
       <div className="row justify-center">

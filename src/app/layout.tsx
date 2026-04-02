@@ -1,9 +1,9 @@
 import { getServerSession } from "next-auth";
-import Head from "next/head";
 import Script from "next/script";
 import NextAuthSessionProvider from "@/components/NextAuthSessionProvider";
 import { Metadata } from "next";
 import { authOpts } from "@/lib/nextAuthOpts";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 export const metadata: Metadata = {
   icons: "/images/favicon.png",
@@ -39,7 +39,7 @@ export default async function RootLayout({
         />
 
         <NextAuthSessionProvider session={session}>
-          {children}
+          <AntdRegistry>{children}</AntdRegistry>
         </NextAuthSessionProvider>
       </body>
     </html>

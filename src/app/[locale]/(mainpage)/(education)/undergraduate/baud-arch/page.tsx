@@ -28,7 +28,6 @@ import { AlignJustifyIcon } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import ProgramSubject from "./components/programSubject";
-import ContactForm from "../../components/contactForm";
 import DomParser from "@/components/domParser";
 import Strengths from "./components/Strengths";
 
@@ -952,11 +951,6 @@ export default function BAUDArchPage() {
           </div> */}
         </div>
         {/* ############### */}
-
-        {/* Form Contact */}
-        <ContactForm
-          category={`chương trình cử nhân kiến trúc và thiết kế đô thị thông minh (tiếng Việt)`}
-        />
       </div>
     </section>
   );
