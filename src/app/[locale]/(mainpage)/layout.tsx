@@ -1,15 +1,17 @@
+import { Metadata } from "next";
+
 import Footer from "@/components/partials/footer";
 import Header from "@/components/partials/header";
-import { Metadata } from "next";
+import HelpingFloat from "./components/FloatButton";
 
 export const metadata: Metadata = {
   title: {
     template: "ISCM | %s",
-    default: "ISCM", // a default is required when creating a template
+    default: "ISCM",
   },
 };
 
-export default async function ContentLayout({
+export default function ContentLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -17,7 +19,8 @@ export default async function ContentLayout({
   return (
     <>
       <Header />
-      <div className="pt-[48px] md:pt-[60px]">{children}</div>
+      <div className="pt-[48px] md:pt-[60px] min-h-[50vh]">{children}</div>
+      <HelpingFloat />
       <Footer />
     </>
   );

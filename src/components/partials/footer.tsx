@@ -86,145 +86,17 @@ export default function Footer() {
                   <PhoneNumber />
                 </li>
               </ul>
-            </div>
-
-            <div className="col-12 col-lg-6 mt-4 mt-lg-0 items-center">
-              <h3 className="text-center text-lg">Explore UEH Facilities</h3>
-              <ul
-                className="list-unstyled mt-4 flex flex-wrap gap-5 justify-center"
-                style={{ textAlign: "center" }}
-              >
-                <li>
-                  <a className="" target="_blank" href={recruitURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={<span style={barlow.style}>Admission</span>}
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_recruit}
-                        alt="ueh_link_recruit"
-                      />
-                    </Popover>
-                  </a>
+              <ul className="list-unstyled mt-3 flex flex-wrap gap-5">
+                <li className="flex items-center">
+                  <Link
+                    href="https://www.facebook.com/ISCM.UEH"
+                    target="_blank"
+                    className="d-inline-block mr-2 text-color"
+                    aria-label="facebook"
+                  >
+                    <Facebook size="24px" />
+                  </Link>
                 </li>
-                <li>
-                  <a className="" target="_blank" href={futureURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={
-                        <span style={barlow.style}>UEH Sustainable</span>
-                      }
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_future}
-                        alt="ueh_sustainable"
-                      />
-                    </Popover>
-                  </a>
-                </li>
-                <li>
-                  <a className="" target="_blank" href={globalURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={
-                        <span style={barlow.style}>UEH Global Learning</span>
-                      }
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_global}
-                        alt="ueh_link_global"
-                      />
-                    </Popover>
-                  </a>
-                </li>
-                <li>
-                  <a className="" target="_blank" href={elearningURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={<span style={barlow.style}>E-Learning</span>}
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_elearning}
-                        alt="ueh_link_elearning"
-                      />
-                    </Popover>
-                  </a>
-                </li>
-                <li>
-                  <a className="" target="_blank" href={jobURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={
-                        <span style={barlow.style}>UEH Career for Student</span>
-                      }
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_job}
-                        alt="ueh_link_job"
-                      />
-                    </Popover>
-                  </a>
-                </li>
-                <li>
-                  <a className="" target="_blank" href={informationURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={<span style={barlow.style}>UEH All in One</span>}
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_information}
-                        alt="ueh_link_information"
-                      />
-                    </Popover>
-                  </a>
-                </li>
-                <li>
-                  <a className="" target="_blank" href={virtualURL}>
-                    <Popover
-                      placement="bottom"
-                      mouseEnterDelay={0}
-                      mouseLeaveDelay={0}
-                      content={
-                        <span style={barlow.style}>UEH Virtual Tour</span>
-                      }
-                    >
-                      <Image
-                        width={36}
-                        height={36}
-                        src={ueh_link_virtual}
-                        alt="ueh_link_virtual"
-                      />
-                    </Popover>
-                  </a>
-                </li>
-              </ul>
-
-              <h3 className="text-center text-lg mt-5">ISCM Social Platforms</h3>
-              <ul className="list-unstyled mt-3 flex flex-wrap gap-5 justify-center">
                 <li className="flex items-center">
                   <Link
                     href="https://www.linkedin.com/company/iscm-ueh"
@@ -245,15 +117,105 @@ export default function Footer() {
                     <Youtube size="24px" />
                   </Link>
                 </li>
-                <li className="flex items-center">
-                  <Link
-                    href="https://www.facebook.com/ISCM.UEH"
+              </ul>
+            </div>
+
+            <div className="col-12 col-lg-6 mt-4 mt-lg-0 items-center">
+              <h3 className="text-center text-lg">
+                {locale === "en"
+                  ? "Explore UEH Facilities"
+                  : "Khám phá Cơ sở vật chất UEH"}
+              </h3>
+              <ul
+                className="list-unstyled mt-4 flex flex-wrap gap-y-5 gap-x-8 justify-center"
+                style={{ textAlign: "center" }}
+              >
+                <li>
+                  <a
+                    className="flex flex-col items-center"
                     target="_blank"
-                    className="d-inline-block mr-2 text-color"
-                    aria-label="facebook"
+                    href={informationURL}
                   >
-                    <Facebook size="24px" />
-                  </Link>
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_link_information}
+                      alt="ueh_link_information"
+                    />
+                    <span style={barlow.style}>UEH All in One</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex flex-col items-center"
+                    target="_blank"
+                    href={futureURL}
+                  >
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_link_future}
+                      alt="ueh_sustainable"
+                    />
+                    <span style={barlow.style}>UEH Sustainable</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex flex-col items-center"
+                    target="_blank"
+                    href={recruitURL}
+                  >
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_link_recruit}
+                      alt="ueh_link_recruit"
+                    />
+                    <span style={barlow.style}>
+                      {locale === "en" ? "Recruitment" : "Tuyển sinh"}
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex flex-col items-center"
+                    target="_blank"
+                    href={jobURL}
+                  >
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_link_job}
+                      alt="ueh_link_job"
+                    />
+                    <span style={barlow.style}>
+                      {locale === "en"
+                        ? "UEH Career for Student"
+                        : "Cổng việc làm sinh viên"}
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    className="flex flex-col items-center"
+                    target="_blank"
+                    href={virtualURL}
+                  >
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_link_virtual}
+                      alt="ueh_link_virtual"
+                    />
+                    <span style={barlow.style}>UEH Virtual Tour</span>
+                  </a>
                 </li>
               </ul>
             </div>

@@ -3,22 +3,23 @@ import path from "path";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
 import { recap_video } from "@/constants";
+import { ibm_plex_sans } from "../fontDeclare";
 
+import { Divider } from "antd";
+import DomParser from "@/components/domParser";
 import Header from "@/components/partials/header";
 import Footer from "@/components/partials/footer";
-import { Metadata } from "next";
-import { getPostServices } from "@/services/post.service";
-import { ibm_plex_sans } from "../fontDeclare";
 import DateCard from "@/components/dateCard";
-import HomePage from "./homepage_views/homepage";
-import { Divider } from "antd";
-import FeatureEvent from "./homepage_views/featureEvent";
-import NewsList from "./homepage_views/newsList";
 import HighlightPost from "@/components/highlightPost";
+import HomePage from "./homepage_views/homepage";
+import NewsList from "./homepage_views/newsList";
+import FeatureEvent from "./homepage_views/featureEvent";
 import InternalLinks from "./homepage_views/internalLink";
-import DomParser from "@/components/domParser";
+
+import { getPostServices } from "@/services/post.service";
 
 export const metadata: Metadata = {
   title: "Institute of Smart City & Management",
@@ -418,7 +419,11 @@ export default async function Home() {
           href={"https://ueh50.ueh.edu.vn"}
           target="_blank"
           className="fixed right-3 bottom-5 w-20 h-20 rounded-full block z-[1024] shadow-drop-center"
-          style={{ background: "radial-gradient(circle,rgba(255, 255, 255, 1) 10%, rgba(206, 32, 39, 0.2) 95%)", backdropFilter: "blur(14px)" }}
+          style={{
+            background:
+              "radial-gradient(circle,rgba(255, 255, 255, 1) 10%, rgba(206, 32, 39, 0.2) 95%)",
+            backdropFilter: "blur(14px)",
+          }}
         >
           <Image
             src={"/images/ueh-50yr-anni.png"}

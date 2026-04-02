@@ -22,7 +22,6 @@ import * as motion from "motion/react-client";
 import ImageNext from "next/image";
 import { Collapse, Image } from "antd";
 
-import ContactForm from "../../components/contactForm";
 import { AlignJustifyIcon } from "lucide-react";
 import HighlightsBox from "./components/HighlightPoint";
 import { AnimatePresence } from "motion/react";
@@ -973,14 +972,6 @@ export default function UndergraduateCoursePage() {
           </div> */}
       </div>
       {/* ############### */}
-
-      {/* Form Contact */}
-      <div className="mt-60">
-        <ContactForm
-          primaryColor="#be2826"
-          category={`chương trình cử nhân kiến trúc và thiết kế đô thị thông minh (tiếng Việt)`}
-        />
-      </div>
     </section>
   );
 }
