@@ -23,10 +23,9 @@ import {
 import { address as addressEn, copyright as copyrightEn } from "@/constants/en";
 import { address as addressVi, copyright as copyrightVI } from "@/constants/vi";
 import Image from "next/image";
-import { Popover } from "antd";
 import { useLocale } from "next-intl";
 import styled from "styled-components";
-import { Facebook, Linkedin, Slash, Youtube } from "lucide-react";
+import { Facebook, Linkedin, Youtube } from "lucide-react";
 import PhoneNumber from "../phoneNumber";
 import Link from "next/link";
 

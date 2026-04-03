@@ -13,7 +13,7 @@ export default function HelpingFloat() {
     <>
       <FloatButtonCustom>
         <div
-          className={`${show ? "scale-100 opacity-100" : "scale-0 opacity-0"} transition-all origin-bottom-right`}
+          className={`${show ? "scale-100 opacity-100 w-full h-full" : "scale-0 opacity-0 w-0 h-0"} transition-all origin-bottom-right`}
         >
           <ContactFloatForm />
         </div>

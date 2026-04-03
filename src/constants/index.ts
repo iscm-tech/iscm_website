@@ -15,7 +15,7 @@ export const ueh_link_global = "/images/footer/global.png";
 export const ueh_link_elearning = "/images/footer/elearning.png";
 export const ueh_link_job = "/images/footer/job.png";
 export const ueh_link_information = "/images/footer/information.png";
-export const ueh_link_virtual = "/images/footer/virtual.png";
+export const ueh_link_virtual = "/images/footer/panorama.png";
 
 export const recruitURL = "https://tuyensinh.ueh.edu.vn/";
 export const futureURL = "https://future.ueh.edu.vn/";

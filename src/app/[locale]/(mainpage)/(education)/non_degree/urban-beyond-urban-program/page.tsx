@@ -1,7 +1,6 @@
 import { getCourseServices } from "@/services/course.service";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
-import ContactForm from "../../components/contactForm";
 import NotFound from "@/components/not-found";
 import { CalendarDays } from "lucide-react";
 import Link from "next/link";
@@ -129,9 +128,6 @@ export default async function page({
               2020
             </Link>
           </div>
-
-          {/* Form Contact */}
-          <ContactForm category={`chương trình Urban Beyond Urban`} />
         </div>
       </section>
     );

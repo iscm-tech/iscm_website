@@ -6,11 +6,12 @@ import { Image as AntImage } from "antd";
 export default function Mansory({ listItems }: { listItems: string[] }) {
   return (
     <AntImage.PreviewGroup
-      preview={{
-        maskStyle: {
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
+      styles={{
+        popup: {
+          mask: {
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+          },
         },
-        closeIcon: null,
       }}
     >
       <div className="mansory__container w-full mt-8">

@@ -83,7 +83,7 @@ export default function SummarizeBar({
                     </div>
                   ),
                   styles: {
-                    content: {
+                    body: {
                       width: "fit-content",
                     },
                   },
