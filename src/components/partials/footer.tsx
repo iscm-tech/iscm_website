@@ -5,12 +5,16 @@ import {
   elearningURL,
   email,
   futureURL,
+  givingTreeURL,
   globalURL,
+  greenCampusURL,
   informationURL,
   jobURL,
   logo,
   recruitURL,
   ueh_ctd_logo,
+  ueh_giving_tree,
+  ueh_green_campus,
   ueh_link_elearning,
   ueh_link_future,
   ueh_link_global,
@@ -56,8 +60,8 @@ export default function Footer() {
               SHAPING THE UNKNOWN FUTURE
             </h2>
           </div>
-          <div className="row">
-            <div className="col-12 col-lg-6 mb-5 mb-lg-0">
+          <div className="row justify-between">
+            <div className="col-12 col-lg-5 mb-5 mb-lg-0">
               <figure className="row max-w-[550px] flex items-center">
                 <Image
                   src={ueh_ctd_logo}
@@ -118,7 +122,6 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-
             <div className="col-12 col-lg-6 mt-4 mt-lg-0 items-center">
               <h3 className="text-center text-lg">
                 {locale === "en"
@@ -126,7 +129,7 @@ export default function Footer() {
                   : "Khám phá Cơ sở vật chất UEH"}
               </h3>
               <ul
-                className="list-unstyled mt-4 flex flex-wrap gap-y-5 gap-x-8 justify-center"
+                className="list-unstyled mt-4 flex flex-wrap gap-y-5 gap-x-4 justify-center"
                 style={{ textAlign: "center" }}
               >
                 <li>
@@ -159,6 +162,38 @@ export default function Footer() {
                       alt="ueh_sustainable"
                     />
                     <span style={barlow.style}>UEH Sustainable</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex flex-col items-center"
+                    target="_blank"
+                    href={greenCampusURL}
+                  >
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_green_campus}
+                      alt="ueh_green_campus"
+                    />
+                    <span style={barlow.style}>UEH Green Campus</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="flex flex-col items-center"
+                    target="_blank"
+                    href={givingTreeURL}
+                  >
+                    <Image
+                      width={80}
+                      height={36}
+                      className="h-9 w-auto object-contain"
+                      src={ueh_giving_tree}
+                      alt="ueh_giving_tree"
+                    />
+                    <span style={barlow.style}>UEH Giving Tree</span>
                   </a>
                 </li>
                 <li>
@@ -199,7 +234,6 @@ export default function Footer() {
                     </span>
                   </a>
                 </li>
-
                 <li>
                   <a
                     className="flex flex-col items-center"

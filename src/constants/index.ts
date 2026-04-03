@@ -16,6 +16,8 @@ export const ueh_link_elearning = "/images/footer/elearning.png";
 export const ueh_link_job = "/images/footer/job.png";
 export const ueh_link_information = "/images/footer/information.png";
 export const ueh_link_virtual = "/images/footer/panorama.png";
+export const ueh_giving_tree = "/images/footer/giving_tree.svg";
+export const ueh_green_campus = "/images/footer/green_campus.png";
 
 export const recruitURL = "https://tuyensinh.ueh.edu.vn/";
 export const futureURL = "https://future.ueh.edu.vn/";
@@ -24,6 +26,8 @@ export const elearningURL = "https://lms.ueh.edu.vn/";
 export const jobURL = "https://vieclam.ueh.edu.vn/";
 export const informationURL = "https://ueh.edu.vn";
 export const virtualURL = "https://virtualtour.ueh.edu.vn/";
+export const givingTreeURL = "https://givingtree.ueh.edu.vn/";
+export const greenCampusURL = "https://gogreen.ueh.edu.vn/";
 
 // Slider
 export const recap_video = "/images/about/ISCMrecap2025-v9.mp4";
