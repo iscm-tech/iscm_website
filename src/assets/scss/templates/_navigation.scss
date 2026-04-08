@@ -11,12 +11,12 @@
 }
 
 .navigation {
-  background: linear-gradient(to right, transparent 50%, $primary-color 50%);
+  // background: linear-gradient(to right, transparent 50%, $primary-color 50%);
   transition: 0.2s ease;
 
-  @include desktop {
-    background: $secondary-color;
-  }
+  // @include desktop {
+  //   background: $secondary-color;
+  // }
 
   @include tablet {
     max-height: 100vh;
@@ -29,15 +29,15 @@
 }
 
 .navbar-collapse {
-  flex-grow: 0.3;
+  // flex-grow: 0.3;
   @include desktop {
     background: $secondary-color;
   }
 }
 
 .navbar-nav {
-  padding-left: 50px;
-  background: $primary-color;
+  // padding-left: 50px;
+  // background: $primary-color;
 
   @include desktop {
     padding-left: 0;
@@ -141,7 +141,7 @@ link:focus,
       visibility: hidden;
       transition: 0.3s ease;
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(-10px);
       background: $white;
 
       @include desktop {

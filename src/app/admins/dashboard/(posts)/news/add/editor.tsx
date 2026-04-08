@@ -45,7 +45,7 @@ export default function Editor({ locale }: { locale: string }) {
   const metaForm = useRef(null);
   const sidebar = useSidebar();
 
-  const [portalCates, setPortalCates] = useState<string[]>([]);
+  const [portalCates, setPortalCates] = useState<number[]>([]);
   const [date, setDate] = useState<Date | undefined>(new Date());
   const [postSlug, setPostSlug] = useState<string>("");
   const [sdgsSelected, setSdgsSelected] = useState<string[]>([]);
@@ -159,7 +159,7 @@ export default function Editor({ locale }: { locale: string }) {
         portal.publishDate = formattedDate;
         portal.thumbnail = `/images/news/${folderName}/${portal_thumb?.name}`;
         portal.background = `/images/news/${folderName}/${portal_background?.name}`;
-        portal.categories = portalCates.map((cate) => Number(cate));
+        portal.categories = portalCates;
         portal.content = await processPortalHTMLContent(portal.content);
         portal.local_cate = "news";
 
@@ -265,13 +265,14 @@ export default function Editor({ locale }: { locale: string }) {
           setDate={setDate}
         />
         <FilesInput field="thumbnail" name="thumbnail" />
-        <CheckboxList
+        <CheckboxList<string>
           field="SDGs"
           name="sdg"
           valueArr={sdgsVal}
           state={sdgsSelected}
           setState={setSdgsSelected}
           maxItems={3}
+          castValType={(val) => val}
         />
         <ComboBox
           field="Language"
@@ -297,11 +298,11 @@ export default function Editor({ locale }: { locale: string }) {
 
         {isPostPortal && (
           <>
-            <CheckboxList
+            <CheckboxList<number>
               field="Portal Categories"
               name="categories"
               valueArr={Object.keys(portalCatesVi).map((val: string) => ({
-                value: val,
+                value: Number(val),
                 icon: (
                   <p className="text-sm">
                     {String(portalCatesVi[val]).replaceAll("_", " ")}
@@ -310,6 +311,7 @@ export default function Editor({ locale }: { locale: string }) {
               }))}
               state={portalCates}
               setState={setPortalCates}
+              castValType={(val) => Number(val)}
             />
             <FilesInput field="portal thumbnail" name="portal_thumbnail" />
             <FilesInput field="portal background" name="portal_background" />

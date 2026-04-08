@@ -20,6 +20,7 @@ import FeatureEvent from "./homepage_views/featureEvent";
 import InternalLinks from "./homepage_views/internalLink";
 
 import { getPostServices } from "@/services/post.service";
+import HelpingFloat from "./(mainpage)/components/FloatButton";
 
 export const metadata: Metadata = {
   title: "Institute of Smart City & Management",
@@ -414,11 +415,11 @@ export default async function Home() {
           </section>
         </HomePage>
         <Footer />
-
+        <HelpingFloat />
         <Link
           href={"https://ueh50.ueh.edu.vn"}
           target="_blank"
-          className="fixed right-3 bottom-5 w-20 h-20 rounded-full block z-[1024] shadow-drop-center"
+          className="fixed left-3 bottom-5 w-20 h-20 rounded-full block z-[1024] shadow-drop-center"
           style={{
             background:
               "radial-gradient(circle,rgba(255, 255, 255, 1) 10%, rgba(206, 32, 39, 0.2) 95%)",

@@ -21,20 +21,22 @@ import { cn } from "@/lib/utils";
 import { Check, PlusCircle } from "lucide-react";
 import React, { ReactElement } from "react";
 
-export default function CheckboxList({
+export default function CheckboxList<T extends number | string>({
   field,
   name,
   valueArr,
   state,
   setState,
   maxItems,
+  castValType,
 }: {
   field: string;
   name: string;
-  valueArr: { value: string; icon?: ReactElement }[];
-  state: string[];
-  setState: React.Dispatch<React.SetStateAction<string[]>>;
+  valueArr: { value: T; icon?: ReactElement }[];
+  state: T[];
+  setState: React.Dispatch<React.SetStateAction<T[]>>;
   maxItems?: number;
+  castValType: (val: any) => T;
 }) {
   return (
     <div className="my-2">
@@ -69,13 +71,15 @@ export default function CheckboxList({
               <CommandEmpty>No results found.</CommandEmpty>
               <CommandGroup>
                 {valueArr.map((option) => {
-                  const isSelected = state.includes(option.value);
+                  const isSelected = state.includes(castValType(option.value));
                   return (
                     <CommandItem
                       key={option.value}
                       onSelect={() => {
                         if (isSelected) {
-                          setState(state.filter((val) => val !== option.value));
+                          setState(
+                            state.filter((val) => val !== Number(option.value)),
+                          );
                         } else {
                           if (maxItems && state.length >= maxItems) {
                             toast({
@@ -86,7 +90,10 @@ export default function CheckboxList({
                             return;
                           }
 
-                          setState((prev) => [...prev, option.value]);
+                          setState((prev) => [
+                            ...prev,
+                            castValType(option.value),
+                          ]);
                         }
                       }}
                       className="cursor-pointer"
@@ -114,22 +121,15 @@ export default function CheckboxList({
 
       {state?.length > 0 && (
         <div className="mt-1">
-          {/* <Separator orientation="vertical" className="mx-2 h-4" /> */}
-          {/* <Badge
-            variant="secondary"
-            className="rounded-sm px-1 font-normal lg:hidden"
-          >
-            {state.length} selected
-          </Badge> */}
           <div className="hidden gap-1 lg:flex flex-wrap h-fit">
             {valueArr
-              .filter((option) => state.includes(option.value))
+              .filter((option) => state.includes(castValType(option.value)))
               .map((option) => (
                 <Badge
                   variant="secondary"
                   key={option.value}
                   className="rounded-sm p-1 font-normal w-fit h-fit cursor-pointer"
-                  title={option.value}
+                  title={String(option.value)}
                 >
                   {option.icon}
                 </Badge>

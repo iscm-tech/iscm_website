@@ -75,50 +75,6 @@ const Combobox = ({
   );
 };
 
-const DatePicker = ({
-  field,
-  date,
-  setDate,
-}: {
-  field: string;
-  date: Date | undefined;
-  setDate: (val: Date) => void;
-}) => {
-  return (
-    <div className="my-2">
-      <Label className="text-md capitalize mb-2 block">{field}</Label>
-      <Popover>
-        <PopoverTrigger asChild>
-          <Button
-            variant={"outline"}
-            className={cn(
-              "w-full justify-start text-left font-normal",
-              !date && "text-muted-foreground"
-            )}
-            title={date ? format(date, "PPP") : "No date picked"}
-          >
-            <CalendarIcon />
-            <span className="line-clamp-1">
-              {date ? format(date, "PPP") : "Pick a date"}
-            </span>
-          </Button>
-        </PopoverTrigger>
-        <PopoverContent className="w-auto p-0">
-          <Calendar
-            mode="single"
-            selected={date || undefined}
-            onSelect={(val) => {
-              if (val) setDate(val);
-            }}
-            initialFocus
-            disabled={(date) => date > new Date()}
-          />
-        </PopoverContent>
-      </Popover>
-    </div>
-  );
-};
-
 const Checkbox = ({
   field,
   valueArr,
@@ -166,7 +122,7 @@ const Checkbox = ({
               <CommandGroup>
                 {valueArr.map((option) => {
                   const isSelected = String(state).includes(
-                    String(option.value)
+                    String(option.value),
                   );
                   return (
                     <CommandItem
@@ -181,7 +137,7 @@ const Checkbox = ({
                           "mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
                           isSelected
                             ? "bg-primary text-primary-foreground"
-                            : "opacity-50 [&_svg]:invisible"
+                            : "opacity-50 [&_svg]:invisible",
                         )}
                       >
                         <Check />
@@ -237,7 +193,7 @@ const sdgsVal: { value: number; icon?: ReactElement }[] = sdgs.map(
         height={40}
       />
     ),
-  })
+  }),
 );
 
 export default function Editor({
@@ -261,7 +217,6 @@ export default function Editor({
 
       const metaDataForm = new FormData(metaForm.current);
       const cate = iscmCates[Number(metaDataForm.get("categories"))];
-      console.log(cate);
       if (
         [
           "events",
@@ -336,13 +291,22 @@ export default function Editor({
           <p className="text-base capitalize font-medium mb-0 block">
             Thumbnail:
           </p>
-          <Link
-            href={data.metadata.thumbnail}
-            target="_blank"
-            className="w-full block overflow-hidden ml-1 pl-2 border-l border-black text-sm hover:underline"
-          >
-            {data.metadata.thumbnail}
-          </Link>
+          <div className="ml-1 pl-2 border-l border-black">
+            <Link
+              href={data.metadata.thumbnail}
+              target="_blank"
+              className="w-full block overflow-hidden text-sm hover:underline"
+            >
+              {data.metadata.thumbnail}
+            </Link>
+
+            <Image
+              src={data.metadata.thumbnail}
+              alt="Thumbnail"
+              width={800}
+              height={500}
+            />
+          </div>
         </div>
 
         <Checkbox
@@ -359,7 +323,7 @@ export default function Editor({
 
             if (isSelected) {
               const filter: number[] = post.metadata.sdgs.filter(
-                (value) => value !== val
+                (value) => value !== val,
               );
 
               setPost((prev) => ({

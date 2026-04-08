@@ -17,6 +17,9 @@ const nextConfig = {
       },
     ],
   },
+  devIndicators: {
+    position: "top-left",
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

@@ -169,64 +169,11 @@ export const iscmerMenuEn: MenuType = {
   name: "ISCMer",
   subMenu: [
     {
-      name: "Thông tin nội bộ",
-      url: "/iscmer",
-      group: [
-        {
-          name: "Nội quy",
-          url: "/iscmer/internal_rules",
-        },
-        {
-          name: "Kế hoạch năm",
-          url: "/iscmer/event_series",
-        },
-        {
-          name: "Sơ đồ tổ chức",
-          url: "/iscmer/company_organization",
-        },
-
-        {
-          name: "Chiến lược phát triển ISCM",
-          url: "/iscmer/iscm_growth_stategy",
-        },
-        {
-          name: "Quy chế chi tiêu nội bộ",
-          url: "/iscmer/financial_policy",
-        },
-      ],
-    },
-    {
-      name: "Quy trình nội bộ",
-      group: [
-        {
-          name: "Tổ chức sự kiện",
-          url: "/iscmer/process_event",
-        },
-        {
-          name: "Mượn thiết bị",
-          url: "/iscmer/process_equipment",
-        },
-        {
-          name: "Mượn/Share sách ISCM",
-          url: "/iscmer/process_book",
-        },
-        {
-          name: "Đăng ký quà tặng",
-          url: "/iscmer/process_gift",
-        },
-      ],
-    },
-    {
-      name: "UEH",
+      name: "UEH & Các đơn vị trực thuộc UEH",
       url: "ueher",
       group: [
         { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
         { name: "Tài chính kế toán", url: "https://tckt.ueh.edu.vn" },
-        {
-          name: "Smart Office",
-          url: "https://smartoffice.ueh.edu.vn",
-        },
-        { name: "E-Office", url: "https://eoffice.ueh.edu.vn" },
         { name: "Kho tri thức", url: "https://hotro.ueh.edu.vn" },
         {
           name: "Tra cứu chương trình đào tạo",
@@ -235,6 +182,109 @@ export const iscmerMenuEn: MenuType = {
         {
           name: "Khung thời gian đào tạo",
           url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
+        },
+      ],
+    },
+    {
+      name: "Thông tin tổng thể",
+      group: [
+        {
+          name: "ISCM Strategy/Plan",
+          url: "/strategy+plan",
+        },
+        {
+          name: "ISCM & UEH",
+          url: "/iscm&ueh",
+        },
+        {
+          name: "ISCM & CTD",
+          url: "/iscm&ctd",
+        },
+        {
+          name: "ISCM & UEH Sustainability",
+          url: "/iscm&ueh_sustainability",
+        },
+        {
+          name: "ISCM & Covergence Tech Hub",
+          url: "/iscm&convergence_tech_hub",
+        },
+        {
+          name: "ISCM & MakerSpace",
+          url: "/iscm&makerspace",
+        },
+        {
+          name: "Cơ cấu tổ chức ISCM",
+          url: "/company_organization",
+        },
+        {
+          name: "Đánh giá ISCM Members",
+          url: "/iscm_members_evaluation",
+        },
+      ],
+    },
+    {
+      name: "Quản trị chung",
+      group: [
+        {
+          name: "Nội quy và Quy định",
+          url: "/internal_rules",
+        },
+        {
+          name: "Quy chế chi tiêu nội bộ",
+          url: "/internal_financial_policy",
+        },
+        {
+          name: "Minute Report",
+          url: "/minute_report",
+        },
+        {
+          name: "Quản trị Tổ chức sự kiện",
+          url: "/process_event",
+        },
+        {
+          name: "Quản trị Thiết bị",
+          url: "/process_equipment",
+        },
+        {
+          name: "Quản trị Sách",
+          url: "/process_book",
+        },
+        {
+          name: "Quản trị Nội dung",
+          url: "/process_content",
+        },
+      ],
+    },
+    {
+      name: "Quản trị theo từng nhóm riêng",
+      group: [
+        {
+          name: "Operation & Finance",
+          url: "/group_operation_finance",
+        },
+        {
+          name: "Academia",
+          url: "/group_academia",
+        },
+        {
+          name: "Research",
+          url: "/group_research",
+        },
+        {
+          name: "Community Engagement",
+          url: "/group_community_engagement",
+        },
+        {
+          name: "PR & Communication",
+          url: "/group_pr_communication",
+        },
+        {
+          name: "Design",
+          url: "/group_design",
+        },
+        {
+          name: "Partnership",
+          url: "/group_partnership",
         },
       ],
     },

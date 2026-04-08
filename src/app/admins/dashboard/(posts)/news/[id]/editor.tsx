@@ -21,6 +21,7 @@ import ComboBox from "../../../components/ComboBox";
 import DatePicker from "../../../components/DatePicker";
 import FilesInput from "../../../components/FilesInput";
 import CheckboxCustom from "../../components/CheckboxCustom";
+import CheckboxList from "../../../components/CheckboxList";
 
 const sdgsVal: { value: number; icon?: ReactElement }[] = sdgs.map(
   (_, sdg) => ({
@@ -57,6 +58,7 @@ export default function Editor({
     posted_portal ? posted_portal.portalCategories : [],
   );
   const [post, setPost] = useState<PostType>(data);
+  const [isPostPortal, setIsPostPortal] = useState(false);
 
   async function updatePost(
     imageUploads: File[],
@@ -281,73 +283,43 @@ export default function Editor({
             return isSelected;
           }}
         />
-        {posted_portal && (
+
+        <div className="flex space-x-3 !mt-5">
+          <Checkbox
+            id="post-portal"
+            onCheckedChange={(checked) =>
+              setIsPostPortal(Boolean(checked.valueOf()))
+            }
+          />
+          <div className="grid gap-1.5 leading-none">
+            <label
+              htmlFor="post-portal"
+              className="cursor-pointer select-none text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              Post To Portal
+            </label>
+          </div>
+        </div>
+
+        {isPostPortal && (
           <>
-            <div>
-              <div
-                className="flex space-x-3 !mt-5"
-                title="Post was posted to portal"
-              >
-                <Checkbox id="post-portal" disabled checked />
-                <div className="grid gap-1.5 leading-none">
-                  <label
-                    htmlFor="post-portal"
-                    className="cursor-pointer select-none text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Posted To Portal
-                  </label>
-                </div>
-              </div>
-              <CheckboxCustom
-                field="Portal Categories"
-                name="categories"
-                valueArr={Object.keys(portalCatesVi).map((val: string) => ({
-                  value: Number(val),
-                  icon: (
-                    <p className="text-sm">
-                      {String(portalCatesVi[val]).replaceAll("_", " ")}
-                    </p>
-                  ),
-                }))}
-                state={portalCates}
-                setState={(val) => {
-                  const isSelected = portalCates.includes(val);
-
-                  if (isSelected) {
-                    const filter: number[] = portalCates.filter(
-                      (value) => value !== val,
-                    );
-
-                    setPortalCates(filter);
-                  } else {
-                    setPortalCates((prev) => [...prev, val]);
-                  }
-                }}
-                showDetail={false}
-              />
-            </div>
+            <CheckboxList<number>
+              field="Portal Categories"
+              name="categories"
+              valueArr={Object.keys(portalCatesVi).map((val: string) => ({
+                value: Number(val),
+                icon: (
+                  <p className="text-sm">
+                    {String(portalCatesVi[val]).replaceAll("_", " ")}
+                  </p>
+                ),
+              }))}
+              state={portalCates}
+              setState={setPortalCates}
+              castValType={(val) => Number(val)}
+            />
             <FilesInput field="portal thumbnail" name="portal_thumbnail" />
-            <div className="w-full">
-              <Image
-                src={posted_portal.thumbnail}
-                alt="portal_thumbnail"
-                className="w-full"
-                width={200}
-                height={200}
-                quality={90}
-              />
-            </div>
             <FilesInput field="portal background" name="portal_background" />
-            <div className="w-full">
-              <Image
-                src={posted_portal.background}
-                alt="portal_background"
-                className="w-full"
-                width={200}
-                height={200}
-                quality={90}
-              />
-            </div>
           </>
         )}
       </form>

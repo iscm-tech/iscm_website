@@ -7,13 +7,13 @@ import { useLocale } from "next-intl";
 import { iscmerMenuEn, mainMenuEn } from "../../constants/en/index";
 import { mainMenuVi } from "@/constants/vi";
 import { Fragment } from "react";
-import { ConfigProvider, Switch } from "antd";
+import { Switch } from "antd";
 import styled from "styled-components";
 import { ibm_plex_sans } from "@/app/fontDeclare";
 import { useSearchParams } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
-import { MenuType } from "@/types/menu.type";
-import { LogOut } from "lucide-react";
+import { Power } from "lucide-react";
+import SearchBar from "../searchBar";
 
 const HeaderStyled = styled.header`
   .ant-switch-inner {
@@ -62,7 +62,7 @@ export const NavMenuItemWithSubMenu = ({
       </div>
 
       {/* Menu */}
-      <div className="dropdown-menu lg:w-[calc(100vw-500px)] lg:max-w-[60vw] lg:!absolute lg:!top-[calc(100%-2px)] lg:!left-0">
+      <div className="dropdown-menu w-full lg:!absolute lg:!top-[calc(100%-2px)] lg:!left-0 overflow-x-auto">
         <div className="d-lg-flex">
           {subMenu.map((sub) => (
             <Fragment key={sub.name}>
@@ -163,35 +163,38 @@ export default function Header() {
 
   return (
     <HeaderStyled className="fixed-top header">
-      <div className="navigation overflow-y-scroll lg:overflow-y-visible max-h-screen nav-bg w-100 top-hider">
-        <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-dark p-0">
-            <Link href="/" className="navbar-brand" style={{ width: "120px" }}>
-              <Image
-                className="img-fluid"
-                src="/images/logoiscm.png"
-                alt="logo"
-                width={150}
-                height={48}
-              />
-            </Link>
-            <button
-              className="navbar-toggler rounded-0 collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navigation"
-              aria-controls="navigation"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+      <div className="navigation overflow-y-scroll lg:overflow-y-visible nav-bg w-100 top-hider">
+        <nav className="navbar navbar-expand-lg navbar-dark p-0">
+          <Link
+            href="/"
+            className="navbar-brand lg:ml-[calc((100vw-1140px)/2)]"
+          >
+            <Image
+              className="img-fluid"
+              src="/images/logoiscm.png"
+              alt="logo"
+              width={150}
+              height={48}
+            />
+          </Link>
+          <button
+            className="navbar-toggler rounded-0 collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-            <div
-              className="navbar-collapse text-center text-[14px] justify-center collapse"
-              id="navigation"
-            >
-              <ul className="navbar-nav ml-auto pl-2 pl-xl-5 items-center relative">
+          <div
+            className="navbar-collapse bg-[#141414] text-center text-[14px] collapse"
+            id="navigation"
+          >
+            <div className="relative w-full flex justify-between">
+              <ul className="navbar-nav items-center">
                 {mainMenu.map((item) => (
                   <Fragment key={item.name}>
                     {/* Render this JSX whenever have submenu */}
@@ -222,26 +225,34 @@ export default function Header() {
                       subMenu={iscmerMenu.subMenu}
                     />
                   )}
-                  {session?.AT && iscmerMenu?.subMenu && (
-                    <li
-                      className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
-                      onClick={() => signOut({ callbackUrl: "/" })}
-                    >
-                      <LogOut color="#fff" />
-                    </li>
-                  )}
                 </Fragment>
+                <Switch
+                  className="mb-4 mt-2 mb-lg-0 mt-lg-0 ml-lg-3"
+                  checkedChildren={<span className="text-black">En</span>}
+                  unCheckedChildren={<span className="text-[#FFCD00]">Vi</span>}
+                  defaultChecked={locale === "en"}
+                  onChange={handleRedirectLocale}
+                />
+
+                <div className="ml-3">
+                  <SearchBar />
+                </div>
               </ul>
-              <Switch
-                className="mb-4 mt-2 mb-lg-0 mt-lg-0 ml-lg-3"
-                checkedChildren={<span className="text-black">En</span>}
-                unCheckedChildren={<span className="text-[#FFCD00]">Vi</span>}
-                defaultChecked={locale === "en"}
-                onChange={handleRedirectLocale}
-              />
+              {session?.AT && iscmerMenu?.subMenu && (
+                <div className="flex items-center">
+                  <span className="text-white !mb-0">{session.user.email}</span>
+                  <div
+                    className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
+                    onClick={() => signOut({ callbackUrl: "/" })}
+                    title="logout"
+                  >
+                    <Power color="#fff" />
+                  </div>
+                </div>
+              )}
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </HeaderStyled>
   );

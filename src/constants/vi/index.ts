@@ -167,6 +167,23 @@ export const iscmerMenuVi: MenuType = {
   name: "ISCMer",
   subMenu: [
     {
+      name: "UEH & Các đơn vị trực thuộc UEH",
+      url: "ueher",
+      group: [
+        { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
+        { name: "Tài chính kế toán", url: "https://tckt.ueh.edu.vn" },
+        { name: "Kho tri thức", url: "https://hotro.ueh.edu.vn" },
+        {
+          name: "Tra cứu chương trình đào tạo",
+          url: "https://student.ueh.edu.vn/Public/TraCuuNganh",
+        },
+        {
+          name: "Khung thời gian đào tạo",
+          url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
+        },
+      ],
+    },
+    {
       name: "Thông tin nội bộ",
       group: [
         {
@@ -209,23 +226,6 @@ export const iscmerMenuVi: MenuType = {
         {
           name: "Mượn/Share sách ISCM",
           url: "/process_book",
-        },
-      ],
-    },
-    {
-      name: "UEH",
-      url: "ueher",
-      group: [
-        { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
-        { name: "Tài chính kế toán", url: "https://tckt.ueh.edu.vn" },
-        { name: "Kho tri thức", url: "https://hotro.ueh.edu.vn" },
-        {
-          name: "Tra cứu chương trình đào tạo",
-          url: "https://student.ueh.edu.vn/Public/TraCuuNganh",
-        },
-        {
-          name: "Khung thời gian đào tạo",
-          url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
         },
       ],
     },
