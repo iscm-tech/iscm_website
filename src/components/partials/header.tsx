@@ -75,7 +75,7 @@ export const NavMenuItemWithSubMenu = ({
                     className={`w-fit h-fit ${sub.url ?? "cursor-default"}`}
                   >
                     <p
-                      className="text-[#ce2027] mb-1"
+                      className="text-[#ce2027]! mb-1"
                       style={ibm_plex_sans.style}
                     >
                       {sub.name}
@@ -86,7 +86,7 @@ export const NavMenuItemWithSubMenu = ({
                 {!sub.url && (
                   <div className="w-fit h-fit">
                     <p
-                      className="text-[#ce2027] mb-1"
+                      className="text-[#ce2027]! mb-1"
                       style={ibm_plex_sans.style}
                     >
                       {sub.name}
@@ -96,7 +96,7 @@ export const NavMenuItemWithSubMenu = ({
 
                 <ul>
                   {sub.group?.map((item) => (
-                    <li key={item.name} className="block w-full">
+                    <li key={item.name} className="block! w-full">
                       <Link
                         locale={locale}
                         href={item.url || "#"}
@@ -229,12 +229,12 @@ export default function Header() {
                 <Switch
                   className="mb-4 mt-2 mb-lg-0 mt-lg-0 ml-lg-3"
                   checkedChildren={<span className="text-black">En</span>}
-                  unCheckedChildren={<span className="text-[#FFCD00]">Vi</span>}
+                  unCheckedChildren={<span className="text-[#FFCD00]!">Vi</span>}
                   defaultChecked={locale === "en"}
-                  onChange={handleRedirectLocale}
+                  onChange={handleRedirectLocale} 
                 />
 
-                <div className="ml-3">
+                <div className="ml-3 h-full py-3">
                   <SearchBar />
                 </div>
               </ul>
