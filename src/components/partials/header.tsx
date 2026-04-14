@@ -229,14 +229,16 @@ export default function Header() {
                 <Switch
                   className="mb-4 mt-2 mb-lg-0 mt-lg-0 ml-lg-3"
                   checkedChildren={<span className="text-black">En</span>}
-                  unCheckedChildren={<span className="text-[#FFCD00]!">Vi</span>}
+                  unCheckedChildren={
+                    <span className="text-[#FFCD00]!">Vi</span>
+                  }
                   defaultChecked={locale === "en"}
-                  onChange={handleRedirectLocale} 
+                  onChange={handleRedirectLocale}
                 />
 
-                <div className="ml-3 h-full py-3">
+                {/* <div className="ml-3 h-full py-3">
                   <SearchBar />
-                </div>
+                </div> */}
               </ul>
               {session?.AT && iscmerMenu?.subMenu && (
                 <div className="flex items-center">
