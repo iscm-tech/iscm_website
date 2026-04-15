@@ -23,6 +23,8 @@ import FilesInput from "../../../components/FilesInput";
 import CheckboxCustom from "../../components/CheckboxCustom";
 import CheckboxList from "../../../components/CheckboxList";
 
+import "@/app/style.css";
+
 const sdgsVal: { value: number; icon?: ReactElement }[] = sdgs.map(
   (_, sdg) => ({
     value: sdg + 1,
@@ -125,8 +127,6 @@ export default function Editor({
 
       if (bodyParse.error) throw new Error(bodyParse.error.message);
 
-      console.log(bodyParse.data);
-
       if (imageUploads)
         await uploadImageService("news", post.metadata.slug, imageUploads);
 
@@ -146,7 +146,6 @@ export default function Editor({
       router.push("./");
     } catch (error) {
       const _e: Error = error as Error;
-
       console.log(_e);
 
       toast({

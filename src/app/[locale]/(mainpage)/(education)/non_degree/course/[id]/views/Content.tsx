@@ -124,19 +124,19 @@ export default function Content({
           }}
         >
           <div>
-            <h3 className="flex gap-2 items-center">
+            <h4 className="flex gap-2 items-center">
               {locale === "en" ? "What you'll learn" : "Những gì bạn sẽ học"}
               <NotebookPen size={22} />
-            </h3>
+            </h4>
             <p className="text-justify">{courseData.description}</p>
           </div>
 
           <div className="mt-4">
-            <h4>{locale === "en" ? "Details to know" : "Chi tiết cần biết"}</h4>
+            <h5>{locale === "en" ? "Details to know" : "Chi tiết cần biết"}</h5>
             <div className="flex gap-4 mt-3">
               <div>
                 <Captions size={30} color="black" />
-                <p className="mb-0 text-base font-semibold">
+                <p className="mb-0 text-base! font-semibold!">
                   {locale === "en"
                     ? "Taught in Vietnamese"
                     : "Giảng dạy bằng tiếng Việt"}
@@ -153,10 +153,10 @@ export default function Content({
             sectionRefs.current.outcome = el;
           }}
         >
-          <h3 className="flex gap-2 items-center">
+          <h4 className="flex gap-2 items-center">
             <PencilRuler size={22} />
             {locale === "en" ? "Skill you gain" : "Kỹ năng bạn sẽ đạt được"}
-          </h3>
+          </h4>
           <p className="mb-0">
             <DomParser content={courseData.objectives} />
           </p>
@@ -169,10 +169,10 @@ export default function Content({
             sectionRefs.current.structure = el;
           }}
         >
-          <h3 className="flex gap-2 items-center">
+          <h4 className="flex gap-2 items-center">
             {locale === "en" ? "Course Structure" : "Nội dung khóa học"}
             <CalendarRange size={22} />
-          </h3>
+          </h4>
           <div className="container">
             <div className="row justify-between">
               <div className="col-12 col-md-7">
@@ -196,11 +196,11 @@ export default function Content({
 
                         <div className="col-md-7 col-12 h-full flex flex-col justify-center">
                           <Skeleton title={false} loading={false} active>
-                            <h4 className="float-start inline mb-0 !text-current text-base transition-colors duration-300 w-fit">
+                            <h5 className="float-start inline mb-0 !text-current text-base! transition-colors duration-300 w-fit">
                               {lesson.title}
-                            </h4>
+                            </h5>
 
-                            <p className="mb-0 text-justify text-[15px] leading-snug line-clamp-6 text-[#232323]"></p>
+                            <p className="mb-0 text-justify text-[15px]! leading-snug! line-clamp-6 text-[#232323]!"></p>
                           </Skeleton>
                         </div>
                       </div>
@@ -210,9 +210,9 @@ export default function Content({
               </div>
               <div className="col-12 col-md-5 !mt-4 md:!mt-0">
                 <div className="rounded-lg border border-[#a1a1a1] !py-2 px-4 h-fit">
-                  <h4 className="mb-3">
+                  <h5 className="mb-3">
                     {locale === "en" ? "Instructors" : "Giảng viên"}
-                  </h4>
+                  </h5>
 
                   <ul className="flex flex-col gap-5">
                     {courseData.instructors.map((instructor, idx) => (
@@ -226,8 +226,8 @@ export default function Content({
                             className="rounded-full w-full h-auto object-cover aspect-square object-top"
                           />
                         </figure>
-                        <div>
-                          <h5 className="mb-0">{instructor.name}</h5>
+                        <div className="mt-2">
+                          <h6 className="mb-0">{instructor.name}</h6>
                           <p className="mb-0 text-sm text-[#555555]">
                             {instructor.title}
                           </p>

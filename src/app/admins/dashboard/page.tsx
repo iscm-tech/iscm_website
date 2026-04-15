@@ -55,13 +55,13 @@ export default async function page() {
             ]}
           >
             {data.map((post) => (
-              <TableRow key={post.id} className="h-[75px]">
+              <TableRow key={post.id} className="h-[75px] border-[#e5e5e5]">
                 <TableCell className="text-center">{post.id}</TableCell>
                 <TableCell
                   className="flex-1 h-fit overflow-auto"
                   title={`${post.title}\n[${post.id}]`}
                 >
-                  <p className="line-clamp-1">{post.title}</p>
+                  <p className="line-clamp-1 mb-0">{post.title}</p>
                 </TableCell>
                 <TableCell className="text-center">
                   {new Date(post.publishDate).toLocaleDateString()}
@@ -89,7 +89,7 @@ export default async function page() {
                     ))}
                   </div>
                 </TableCell>
-                <TableCell className="flex justify-end">
+                <TableCell>
                   <DataTableRowActions
                     id={post.id}
                     category="news"

@@ -150,8 +150,9 @@ export default function UndergraduateCoursePage() {
                 <span className="text-[#be2826] font-bold">
                   Core values that the program delivers:
                 </span>
-                <ul className="list-disc pl-4">
-                  <li className="list-item">
+                <br />
+                <ul className="pl-4">
+                  <li className="list-item! list-disc!">
                     <span className="text-[#be2826] font-bold">
                       Solid interdisciplinary knowledge:
                     </span>{" "}
@@ -170,7 +171,7 @@ export default function UndergraduateCoursePage() {
                     </span>
                     .
                   </li>
-                  <li className="list-item">
+                  <li className="list-item! list-disc!">
                     <span className="text-[#be2826] font-bold">
                       Practical skills & Industry 4.0 technologies:
                     </span>{" "}
@@ -181,7 +182,7 @@ export default function UndergraduateCoursePage() {
                     entrepreneurship, and effective work in national and
                     international environments.
                   </li>
-                  <li className="list-item">
+                  <li className="list-item! list-disc!">
                     <span className="text-[#be2826] font-bold">
                       Strategic human resource orientation:
                     </span>{" "}
@@ -251,9 +252,10 @@ export default function UndergraduateCoursePage() {
                 phát triển giao thông vận tải, đô thị thông minh và bền vững của
                 Việt Nam.
                 <br />
+                <br />
                 Giá trị cốt lõi mà chương trình mang lại:
                 <ul className="list-disc pl-5 mt-2">
-                  <li className="list-item">
+                  <li className="list-item! list-disc!">
                     <span className="text-[#be2826] font-bold">
                       Kiến thức liên ngành vững chắc:
                     </span>{" "}
@@ -267,7 +269,7 @@ export default function UndergraduateCoursePage() {
                     Tham gia chương trình, sinh viên có cơ hội được học tập trao
                     đổi nước ngoài và nhận song bằng.
                   </li>
-                  <li className="list-item">
+                  <li className="list-item! list-disc!">
                     <span className="text-[#be2826] font-bold">
                       Kỹ năng thực tiễn & công nghệ 4.0:
                     </span>{" "}
@@ -277,7 +279,7 @@ export default function UndergraduateCoursePage() {
                     AI, Big Data, IoT, cùng năng lực nghiên cứu khoa học, khởi
                     nghiệp và làm việc hiệu quả trong môi trường quốc tế.
                   </li>
-                  <li className="list-item">
+                  <li className="list-item! list-disc!">
                     <span className="text-[#be2826] font-bold">
                       Định hướng nguồn nhân lực chiến lược:
                     </span>{" "}
@@ -512,32 +514,22 @@ export default function UndergraduateCoursePage() {
                 </div>
               ),
               children: (
-                <div className="border-2 border-[#be2826] p-3 -ml-1 -mr-0">
+                <div className="border-2 border-[#be2826] p-3 -ml-1 mr-0">
                   <div className="py-3">
                     <div className="flex flex-wrap justify-around">
                       <div className="text-center">
-                        <h4 className="text-[#be2826] text-6xl">40</h4>
+                        <h4 className="text-[#be2826] text-5xl!">40</h4>
                         <p
-                          className="text-2xl text-[#be2826] uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                          className="text-2xl! text-[#be2826]! uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                           style={ibm_plex_sans.style}
                         >
                           {locale === "en" ? "students" : "chỉ tiêu"}
                         </p>
-                        {/* <p className="text-black">
-                          {locale === "en" ? (
-                            <>
-                              Standard Programs (Vietnamese) <br />
-                              English Standard Programs (100% English)
-                            </>
-                          ) : (
-                            "Chương trình chuẩn và Chương trình bán phần"
-                          )}
-                        </p> */}
                       </div>
                       <div className="text-center">
-                        <h4 className="text-[#be2826] text-6xl">7840104</h4>
+                        <h4 className="text-[#be2826] text-5xl!">7840104</h4>
                         <p
-                          className="text-2xl text-[#be2826] uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                          className="text-2xl! text-[#be2826]! uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                           style={ibm_plex_sans.style}
                         >
                           {locale === "en"
@@ -556,7 +548,7 @@ export default function UndergraduateCoursePage() {
                       <div className="col-lg-6 col-12 flex items-center gap-4">
                         <h3
                           style={ibm_plex_sans.style}
-                          className="bg-[#be2826] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                          className="bg-[#be2826] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                         >
                           1
                         </h3>
@@ -581,7 +573,7 @@ export default function UndergraduateCoursePage() {
                       <div className="col-lg-6 col-12 flex items-center gap-4">
                         <h3
                           style={ibm_plex_sans.style}
-                          className="bg-[#be2826] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                          className="bg-[#be2826] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                         >
                           2
                         </h3>

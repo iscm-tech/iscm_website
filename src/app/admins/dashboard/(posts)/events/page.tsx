@@ -16,6 +16,7 @@ import Link from "next/link";
 import envConfig from "@/config";
 import { Tag } from "antd";
 import { EventCardType } from "@/schemaValidations/post.schema";
+import { ibm_plex_sans } from "@/app/fontDeclare";
 
 export default async function page({ searchParams }: RequestProps) {
   const page = (await searchParams).page || 1;
@@ -46,7 +47,7 @@ export default async function page({ searchParams }: RequestProps) {
           headers: {
             authorization: cookieStorage.get("sessionToken")?.value,
           },
-        }
+        },
       );
 
       data = payload.data.map((post) => ({ lang, ...post }));
@@ -83,7 +84,7 @@ export default async function page({ searchParams }: RequestProps) {
         .sort(
           (a, b) =>
             new Date(b.publishDate).getTime() -
-            new Date(a.publishDate).getTime()
+            new Date(a.publishDate).getTime(),
         );
     }
 
@@ -91,7 +92,6 @@ export default async function page({ searchParams }: RequestProps) {
       <DataTable
         totalPage={totalPage}
         tableHead={[
-          "",
           "ID",
           "Title",
           "Publish Date",
@@ -103,9 +103,8 @@ export default async function page({ searchParams }: RequestProps) {
         currentPage={page}
       >
         {data.map((post, id) => (
-          <TableRow key={post.title} className="h-[75px]">
-            <TableCell>{6 * (page - 1) + id + 1}.</TableCell>
-            <TableCell className="text-black/50 text-center">
+          <TableRow key={post.title} className="h-[75px] border-[#e5e5e5]">
+            <TableCell className="!text-black/50 text-center text-sm!">
               {post.id}
             </TableCell>
             <TableCell
@@ -115,7 +114,8 @@ export default async function page({ searchParams }: RequestProps) {
               <Link
                 href={`${envConfig.PRODUCTION_DOMAIN}/${post.lang}/events/${post.slug}`}
                 target="_blank"
-                className="line-clamp-2 w-full hover:underline hover:text-[#ce2027]"
+                className="line-clamp-2 w-full text-base! hover:underline hover:text-[#ce2027]!"
+                style={ibm_plex_sans.style}
               >
                 {post.title}
               </Link>
@@ -134,7 +134,11 @@ export default async function page({ searchParams }: RequestProps) {
                 {post.draft ? <EyeOff width={20} /> : <Eye width={20} />}
               </div>
             </TableCell>
-            <TableCell>{post.author}</TableCell>
+            <TableCell>
+              <p className="max-w-[140px] text-sm! line-clamp-1 mb-0!">
+                {post.author}
+              </p>
+            </TableCell>
             {/* Actions */}
             <TableCell>
               <DataTableRowActions

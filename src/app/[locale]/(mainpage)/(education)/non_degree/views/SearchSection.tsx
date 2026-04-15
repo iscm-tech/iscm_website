@@ -92,7 +92,7 @@ export default function SearchSection() {
           ref={inputSearch}
         />
         <button
-          className="transition-all duration-200 flex items-center justify-center rounded-full bg-black w-auto h-12 aspect-square !text-white hover:shadow-black hover:scale-105"
+          className="transition-all duration-200 flex items-center justify-center rounded-full! bg-black w-auto h-12 aspect-square !text-white hover:shadow-black hover:scale-105"
           style={{ boxShadow: "0 0 12px var(--tw-shadow-color)" }}
           onClick={handleSearch}
         >
@@ -120,7 +120,7 @@ export default function SearchSection() {
                       return (
                         <Tag
                           key={key}
-                          className="flex gap-2 items-center text-sm"
+                          className="flex! gap-2 items-center text-sm"
                           style={barlow.style}
                         >
                           <span>
@@ -183,7 +183,7 @@ export default function SearchSection() {
                       trigger={["click"]}
                     >
                       <button
-                        className="!border border-black flex-1 px-4 py-2 rounded-md text-lg flex items-center justify-between gap-2 min-w-[140px]"
+                        className="!border border-black flex-1 px-4 py-2 rounded-md! text-lg flex items-center justify-between gap-2 min-w-[140px]"
                         style={barlow.style}
                       >
                         {i18n(item)}

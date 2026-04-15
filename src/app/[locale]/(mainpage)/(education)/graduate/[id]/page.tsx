@@ -99,7 +99,7 @@ export default async function page({
                   : `MSCIM cung cấp hai lộ trình học tập phù hợp với các định hướng nghề nghiệp và trình độ kinh nghiệm khác nhau:`}
               </p>
               <ul className="mt-2 !pl-10">
-                <li className="list-item !list-disc">
+                <li className="list-item! !list-disc">
                   {locale === "en" ? (
                     <p>
                       <b>Standard Master Program</b> – Designed for learners
@@ -114,7 +114,7 @@ export default async function page({
                     </p>
                   )}
                 </li>
-                <li className="list-item !list-disc">
+                <li className="list-item! !list-disc">
                   {locale === "en" ? (
                     <p>
                       <b>Executive Master Program</b> – Tailored for high-level
@@ -134,25 +134,10 @@ export default async function page({
             </p>
 
             <div className="mt-4">
-              <Info data={data} />
+              <Info />
             </div>
           </div>
         </div>
-
-        {/* <div className="text-center">
-          <button className="btn btn-primary !bg-[#ce2027] px-3">
-            <Link
-              href="https://tuyensinh.ueh.edu.vn/bai-viet/ueh-thong-bao-tuyen-sinh-dao-tao-trinh-do-thac-si-dot-1-nam-2026-2/"
-              target="_blank"
-              className="ml-2 !no-underline font-bold text-lg"
-              style={{ textTransform: "none" }}
-            >
-              {locale === "en"
-                ? "Details of the application profile"
-                : "Chi tiết hồ sơ dự tuyển"}
-            </Link>
-          </button>
-        </div> */}
 
         <h3
           className="mt-5 pb-3 font-bold text-3xl uppercase"

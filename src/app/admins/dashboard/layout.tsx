@@ -5,8 +5,6 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
-import "./style.scss";
-
 import {
   Sidebar,
   SidebarContent,
@@ -53,7 +51,11 @@ export default function DashboardLayout({
     <section className="cms__wrapper">
       <div className="main__container">
         <SidebarProvider className="min-h-0">
-          <Sidebar collapsible="offcanvas" variant="sidebar">
+          <Sidebar
+            collapsible="offcanvas"
+            variant="sidebar"
+            className="border-none"
+          >
             <SidebarHeader>
               <div className="flex flex-1 justify-between items-center gap-4">
                 <Link href="/">
@@ -87,7 +89,7 @@ export default function DashboardLayout({
                       <Collapsible defaultOpen className="group/collapsible">
                         <SidebarMenuButton asChild>
                           <CollapsibleTrigger>
-                            <p className="!text-sm !text-[#3f3f46]">People</p>
+                            <p className="!text-sm !text-black">People</p>
                             <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
                           </CollapsibleTrigger>
                         </SidebarMenuButton>

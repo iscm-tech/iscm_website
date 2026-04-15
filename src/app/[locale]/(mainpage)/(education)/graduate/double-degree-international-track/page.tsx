@@ -64,7 +64,7 @@ export default function DoubleDegree() {
               <div className="col-12 col-md-5">
                 <div className="row justify-between pb-3">
                   <p
-                    className="text-white text-lg font-medium col-12 leading-normal text-center mb-0"
+                    className="text-white text-lg! font-medium! col-12 leading-normal text-center mb-0"
                     style={ibm_plex_sans.style}
                   >
                     {locale === "en" ? (
@@ -80,7 +80,7 @@ export default function DoubleDegree() {
                     )}
                   </p>
                 </div>
-                <figure className="flex gap-7 items-center">
+                <figure className="flex! gap-7 items-center">
                   <Image
                     src="/images/logo/ctd white.png"
                     width={100}
@@ -103,7 +103,7 @@ export default function DoubleDegree() {
                 <div className="h-full w-2 bg-white"></div>
               </div>
               <div className="col-12 col-md-5">
-                <figure className="w-full flex gap-6 items-center justify-center">
+                <figure className="w-full flex! gap-6 items-center justify-center">
                   <Image
                     src="/images/partners/handong_circle.png"
                     width={150}
@@ -145,12 +145,12 @@ export default function DoubleDegree() {
         <div className="flex items-center pt-20 pb-32 justify-center">
           <div className="flex flex-col items-center leading-normal">
             <h1
-              className="uppercase text-[#CD2027] text-center"
+              className="uppercase text-[#CD2027]! text-center"
               style={ibm_plex_sans.style}
             >
               {locale === "en" ? "about the program" : "tổng quan chương trình"}
             </h1>
-            <p className="text-black text-lg text-center mt-3 leading-normal">
+            <p className="text-black! text-lg! text-center mt-3 leading-normal">
               {locale === "en" ? (
                 <>
                   In addition to the full-time study option at UEH, the program
@@ -176,7 +176,7 @@ export default function DoubleDegree() {
       <div className="container">
         <ul className="program-opts flex border border-black">
           <li
-            className="flex-1 border-right border-black py-2 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]"
+            className="flex-1 border-right border-black py-2 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]!"
             style={{
               ...ibm_plex_sans.style,
               color: type === "handong" ? "#ce2027" : "black",
@@ -188,7 +188,7 @@ export default function DoubleDegree() {
               : "Đại học Handong Global (Hàn Quốc)"}
           </li>
           <li
-            className="flex-1 border-right border-black py-2 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]"
+            className="flex-1 border-right border-black py-2 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]!"
             style={{
               ...ibm_plex_sans.style,
               color: type === "uhasselt" ? "#ce2027" : "black",

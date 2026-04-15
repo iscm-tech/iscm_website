@@ -30,7 +30,7 @@ export default async function page() {
                       className="list-disc list-item hover:underline"
                     >
                       <Link
-                        className="block text-base mb-2"
+                        className="block text-base text-[#141414]! mb-2"
                         href={publication.link}
                         target="_blank"
                         style={barlow.style}
@@ -43,7 +43,10 @@ export default async function page() {
               </div>
             ),
             dot: (
-              <span className="text-base font-bold" style={ibm_plex_sans.style}>
+              <span
+                className="text-base font-bold text-black"
+                style={ibm_plex_sans.style}
+              >
                 {list.year}{" "}
                 <span className="font-normal text-sm text-[#333]">
                   ({list.publications_list.length})

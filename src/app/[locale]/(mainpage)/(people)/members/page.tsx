@@ -22,7 +22,7 @@ export default async function MembersPage({
             <div className="row items-stretch md:justify-stretch justify-center">
               {data.map(({ name, image, title, id }) => (
                 <div
-                  className="col-lg-3 col-sm-6 max-w-[350px] mb-4 h-[450px] lg:h-[380px]"
+                  className="col-lg-3 col-sm-6 max-w-[350px] mb-4 h-[480px] lg:h-[420px]"
                   key={name}
                 >
                   <MemberCard

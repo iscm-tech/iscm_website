@@ -134,7 +134,7 @@ export default function UndergraduateCoursePage() {
         <div className="z-[1] relative pt-[150px] text-center container">
           <RevealWrapper delay={0} distance="0px" opacity={0} origin="bottom">
             <h1
-              className="uppercase text-white text-3xl lg:text-5xl"
+              className="uppercase text-white text-3xl! lg:text-5xl!"
               style={ibm_plex_sans.style}
             >
               {locale === "en"
@@ -286,7 +286,7 @@ export default function UndergraduateCoursePage() {
           </div>
 
           {/* JOB CHANCE */}
-          <div className="row mt-24">
+          <div className="row mt-44">
             <div className="col-12">
               <h2 className="text-black uppercase" style={ibm_plex_sans.style}>
                 {locale === "en"
@@ -301,12 +301,12 @@ export default function UndergraduateCoursePage() {
               <div className="flex flex-wrap gap-x-4 gap-y-8">
                 {jobList.map(({ position, details }) => (
                   <div
-                    className="btn btn-outline-primary !bg-[#CD2027] text-white !flex flex-col justify-center items-center text-base p-3 whitespace-normal break-keep break-words text-wrap"
+                    className="btn btn-outline-primary !bg-[#CD2027] text-white !flex flex-col justify-center items-center text-base! p-3 whitespace-normal break-keep break-words text-wrap"
                     key={position}
                     style={{ width: "calc(50% - 8px)" }}
                     onClick={() => setJobDesc({ position, details })}
                   >
-                    <p className="text-current text-base font-bold mb-0 uppercase">
+                    <p className="text-current! text-base! font-bold! mb-0 uppercase">
                       {DOMParser(position)}
                     </p>
                   </div>
@@ -315,8 +315,8 @@ export default function UndergraduateCoursePage() {
             </div>
             <div className="col-12 col-lg-7 max-h-[550px] flex mt-6 lg:mt-0 relative">
               <div className="overflow-auto flex-1 jobDesc border-[3px] border-[#cd2027]">
-                <h3
-                  className="text-center bg-[#CD2027] text-white py-3 uppercase text-xl px-5 z-[99]"
+                <h4
+                  className="text-center bg-[#CD2027] py-3 uppercase text-xl! px-5 z-[99]"
                   style={{ position: "sticky", top: 0 }}
                 >
                   <AnimatePresence mode="wait">
@@ -332,7 +332,7 @@ export default function UndergraduateCoursePage() {
                       </span>
                     </motion.div>
                   </AnimatePresence>
-                </h3>
+                </h4>
                 <div className="px-5 py-3 contentt">
                   <AnimatePresence mode="wait">
                     <motion.div
@@ -342,14 +342,16 @@ export default function UndergraduateCoursePage() {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.1 }}
                     >
-                      <p className="text-black">{jobDesc.details.desc}</p>
+                      <p className="text-black text-justify">
+                        {jobDesc.details.desc}
+                      </p>
                       <h4 className="uppercase">
                         {locale === "en"
                           ? "primary responsibilities"
                           : "vai trò chính"}
                         :
                       </h4>
-                      <ul className="list-disc pl-4">
+                      <ul className="list-disc! pl-4">
                         {jobDesc.details.missions.map((mission) => (
                           <li className="!list-item" key={mission}>
                             {mission}
@@ -408,7 +410,7 @@ export default function UndergraduateCoursePage() {
                   style={{ width: "calc(50% - 10px)" }}
                   onClick={() => setSubjectLsit({ module, subjects })}
                 >
-                  <p className="text-[#CD2027] text-base font-bold mb-0 uppercase">
+                  <p className="text-[#CD2027]! text-base! font-bold! mb-0 uppercase">
                     <DomParser content={module} />
                   </p>
                 </div>
@@ -438,34 +440,34 @@ export default function UndergraduateCoursePage() {
               )}
             </p>
             {locale === "en" ? (
-              <ul className="list-disc pl-4">
-                <li className="list-item text-base">
+              <ul className="list-disc! pl-4">
+                <li className="list-item! text-base">
                   Creates an innovative, general, and coherent body of knowledge
                   on architecture, urban development, and urban design inclusive
                   smart city from a multidisciplinary, transdisciplinary, and
                   global perspective.
                 </li>
-                <li className="list-item text-base">
+                <li className="list-item! text-base">
                   Provide learners with the skills to become global citizens
                   acting locally.
                 </li>
-                <li className="list-item text-base">
+                <li className="list-item! text-base">
                   To highlight professional ethics, intellectual integrity, and
                   social responsibility.
                 </li>
               </ul>
             ) : (
-              <ul className="list-disc pl-4">
-                <li className="list-item text-base">
+              <ul className="list-disc! pl-4">
+                <li className="list-item! text-base">
                   Có khối kiến thức sáng tạo, tổng quát và chặt chẽ về kiến
                   trúc, phát triển đô thị, và thiết kế đô thị thông minh trên
                   quan điểm đa ngành, xuyên ngành và toàn cầu.
                 </li>
-                <li className="list-item text-base">
+                <li className="list-item! text-base">
                   Cung cấp cho người học các kỹ năng để trở thành công dân toàn
                   cầu hành động địa phương.
                 </li>
-                <li className="list-item text-base">
+                <li className="list-item! text-base">
                   Đề cao đạo đức nghề nghiệp, trí tuệ liêm chính, trách nhiệm xã
                   hội và học tập suốt đời.
                 </li>
@@ -480,20 +482,78 @@ export default function UndergraduateCoursePage() {
                 : "Chuẩn đầu ra của chương trình đào tạo"}
             </h2>
 
-            <div className="flex justify-center">
-              <Image
-                src={`/images/courses/undergraduate/PLO matrix-new(1).jpg`}
-                alt=""
-                width="70%"
-                className="w-1/2"
-                preview={{
-                  closeIcon: <i className="hidden"></i>,
-                  maskClassName: "bg-transparent hover:cursor-zoom-in",
-                  mask: (
-                    <div className="w-full h-full border-2 border-black"></div>
-                  ),
-                }}
-              />
+            <div className="container border! border-black py-3">
+              <div className="row">
+                <div className="col-12 text-center font-bold text-xl text-[#ce2027]">
+                  {locale === "en" ? "Knowledge" : "Kiến thức"}
+                </div>
+              </div>
+              <div className="row mt-4">
+                <div className="col-12 col-md-6 text-justify">
+                  <b>PLO1.1</b>:{" "}
+                  {locale === "en"
+                    ? "Apply a foundational comprehensive, multidisciplinary, interdisciplinary and work-ready knowledge in architecture, urban design, and smart city development to solve complex problems"
+                    : "Vận dụng được nền tảng vững chắc, kiến thức toàn diện, đa ngành, liên ngành và thực tế trong kiến trúc, thiết kế đô thị và phát triển thành phố thông minh để giải quyết các vấn đề phức tạp"}
+                </div>
+                <div className="col-12 col-md-6 text-justify">
+                  <b>PLO1.2</b>:{" "}
+                  {locale === "en"
+                    ? "Demonstrate an international understanding on architecture, urban design and smart city development towards sustainability"
+                    : "Thể hiện sự hiểu biết toàn cầu về kiến trúc, thiết kế đô thị và phát triển thành phố thông minh hướng tới bền vững"}{" "}
+                </div>
+              </div>
+              <div className="row mt-4 border-t border-black mx-3">
+                <div className="col-12 text-center font-bold text-xl text-[#ce2027] mt-3">
+                  {locale === "en" ? "Skills" : "Kỹ năng"}
+                </div>
+              </div>
+              <div className="row mt-4">
+                <div className="col-12 col-md-4 text-justify">
+                  <b>PLO2.1</b>:{" "}
+                  {locale === "en"
+                    ? "Show ability to communicate effectively from different types including interpersonal, textual, visual, numeracy, and information technology one in various contexts, both in Vietnamese and English"
+                    : "Thể hiện được kỹ năng giao tiếp hiệu quả bằng cả tiếng Việt và tiếng Anh, bằng nhiều hình thức trong nhiều bối cảnh khác nhau, bao gồm giao tiếp cá nhân, giao tiếp bằng văn bản, hình ảnh, con số và các ứng dụng công nghệ thông tin khác"}
+                </div>
+                <div className="col-12 col-md-4 text-justify">
+                  <b>PLO2.2</b>:{" "}
+                  {locale === "en"
+                    ? "Display ability to collect, analyze, and evaluate information and propose ideas for effective problem solving by innovation, simulate, creativity, and critical thinking of architectural and urban solutions"
+                    : "Thể hiện khả năng thu thập, phân tích, đánh giá thông tin và đưa ra ý tưởng để giải quyết vấn đề hiệu quả bằng sự đổi mới, sáng tạo và tư duy phản biện trong giải pháp kiến trúc và đô thị"}
+                </div>
+                <div className="col-12 col-md-4 text-justify">
+                  <b>PLO2.3</b>:{" "}
+                  {locale === "en"
+                    ? "Demonstrate teamwork, negotiation, conflict resolution, leadership and leading to others to achieve desired results"
+                    : "Thể hiện năng lực làm việc nhóm, đàm phán, giải quyết xung đột, hợp tác, dẫn dắt, lãnh đạp người khác để đạt được kết quả mong muốn"}
+                </div>
+              </div>
+              <div className="row mt-4 border-t border-black mx-3">
+                <div className="col-12 text-center font-bold text-xl text-[#ce2027] mt-3">
+                  {locale === "en"
+                    ? "Autonomy and Responsibility"
+                    : "Tự chủ và Trách nhiệm"}
+                </div>
+              </div>
+              <div className="row mt-4">
+                <div className="col-12 col-md-4 text-justify">
+                  <b>PLO3.1</b>:{" "}
+                  {locale === "en"
+                    ? "Demonstrate a sense of civic, social responsibility as an urge to act on sustainability"
+                    : "Thể hiện ý thức trách nhiệm công dân, xã hội và hành động vì sự bền vững"}
+                </div>
+                <div className="col-12 col-md-4 text-justify">
+                  <b>PLO3.2</b>:{" "}
+                  {locale === "en"
+                    ? "Perform an ability to learn and work autonomously, independently, and ethically to become lifelong learners with resilience and confidence"
+                    : "Thể hiện khả năng học tập và làm việc tự chủ, độc lập và có đạo đức, hướng đến mục tiêu học tập suốt đời với sự tự tin và kiên trì"}
+                </div>
+                <div className="col-12 col-md-4 text-justify">
+                  <b>PLO3.3</b>:{" "}
+                  {locale === "en"
+                    ? "Comply an intercultural understanding and diversity respect"
+                    : "Thấu hiểu môi trường đa văn hoá và tôn trọng sự khác biệt"}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -514,14 +574,14 @@ export default function UndergraduateCoursePage() {
                     key={program.id}
                     className={`flex-1 text-center ${
                       program.programCourse === programStructureImage
-                        ? "text-[#cd2027]"
-                        : "text-[#3c3939]"
+                        ? "text-[#cd2027]!"
+                        : "text-[#3c3939]!"
                     } py-2 px-4 transition-colors cursor-pointer duration-200 hover:bg-[#F0F0F0]`}
                     onClick={() => {
                       setProgramStructureImage(program.programCourse);
                     }}
                   >
-                    <p className="mb-0 font-bold text-xl text-current">
+                    <p className="mb-0 font-bold! text-xl! text-current!">
                       {program.years}
                     </p>
                     <p className="mb-0">
@@ -587,14 +647,17 @@ export default function UndergraduateCoursePage() {
                 </figure>
                 <div className="w-full h-[50%] mt-0 py-2 px-4">
                   <h4
-                    className="uppercase text-center"
+                    className="uppercase text-center text-lg! font-bold!"
                     style={ibm_plex_sans.style}
                   >
                     {locale === "en"
                       ? "Collaboration Studio"
                       : "Hợp tác quốc tế"}
                   </h4>
-                  <p className="text-sm text-center mb-0">
+                  <p
+                    className="text-base! text-justify mb-0"
+                    style={{ textAlignLast: "center" }}
+                  >
                     {locale === "en"
                       ? "The project collaborates with domestic and international universities and enterprises."
                       : "Đồ án kết hợp cùng các đại học, doanh nghiệp trong nước và quốc tế"}
@@ -616,7 +679,7 @@ export default function UndergraduateCoursePage() {
                 </figure>
                 <div className="w-full h-[50%] mt-0 py-2 px-4">
                   <h4
-                    className="uppercase text-center"
+                    className="uppercase text-center text-lg! font-bold!"
                     style={ibm_plex_sans.style}
                   >
                     {locale === "en"
@@ -624,7 +687,7 @@ export default function UndergraduateCoursePage() {
                       : "Chuỗi hoạt động chia sẻ tri thức"}
                   </h4>
                   <p
-                    className="text-sm text-justify mb-0 overflow-hidden"
+                    className="text-base! text-justify mb-0 overflow-hidden"
                     style={{ textAlignLast: "center" }}
                   >
                     {locale === "en" ? (
@@ -637,8 +700,9 @@ export default function UndergraduateCoursePage() {
                     ) : (
                       <>
                         Chuỗi sự kiện Hội thảo, Workshop quốc tế được tổ chức
-                        hàng năm bởi Viện Đô thị Thông minh và Quản lý cùng các
-                        đối tác, với chủ đề hướng tới <br />
+                        hàng năm bởi <br />
+                        Viện Đô thị Thông minh và Quản lý cùng các đối tác, với
+                        chủ đề hướng tới <br />
                         Đô thị Thông minh và Bền vững
                       </>
                     )}
@@ -660,7 +724,7 @@ export default function UndergraduateCoursePage() {
                 </figure>
                 <div className="w-full h-[50%] mt-0 py-2 px-4">
                   <h4
-                    className="uppercase text-center"
+                    className="uppercase text-center text-lg! font-bold!"
                     style={ibm_plex_sans.style}
                   >
                     {locale === "en"
@@ -668,7 +732,7 @@ export default function UndergraduateCoursePage() {
                       : "Hoạt động sinh viên"}
                   </h4>
                   <p
-                    className="text-sm text-justify mb-0"
+                    className="text-base! text-justify mb-0"
                     style={{ textAlignLast: "center" }}
                   >
                     {locale === "en" ? (
@@ -704,7 +768,7 @@ export default function UndergraduateCoursePage() {
                 </figure>
                 <div className="w-full h-[50%] mt-0 py-2 px-4">
                   <h4
-                    className="uppercase text-center"
+                    className="uppercase text-center text-lg! font-bold!"
                     style={ibm_plex_sans.style}
                   >
                     {locale === "en"
@@ -712,7 +776,7 @@ export default function UndergraduateCoursePage() {
                       : "HỆ THỐNG STUDIOLAB"}
                   </h4>
                   <p
-                    className="text-sm text-justify mb-0 overflow-clip"
+                    className="text-base! text-justify mb-0 overflow-clip"
                     style={{ textAlignLast: "center" }}
                   >
                     {locale === "en" ? (
@@ -746,7 +810,7 @@ export default function UndergraduateCoursePage() {
                 </figure>
                 <div className="w-full h-[50%] mt-0 py-2 px-4">
                   <h4
-                    className="uppercase text-center"
+                    className="uppercase text-center text-lg! font-bold!"
                     style={ibm_plex_sans.style}
                   >
                     {locale === "en" ? (
@@ -760,7 +824,7 @@ export default function UndergraduateCoursePage() {
                     )}
                   </h4>
                   <p
-                    className="text-sm text-justify mb-0 overflow-clip"
+                    className="text-base! text-justify mb-0 overflow-clip"
                     style={{ textAlignLast: "center" }}
                   >
                     {locale === "en" ? (
@@ -819,13 +883,13 @@ export default function UndergraduateCoursePage() {
                   </div>
                 ),
                 children: (
-                  <div className="border-2 border-[#CE2027] p-3 -ml-1 -mr-0">
+                  <div className="border-2 border-[#CE2027] p-3 -ml-1 mr-0">
                     <div className="py-3">
                       <div className="flex flex-wrap justify-around">
                         <div className="text-center">
-                          <h4 className="text-[#CD2027] text-6xl">80</h4>
+                          <h4 className="text-[#CD2027]! text-5xl!">80</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-2xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? "students" : "chỉ tiêu"}
@@ -842,9 +906,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center">
-                          <h4 className="text-[#CD2027] text-6xl">7580104</h4>
+                          <h4 className="text-[#CD2027]! text-5xl!">7580104</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-2xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en"
@@ -863,7 +927,7 @@ export default function UndergraduateCoursePage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             1
                           </h3>
@@ -890,7 +954,7 @@ export default function UndergraduateCoursePage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             2
                           </h3>
@@ -952,13 +1016,13 @@ export default function UndergraduateCoursePage() {
                   </div>
                 ),
                 children: (
-                  <div className="border-2 border-[#CE2027] p-3 -ml-1 -mr-0">
+                  <div className="border-2 border-[#CE2027] p-3 -ml-1 mr-0">
                     <div className="py-3 mb-3">
                       <div className="flex flex-wrap justify-around">
                         <div className="text-center">
-                          <h4 className="text-[#CD2027] text-6xl">110</h4>
+                          <h4 className="text-[#CD2027]! text-5xl!">110</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-2xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? "students" : "chỉ tiêu"}
@@ -975,9 +1039,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center">
-                          <h4 className="text-[#CD2027] text-6xl">7580104</h4>
+                          <h4 className="text-[#CD2027]! text-5xl!">7580104</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-2xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en"
@@ -996,7 +1060,7 @@ export default function UndergraduateCoursePage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             1
                           </h3>
@@ -1023,7 +1087,7 @@ export default function UndergraduateCoursePage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             2
                           </h3>
@@ -1052,7 +1116,7 @@ export default function UndergraduateCoursePage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             3
                           </h3>
@@ -1067,21 +1131,20 @@ export default function UndergraduateCoursePage() {
                               <>
                                 Admission for students with good academic
                                 performance, quota 40%-50%
-                                <span className="text-[#ce2027]"> [New]</span>
                               </>
                             ) : (
                               <>
                                 Xét tuyển thí sinh có kết quả học tập tốt, chỉ
-                                tiêu 40%-50%{" "}
-                                <span className="text-[#ce2027]"> [Mới]</span>;
+                                tiêu 40%-50%
                               </>
                             )}
+                            ;
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             4
                           </h3>
@@ -1109,7 +1172,7 @@ export default function UndergraduateCoursePage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             5
                           </h3>
@@ -1135,26 +1198,26 @@ export default function UndergraduateCoursePage() {
                         </div>
                       </div>
                     </div>
-                    <div className="py-4 bg-[#f2f2f2]">
+                    <div className="py-4 px-2 bg-[#f2f2f2]">
                       <h2 className="text-center uppercase text-4xl font-bold text-[#CD2027] mb-5">
                         {locale === "en"
                           ? "Admission Results 2025"
                           : "Kết quả tuyển sinh 2025"}
                       </h2>
-                      <div className="flex flex-wrap gap-6 justify-around">
+                      <div className="flex flex-wrap gap-8 justify-around">
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">23.00</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">23.00</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? "entrance score" : "Điểm chuẩn"}
                           </p>
                         </div>
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">21</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">21</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? (
@@ -1169,9 +1232,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">62</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">62</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? (
@@ -1187,9 +1250,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">28.31</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">28.31</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en"
@@ -1198,9 +1261,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">2,5%</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">2,5%</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? (
@@ -1224,9 +1287,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">9,6%</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">9,6%</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? (
@@ -1253,9 +1316,9 @@ export default function UndergraduateCoursePage() {
                           </p>
                         </div>
                         <div className="text-center w-fit">
-                          <h4 className="text-[#CD2027] text-6xl">88%</h4>
+                          <h4 className="text-[#CD2027]! text-4xl!">88%</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? (
@@ -1282,17 +1345,6 @@ export default function UndergraduateCoursePage() {
               },
             ]}
           />
-
-          {/* <div className="w-full flex justify-center pb-10 mt-11">
-            <Link
-              href="https://xettuyenk51.ueh.edu.vn"
-              target="_blank"
-              className="uppercase bg-[#971919] text-white font-bold py-3 px-16 text-xl"
-              style={ibm_plex_sans.style}
-            >
-              {locale === "en" ? "Apply now" : "nộp hồ sơ ngay"}
-            </Link>
-          </div> */}
         </div>
         {/* ############### */}
       </div>

@@ -71,7 +71,7 @@ export default async function Home() {
               >
                 <div className="inline-block">
                   <h2
-                    className="text-layout text-xl lg:text-5xl"
+                    className="text-layout text-xl! lg:text-5xl! leading-relaxed"
                     style={{
                       ...ibm_plex_sans.style,
                       zIndex: 999,

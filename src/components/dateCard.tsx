@@ -80,22 +80,9 @@ export default function DateCard({
           quality={imgQuality}
           style={{ aspectRatio: 1200 / 630 }}
         />
-
-        {/* <div
-          className="card-date text-white"
-          style={{ fontSize: isHorizontal ? "12px" : "14px" }}
-        >
-          <span className="text-current" style={{ fontSize: "150%" }}>
-            {dateFormat.day}
-          </span>
-          <br />
-          <span className="text-current" style={{ fontSize: "100%" }}>
-            {dateFormat.month}
-          </span>
-        </div> */}
       </div>
       <div className={`card-body ${bodyCls}`} style={bodyStyle}>
-        <div className="">
+        <div className="flex flex-wrap">
           <div className="flex flex-wrap flex-1 gap-2 mb-2">
             {sdgs.map((sdg) => (
               <Image

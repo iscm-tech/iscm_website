@@ -26,7 +26,7 @@ export default function CourseCard({
   return (
     <Link
       href={{ pathname: id ? `${basePath}/${id}` : basePath }}
-      className="block card border-0 rounded-0 hover-shadow !mb-0 w-full !h-full cursor-pointer bg-white"
+      className="block card border-0 rounded-0 hover-shadow !mb-0 w-full! !h-full cursor-pointer bg-white"
       title={title}
     >
       <Image
@@ -45,20 +45,20 @@ export default function CourseCard({
       <div className="card-body h-fit">
         <div className="card-content flex-fill row px-[15px]">
           <ul className="list-inline mb-2 col-12 px-0 text-base">
-            <li className="w-full flex items-center">
+            <li className="w-full flex! items-center">
               <CalendarDaysIcon className="mr-2" size={20} /> {duration}
             </li>
-            <li className="w-full flex items-center capitalize">
+            <li className="w-full flex! items-center capitalize">
               <BookOpenText className="mr-2" size={20} /> {category}
             </li>
             {class_type && (
-              <li className="w-full flex items-center capitalize">
+              <li className="w-full flex! items-center capitalize">
                 <MapPin className="mr-2" size={20} /> {class_type}
               </li>
             )}
           </ul>
 
-          <h4 className="card-title leading-6 line-clamp-2 h-[50px] font-bold capitalize text-[#141414] text-xl">
+          <h4 className="card-title leading-6 line-clamp-2 h-14 font-bold! capitalize text-[#141414] text-xl!">
             {title}
           </h4>
         </div>

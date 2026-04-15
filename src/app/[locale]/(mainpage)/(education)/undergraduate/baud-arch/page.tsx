@@ -131,10 +131,10 @@ export default function BAUDArchPage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="z-[1] relative pt-[150px] text-center container">
+        <div className="z-[1] relative pt-[150px] text-center">
           <RevealWrapper delay={0} distance="0px" opacity={0} origin="bottom">
             <h1
-              className="uppercase text-white text-3xl lg:text-5xl"
+              className="uppercase text-white text-3xl! lg:text-5xl!"
               style={ibm_plex_sans.style}
             >
               {locale === "en" ? (
@@ -281,12 +281,12 @@ export default function BAUDArchPage() {
               <div className="flex flex-wrap gap-x-4 gap-y-8">
                 {jobList.map(({ position, details }) => (
                   <div
-                    className="btn btn-outline-primary !bg-[#CD2027] text-white !flex flex-col justify-center items-center text-base p-3 whitespace-normal break-keep break-words text-wrap"
+                    className="btn btn-outline-primary !bg-[#CD2027] text-white !flex flex-col justify-center items-center text-base p-3 whitespace-normal break-keep wrap-break-word text-wrap"
                     key={position}
                     style={{ width: "calc(50% - 8px)" }}
                     onClick={() => setJobDesc({ position, details })}
                   >
-                    <p className="text-current text-base font-bold mb-0 uppercase">
+                    <p className="text-current! text-base! font-bold! mb-0 uppercase">
                       {DOMParser(position)}
                     </p>
                   </div>
@@ -370,12 +370,12 @@ export default function BAUDArchPage() {
             <div className="col-12 col-lg-5 flex flex-wrap gap-5 h-fit mb-5 mb-lg-0">
               {program.map(({ module, subjects }) => (
                 <div
-                  className="btn btn-outline-primary !flex justify-center items-center text-base p-3 whitespace-normal break-keep break-words text-wrap"
+                  className="btn btn-outline-primary !flex justify-center items-center p-3 whitespace-normal break-keep break-words text-wrap"
                   key={module}
                   style={{ width: "calc(50% - 10px)" }}
                   onClick={() => setSubjectLsit({ module, subjects })}
                 >
-                  <p className="text-[#CD2027] text-base font-bold mb-0 uppercase">
+                  <p className="text-[#CD2027]! text-base! font-bold! mb-0 uppercase">
                     <DomParser content={module} />
                   </p>
                 </div>
@@ -393,10 +393,10 @@ export default function BAUDArchPage() {
               {programStructure.map((program) => (
                 <li
                   key={program.id}
-                  className={`flex-1 text-center text-xl font-bold text-[#3c3939] ${
+                  className={`flex-1 text-center text-xl! font-bold! ${
                     program.programCourse === programStructureImage
-                      ? "text-[#cd2027]"
-                      : ""
+                      ? "text-[#cd2027]!"
+                      : "text-[#3c3939]!"
                   } py-2 px-4 transition-colors cursor-pointer duration-200 hover:bg-[#F0F0F0]`}
                   onClick={() => {
                     setProgramStructureImage(program.programCourse);
@@ -475,13 +475,13 @@ export default function BAUDArchPage() {
                   </div>
                 ),
                 children: (
-                  <div className="border-2 border-[#CE2027] p-3 -ml-1 -mr-0">
+                  <div className="border-2 border-[#CE2027] p-3 -ml-1 mr-0">
                     <div className="py-3">
                       <div className="flex flex-wrap justify-around">
                         <div className="text-center">
-                          <h4 className="text-[#CD2027] text-6xl">40</h4>
+                          <h4 className="text-[#CD2027]! text-6xl!">40</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-2xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en" ? "students" : "chỉ tiêu"}
@@ -498,9 +498,9 @@ export default function BAUDArchPage() {
                           </p>
                         </div>
                         <div className="text-center">
-                          <h4 className="text-[#CD2027] text-6xl">7580104</h4>
+                          <h4 className="text-[#CD2027]! text-6xl!">7580104</h4>
                           <p
-                            className="text-2xl text-black uppercase font-bold mb-0 mt-3 whitespace-nowrap"
+                            className="text-2xl! text-black uppercase font-bold! mb-0 mt-3 whitespace-nowrap"
                             style={ibm_plex_sans.style}
                           >
                             {locale === "en"
@@ -519,7 +519,7 @@ export default function BAUDArchPage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             1
                           </h3>
@@ -546,7 +546,7 @@ export default function BAUDArchPage() {
                         <div className="col-lg-6 col-12 flex items-center gap-4">
                           <h3
                             style={ibm_plex_sans.style}
-                            className="bg-[#CD2027] w-fit h-fit aspect-square px-1 leading-[0.75] text-[46px] mb-0 text-white"
+                            className="bg-[#CD2027] w-fit! h-fit! aspect-square! px-1 leading-[0.75] text-[46px] mb-0 text-white"
                           >
                             2
                           </h3>

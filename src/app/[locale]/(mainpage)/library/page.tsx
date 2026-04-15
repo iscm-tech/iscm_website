@@ -58,7 +58,7 @@ export default function Page() {
                     <div className="flex gap-3">
                       <div className="flex gap-4 cursor-default">
                         <Link
-                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027] w-fit text-white px-3 py-2 relative
+                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027]! w-fit text-white px-3 py-2 relative
                         before:w-[6px] before:h-[60%] before:bg-white before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-translate-x-full before:rounded-2xl before:transition-transform hover:before:-translate-x-[2px]
                         after:w-[6px] after:h-[60%] after:bg-white after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:translate-x-full after:rounded-2xl after:transition-transform hover:after:translate-x-[2px]"
                           href={"/assets/fonts/Barlow.zip"}
@@ -70,7 +70,7 @@ export default function Page() {
                       </div>
                       <div className="flex gap-4 cursor-default">
                         <Link
-                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027] w-fit text-white px-3 py-2 relative
+                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027]! w-fit text-white px-3 py-2 relative
                         before:w-[6px] before:h-[60%] before:bg-white before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-translate-x-full before:rounded-2xl before:transition-transform hover:before:-translate-x-[2px]
                         after:w-[6px] after:h-[60%] after:bg-white after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:translate-x-full after:rounded-2xl after:transition-transform hover:after:translate-x-[2px]"
                           href={"/assets/fonts/Barlow Condensed.zip"}
@@ -82,7 +82,7 @@ export default function Page() {
                       </div>
                       <div className="flex gap-4 cursor-default">
                         <Link
-                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027] w-fit text-white px-3 py-2 relative
+                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027]! w-fit text-white px-3 py-2 relative
                         before:w-[6px] before:h-[60%] before:bg-white before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-translate-x-full before:rounded-2xl before:transition-transform hover:before:-translate-x-[2px]
                         after:w-[6px] after:h-[60%] after:bg-white after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:translate-x-full after:rounded-2xl after:transition-transform hover:after:translate-x-[2px]"
                           href={"/assets/fonts/IBM_Plex_Sans.zip"}
@@ -100,7 +100,7 @@ export default function Page() {
                     <div className="flex gap-3">
                       <div className="flex gap-4 cursor-default">
                         <Link
-                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027] w-fit text-white px-3 py-2 relative
+                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027]! w-fit text-white px-3 py-2 relative
                         before:w-[6px] before:h-[60%] before:bg-white before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-translate-x-full before:rounded-2xl before:transition-transform hover:before:-translate-x-[2px]
                         after:w-[6px] after:h-[60%] after:bg-white after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:translate-x-full after:rounded-2xl after:transition-transform hover:after:translate-x-[2px]"
                           href={"/assets/logo/UEH.zip"}
@@ -112,7 +112,7 @@ export default function Page() {
                       </div>
                       <div className="flex gap-4 cursor-default">
                         <Link
-                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027] w-fit text-white px-3 py-2 relative
+                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027]! w-fit text-white px-3 py-2 relative
                         before:w-[6px] before:h-[60%] before:bg-white before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-translate-x-full before:rounded-2xl before:transition-transform hover:before:-translate-x-[2px]
                         after:w-[6px] after:h-[60%] after:bg-white after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:translate-x-full after:rounded-2xl after:transition-transform hover:after:translate-x-[2px]"
                           href={"/assets/logo/CTD.zip"}
@@ -124,7 +124,7 @@ export default function Page() {
                       </div>
                       <div className="flex gap-4 cursor-default">
                         <Link
-                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027] w-fit text-white px-3 py-2 relative
+                          className="my-2 overflow-hidden flex items-center shadow-lg font-bold gap-2 bg-[#ce2027]! w-fit text-white px-3 py-2 relative
                         before:w-[6px] before:h-[60%] before:bg-white before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-translate-x-full before:rounded-2xl before:transition-transform hover:before:-translate-x-[2px]
                         after:w-[6px] after:h-[60%] after:bg-white after:absolute after:top-1/2 after:right-0 after:-translate-y-1/2 after:translate-x-full after:rounded-2xl after:transition-transform hover:after:translate-x-[2px]"
                           href={"/assets/logo/ISCM.zip"}
@@ -152,13 +152,13 @@ export default function Page() {
                         ytbList.push(
                           <Link href={value} target="_blank">
                             <button
-                              className="btn btn-primary !flex items-center gap-2 !bg-[#ce2027] !text-white"
+                              className="btn btn-primary !flex items-center gap-2 !bg-[#ce2027]! text-white"
                               key={key}
                             >
                               <CirclePlay />
                               {key}
                             </button>
-                          </Link>
+                          </Link>,
                         );
                       }
 

@@ -24,7 +24,7 @@ export default async function LatestPosts() {
       payload: { data: evolvingResearchList },
     } = await getPostServices.getLatestPostByCategory(
       locale,
-      "evolving-research"
+      "evolving-research",
     );
 
     const {
@@ -59,7 +59,7 @@ export default async function LatestPosts() {
                 className="col-lg-12 col-md-6 col-12 mb-12"
                 key={cate.cateName}
               >
-                <h3 className="uppercase text-[#ce2027] font-extrabold mb-3">
+                <h3 className="uppercase text-[#ce2027]! font-extrabold! mb-3">
                   {translate(cate.cateName)}
                 </h3>
                 <ul className="lastest-post__item">
@@ -69,13 +69,11 @@ export default async function LatestPosts() {
                         <HoverCardTrigger>
                           <Link
                             href={`/${cate.cateName}/${item.slug}`}
-                            className="text-[15px] text-black line-clamp-2 hover:text-[#ce2027]"
+                            className="text-[15px] text-black line-clamp-2 hover:text-[#ce2027]!"
                             style={{ float: "left" }}
                           >
-                            <span className="date whitespace-nowrap hover:!no-underline pr-1 mr-1 border-r border-black">
-                              <i className="text-[#bbb]">
-                                {format(item.publishDate, "dd/MM/yyyy")}
-                              </i>
+                            <span className="date whitespace-nowrap hover:!no-underline pr-1 mr-1 border-r text-[#ce2027] border-black">
+                              {format(item.publishDate, "dd/MM/yyyy")}
                             </span>
                             <span className="title inline transition-all">
                               {item.title}
@@ -87,9 +85,7 @@ export default async function LatestPosts() {
                           align="start"
                           className="p-2 flex flex-col"
                         >
-                          <figure
-                            className={`card-img w-[250px] h-[120px] mb-0`}
-                          >
+                          <figure className={`card-img w-[250px] mb-0`}>
                             <Image
                               className={`card-img-top rounded-0 w-full h-full`}
                               loading="lazy"
@@ -102,7 +98,7 @@ export default async function LatestPosts() {
                           </figure>
                           <div className={`card-body p-2`}>
                             <div className="overflow-hidden">
-                              <h4 className="card-title !mb-0 !text-sm line-clamp-2">
+                              <h4 className="card-title !mb-0 !text-sm">
                                 {item.title}
                               </h4>
                             </div>

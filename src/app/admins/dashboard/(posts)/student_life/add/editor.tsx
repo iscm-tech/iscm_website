@@ -272,6 +272,7 @@ export default function Editor({ locale }: { locale: string }) {
           state={sdgsSelected}
           setState={setSdgsSelected}
           maxItems={3}
+          castValType={(val) => String(val)}
         />
         <ComboBox
           field="Language"
@@ -310,6 +311,7 @@ export default function Editor({ locale }: { locale: string }) {
               }))}
               state={portalCates}
               setState={setPortalCates}
+              castValType={(val) => String(val)}
             />
             <FilesInput field="portal thumbnail" name="portal_thumbnail" />
             <FilesInput field="portal background" name="portal_background" />

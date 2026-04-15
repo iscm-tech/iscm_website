@@ -4,10 +4,6 @@ import NextAuthSessionProvider from "@/components/NextAuthSessionProvider";
 import { Metadata } from "next";
 import { authOpts } from "@/lib/nextAuthOpts";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   icons: "/images/favicon.png",
@@ -27,7 +23,7 @@ export default async function RootLayout({
   const session = await getServerSession(authOpts);
 
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
+    <html lang="en">
       <body className="overflow-x-hidden">
         <Script src="/js/jquery.slim.min.js" strategy="beforeInteractive" />
         <Script

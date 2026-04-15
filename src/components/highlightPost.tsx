@@ -33,8 +33,6 @@ export default function HighlightPost({
   const i18n = useTranslations();
   const locale = useLocale();
 
-  console.log(getInnerText(desc));
-
   return (
     <Link
       href={{
@@ -58,16 +56,6 @@ export default function HighlightPost({
           src={thumb}
           quality={95}
         />
-
-        {/* <div className="card-date text-white" style={{ fontSize: "14px" }}>
-          <span className="text-current" style={{ fontSize: "150%" }}>
-            {dateFormat.day}
-          </span>
-          <br />
-          <span className="text-current" style={{ fontSize: "100%" }}>
-            {dateFormat.month}
-          </span>
-        </div> */}
       </div>
       <div className={`card-body flex flex-col justify-between !flex-1`}>
         <div>
@@ -85,7 +73,10 @@ export default function HighlightPost({
           <h4 className="card-title font-bold !mb-2 text-black !text-base w-full">
             {title}
           </h4>
-          <p className="text-sm line-clamp-5" style={barlow.style}>
+          <p
+            className="text-sm! text-justify line-clamp-4"
+            style={barlow.style}
+          >
             {getInnerText(desc)}
           </p>
         </div>

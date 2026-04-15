@@ -15,6 +15,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import envConfig from "@/config";
 import { Tag } from "antd";
+import { ibm_plex_sans } from "@/app/fontDeclare";
 
 export default async function page({ searchParams }: RequestProps) {
   const page = (await searchParams).page || 1;
@@ -96,22 +97,13 @@ export default async function page({ searchParams }: RequestProps) {
     return (
       <DataTable
         totalPage={totalPage}
-        tableHead={[
-          "",
-          "ID",
-          "Title",
-          "Publish Date",
-          "Lang",
-          "Visible",
-          "Author",
-        ]}
+        tableHead={["ID", "Title", "Publish Date", "Lang", "Visible", "Author"]}
         currentPage={page}
         lang={lang}
       >
         {data.map((post, id) => (
-          <TableRow key={post.title} className="h-[75px]">
-            <TableCell>{6 * (page - 1) + id + 1}.</TableCell>
-            <TableCell className="text-black/50 text-center">
+          <TableRow key={post.title} className="h-[75px] border-[#e5e5e5]">
+            <TableCell className="!text-black/50 text-center text-sm!">
               {post.id}
             </TableCell>
             <TableCell
@@ -121,7 +113,8 @@ export default async function page({ searchParams }: RequestProps) {
               <Link
                 href={`${envConfig.PRODUCTION_DOMAIN}/${post.lang}/student_life/${post.slug}`}
                 target="_blank"
-                className="line-clamp-2 w-full hover:underline hover:text-[#ce2027]"
+                className="line-clamp-2 w-full text-base! hover:underline hover:text-[#ce2027]!"
+                style={ibm_plex_sans.style}
               >
                 {post.title}
               </Link>
@@ -138,7 +131,7 @@ export default async function page({ searchParams }: RequestProps) {
               </div>
             </TableCell>
             <TableCell className="overflow-clip">
-              <p className="max-w-[140px] text-sm line-clamp-1">
+              <p className="max-w-[140px] text-sm! line-clamp-1 mb-0!">
                 {post.author}
               </p>
             </TableCell>

@@ -30,10 +30,10 @@ export default function SummarizeBar({
           className="flex justify-center items-center flex-1 border-b !pb-3 !mb-3 lg:!pb-0 lg:!mb-0 lg:border-b-0 lg:border-r border-[#A1A1A1]"
         >
           <div>
-            <h3 className="text-3xl text-center font-bold mb-0">
+            <h3 className="text-2xl! text-center font-bold! mb-0">
               {item.value}
             </h3>
-            <p className="text-xl text-center mb-0 font-semibold">
+            <p className="text-xl! text-center mb-0 font-semibold!">
               {item.title}
             </p>
           </div>
@@ -41,10 +41,10 @@ export default function SummarizeBar({
       ))}
       <div className="flex justify-center items-center flex-1 border-b !pb-3 !mb-3 lg:!pb-0 lg:!mb-0 lg:border-b-0 lg:border-r border-[#A1A1A1]">
         <div>
-          <h3 className="text-2xl text-center mb-0 font-semibold">
+          <h3 className="text-2xl! text-center mb-0 font-semibold!">
             {i18n(level?.level)}
           </h3>
-          <p className="mb-0 text-sm text-[#5b6780] flex items-center gap-1">
+          <p className="mb-0 text-sm! text-[#5b6780]! flex items-center gap-1">
             {locale === "en"
               ? "Recommended experience"
               : "Kinh nghiệm nên có trước khi học"}
@@ -55,7 +55,7 @@ export default function SummarizeBar({
                   maskClosable: true,
                   title: (
                     <div>
-                      <h3 className="text-2xl lg:whitespace-nowrap mb-0">
+                      <h3 className="text-2xl! lg:whitespace-nowrap mb-0">
                         {locale === "en"
                           ? "Recommended experience"
                           : "Kinh nghiệm nên có trước khi học"}
@@ -83,7 +83,7 @@ export default function SummarizeBar({
                     </div>
                   ),
                   styles: {
-                    body: {
+                    container: {
                       width: "fit-content",
                     },
                   },
@@ -104,16 +104,16 @@ export default function SummarizeBar({
         </div>
       </div>
       <div className="flex-1 gap-2">
-        <h3 className="flex gap-2 items-center justify-center font-bold text-black mb-0">
+        <h3 className="flex gap-2 items-center justify-center font-bold! text-black mb-0">
           0.0
           <FontAwesomeIcon
             icon={faStar}
             color="#FDD017"
             fontSize={20}
-            className="max-h-[20px]"
+            className="max-h-5"
           />
         </h3>
-        <p className="text-center mb-0 text-[#5b6780]">(0 reviews)</p>
+        <p className="text-center mb-0 text-[#5b6780]!">(0 reviews)</p>
       </div>
     </div>
   );

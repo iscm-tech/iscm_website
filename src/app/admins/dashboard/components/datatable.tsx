@@ -40,7 +40,7 @@ export default function DataTable({
     >
       <Table>
         <TableHeader className="sticky top-0 bg-[#fafafa] shadow-md z-[999999]">
-          <TableRow>
+          <TableRow className="border-none">
             {tableHead.map((head) => (
               <TableHead
                 className="font-bold text-base text-center text-black py-2 whitespace-nowrap"

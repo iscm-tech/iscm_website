@@ -54,10 +54,12 @@ export default async function page({
             <section className="col-lg-10 col-12 content-body">
               <div className="row mb-8">
                 <div className="col-12">
-                  <h1 className="section-title mb-3">{data.metadata.title}</h1>
+                  <h1 className="section-title mb-3">
+                    {data.metadata.title}
+                  </h1>
                 </div>
                 <div className="col-12 mb-2">
-                  <em className="text-[15px]">
+                  <em className="text-[15px]!">
                     {format(
                       data.metadata.publishDate,
                       locale === "en"
@@ -65,7 +67,7 @@ export default async function page({
                         : "dd 'tháng' MM 'năm' yyyy",
                       {
                         locale: locale === "en" ? enUS : vi,
-                      }
+                      },
                     )}
                   </em>
                 </div>

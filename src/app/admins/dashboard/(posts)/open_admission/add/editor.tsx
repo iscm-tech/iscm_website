@@ -37,7 +37,7 @@ const sdgsVal: { value: string; icon?: ReactElement }[] = sdgs.map(
         height={40}
       />
     ),
-  })
+  }),
 );
 
 export default function Editor({ locale }: { locale: string }) {
@@ -54,7 +54,7 @@ export default function Editor({ locale }: { locale: string }) {
   async function createPost(
     imageUploads: File[],
     content: string,
-    description: string
+    description: string,
   ) {
     try {
       if (!metaForm.current) throw new Error("Invalid metaForm");
@@ -110,7 +110,7 @@ export default function Editor({ locale }: { locale: string }) {
         "open-admission",
         meta.id,
         meta.lang,
-        bodyParse.data
+        bodyParse.data,
       );
 
       // --------------------- HANDLE POST TO PORTAL -----------------------
@@ -185,7 +185,7 @@ export default function Editor({ locale }: { locale: string }) {
                   trim: true,
                   remove: /[*+~.()'"!:@]/g,
                   locale: "vi",
-                })
+                }),
               )
             }
           />
@@ -215,7 +215,7 @@ export default function Editor({ locale }: { locale: string }) {
                   trim: true,
                   remove: /[*+~.()'"!:@]/g,
                   locale: "vi",
-                })
+                }),
               );
             }}
           >
@@ -241,6 +241,7 @@ export default function Editor({ locale }: { locale: string }) {
           state={sdgsSelected}
           setState={setSdgsSelected}
           maxItems={3}
+          castValType={(val) => String(val)}
         />
         <ComboBox
           field="Language"
@@ -278,6 +279,7 @@ export default function Editor({ locale }: { locale: string }) {
             }))}
             state={portalCates}
             setState={setPortalCates}
+            castValType={(val) => String(val)}
           />
         )}
       </form>

@@ -56,7 +56,7 @@ export default function Card({
           onClick={(e) => isDisabled && e.preventDefault()}
         >
           <Image
-            className="card-img-top rounded-0 h-[60%]"
+            className="card-img-top rounded-0 h-[60%] lg:h-1/2"
             src={thumb}
             alt={`${title} - ${subTitle}`}
             style={{
@@ -90,7 +90,7 @@ export default function Card({
               >
                 {title}
               </h4>
-              <p className="mt-3 mb-0 text-base">
+              <p className="mt-3 mb-0 text-base!">
                 {typeof subTitle === "string"
                   ? DOMParser(subTitle || "")
                   : subTitle}
@@ -106,7 +106,7 @@ export default function Card({
           style={style}
         >
           <Image
-            className="card-img-top rounded-0 h-[60%]"
+            className="card-img-top rounded-0 h-[60%] lg:h-1/2"
             src={thumb}
             alt={`${title} - ${subTitle}`}
             style={{

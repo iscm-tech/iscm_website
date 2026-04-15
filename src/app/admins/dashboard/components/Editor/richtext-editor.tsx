@@ -28,6 +28,7 @@ import "./editor_style.scss";
 import {
   Tooltip,
   TooltipContent,
+  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { useSidebar } from "@/components/ui/sidebar";
@@ -70,7 +71,7 @@ export default function RichtextEditor({
           return [
             "figure",
             {
-              class: "w-100",
+              class: "w-full",
               style:
                 "display: flex; flex-direction: column; align-items: center; justify-content: center;",
             },
@@ -277,70 +278,72 @@ export default function RichtextEditor({
   }, []);
 
   return (
-    <div className="h-full overflow-hidden flex flex-row">
-      <div className="py-2 flex flex-col justify-between mr-2">
-        {mainSidebar && (
-          <Button
-            className="w-fit"
-            variant="ghost"
-            onClick={() => mainSidebar.setOpen(!mainSidebar.open)}
-          >
-            <PanelRight />
-          </Button>
-        )}
-        <div className="flex flex-col">
-          <Tooltip>
-            <TooltipTrigger>
-              <Button
-                variant="ghost"
-                className="text-md"
-                type="submit"
-                onClick={handlePublish}
-              >
-                <SaveIcon />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="left">
-              <p className="text-base italic">Publish</p>
-            </TooltipContent>
-          </Tooltip>
+    <TooltipProvider>
+      <div className="h-full overflow-hidden flex flex-row">
+        <div className="py-2 flex flex-col justify-between mr-2">
+          {mainSidebar && (
+            <Button
+              className="w-fit"
+              variant="ghost"
+              onClick={() => mainSidebar.setOpen(!mainSidebar.open)}
+            >
+              <PanelRight />
+            </Button>
+          )}
+          <div className="flex flex-col">
+            <Tooltip>
+              <TooltipTrigger>
+                <Button
+                  variant="ghost"
+                  className="text-md"
+                  type="submit"
+                  onClick={handlePublish}
+                >
+                  <SaveIcon />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent side="left">
+                <p className="text-base italic">Publish</p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
         </div>
-      </div>
 
-      <Splitter className="gap-3 py-3">
-        <Splitter.Panel
-          className="rounded-lg"
-          defaultSize="20%"
-          min="10%"
-          max="40%"
-          collapsible
-          style={{ boxShadow: "0 0 10px rgba(61, 37, 20, 0.2)" }}
-        >
-          <div className="w-full h-full overflow-auto editor__sidebar !px-3">
-            {children}
-          </div>
-        </Splitter.Panel>
-        <Splitter.Panel className="h-full overflow-hidden">
-          {/* Editor */}
-          <div
-            className="editor h-full flex-1 flex flex-col border-2 border-gray-400 rounded-lg overflow-hidden"
-            style={{
-              opacity: readOnly ? 0.6 : 1,
-            }}
+        <Splitter className="gap-3 py-3">
+          <Splitter.Panel
+            className="rounded-lg"
+            defaultSize="20%"
+            min="10%"
+            max="40%"
+            collapsible
+            style={{ boxShadow: "0 0 10px rgba(61, 37, 20, 0.2)" }}
           >
-            {editor && !readOnly && (
-              <Menubar editor={editor} setImageUploads={setImageUploads} />
-            )}
-            <section className="content-body overflow-auto h-full">
-              <EditorContent
-                editor={editor}
-                className="tiptap__wrapper flex-1 h-full"
-                style={{ cursor: readOnly ? "not-allowed" : "text" }}
-              />
-            </section>
-          </div>
-        </Splitter.Panel>
-      </Splitter>
-    </div>
+            <div className="w-full h-full overflow-auto editor__sidebar !px-3">
+              {children}
+            </div>
+          </Splitter.Panel>
+          <Splitter.Panel className="h-full overflow-hidden">
+            {/* Editor */}
+            <div
+              className="editor h-full flex-1 flex flex-col border-2 border-gray-400 rounded-lg overflow-hidden"
+              style={{
+                opacity: readOnly ? 0.6 : 1,
+              }}
+            >
+              {editor && !readOnly && (
+                <Menubar editor={editor} setImageUploads={setImageUploads} />
+              )}
+              <section className="content-body overflow-auto h-full">
+                <EditorContent
+                  editor={editor}
+                  className="tiptap__wrapper flex-1 h-full"
+                  style={{ cursor: readOnly ? "not-allowed" : "text" }}
+                />
+              </section>
+            </div>
+          </Splitter.Panel>
+        </Splitter>
+      </div>
+    </TooltipProvider>
   );
 }

@@ -53,7 +53,7 @@ export default function HighlightsBox() {
             ? "A Comprehensive Foundation with Core Strengths"
             : "Nền tảng đào tạo toàn diện với các thế mạnh cốt lõi"}
         </h2>
-        <div className="boxWrapper !hidden xl:!flex">
+        <div className="boxWrapper mt-[6vw] !hidden xl:!flex">
           <div ref={cubeRef} className="box">
             <div className="face top">
               <div className="rounded-lg p-4 h-full w-full row">
@@ -100,9 +100,13 @@ export default function HighlightsBox() {
                 </figure>
                 <div className="col-6 h-full w-full flex flex-col justify-center">
                   <h2 className="text-white text-center mb-5 text-3xl font-bold">
-                    {locale === "en"
-                      ? "M.O.V.E SYSTEM"
-                      : 'Hệ thống phòng labs "M.O.V.E SYSTEM"'}
+                    {locale === "en" ? (
+                      "MOVE SYSTEM"
+                    ) : (
+                      <>
+                        Hệ thống phòng labs <br /> MOVE SYSTEM
+                      </>
+                    )}
                   </h2>
 
                   <p className="text-white text-justify">
@@ -122,13 +126,13 @@ export default function HighlightsBox() {
                   </p>
 
                   <p className="text-white text-justify">
-                    &bull; <span className="inline-block ml-4"></span>S.E.E
-                    Living Lab <br />
+                    &bull; <span className="inline-block ml-4"></span>SEE Living
+                    Lab <br />
                     &bull; <span className="inline-block ml-4"></span>Smart
                     Mobility Lab <br /> &bull;{" "}
                     <span className="inline-block ml-4"></span>CE-Rail@UEH
                     <br /> &bull; <span className="inline-block ml-4"></span>
-                    CTrl Lab
+                    ClrLab
                   </p>
                 </div>
               </div>

@@ -44,13 +44,13 @@ export default async function page({ params }: RequestProps) {
                 </Link>
               )}
             </h3>
-            <h6 className="text-color">
+            <h5 className="text-color">
               <DomParser content={data.metadata.title} />
-            </h6>
+            </h5>
             <div className="mt-5">
               {data.metadata.interest && data.metadata.interest?.length > 0 && (
                 <div>
-                  <h4 className="mb-2 text-base">{i18n("interest")}</h4>
+                  <h4 className="mb-2 text-base!">{i18n("interest")}</h4>
                   <ul className="w-ful max-h-[200px] row flex-col flex-wrap gap-x-2 justify-between">
                     {data.metadata.interest.map((int) => (
                       <li key={int} className="text-base mb-3 col-5">

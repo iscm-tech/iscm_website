@@ -35,15 +35,13 @@ const customPlugin: Plugin<[CustomPluginOptions?]> = (options) => {
         if (String(node.properties.src).startsWith("blob")) {
           node.properties.src = `/images/${options?.category}/${options?.folderName}/${node.properties.alt}`;
         } else if (
-          String(node.properties.src).startsWith(
-            envConfig.API_ENDPOINT
-          )
+          String(node.properties.src).startsWith(envConfig.API_ENDPOINT)
         ) {
           node.properties.src = String(node.properties.src).substring(
-            String(node.properties.src).lastIndexOf("/images")
+            String(node.properties.src).lastIndexOf("/images"),
           );
         }
-      }
+      },
     );
   };
 };
@@ -51,7 +49,7 @@ const customPlugin: Plugin<[CustomPluginOptions?]> = (options) => {
 export default async function processHTMLContent(
   htmlcontent: string,
   category: string,
-  folderName: string
+  folderName: string,
 ): Promise<string> {
   const unified = (await import("unified")).unified;
   const rehypeParse = (await import("rehype-parse")).default;
@@ -84,7 +82,7 @@ function stripClassStylePlugin<Tree>(): (tree: Tree) => void {
         delete props.class; // sometimes "class"
         delete props.className; // sometimes "className" (array/string)
         delete props.style; // style string/object
-      }
+      },
     );
   };
 }
@@ -120,7 +118,7 @@ function customImageDomainPlugin<Tree>(): (tree: Tree) => void {
             type: "element",
             tagName: "figure",
             properties: {
-              class: "w-100",
+              class: "w-full",
               style:
                 "display: flex; flex-direction: column; align-items: center; justify-content: center",
             },
@@ -130,7 +128,7 @@ function customImageDomainPlugin<Tree>(): (tree: Tree) => void {
         } else {
           parent.children[index] = imgNode;
         }
-      }
+      },
     );
   };
 }

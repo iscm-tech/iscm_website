@@ -19,7 +19,7 @@ export default async function page({ searchParams, params }: RequestProps) {
             <div className="row items-stretch md:justify-stretch justify-center">
               {data.map(({ name, image, title, id }) => (
                 <div
-                  className="col-lg-3 col-sm-6 max-w-[350px] mb-4 h-[450px] lg:h-[500px]"
+                  className="col-lg-3 col-sm-6 max-w-[350px] mb-4 h-[450px] lg:h-[530px]"
                   key={name}
                 >
                   <MemberCard
@@ -30,7 +30,7 @@ export default async function page({ searchParams, params }: RequestProps) {
                     id={id}
                     imageStyle={{
                       objectPosition: "top center",
-                      height: "48%",
+                      height: "40%",
                     }}
                     isDisabled
                   />

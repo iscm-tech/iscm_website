@@ -10,10 +10,12 @@ import infoVi from "./data/vi";
 import infoEn from "./data/en";
 import Link from "next/link";
 
-export default function Info({ data }: { data: CourseType }) {
+export default function Info() {
   const locale = useLocale();
 
-  const [type, setType] = useState<"standard" | "executive">("standard");
+  const [courseType, setCourseType] = useState<"standard" | "executive">(
+    "standard",
+  );
 
   const [info, setInfo] = useState(locale === "en" ? infoEn : infoVi);
 
@@ -26,31 +28,29 @@ export default function Info({ data }: { data: CourseType }) {
     <div className="content">
       <ul className="program-opts flex border border-black">
         <li
-          className="flex-1 border-right border-black !p-0 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]"
+          className={`flex-1 border-right border-black !p-0 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]! ${courseType == "standard" ? "text-[#ce2027]!" : "text-black!"}`}
           style={{
             ...ibm_plex_sans.style,
-            color: type === "standard" ? "#ce2027" : "black",
           }}
-          onClick={() => setType("standard")}
+          onClick={() => setCourseType("standard")}
         >
-          <p className="w-full h-full p-2 flex items-center justify-center font-bold text-inherit hover:text-[#ce2027] ">
+          <p className="w-full h-full p-2 flex items-center justify-center font-bold! text-inherit! hover:text-[#ce2027]!">
             {locale === "en" ? "Standard" : "Hệ chính quy"}
           </p>
         </li>
         <li
-          className="flex-1 border-right border-black !p-0 last:!border-none mb-0 cursor-pointer hover:bg-[#F0F0F0]"
+          className={`flex-1 border-right border-black !p-0 last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]! ${courseType == "executive" ? "text-[#ce2027]!" : "text-black!"}`}
           style={{
             ...ibm_plex_sans.style,
-            color: type === "executive" ? "#ce2027" : "black",
           }}
-          onClick={() => setType("executive")}
+          onClick={() => setCourseType("executive")}
         >
-          <p className="w-full h-full p-2 flex items-center justify-center font-bold text-inherit hover:text-[#ce2027] ">
+          <p className="w-full h-full p-2 flex items-center justify-center font-bold! text-inherit! hover:text-[#ce2027]!">
             {locale === "en" ? "Executive" : "Hệ điều hành cao cấp"}
           </p>
         </li>
         <li
-          className="flex-1 !px-0 border-right border-black last:!border-none mb-0 text-center font-bold cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]"
+          className="flex-1 !px-0 border-right border-black last:!border-none mb-0 text-center font-bold! cursor-pointer hover:bg-[#F0F0F0] hover:text-[#ce2027]!"
           style={{
             ...ibm_plex_sans.style,
           }}
@@ -67,11 +67,11 @@ export default function Info({ data }: { data: CourseType }) {
       </ul>
 
       <div className="mt-2 p-3 border border-black">
-        <p className="mb-3">{info[type].about}</p>
+        <p className="mb-3">{info[courseType].about}</p>
 
         <div className="info__container mt-3">
           <CollapseInfo
-            data={info[type].accordion.map((item) => ({
+            data={info[courseType].accordion.map((item) => ({
               key: item.label,
               label: item.label,
               children: item.content,

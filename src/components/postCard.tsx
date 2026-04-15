@@ -21,7 +21,7 @@ export default function PostCard({
   return (
     <List.Item className="block">
       <Link
-        className="row hover:text-[#ce2027] py-2 border-t-[1px] rounded-bl-[calc(0.25rem)] rounded-br-[calc(0.25rem)] transition-shadow hover:shadow-xl duration-300"
+        className="row hover:text-[#ce2027]! py-2 border-t-[1px] border-[#d9d9d9] rounded-bl-[calc(0.25rem)] rounded-br-[calc(0.25rem)] transition-shadow hover:shadow-xl duration-300"
         href={`/${basePath}/${item.slug}`}
       >
         <div className="col-md-4 col-12" style={{ aspectRatio: 1200 / 630 }}>
@@ -37,12 +37,12 @@ export default function PostCard({
 
         <div className="col-md-7 col-12 h-full flex flex-col justify-center">
           <Skeleton title={false} loading={false} active>
-            <h4 className="float-start inline mb-0 !text-current text-base transition-colors duration-300 w-fit">
+            <h5 className="float-start inline mb-0 !text-current text-base! transition-colors duration-300 font-bold! w-fit">
               {item.title}
-            </h4>
+            </h5>
 
             <div className="flex gap-10 mb-2">
-              <em className="text-sm text-[#545658]">
+              <em className="text-sm text-[#545658]!">
                 {format(
                   item.publishDate,
                   locale === "en" ? "dd LLL, yyyy" : "dd 'tháng' MM 'năm' yyyy",
@@ -54,7 +54,7 @@ export default function PostCard({
             </div>
 
             {item?.description && (
-              <p className="mb-0 text-justify text-[15px] leading-snug line-clamp-6 text-[#232323]">
+              <p className="mb-0 text-justify text-[15px]! leading-snug! line-clamp-6 text-[#232323]!">
                 {getInnerText(item.description)}
               </p>
             )}

@@ -67,7 +67,7 @@ export default function StickyNav({
           </ul>
 
           <h1
-            className={`mb-0 flex-1 w-full h-fit transition-all duration-1000 !text-left !mt-3 lg:!mt-0 lg:!text-center text-base lg:text-lg xl:text-xl ${
+            className={`mb-0 flex-1 w-full h-fit transition-all duration-1000 !text-left !mt-3 lg:!mt-0 lg:!text-center text-base! lg:text-lg! xl:text-xl! ${
               isSticky
                 ? "visible scale-100 opacity-100"
                 : "hidden scale-0 opacity-0"

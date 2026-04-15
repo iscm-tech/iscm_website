@@ -73,7 +73,7 @@ export default async function AboutPage() {
                       ? "Assoc.Prof. Tú Anh Trinh"
                       : "PGS.TS. Trịnh Tú Anh"}
                   </b>
-                  <span className="inline-block !text-[#A9A8A8] mb-0 text-base">
+                  <span className="inline-block !text-[#141414] mb-0 text-base">
                     {locale === "en" ? "Director" : "Viện trưởng"} <br />{" "}
                     {locale === "en" ? (
                       <>
@@ -89,7 +89,7 @@ export default async function AboutPage() {
               </figure>
             </div>
             <div className="col-md-8 col-12">
-              <p className="text-justify bg-gray-100 p-4 italic">
+              <p className="text-justify bg-gray-100 p-4 italic font-normal!">
                 <DomParser content={i18n("about_quote")} />
               </p>
               <p className="font-bold mt-3"></p>

@@ -72,6 +72,7 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
   return (
     <FeatureEventStyled className="row">
       <div className="col-12 col-lg-5 ">
+        {/* Mobile */}
         <div className="row bg-[#ccc] rounded-2xl mb-3 py-3 !flex lg:!hidden">
           <div className="col-12 text-black font-bold">
             {locale === "en"
@@ -82,11 +83,11 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
             {events.map((event) => (
               <div
                 key={event.id}
-                className={`px-2 py-1 rounded-md ${selectedEvent.id === event.id ? "bg-[#000] text-white" : "text-black"} transition-all duration-200 hover:bg-[#000] cursor-pointer hover:text-white`}
+                className={`px-2 py-1 rounded-md ${selectedEvent.id === event.id ? "bg-[#000] !text-white" : "!text-black"} transition-all duration-200 hover:bg-[#000] cursor-pointer hover:text-white!`}
                 onClick={() => setSelectedEvent(event)}
               >
                 <p
-                  className={`text-current !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
+                  className={`text-current! !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
                 >
                   {
                     formatDate(
@@ -96,7 +97,7 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
                   }
                 </p>
                 <p
-                  className={`text-current !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
+                  className={`text-current! !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
                   style={{ fontSize: "100%" }}
                 >
                   {
@@ -110,26 +111,24 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
             ))}
           </div>
         </div>
-
+        {/* ------ */}
         <div
           className="row bg-[#91171b] rounded-2xl"
           onMouseEnter={() => setIsHoldEvent(true)}
           onMouseLeave={() => setIsHoldEvent(false)}
         >
           <div className="col-12 py-3">
-            <h3 className="text-white h-[68px] text-xl">
-              {selectedEvent.title}
-            </h3>
+            <h4 className="text-white h-24 text-xl!">{selectedEvent.title}</h4>
             <div className="flex items-baseline justify-between">
               {/* Event Time */}
               {selectedEvent.eventTime && (
                 <div className="flex items-center text-sm">
                   {isEqual(Date.now(), selectedEvent.eventTime) ? (
-                    <span className="mb-0 mr-1 text-[#fff] font-bold uppercase">
+                    <span className="mb-0 mr-1 text-white font-bold uppercase">
                       {locale === "en" ? "[Ongoing]" : "[Đang diễn ra]"}
                     </span>
                   ) : isBefore(Date.now(), selectedEvent.eventTime) ? (
-                    <span className="mb-0 mr-1 text-[#fff] font-bold uppercase">
+                    <span className="mb-0 mr-1 text-white font-bold uppercase">
                       {locale === "en" ? "[Upcoming]" : "[Sắp diễn ra]"}
                     </span>
                   ) : (
@@ -166,6 +165,8 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
             </Link>
           </div>
         </div>
+
+        {/* Desktop */}
         <div className="row bg-[#ccc] rounded-2xl mt-3 py-3 !hidden lg:!flex">
           <div className="col-12 text-black font-bold">
             {locale === "en"
@@ -176,11 +177,11 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
             {events.map((event) => (
               <div
                 key={event.id}
-                className={`px-2 py-1 rounded-md ${selectedEvent.id === event.id ? "bg-[#000] text-white" : "text-black"} transition-all duration-200 hover:bg-[#000] cursor-pointer hover:text-white`}
+                className={`px-2 py-1 rounded-md ${selectedEvent.id === event.id ? "bg-[#000] text-white!" : "text-black!"} transition-all duration-200 hover:bg-[#000] cursor-pointer hover:text-white!`}
                 onClick={() => setSelectedEvent(event)}
               >
                 <p
-                  className={`text-current !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
+                  className={`text-current! !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
                 >
                   {
                     formatDate(
@@ -190,7 +191,7 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
                   }
                 </p>
                 <p
-                  className={`text-current !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
+                  className={`text-current! !text-base text-center mb-0 ${selectedEvent.id === event.id ? "font-bold" : ""}`}
                   style={{ fontSize: "100%" }}
                 >
                   {
@@ -204,15 +205,17 @@ export default function FeatureEvent({ events }: { events: EventCardType[] }) {
             ))}
           </div>
         </div>
+        {/* ------ */}
       </div>
+
       <div
-        className="col-12 col-lg-7 mt-2 lg:!mt-0 !px-0 lg:!px-[15px]"
+        className="col-12 col-lg-7 mt-2 flex flex-col lg:!mt-0 !px-0 lg:!px-[15px]"
         onMouseEnter={() => setIsHoldEvent(true)}
         onMouseLeave={() => setIsHoldEvent(false)}
       >
         <Link
           href={`/events/${selectedEvent.slug}`}
-          className="hover:opacity-70"
+          className="hover:opacity-70 flex-1"
         >
           <figure className="rounded-2xl overflow-hidden">
             <Image

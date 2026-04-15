@@ -18,79 +18,6 @@ export default function Strengths() {
 
   const strengths = locale === "en" ? strengthsEn : strengthsVi;
 
-  // useLayoutEffect(() => {
-  //   if (!sectionRef.current || !viewportRef.current) return;
-
-  //   const ctx = gsap.context(() => {
-  //     const items = itemsRef.current.filter(Boolean);
-  //     const viewport = viewportRef.current!;
-  //     if (!items.length) return;
-
-  //     let deltas: number[] = [];
-  //     let setters: ((v: number) => void)[] = [];
-
-  //     const measure = () => {
-  //       gsap.set(items, { x: 0 });
-
-  //       const vpRect = viewport.getBoundingClientRect();
-  //       const vpWidth = vpRect.width;
-
-  //       const firstItemRect = items[0].getBoundingClientRect();
-  //       const itemWidth = firstItemRect.width;
-
-  //       const spacing = (vpWidth - itemWidth) / (items.length - 1);
-
-  //       deltas = items.map((el, i) => {
-  //         const r = el.getBoundingClientRect();
-  //         const currentLeft = r.left - vpRect.left;
-
-  //         const targetLeft = spacing * i;
-
-  //         return targetLeft - currentLeft;
-  //       });
-
-  //       setters = items.map(
-  //         (el) => gsap.quickSetter(el, "x", "px") as (v: number) => void,
-  //       );
-  //     };
-
-  //     measure();
-
-  //     const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
-  //     const delayStep = 0.08;
-  //     const activeSpan = 0.55;
-
-  //     const st = ScrollTrigger.create({
-  //       trigger: sectionRef.current!,
-  //       start: "top top",
-  //       end: "bottom 70%", // độ dài scroll (bạn chỉnh theo cảm giác)
-  //       scrub: true,
-  //       invalidateOnRefresh: true,
-  //       onRefresh: measure,
-  //       onUpdate: (self) => {
-  //         const p = self.progress;
-
-  //         for (let i = 0; i < items.length; i++) {
-  //           const pi = clamp01((p - delayStep * i) / activeSpan);
-  //           const eased = gsap.parseEase("power2.out")(pi);
-  //           setters[i](deltas[i] * eased);
-  //         }
-  //       },
-  //     });
-
-  //     // responsive: khi resize thì refresh lại
-  //     const onResize = () => ScrollTrigger.refresh();
-  //     window.addEventListener("resize", onResize);
-
-  //     return () => {
-  //       window.removeEventListener("resize", onResize);
-  //       st.kill();
-  //     };
-  //   }, sectionRef);
-
-  //   return () => ctx.revert();
-  // }, []);
-
   return (
     <section className="career-section" ref={sectionRef}>
       <div className="wrapper" ref={viewportRef}>
@@ -118,7 +45,7 @@ export default function Strengths() {
                   WebkitTextStrokeWidth: "2.5px",
                   ...barlow.style,
                 }}
-                className={`text-7xl font-bold text-transparent`}
+                className={`text-5xl! font-bold! text-transparent!`}
               >
                 0{idx + 1}
               </h5>
