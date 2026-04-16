@@ -62,8 +62,8 @@ export default function page() {
             : Thúc đẩy văn hóa chia sẻ tri thức (Knowledge Sharing) thông qua
             thư viện nội bộ. Quy trình mượn và chia sẻ sách giúp các thành viên
             tiếp cận dễ dàng với nguồn tài liệu chuyên ngành quý giá, đồng thời
-            cùng nhau làm giàu thêm kho tàng kiến thức chung của "đại gia đình"
-            ISCM.
+            cùng nhau làm giàu thêm kho tàng kiến thức chung của &quot;đại gia
+            đình&quot; ISCM.
           </li>
         </ul>
       </div>

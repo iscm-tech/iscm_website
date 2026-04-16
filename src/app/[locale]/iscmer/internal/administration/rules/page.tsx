@@ -41,8 +41,8 @@ export default function page() {
         </ul>
         <h4>2. Tác phong và Văn hóa làm việc</h4>
         <p>
-          Với phương châm "Learning by Doing" và "Together we do the best", mỗi
-          thành viên ISCM đều là một đại sứ thương hiệu:
+          Với phương châm &quot;Learning by Doing&quot; và &quot;Together we do
+          the best&quot;, mỗi thành viên ISCM đều là một đại sứ thương hiệu:
         </p>
         <ul className="list-disc! pl-4 mb-4">
           <li className="list-item!">
@@ -57,7 +57,7 @@ export default function page() {
           <li className="list-item!">
             Quản lý cảm xúc (Self-manage Mood): Khuyến khích sự tích cực, thẳng
             thắn trong trao đổi (Direct Talk) và luôn hỗ trợ đồng đội với tinh
-            thần "Make Smiles – Be Happy".
+            thần &quot;Make Smiles – Be Happy&quot;.
           </li>
         </ul>
         <h4>3. Trách nhiệm với cộng đồng và Tài sản chung</h4>
@@ -69,7 +69,7 @@ export default function page() {
           </li>
           <li className="list-item!">
             Chia sẻ tri thức (Knowledge Sharing): Sẵn sàng chuyển giao thông
-            tin, hỗ trợ và bảo vệ các thành viên trong "đại gia đình" ISCM để
+            tin, hỗ trợ và bảo vệ các thành viên trong &quot;đại gia đình&quot; ISCM để
             cùng nhau phát triển hài hòa với cộng đồng.
           </li>
         </ul>

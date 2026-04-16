@@ -18,7 +18,7 @@ const yearPlanImgs = {
 
 type Year = keyof typeof yearPlanImgs;
 
-export default function page() {
+export default function Page() {
   const [yearPlan, setYearPlan] = useState<Year>(2026);
 
   return (
