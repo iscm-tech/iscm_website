@@ -184,17 +184,6 @@ export const iscmerMenuEn: MenuType = {
           name: "Program Duration & Timeline",
           url: "/iscmer/ueh/program_duration",
         },
-        // { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
-        // { name: "Finance & Accounting", url: "https://tckt.ueh.edu.vn" },
-        // { name: "Knowledge Hub", url: "https://hotro.ueh.edu.vn" },
-        // {
-        //   name: "Training Programme Finder",
-        //   url: "https://student.ueh.edu.vn/Public/TraCuuNganh",
-        // },
-        // {
-        //   name: "Program Duration & Timeline",
-        //   url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
-        // },
       ],
     },
     {
