@@ -5,7 +5,7 @@ import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 
 import { iscmerMenuEn, mainMenuEn } from "../../constants/en/index";
-import { mainMenuVi } from "@/constants/vi";
+import { iscmerMenuVi, mainMenuVi } from "@/constants/vi";
 import { Fragment } from "react";
 import { Switch } from "antd";
 import styled from "styled-components";
@@ -149,7 +149,7 @@ export default function Header() {
   const { data: session } = useSession();
 
   const mainMenu = locale === "en" ? mainMenuEn : mainMenuVi;
-  const iscmerMenu = locale === "en" ? iscmerMenuEn : iscmerMenuEn;
+  const iscmerMenu = locale === "en" ? iscmerMenuEn : iscmerMenuVi;
 
   const handleRedirectLocale = (checked: boolean) => {
     //  checked = En
@@ -236,9 +236,9 @@ export default function Header() {
                   onChange={handleRedirectLocale}
                 />
 
-                {/* <div className="ml-3 h-full py-3">
+                <div className="ml-3 h-full py-3">
                   <SearchBar />
-                </div> */}
+                </div>
               </ul>
               {session?.AT && iscmerMenu?.subMenu && (
                 <div className="flex items-center">

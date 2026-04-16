@@ -6,7 +6,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="py-4">
+    <div className="py-4 container">
       <h1 className="text-center uppercase">Hướng dẫn sử dụng Website UEH</h1>
       <Collapse
         ghost
@@ -17,7 +17,7 @@ export default function page() {
             key: "ueher",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -76,7 +76,7 @@ export default function page() {
             key: "tckt",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -134,7 +134,7 @@ export default function page() {
             key: "smartoffice",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -191,7 +191,7 @@ export default function page() {
             key: "eoffice",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -244,7 +244,7 @@ export default function page() {
             key: "khotrithuc",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -303,7 +303,7 @@ export default function page() {
             key: "dangkyphong",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -362,7 +362,7 @@ export default function page() {
             key: "tracuuchuongtrinhdaotao",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"
@@ -397,7 +397,7 @@ export default function page() {
             key: "khungthoigiandaotao",
             showArrow: false,
             label: (
-              <div className="py-3 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
+              <div className="py-2 pl-8 text-white bg-[#CD2027] flex gap-6 items-center">
                 <AlignJustifyIcon />
                 <h3
                   className="uppercase text-white mb-0"

@@ -167,124 +167,136 @@ export const mainMenuEn: Array<MenuType> = [
 
 export const iscmerMenuEn: MenuType = {
   name: "ISCMer",
+  url: "iscmer",
   subMenu: [
     {
-      name: "UEH & Các đơn vị trực thuộc UEH",
+      name: "UEH & Affiliated Units",
       url: "ueher",
       group: [
-        { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
-        { name: "Tài chính kế toán", url: "https://tckt.ueh.edu.vn" },
-        { name: "Kho tri thức", url: "https://hotro.ueh.edu.vn" },
+        { name: "UEHer", url: "/iscmer/ueh/ueher" },
+        { name: "Finance & Accounting", url: "/iscmer/ueh/finance&accounting" },
+        { name: "Knowledge Hub", url: "/iscmer/ueh/knowledge_hub" },
         {
-          name: "Tra cứu chương trình đào tạo",
-          url: "https://student.ueh.edu.vn/Public/TraCuuNganh",
+          name: "Training Programme Finder",
+          url: "/iscmer/ueh/program_finder",
         },
         {
-          name: "Khung thời gian đào tạo",
-          url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
+          name: "Program Duration & Timeline",
+          url: "/iscmer/ueh/program_duration",
         },
+        // { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
+        // { name: "Finance & Accounting", url: "https://tckt.ueh.edu.vn" },
+        // { name: "Knowledge Hub", url: "https://hotro.ueh.edu.vn" },
+        // {
+        //   name: "Training Programme Finder",
+        //   url: "https://student.ueh.edu.vn/Public/TraCuuNganh",
+        // },
+        // {
+        //   name: "Program Duration & Timeline",
+        //   url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
+        // },
       ],
     },
     {
-      name: "Thông tin tổng thể",
+      name: "Overview",
       group: [
         {
           name: "ISCM Strategy/Plan",
-          url: "/strategy+plan",
+          url: "/iscmer/internal/strategy+plan",
         },
         {
           name: "ISCM & UEH",
-          url: "/iscm&ueh",
+          url: "/iscmer/internal/iscm&ueh",
         },
         {
           name: "ISCM & CTD",
-          url: "/iscm&ctd",
+          url: "/iscmer/internal/iscm&ctd",
         },
         {
           name: "ISCM & UEH Sustainability",
-          url: "/iscm&ueh_sustainability",
+          url: "/iscmer/internal/iscm&ueh_sustainability",
         },
         {
           name: "ISCM & Covergence Tech Hub",
-          url: "/iscm&convergence_tech_hub",
+          url: "/iscmer/internal/iscm&convergence_tech_hub",
         },
         {
           name: "ISCM & MakerSpace",
-          url: "/iscm&makerspace",
+          url: "/iscmer/internal/iscm&makerspace",
         },
         {
-          name: "Cơ cấu tổ chức ISCM",
-          url: "/company_organization",
+          name: "Organizational Structure",
+          url: "/iscmer/internal/company_organization",
         },
         {
-          name: "Đánh giá ISCM Members",
-          url: "/iscm_members_evaluation",
+          name: "Review and Assessment of ISCM Members",
+          url: "/iscmer/internal/iscm_members_evaluation",
         },
       ],
     },
     {
-      name: "Quản trị chung",
+      name: "General Administration",
       group: [
         {
-          name: "Nội quy và Quy định",
-          url: "/internal_rules",
+          name: "Internal Rules and Regulations",
+          url: "/iscmer/administration/rules",
         },
         {
-          name: "Quy chế chi tiêu nội bộ",
-          url: "/internal_financial_policy",
+          name: "Internal Financial Policy",
+          url: "/iscmer/administration/financial_policy",
         },
         {
           name: "Minute Report",
-          url: "/minute_report",
+          url: "/iscmer/administration/minute_report",
         },
         {
-          name: "Quản trị Tổ chức sự kiện",
-          url: "/process_event",
+          name: "Event Planning & Management",
+          url: "/iscmer/administration/process/event",
         },
         {
-          name: "Quản trị Thiết bị",
-          url: "/process_equipment",
+          name: "Facility & Equipment Management",
+          url: "/iscmer/administration/process/equipment",
         },
         {
-          name: "Quản trị Sách",
-          url: "/process_book",
+          name: "Book Management",
+          url: "/iscmer/administration/process/book",
         },
         {
-          name: "Quản trị Nội dung",
-          url: "/process_content",
+          name: "Templates - Documents",
+          url: "/iscmer/administration/templates",
         },
       ],
     },
     {
-      name: "Quản trị theo từng nhóm riêng",
+      name: "Group-based Management",
       group: [
         {
+          name: "Storage Structure",
+          url: "/iscmer/groups/storage_structure",
+        },
+        {
           name: "Operation & Finance",
-          url: "/group_operation_finance",
+          url: "/iscmer/groups/operation_finance",
         },
         {
           name: "Academia",
-          url: "/group_academia",
+          url: "/iscmer/groups/academia",
         },
         {
           name: "Research",
-          url: "/group_research",
+          url: "/iscmer/groups/research",
         },
         {
           name: "Community Engagement",
-          url: "/group_community_engagement",
+          url: "/iscmer/groups/community_engagement",
         },
         {
           name: "PR & Communication",
-          url: "/group_pr_communication",
-        },
-        {
-          name: "Design",
-          url: "/group_design",
+          url: "/iscmer/groups/pr_communication",
         },
         {
           name: "Partnership",
-          url: "/group_partnership",
+          url: "/iscmer/groups/partnership",
         },
       ],
     },

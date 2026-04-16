@@ -5,16 +5,20 @@ import Image from "next/image";
 export default function page() {
   return (
     <div className="mx-auto w-full">
-      <figure className="w-full flex! items-center justify-center bg-[#F0F6FB]">
-        <Image
-          src={`${envConfig.API_ENDPOINT}/public/static/images/event_series/2026.png`}
-          alt="Timeline 2026"
-          width={2400}
-          height={2000}
-          quality={95}
-          className="w-full max-w-[70vw]"
-        />
-      </figure>
+      <div className="bg-[#F0F6FB]">
+        <div className="container">
+          <figure className="row items-center justify-center">
+            <Image
+              src={`${envConfig.API_ENDPOINT}/public/static/images/event_series/2026.png`}
+              alt="Timeline 2026"
+              width={2400}
+              height={2000}
+              quality={95}
+              className="object-cover w-full"
+            />
+          </figure>
+        </div>
+      </div>
 
       <section className="container">
         <div className="row">

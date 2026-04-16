@@ -170,62 +170,119 @@ export const iscmerMenuVi: MenuType = {
       name: "UEH & Các đơn vị trực thuộc UEH",
       url: "ueher",
       group: [
-        { name: "UEHer", url: "https://ueh.edu.vn/ueher" },
-        { name: "Tài chính kế toán", url: "https://tckt.ueh.edu.vn" },
-        { name: "Kho tri thức", url: "https://hotro.ueh.edu.vn" },
+        { name: "UEHer", url: "/iscmer/ueh/ueher" },
+        { name: "Tài chính kế toán", url: "/iscmer/ueh/finance&accounting" },
+        { name: "Kho tri thức", url: "/iscmer/ueh/knowledge_hub" },
         {
           name: "Tra cứu chương trình đào tạo",
-          url: "https://student.ueh.edu.vn/Public/TraCuuNganh",
+          url: "/iscmer/ueh/program_finder",
         },
         {
           name: "Khung thời gian đào tạo",
-          url: "https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao",
+          url: "/iscmer/ueh/program_duration",
         },
       ],
     },
     {
-      name: "Thông tin nội bộ",
+      name: "Thông tin tổng thể",
       group: [
         {
-          name: "Nội quy",
-          url: "/internal_rules",
+          name: "Chiến lược/Kế hoạch ISCM",
+          url: "/iscmer/internal/strategy+plan",
         },
         {
-          name: "Kế hoạch năm",
-          url: "/event_series",
+          name: "ISCM & UEH",
+          url: "/iscmer/internal/iscm&ueh",
         },
         {
-          name: "Sơ đồ tổ chức",
-          url: "/company_organization",
+          name: "ISCM & CTD",
+          url: "/iscmer/internal/iscm&ctd",
         },
         {
-          name: "Quy trình",
-          url: "/network",
+          name: "ISCM & UEH Bền vững",
+          url: "/iscmer/internal/iscm&ueh_sustainability",
         },
         {
-          name: "Chiến lược phát triển ISCM",
-          url: "/iscm_growth_stategy",
+          name: "ISCM & Covergence Tech Hub",
+          url: "/iscmer/internal/iscm&convergence_tech_hub",
+        },
+        {
+          name: "ISCM & MakerSpace",
+          url: "/iscmer/internal/iscm&makerspace",
+        },
+        {
+          name: "Cơ cấu tổ chức",
+          url: "/iscmer/internal/company_organization",
+        },
+        {
+          name: "Đánh giá nhân sự",
+          url: "/iscmer/internal/iscm_members_evaluation",
+        },
+      ],
+    },
+    {
+      name: "Quản trị chung",
+      group: [
+        {
+          name: "Nội quy và Quy định",
+          url: "/iscmer/administration/rules",
         },
         {
           name: "Quy chế chi tiêu nội bộ",
-          url: "/financial_policy",
+          url: "/iscmer/administration/financial_policy",
+        },
+        {
+          name: "Biên bản họp",
+          url: "/iscmer/administration/minute_report",
+        },
+        {
+          name: "Quản trị Tổ chức sự kiện",
+          url: "/iscmer/administration/process/event",
+        },
+        {
+          name: "Quản trị Thiết bị",
+          url: "/iscmer/administration/process/equipment",
+        },
+        {
+          name: "Quản trị Sách",
+          url: "/iscmer/administration/process/book",
+        },
+        {
+          name: "Mẫu - Tài liệu",
+          url: "/iscmer/administration/templates",
         },
       ],
     },
     {
-      name: "Quy trình nội bộ",
+      name: "Quản trị theo từng nhóm riêng",
       group: [
         {
-          name: "Tổ chức sự kiện",
-          url: "/process_event",
+          name: "Tổng quan cấu trúc lưu trữ",
+          url: "/iscmer/groups/storage_structure",
         },
         {
-          name: "Mượn thiết bị",
-          url: "/process_equipment",
+          name: "Vận hành & Tài chính",
+          url: "/iscmer/groups/operation_finance",
         },
         {
-          name: "Mượn/Share sách ISCM",
-          url: "/process_book",
+          name: "Học thuật",
+          url: "/iscmer/groups/academia",
+        },
+        {
+          name: "Nghiên cứu",
+          url: "/iscmer/groups/research",
+        },
+        {
+          name: "Gắn kết cộng đồng",
+          url: "/iscmer/groups/community_engagement",
+        },
+        {
+          name: "Truyền thông & Quan hệ Công chúng",
+          url: "/iscmer/groups/pr_communication",
+        },
+        {
+          name: "Hợp tác quốc tế",
+          url: "/iscmer/groups/partnership",
         },
       ],
     },
