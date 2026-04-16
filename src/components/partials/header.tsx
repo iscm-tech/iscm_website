@@ -39,9 +39,11 @@ const HeaderStyled = styled.header`
 
 export const NavMenuItemWithSubMenu = ({
   name,
+  url,
   subMenu,
 }: {
   name: string;
+  url?: string;
   subMenu: Array<{
     name: string;
     group?: Array<{ name: string; url: string }>;
@@ -52,14 +54,29 @@ export const NavMenuItemWithSubMenu = ({
 
   return (
     <li className="nav-item before:hidden dropdown align-self-lg-stretch flex !static">
-      <div
-        style={{ cursor: "pointer" }}
-        className="nav-link nav-item dropdown-toggle"
-        role="button"
-        data-toggle="dropdown"
-      >
-        {name}
-      </div>
+      {!url && (
+        <div
+          style={{ cursor: "pointer" }}
+          className="nav-link nav-item dropdown-toggle"
+          role="button"
+          data-toggle="dropdown"
+        >
+          {name}
+        </div>
+      )}
+
+      {url && (
+        <Link
+          locale={locale}
+          style={{ cursor: "pointer" }}
+          className="nav-link nav-item dropdown-toggle"
+          role="button"
+          data-toggle="dropdown"
+          href={url}
+        >
+          {name}
+        </Link>
+      )}
 
       {/* Menu */}
       <div className="dropdown-menu w-full lg:!absolute lg:!top-[calc(100%-2px)] lg:!left-0 overflow-x-auto">
@@ -222,6 +239,7 @@ export default function Header() {
                   {session?.AT && iscmerMenu?.subMenu && (
                     <NavMenuItemWithSubMenu
                       name={iscmerMenu.name}
+                      url={iscmerMenu.url}
                       subMenu={iscmerMenu.subMenu}
                     />
                   )}

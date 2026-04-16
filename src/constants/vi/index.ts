@@ -165,6 +165,7 @@ export const mainMenuVi: Array<MenuType> = [
 
 export const iscmerMenuVi: MenuType = {
   name: "ISCMer",
+  url: "/iscmer",
   subMenu: [
     {
       name: "UEH & Các đơn vị trực thuộc UEH",
@@ -185,38 +186,39 @@ export const iscmerMenuVi: MenuType = {
     },
     {
       name: "Thông tin tổng thể",
+      url: "/iscmer",
       group: [
         {
           name: "Chiến lược/Kế hoạch ISCM",
-          url: "/iscmer/internal/strategy+plan",
+          url: "/iscmer/internal/overview/strategy+plan",
         },
         {
           name: "ISCM & UEH",
-          url: "/iscmer/internal/iscm&ueh",
+          url: "/iscmer/internal/overview/ueh",
         },
         {
           name: "ISCM & CTD",
-          url: "/iscmer/internal/iscm&ctd",
+          url: "/iscmer/internal/overview/ctd",
         },
         {
           name: "ISCM & UEH Bền vững",
-          url: "/iscmer/internal/iscm&ueh_sustainability",
+          url: "/iscmer/internal/overview/ueh_sustainability",
         },
         {
           name: "ISCM & Covergence Tech Hub",
-          url: "/iscmer/internal/iscm&convergence_tech_hub",
+          url: "/iscmer/internal/overview/convergence_tech_hub",
         },
         {
           name: "ISCM & MakerSpace",
-          url: "/iscmer/internal/iscm&makerspace",
+          url: "/iscmer/internal/overview/makerspace",
         },
         {
           name: "Cơ cấu tổ chức",
-          url: "/iscmer/internal/company_organization",
+          url: "/iscmer/internal/overview/company_organization",
         },
         {
           name: "Đánh giá nhân sự",
-          url: "/iscmer/internal/iscm_members_evaluation",
+          url: "/iscmer/internal/overview/iscm_members_evaluation",
         },
       ],
     },
@@ -225,63 +227,55 @@ export const iscmerMenuVi: MenuType = {
       group: [
         {
           name: "Nội quy và Quy định",
-          url: "/iscmer/administration/rules",
+          url: "/iscmer/internal/administration/rules",
         },
         {
           name: "Quy chế chi tiêu nội bộ",
-          url: "/iscmer/administration/financial_policy",
+          url: "/iscmer/internal/administration/financial_policy",
         },
         {
           name: "Biên bản họp",
-          url: "/iscmer/administration/minute_report",
+          url: "/iscmer/internal/administration/minute_report",
         },
         {
-          name: "Quản trị Tổ chức sự kiện",
-          url: "/iscmer/administration/process/event",
-        },
-        {
-          name: "Quản trị Thiết bị",
-          url: "/iscmer/administration/process/equipment",
-        },
-        {
-          name: "Quản trị Sách",
-          url: "/iscmer/administration/process/book",
+          name: "Quy trình",
+          url: "/iscmer/internal/administration/procedure",
         },
         {
           name: "Mẫu - Tài liệu",
-          url: "/iscmer/administration/templates",
+          url: "/iscmer/internal/administration/templates",
         },
       ],
     },
     {
-      name: "Quản trị theo từng nhóm riêng",
+      name: "Quản trị theo từng nhóm",
       group: [
         {
           name: "Tổng quan cấu trúc lưu trữ",
           url: "/iscmer/groups/storage_structure",
         },
         {
-          name: "Vận hành & Tài chính",
+          name: "Khối Vận hành & Tài chính",
           url: "/iscmer/groups/operation_finance",
         },
         {
-          name: "Học thuật",
+          name: "Khối Học thuật",
           url: "/iscmer/groups/academia",
         },
         {
-          name: "Nghiên cứu",
+          name: "Khối Nghiên cứu",
           url: "/iscmer/groups/research",
         },
         {
-          name: "Gắn kết cộng đồng",
+          name: "Khối Gắn kết cộng đồng",
           url: "/iscmer/groups/community_engagement",
         },
         {
-          name: "Truyền thông & Quan hệ Công chúng",
+          name: "Khối Truyền thông & Quan hệ Công chúng",
           url: "/iscmer/groups/pr_communication",
         },
         {
-          name: "Hợp tác quốc tế",
+          name: "Khối Hợp tác quốc tế",
           url: "/iscmer/groups/partnership",
         },
       ],

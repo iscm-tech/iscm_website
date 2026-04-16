@@ -1,7 +1,7 @@
 import { MenuType } from "@/types/menu.type";
 export const address = "232/6 Vo Thi Sau St., Xuan Hoa Ward, HCMC, Vietnam";
 export const copyright = "© Copyright by ISCM";
-// Menu
+
 export const mainMenuEn: Array<MenuType> = [
   {
     name: "About",
@@ -167,7 +167,7 @@ export const mainMenuEn: Array<MenuType> = [
 
 export const iscmerMenuEn: MenuType = {
   name: "ISCMer",
-  url: "iscmer",
+  url: "/iscmer",
   subMenu: [
     {
       name: "UEH & Affiliated Units",
@@ -188,38 +188,39 @@ export const iscmerMenuEn: MenuType = {
     },
     {
       name: "Overview",
+      url: "/iscmer",
       group: [
         {
           name: "ISCM Strategy/Plan",
-          url: "/iscmer/internal/strategy+plan",
+          url: "/iscmer/internal/overview/strategy+plan",
         },
         {
           name: "ISCM & UEH",
-          url: "/iscmer/internal/iscm&ueh",
+          url: "/iscmer/internal/overview/ueh",
         },
         {
           name: "ISCM & CTD",
-          url: "/iscmer/internal/iscm&ctd",
+          url: "/iscmer/internal/overview/ctd",
         },
         {
           name: "ISCM & UEH Sustainability",
-          url: "/iscmer/internal/iscm&ueh_sustainability",
+          url: "/iscmer/internal/overview/ueh_sustainability",
         },
         {
           name: "ISCM & Covergence Tech Hub",
-          url: "/iscmer/internal/iscm&convergence_tech_hub",
+          url: "/iscmer/internal/overview/convergence_tech_hub",
         },
         {
           name: "ISCM & MakerSpace",
-          url: "/iscmer/internal/iscm&makerspace",
+          url: "/iscmer/internal/overview/makerspace",
         },
         {
           name: "Organizational Structure",
-          url: "/iscmer/internal/company_organization",
+          url: "/iscmer/internal/overview/company_organization",
         },
         {
           name: "Review and Assessment of ISCM Members",
-          url: "/iscmer/internal/iscm_members_evaluation",
+          url: "/iscmer/internal/overview/iscm_members_evaluation",
         },
       ],
     },
@@ -228,31 +229,23 @@ export const iscmerMenuEn: MenuType = {
       group: [
         {
           name: "Internal Rules and Regulations",
-          url: "/iscmer/administration/rules",
+          url: "/iscmer/internal/administration/rules",
         },
         {
           name: "Internal Financial Policy",
-          url: "/iscmer/administration/financial_policy",
+          url: "/iscmer/internal/administration/financial_policy",
         },
         {
           name: "Minute Report",
-          url: "/iscmer/administration/minute_report",
+          url: "/iscmer/internal/administration/minute_report",
         },
         {
-          name: "Event Planning & Management",
-          url: "/iscmer/administration/process/event",
-        },
-        {
-          name: "Facility & Equipment Management",
-          url: "/iscmer/administration/process/equipment",
-        },
-        {
-          name: "Book Management",
-          url: "/iscmer/administration/process/book",
+          name: "Procedure",
+          url: "/iscmer/internal/administration/procedure",
         },
         {
           name: "Templates - Documents",
-          url: "/iscmer/administration/templates",
+          url: "/iscmer/internal/administration/templates",
         },
       ],
     },

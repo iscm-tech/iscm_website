@@ -16,7 +16,7 @@ export default async function layout({
   return (
     <>
       <Header />
-      <section className="pt-[48px] md:pt-[60px] min-h-[70vh]">
+      <section className="pt-[48px] md:pt-[60px] pb-16! min-h-[70vh]">
         {children}
       </section>
       <Footer />
