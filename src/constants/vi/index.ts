@@ -168,7 +168,7 @@ export const iscmerMenuVi: MenuType = {
   subMenu: [
     {
       name: "UEH & Các đơn vị trực thuộc UEH",
-      url: "ueher",
+      url: "/iscmer/ueh",
       group: [
         { name: "UEHer", url: "/iscmer/ueh/ueher" },
         { name: "Tài chính kế toán", url: "/iscmer/ueh/finance&accounting" },

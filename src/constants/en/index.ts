@@ -171,7 +171,7 @@ export const iscmerMenuEn: MenuType = {
   subMenu: [
     {
       name: "UEH & Affiliated Units",
-      url: "ueher",
+      url: "/iscmer/ueh",
       group: [
         { name: "UEHer", url: "/iscmer/ueh/ueher" },
         { name: "Finance & Accounting", url: "/iscmer/ueh/finance&accounting" },
