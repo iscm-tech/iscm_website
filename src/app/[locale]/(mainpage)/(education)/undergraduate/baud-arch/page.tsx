@@ -488,12 +488,9 @@ export default function BAUDArchPage() {
                           </p>
                           <p className="text-black">
                             {locale === "en" ? (
-                              <>
-                                Standard Programs (Vietnamese) <br />
-                                English Standard Programs (100% English)
-                              </>
+                              <>Standard Programs</>
                             ) : (
-                              "Chương trình chuẩn và Chương trình bán phần"
+                              "Chương trình chuẩn"
                             )}
                           </p>
                         </div>
