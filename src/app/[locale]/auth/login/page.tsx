@@ -5,7 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
 import authServices from "@/services/auth.service";
 
-import "../../style.css";
+import "../../../style.css";
 import "./style.css";
 import "@/assets/plugins/bootstrap/bootstrap.min.css";
 import "@/assets/scss/style.scss";
@@ -14,9 +14,15 @@ import { setCookie } from "@/lib/cookies";
 import Image from "next/image";
 import { signIn } from "next-auth/react";
 import { LoginBodySchema } from "@/schemaValidations/auth.schema";
+import { useLocale } from "next-intl";
+import { barlow } from "@/app/fontDeclare";
+import { LinkIcon, MessageCircleWarning } from "lucide-react";
+import { Modal } from "antd";
+import Link from "next/link";
 
 const LoginWithUsernameAndPassword = () => {
   const router = useRouter();
+  const locale = useLocale();
   const { toast } = useToast();
 
   const [isError, setIsError] = useState<boolean>(false);
@@ -58,7 +64,9 @@ const LoginWithUsernameAndPassword = () => {
   return (
     <div>
       <h3 className="w-fit text-4xl font-extrabold mb-7 relative left-1/2 -translate-x-1/2 after:w-[50%] after:h-[3px] after:bg-black after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-3">
-        Login
+        {locale === "en"
+          ? "Adminstrator Page Login"
+          : "Đăng nhập trang quản trị"}
       </h3>
       <form className="flex flex-col gap-5" onSubmit={handleLogin}>
         <div className="control-group">
@@ -66,7 +74,7 @@ const LoginWithUsernameAndPassword = () => {
             htmlFor="email"
             className="block text-base mb-1 transition-colors"
           >
-            Username
+            {locale === "en" ? "Username" : "Tên đăng nhập"}
           </label>
           <div
             className={`border-b-2 ${
@@ -89,7 +97,7 @@ const LoginWithUsernameAndPassword = () => {
             htmlFor="password"
             className="block text-base mb-1 transition-colors"
           >
-            Password
+            {locale === "en" ? "Password" : "Mật khẩu"}
           </label>
           <div
             className={`border-b-2 ${
@@ -113,7 +121,7 @@ const LoginWithUsernameAndPassword = () => {
           </p>
         )}
         <button className="w-full bg-black text-white text-base py-2 rounded-lg">
-          Login
+          {locale === "en" ? "Login" : "Đăng nhập"}
         </button>
       </form>
     </div>
@@ -121,6 +129,7 @@ const LoginWithUsernameAndPassword = () => {
 };
 
 const LoginWithGoogle = () => {
+  const locale = useLocale();
   return (
     <div
       id="customBtn"
@@ -138,13 +147,17 @@ const LoginWithGoogle = () => {
         }}
       ></span>
       <span className="inline-block px-11 align-middle text-base">
-        Login with Google
+        {locale === "en" ? "Login with UEH Email" : "Đăng nhập bằng email UEH"}
       </span>
     </div>
   );
 };
 
 const Auth = () => {
+  const locale = useLocale();
+
+  const [modal, contextHolder] = Modal.useModal();
+
   return (
     <div className="row w-screen h-screen overflow-hidden px-[15px] bg-[#890a17]">
       <figure className="col-8 h-full !p-0">
@@ -167,7 +180,45 @@ const Auth = () => {
           }}
         >
           <LoginWithUsernameAndPassword />
+          <div className="flex items-center justify-between gap-2 mt-5">
+            <div className="flex-1 h-[1px] w-full bg-black"></div>
+            <p className="mb-0!">
+              {locale === "en" ? "For ISCMer Page" : "Truy cập trang ISCMer"}
+            </p>
+            <div className="flex-1 h-[1px] w-full bg-black"></div>
+          </div>
           <LoginWithGoogle />
+
+          <div className="text-sm! italic mt-2">
+            *{" "}
+            {locale === "en" ? (
+              <>
+                New personnel who do not yet have access to the ISCMer website
+                are required to fill out the{" "}
+                <Link
+                  href={"https://forms.gle/FNLB57d2qoa7Zyc2A"}
+                  target="_blank"
+                  className="mb-0 text-sm! text-[#cd2027]! hover:underline! inline-flex items-center gap-1"
+                >
+                  form <LinkIcon size={12} />
+                </Link>{" "}
+                to be granted access.
+              </>
+            ) : (
+              <>
+                Nhân sự mới hoàn toàn, chưa truy cập được vào ISCMer Website cần
+                phải điền vào{" "}
+                <Link
+                  href={"https://forms.gle/FNLB57d2qoa7Zyc2A"}
+                  target="_blank"
+                  className="mb-0 text-sm! text-[#cd2027]! hover:underline! inline-flex items-center gap-1"
+                >
+                  form <LinkIcon size={12} />
+                </Link>{" "}
+                để được cấp quyền truy cập trang.
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

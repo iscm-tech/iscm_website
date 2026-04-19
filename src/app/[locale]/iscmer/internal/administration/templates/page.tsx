@@ -13,7 +13,7 @@ export default function page() {
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://docs.google.com/spreadsheets/d/1ow2qBTsU06JcIjms9_627CDyyAVWmLp5
+            [Nhấn vào đây]
           </Link>
         </p>
         <div className="text-justify">

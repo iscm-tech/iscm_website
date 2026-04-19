@@ -1,3 +1,5 @@
+import { LinkIcon } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -35,6 +37,19 @@ export default function page() {
             do bộ phận chuyên trách (Mai/Trâm) trực tiếp xử lý.
           </li>
         </ul>
+
+        <p>
+          Link truy cập:{" "}
+          <Link
+            href={
+              "https://drive.google.com/file/d/1A0VgvrBOaX1FhFCcrcRrTermjOrJUfLP/view?usp=drive_link"
+            }
+            target="_blank"
+            className="text-[#cd2027]!"
+          >
+            [Nhấn vào đây]
+          </Link>
+        </p>
       </div>
     </div>
   );

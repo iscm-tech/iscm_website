@@ -171,7 +171,7 @@ export const iscmerMenuEn: MenuType = {
   subMenu: [
     {
       name: "UEH & Affiliated Units",
-      url: "/iscmer/ueh",
+      // url: "/iscmer/ueh",
       group: [
         { name: "UEHer", url: "/iscmer/ueh/ueher" },
         { name: "Finance & Accounting", url: "/iscmer/ueh/finance&accounting" },
@@ -240,12 +240,24 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/administration/minute_report",
         },
         {
-          name: "Procedure",
-          url: "/iscmer/internal/administration/procedure",
+          name: "Event Procedure",
+          url: "/iscmer/internal/administration/event",
+        },
+        {
+          name: "Equipment Procedure",
+          url: "/iscmer/internal/administration/equipment",
+        },
+        {
+          name: "Book Procedure",
+          url: "/iscmer/internal/administration/book",
         },
         {
           name: "Templates - Documents",
           url: "/iscmer/internal/administration/templates",
+        },
+        {
+          name: "Storage Structure",
+          url: "/iscmer/internal/administration/storage_structure",
         },
       ],
     },
@@ -253,32 +265,28 @@ export const iscmerMenuEn: MenuType = {
       name: "Group-based Management",
       group: [
         {
-          name: "Storage Structure",
-          url: "/iscmer/groups/storage_structure",
-        },
-        {
           name: "Operation & Finance",
-          url: "/iscmer/groups/operation_finance",
+          url: "/iscmer/internal/groups/operation_finance",
         },
         {
           name: "Academia",
-          url: "/iscmer/groups/academia",
+          url: "/iscmer/internal/groups/academia",
         },
         {
           name: "Research",
-          url: "/iscmer/groups/research",
+          url: "/iscmer/internal/groups/research",
         },
         {
           name: "Community Engagement",
-          url: "/iscmer/groups/community_engagement",
+          url: "/iscmer/internal/groups/community_engagement",
         },
         {
           name: "PR & Communication",
-          url: "/iscmer/groups/pr_communication",
+          url: "/iscmer/internal/groups/pr_communication",
         },
         {
           name: "Partnership",
-          url: "/iscmer/groups/partnership",
+          url: "/iscmer/internal/groups/partnership",
         },
       ],
     },

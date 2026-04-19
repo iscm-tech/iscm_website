@@ -16,7 +16,7 @@ export default function page() {
               target="_blank"
               className="text-[#cd2027]!"
             >
-              https://student.ueh.edu.vn/Public/TraCuuNganh
+              [Nhấn vào đây]
             </Link>
           </p>
 

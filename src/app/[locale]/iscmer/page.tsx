@@ -64,16 +64,9 @@ export default function page() {
 
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">UEHer</li>
-                  <li className="list-item!">
-                    College of Technology and Design
-                  </li>
-                  <li className="list-item!">UEH Sustainability</li>
-                  <li className="list-item!">Convergence Tech Hub</li>
-                  <li className="list-item!">Hệ thống Tài chính – Kế toán</li>
+                  <li className="list-item!">Tài chính Kế toán</li>
                   <li className="list-item!">Kho tri thức</li>
-                  <li className="list-item!">
-                    Hệ thống tra cứu chương trình đào tạo
-                  </li>
+                  <li className="list-item!">Tra cứu chương trình đào tạo</li>
                   <li className="list-item!">Khung thời gian đào tạo</li>
                 </ul>
                 <p className="mt-4">
@@ -95,18 +88,14 @@ export default function page() {
                   1.2.1. Thông tin tổng thể
                 </h5>
                 <ul className="list-disc! pl-4">
-                  <li className="list-item!">UEHer</li>
-                  <li className="list-item!">
-                    College of Technology and Design
-                  </li>
-                  <li className="list-item!">UEH Sustainability</li>
-                  <li className="list-item!">Convergence Tech Hub</li>
-                  <li className="list-item!">Hệ thống Tài chính – Kế toán</li>
-                  <li className="list-item!">Kho tri thức</li>
-                  <li className="list-item!">
-                    Hệ thống tra cứu chương trình đào tạo
-                  </li>
-                  <li className="list-item!">Khung thời gian đào tạo</li>
+                  <li className="list-item!">ISCM Strategy + Plan</li>
+                  <li className="list-item!">ISCM & UEH</li>
+                  <li className="list-item!">ISCM & CTD</li>
+                  <li className="list-item!">ISCM & UEH Sustainability</li>
+                  <li className="list-item!">ISCM & Covergence Tech Hub</li>
+                  <li className="list-item!">ISCM & MakerSpace</li>
+                  <li className="list-item!">Cơ cấu tổ chức ISCM</li>
+                  <li className="list-item!">Các đánh giá của ISCM</li>
                 </ul>
                 <p className="mt-4">
                   Các liên kết này hỗ trợ thành viên trong việc tra cứu thông
@@ -125,13 +114,13 @@ export default function page() {
                   vận hành:
                 </p>
                 <ul className="list-disc! pl-4">
-                  <li className="list-item!">Nội quy và quy định</li>
+                  <li className="list-item!">Nội quy và Quy định </li>
                   <li className="list-item!">Quy chế chi tiêu nội bộ</li>
-                  <li className="list-item!">Minute Report</li>
+                  <li className="list-item!">Biên bản họp</li>
                   <li className="list-item!">Quản trị tổ chức sự kiện</li>
                   <li className="list-item!">Quản trị thiết bị</li>
                   <li className="list-item!">Quản trị sách</li>
-                  <li className="list-item!">Quản trị nội dung</li>
+                  <li className="list-item!">Mẫu - Tài liệu</li>
                 </ul>
                 <p className="mt-4">
                   Các tài liệu trong nhóm này đóng vai trò nền tảng trong việc
@@ -139,21 +128,21 @@ export default function page() {
                 </p>
 
                 <h5 id="structure-iscm-group_management" className="text-base!">
-                  1.2.3. Quản trị theo nhóm chức năng
+                  1.2.3. Quản trị theo từng nhóm riêng
                 </h5>
                 <p>
                   Cung cấp các tài liệu và hướng dẫn chuyên môn theo từng bộ
                   phận, bao gồm:
                 </p>
                 <ul className="list-disc! pl-4">
-                  <li className="list-item!">Khối Vận hành & Tài chính</li>
-                  <li className="list-item!">Khối Học thuật</li>
-                  <li className="list-item!">Khối Nghiên cứu</li>
-                  <li className="list-item!">Khối Gắn kết cộng đồng</li>
+                  <li className="list-item!">Nhóm Vận hành & Tài chính</li>
+                  <li className="list-item!">Nhóm Học thuật</li>
+                  <li className="list-item!">Nhóm Nghiên cứu</li>
+                  <li className="list-item!">Nhóm Gắn kết cộng đồng</li>
                   <li className="list-item!">
-                    Khối Truyền thông & Quan hệ Công chúng
+                    Nhóm Truyền thông & Quan hệ Công chúng
                   </li>
-                  <li className="list-item!">Khối Hợp tác quốc tế</li>
+                  <li className="list-item!">Nhóm Hợp tác</li>
                 </ul>
                 <p className="mt-4">
                   Nội dung được thiết kế nhằm hỗ trợ từng nhóm chức năng triển

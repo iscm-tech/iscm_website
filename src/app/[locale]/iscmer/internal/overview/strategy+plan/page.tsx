@@ -35,7 +35,7 @@ export default function Page() {
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://docs.google.com/spreadsheets/d/1TgBBAlvmUp_fUBigVoyFCA3MMyZ1EillTPLEkdMyf84
+            [Nhấn vào đây]
           </Link>
         </p>
 

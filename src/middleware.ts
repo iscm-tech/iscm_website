@@ -11,6 +11,6 @@ export const config = {
     // - … if they start with `/api`, `/_next` or `/_vercel`
     // - … the ones containing a dot (e.g. `favicon.ico`)
     // - … the ones starting with `/admins`
-    "/((?!api|_next|_vercel|admins|auth|.*\\..*).*)",
+    "/((?!api|_next|_vercel|admins|.*\\..*).*)",
   ],
 };

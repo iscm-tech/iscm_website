@@ -16,7 +16,7 @@ export default function page() {
               target="_blank"
               className="text-[#cd2027]!"
             >
-              https://daotao.ueh.edu.vn/category/tin-tuc/ke-hoach-dao-tao
+              [Nhấn vào đây]
             </Link>
           </p>
 

@@ -19,7 +19,7 @@ export default function pgae() {
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://drive.google.com/drive/folders/1bSNVnfWOmTgDidQ0S-L_OSJOS3XmL7Ns
+            [Nhấn vào đây]
           </Link>
           <span className="block italic font-bold! text-[#cd2027]!">
             * Chỉ nhưng thành viên làm chính mới access được.

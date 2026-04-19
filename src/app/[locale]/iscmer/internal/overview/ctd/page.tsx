@@ -19,10 +19,11 @@ export default function page() {
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://drive.google.com/drive/folders/1pOjBvEW-ccYC4NbUW_TtZINMb4kw9Zts
+            [Nhấn vào đây]
           </Link>
           <span className="block italic font-bold! text-[#cd2027]!">
-            * Chỉ nhưng thành viên làm chính trong hoạt động CTD mới access được.
+            * Chỉ nhưng thành viên làm chính trong hoạt động CTD mới access
+            được.
           </span>
         </p>
       </div>

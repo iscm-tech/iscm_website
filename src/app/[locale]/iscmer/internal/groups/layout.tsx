@@ -3,5 +3,5 @@ export default async function layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="container lg:!max-w-[70vw] py-4">{children}</div>;
+  return <div className="container py-4">{children}</div>;
 }

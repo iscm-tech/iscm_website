@@ -20,7 +20,7 @@ export default function page() {
               target="_blank"
               className="text-[#cd2027]!"
             >
-              https://ueh.edu.vn/ueher
+              [Nhấn vào đây]
             </Link>
           </p>
           <p className="text-justify">
@@ -54,7 +54,7 @@ export default function page() {
           <h4 id="ueh_information">2. Thông tin UEH</h4>
           <p>
             Tổng hợp các thông tin nội bộ và văn bản quản trị chính thức của
-            UEH:
+            UEH, bao gồm:
           </p>
           <ul className="list-disc! pl-4 mb-4">
             <li className="list-item!">Quy định, quy chế</li>
@@ -73,7 +73,7 @@ export default function page() {
             hoạt động trong toàn trường.
           </p>
           <h4 id="work_schedule">3. Lịch làm việc</h4>
-          <p>Hỗ trợ quản lý và đồng bộ lịch làm việc:</p>
+          <p>Hỗ trợ quản lý và đồng bộ lịch làm việc, bao gồm:</p>
           <ul className="list-disc! pl-4 mb-4">
             <li className="list-item!">Lịch UEH</li>
             <li className="list-item!">Lịch cá nhân</li>
@@ -85,7 +85,7 @@ export default function page() {
             công việc giữa các cá nhân và đơn vị.
           </p>
           <h4 id="work_management">4. Quản lý công việc</h4>
-          <p>Tích hợp các hệ thống phục vụ vận hành và quản trị nội bộ:</p>
+          <p>Tích hợp các hệ thống phục vụ vận hành và quản trị nội bộ, bao gồm:</p>
           <ul className="list-disc! pl-4 mb-4">
             <li className="list-item!">
               E-Office (đăng ký xe, các yêu cầu hành chính)
@@ -107,7 +107,7 @@ export default function page() {
           <h4 id="teaching&scientific_research">
             5. Giảng dạy và nghiên cứu khoa học
           </h4>
-          <p>Hỗ trợ toàn diện hoạt động học thuật và nghiên cứu:</p>
+          <p>Hỗ trợ toàn diện hoạt động học thuật và nghiên cứu, bao gồm:</p>
           <ul className="list-disc! pl-4 mb-4">
             <li className="list-item!">Đăng ký giảng dạy</li>
             <li className="list-item!">Quản lý giảng dạy</li>
@@ -124,7 +124,7 @@ export default function page() {
           <h4 id="utilities">6. Tiện ích</h4>
           <p>
             Cung cấp các công cụ và dịch vụ hỗ trợ trong quá trình làm việc và
-            học tập:
+            học tập, bao gồm:
           </p>
           <ul className="list-disc! pl-4 mb-4">
             <li className="list-item!">Danh bạ UEH</li>

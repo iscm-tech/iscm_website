@@ -4,9 +4,7 @@ import React from "react";
 export default function page() {
   return (
     <div>
-      <h1 className="text-center uppercase">
-        Quy trình Tổ chức sự kiện/Mượn thiết bị/Sách ISCM
-      </h1>
+      <h1 className="text-center uppercase">Biên bản cuộc họp</h1>
       <div className="content-body mt-5">
         <p>
           Link truy cập:{" "}
@@ -15,7 +13,7 @@ export default function page() {
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://docs.google.com/spreadsheets/d/1tMc-Iuul27ykrobGg2pjW1lH_b_NigwdGCbNTp4hxos
+            [Nhấn vào đây]{" "}
           </Link>
         </p>
         <div className="text-justify">
