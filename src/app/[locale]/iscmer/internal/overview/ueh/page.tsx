@@ -8,19 +8,18 @@ export default function page() {
 
       <div className="content-body mt-5">
         <p>
-          Các folder, thông tin chung về UEH như Chiến lược phát triển UEH,
-          storyline và các hoạt động làm chung cho UEH.
-        </p>
-
-        <p>
           Link truy cập:{" "}
           <Link
             href="https://drive.google.com/drive/folders/1KzOTxlTeDH75bB7USN_YJlq8A5bq585y"
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://drive.google.com/drive/folders/1KzOTxlTeDH75bB7USN_YJlq8A5bq585y
+            [Nhấn vào đây]
           </Link>
+        </p>
+        <p>
+          Các folder, thông tin chung về UEH như Chiến lược phát triển UEH,
+          storyline và các hoạt động làm chung cho UEH.
           <span className="block italic font-bold! text-[#cd2027]!">
             * Chỉ những thành viên làm chính trong hoạt động UEH mới access
             được.

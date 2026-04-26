@@ -4,7 +4,7 @@ import React from "react";
 export default function page() {
   return (
     <div className="py-4">
-      <h1 className="text-center uppercase">Quản trị sách</h1>
+      <h1 className="text-center uppercase">Quản lý và mượn sách</h1>
 
       <div className="content-body mt-5">
         <p>
@@ -21,14 +21,21 @@ export default function page() {
         </p>
 
         <p>
-          Thúc đẩy văn hóa chia sẻ tri thức (Knowledge Sharing) thông qua thư
-          viện nội bộ. Quy trình mượn và chia sẻ sách giúp các thành viên tiếp
-          cận dễ dàng với nguồn tài liệu chuyên ngành quý giá, đồng thời cùng
-          nhau làm giàu thêm kho tàng kiến thức chung của &quot;đại gia đình&quot; ISCM.
+          Nhằm thúc đẩy văn hóa học tập liên tục, ISCM vận hành Thư viện sách
+          nội bộ - nơi các thành viên dễ dàng tiếp cận nguồn tài liệu chuyên
+          ngành quý giá và cùng đóng góp làm giàu kho tri thức chung của tập
+          thể.
         </p>
-        <ul className="">
-          <li className="list-item!">(1) Các đầu sách được quản trị</li>
-          <li className="list-item!">(2) Form đăng ký mượn/share sách ISCM</li>
+        <p>Để tra cứu và sử dụng thư viện, vui lòng truy cập 2 mục sau:</p>
+        <ul className="list-disc! pl-4">
+          <li className="list-item!">
+            Danh mục sách (Book Catalog): Nơi cập nhật và tra cứu toàn bộ các
+            đầu sách đang được lưu trữ, quản lý tại ISCM.
+          </li>
+          <li className="list-item!">
+            Đăng ký Mượn / Tặng sách (Borrow & Share Form): Biểu mẫu để bạn đăng
+            ký mượn tài liệu hoặc đóng góp sách cá nhân vào thư viện chung.
+          </li>
         </ul>
       </div>
     </div>

@@ -8,11 +8,6 @@ export default function page() {
 
       <div className="content-body mt-5">
         <p>
-          Các folder, thông tin chung về CTD như Chiến lược phát triển UEH,
-          chuẩn đầu ra và các hoạt động làm chung cho CTD.
-        </p>
-
-        <p>
           Link truy cập:{" "}
           <Link
             href="https://drive.google.com/drive/folders/1pOjBvEW-ccYC4NbUW_TtZINMb4kw9Zts"
@@ -21,6 +16,10 @@ export default function page() {
           >
             [Nhấn vào đây]
           </Link>
+        </p>
+        <p>
+          Các folder, thông tin chung về CTD như Chiến lược phát triển UEH,
+          chuẩn đầu ra và các hoạt động làm chung cho CTD.
           <span className="block italic font-bold! text-[#cd2027]!">
             * Chỉ nhưng thành viên làm chính trong hoạt động CTD mới access
             được.

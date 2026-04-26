@@ -4,7 +4,7 @@ import React from "react";
 export default function page() {
   return (
     <div className="py-4">
-      <h1 className="text-center uppercase">Quản trị Thiết bị</h1>
+      <h1 className="text-center uppercase">Quản lý và mượn Thiết bị</h1>
 
       <div className="content-body mt-5">
         <p>
@@ -21,19 +21,27 @@ export default function page() {
         </p>
 
         <p>
-          Mượn thiết bị: Nhằm hỗ trợ tối đa cho việc nghiên cứu và giảng dạy,
-          ISCM xây dựng quy trình quản lý thiết bị chặt chẽ. Thành viên có thể
-          dễ dàng đăng ký mượn và sử dụng các công cụ công nghệ, máy móc tại Lab
-          hoặc Maker Space một cách nhanh chóng và có trách nhiệm.
+          Nhằm hỗ trợ tối đa cho hoạt động giảng dạy và nghiên cứu, ISCM cung
+          cấp hệ thống thiết bị công nghệ tại ISCM. Để việc mượn và sử dụng diễn
+          ra nhanh chóng, trách nhiệm, thành viên vui lòng tra cứu và thao tác
+          theo 4 mục dưới đây:
         </p>
-        <ul className="">
-          <li className="list-item!">(1) Các quy định quản trị thiết bị, </li>
+        <ul className="list-disc! pl-4">
           <li className="list-item!">
-            (2) Các thông tin về thiết bị hiện nay có tại ISCM,
+            Quy định sử dụng: Chi tiết các nguyên tắc mượn, trả và quản lý tài
+            sản chung.
           </li>
-          <li className="list-item!">(3) Đăng ký mượn, trả thiết bị,</li>
           <li className="list-item!">
-            (4) Theo dõi đề xuất mua, thanh toán, quản trị thiết bị.
+            Danh mục thiết bị: Cập nhật thông tin và tình trạng các máy móc,
+            công cụ hiện có tại ISCM.
+          </li>
+          <li className="list-item!">
+            Đăng ký Mượn - Trả: Truy cập biểu mẫu (form) để đăng ký mượn và hoàn
+            trả thiết bị.
+          </li>
+          <li className="list-item!">
+            Mua sắm & Thanh toán: Nơi theo dõi tiến độ các đề xuất mua mới,
+            thanh toán và bảo trì thiết bị.
           </li>
         </ul>
       </div>

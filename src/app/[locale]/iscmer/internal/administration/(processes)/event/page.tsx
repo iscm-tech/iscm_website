@@ -4,7 +4,12 @@ import React from "react";
 export default function page() {
   return (
     <div className="py-4">
-      <h1 className="text-center uppercase">Quản trị Tổ chức sự kiện</h1>
+      <h1 className="text-center uppercase">
+        TỔNG QUAN VỀ QUẢN LÝ VÀ TỔ CHỨC SỰ KIỆN <br />{" "}
+        <span className="text-base">
+          (Áp dụng cho hệ thống Kế hoạch sự kiện 2026)
+        </span>
+      </h1>
 
       <div className="content-body mt-5">
         <p>
@@ -21,24 +26,24 @@ export default function page() {
         </p>
 
         <p>
-          Tài liệu này cung cấp tổng quan về định nghĩa, phạm vi và quy trình tổ
-          chức các sự kiện của ISCM trong năm 2026, bao gồm:
+          Thông tin trong này đưa ra định nghĩa, phạm vi và nguyên tắc vận hành
+          chung cho toàn bộ sự kiện tại ISCM:
         </p>
-        <ul className="">
+        <ul className="list-disc! pl-4">
           <li className="list-item!">
-            (1) Toàn bộ các sự kiện được hệ thống hóa theo kế hoạch chung, bao
-            gồm các hạng mục chính như: lập kế hoạch (planning), thiết kế
-            (design) và truyền thông (communication);
+            Quy trình đồng bộ: Mọi sự kiện đều được hệ thống hóa xuyên suốt từ
+            khâu Lập kế hoạch (Planning), Thiết kế (Design) đến Truyền thông
+            (Communication).
           </li>
           <li className="list-item!">
-            (2) Các form đăng ký và biểu mẫu liên quan đã được tích hợp trong
-            file quy trình tổ chức sự kiện, nhằm đảm bảo tính thống nhất trong
-            triển khai và phối hợp giữa các bộ phận;
+            Công cụ tập trung: Toàn bộ biểu mẫu (templates) và link đăng ký công
+            việc đã được tích hợp sẵn vào quy trình, đảm bảo sự phối hợp nhất
+            quán giữa các nhóm chức năng.
           </li>
           <li className="list-item!">
-            (3) Người Host/phụ trách cần tuân thủ đầy đủ quy trình và sử dụng
-            đúng các biểu mẫu được cung cấp để đảm bảo hiệu quả vận hành và chất
-            lượng sự kiện.
+            Trách nhiệm thực thi: Người phụ trách (Host) bắt buộc tuân thủ chặt
+            chẽ quy trình này và sử dụng đúng biểu mẫu được cung cấp nhằm tối ưu
+            hóa vận hành và đảm bảo chất lượng sự kiện.
           </li>
         </ul>
       </div>

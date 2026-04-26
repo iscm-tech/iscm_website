@@ -8,19 +8,18 @@ export default function pgae() {
 
       <div className="content-body mt-5">
         <p>
-          Các folder, thông tin chung về UEH bền vững như Chiến lược phát triển
-          và các hoạt động.
-        </p>
-
-        <p>
           Link truy cập:{" "}
           <Link
             href="https://drive.google.com/drive/folders/1l-wGBcnLEsInX5ZF-A2UQ_8yfiz7qL5C"
             target="_blank"
             className="text-[#cd2027]!"
           >
-            https://drive.google.com/drive/folders/1l-wGBcnLEsInX5ZF-A2UQ_8yfiz7qL5C
+            [Nhấn vào đây]
           </Link>
+        </p>
+        <p>
+          Các folder, thông tin chung về UEH bền vững như Chiến lược phát triển
+          và các hoạt động.
           <span className="block italic font-bold! text-[#cd2027]!">
             * Chỉ nhưng thành viên làm chính mới access được.
           </span>

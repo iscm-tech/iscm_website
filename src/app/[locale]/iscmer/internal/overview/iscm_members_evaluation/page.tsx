@@ -1,4 +1,4 @@
-import { LinkIcon } from "lucide-react";
+import { FileTextIcon, LinkIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -6,57 +6,121 @@ export default function page() {
   return (
     <div>
       <h1 className="text-center uppercase">
-        Chiến lược phát triển ISCM & Kế hoạch năm
+        QUY ĐỊNH VỀ THIẾT LẬP MỤC TIÊU, ĐÁNH GIÁ NHÂN SỰ <br /> VÀ THỜI GIAN LÀM
+        VIỆC TẠI ISCM
       </h1>
 
       <div className="content-body mt-5">
-        <p>
-          Hệ thống đánh giá ISCM members được xây dựng nhằm theo dõi mức độ tham
-          gia, chất lượng đóng góp và hiệu quả thực hiện công việc của từng
-          thành viên trong quá trình hoạt động.
+        <h3>I. Hệ thống thiết lập mục tiêu và Đánh giá nhân sự</h3>
+        <p className="text-justify">
+          Hệ thống này được xây dựng nhằm thiết lập định hướng rõ ràng, theo dõi
+          sát sao mức độ gắn kết, chất lượng đóng góp và hiệu suất công việc của
+          từng cá nhân cũng như hiệu quả vận hành của toàn bộ máy. Toàn bộ kết
+          quả đánh giá sẽ do Viện trưởng trực tiếp tổng hợp và quản lý, làm cơ
+          sở để điều chỉnh nguồn lực, khen thưởng, cải tiến quy trình và hoạch
+          định chiến lược phát triển đội ngũ.
         </p>
 
-        <p className="text-justify">Nội dung đánh giá bao gồm: </p>
+        <p className="text-justify">
+          Quy trình thiết lập mục tiêu và đánh giá được thực hiện dựa trên 5 trụ
+          cột cốt lõi:
+        </p>
 
-        <ul className="list-disc! pl-4 mb-4">
+        <ul className="list-decimal! pl-4 mb-4">
           <li className="list-item!">
-            <Link
-              href="https://docs.google.com/spreadsheets/d/1EG6fWZM7fgZ7kLRg83fb4pURnkmGsvhYVEIChdFiZ0g"
-              target="_blank"
-              className="text-[#cd2027]! inline-flex items-center gap-1"
-            >
-              Điểm danh
-              <LinkIcon size={14} />
-            </Link>
-            : Xác nhận mức độ tham gia của ISCM members trong các hoạt động
+            Thiết lập mục tiêu (Annual OKRs): Dựa trên mục tiêu chiến lược hàng
+            năm của UEH và định hướng của ISCM, mỗi thành viên sẽ được phân công
+            nhiệm vụ và chủ động xây dựng bộ mục tiêu OKR cá nhân. Đây là thước
+            đo cơ sở cho mọi hoạt động đánh giá trong năm.
           </li>
           <li className="list-item!">
-            Thu thập ý kiến: Ghi nhận phản hồi của sinh viên đối với ISCM và các
-            chương trình liên quan
+            Đánh giá hiệu quả công việc cá nhân (Performance Review): Định kỳ
+            mỗi quý 1 lần, các cấp quản lý trực tiếp (Head, Lead, Manager,
+            Coordinator, Host) sẽ tiến hành đánh giá chất lượng hoàn thành nhiệm
+            vụ của các thành viên dựa trên tiến độ, mức độ đạt được của các OKR
+            đã cam kết và hiệu quả thực thi các công việc phát sinh.
           </li>
           <li className="list-item!">
-            <Link
-              href="https://forms.gle/SxMBaT16JRtAxEJH9"
-              target="_blank"
-              className="text-[#cd2027]! inline-flex items-center gap-1"
-            >
-              Đánh giá hiệu suất
-              <LinkIcon size={14} />
-            </Link>
-            : Đánh giá chất lượng thực hiện công việc của Host/Coordinator và
-            Members theo định kỳ (mỗi quý 1 lần)
+            Đánh giá hoạt động của các nhóm chức năng (Cross-functional &
+            Bottom-up Review): Định kỳ 1 đến 2 năm/lần, toàn bộ các thành viên
+            sẽ tham gia đánh giá chất lượng vận hành, hiệu quả hỗ trợ và mức độ
+            phối hợp của các nhóm chức năng (Operation, Academia, Research,
+            v.v.). Tiêu chí này giúp nhận diện các điểm nghẽn trong quy trình
+            làm việc liên nhóm và cải tiến bộ máy quản lý.
+          </li>
+          <li className="list-item!">
+            Chuyên cần (Attendance): Ghi nhận và xác nhận tỷ lệ tham gia của các
+            thành viên vào các hoạt động, sự kiện và dự án chung của ISCM.
+          </li>
+          <li className="list-item!">
+            Phản hồi từ sinh viên (Student Feedback): Thu thập và ghi nhận các ý
+            kiến đánh giá của sinh viên đối với chất lượng hỗ trợ của nhân sự
+            ISCM cũng như các chương trình, hoạt động liên quan.
+          </li>
+          <li className="list-item!">Đánh giá performance trên Smart Office</li>
+        </ul>
+
+        <h3>II. Quy định về thời gian và hình thức làm việc</h3>
+        <p>
+          Nhằm đảm bảo luồng công việc xuyên suốt nhưng vẫn giữ được tính linh
+          hoạt, các thành viên cần tuân thủ nghiêm ngặt quy trình báo cáo vắng
+          mặt/thay đổi lịch làm việc như sau:
+        </p>
+        <ul className="list-disc! pl-4">
+          <li className="list-item!">
+            Đối với các thay đổi nội bộ: Trường hợp đến muộn, cần làm việc từ xa
+            (Work From Home) hoặc thay đổi lịch trực/làm việc tại văn phòng,
+            thành viên phải chủ động xin phép Viện trưởng và cập nhật thông tin
+            đầy đủ lên hệ thống quản lý nội bộ của ISCM.
+          </li>
+          <li className="list-item!">
+            Đối với các thủ tục hành chính: Trường hợp xin nghỉ phép (giải quyết
+            việc riêng, nghỉ ốm, v.v.) hoặc đi công tác chính thức, thành viên
+            bắt buộc phải thực hiện thủ tục đăng ký và tuân thủ theo đúng quy
+            trình phê duyệt chung của UEH (làm trên hệ thống Smart Office).
           </li>
         </ul>
-        <p>
-          Kết quả đánh giá được tổng hợp và quản lý bởi ISCM Director nhằm phục
-          vụ công tác theo dõi, điều chỉnh và phát triển đội ngũ.
-        </p>
-        <p className="italic text-[#cd2027]!">
-          * Đối với các trường hợp vắng mặt, làm việc từ xa hoặc thay đổi hình
-          thức tham gia, members cần chủ động xin phép ISCM Director và cập nhật
-          thông tin đầy đủ trên hệ thống. Các trường hợp nghỉ dài hạn hoặc công
-          tác cần thực hiện theo quy trình phê duyệt chính thức.
-        </p>
+
+        <ul className="mt-4">
+          <h4>Danh mục các forms:</h4>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={"https://forms.gle/SxMBaT16JRtAxEJH9"}
+            >
+              <FileTextIcon />
+              Đánh giá hiệu suất thành viên ISCM
+            </Link>
+          </li>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={"https://forms.gle/kzTw93Y4xDw382Do6"}
+            >
+              <FileTextIcon /> Khảo sát sinh viên thường niên
+            </Link>
+          </li>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={"https://forms.gle/TQP4YWTrLTzjq3Vf7"}
+            >
+              <FileTextIcon /> Hòm thư bồ câu
+            </Link>
+          </li>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={"https://forms.gle/ZCoJaAhjd756RBSi7"}
+            >
+              <FileTextIcon /> Đánh giá nhóm
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

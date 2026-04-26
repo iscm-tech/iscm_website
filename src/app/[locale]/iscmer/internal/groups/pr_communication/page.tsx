@@ -27,13 +27,13 @@ export default function page() {
           nội dung, thiết kế, website và các sản phẩm truyền thông của ISCM.
         </p>
         <p>
-          Mục tiêu: Đảm bảo hình ảnh thương hiệu nhất quán, nâng cao độ nhận
-          diện và hiệu quả truyền thông.
+          Cơ chế truy cập: Phân quyền dựa trên chuyên môn thực thi (Nội dung,
+          Thiết kế, Web...).
         </p>
         <p>
-          Người truy cập: Quyền truy cập được phân theo vai trò trong team. Các
-          tài liệu liên quan đến chiến lược và kế hoạch truyền thông có thể bị
-          giới hạn đối với một số đối tượng.
+          Vùng bảo mật: Tài liệu định hướng (Chiến lược thương hiệu, kế hoạch
+          tổng, ngân sách PR) chỉ giới hạn cho cấp Quản lý và nhân sự trực tiếp
+          phụ trách.
         </p>
       </div>
     </div>

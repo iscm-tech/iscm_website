@@ -25,13 +25,12 @@ export default function page() {
           các đối tác, doanh nghiệp và tổ chức liên quan.
         </p>
         <p>
-          Mục tiêu: Mở rộng mạng lưới hợp tác, gia tăng nguồn lực và tạo cơ hội
-          phát triển cho các hoạt động của ISCM.
+          Cơ chế truy cập: Phân quyền theo dự án và mức độ trực tiếp chăm sóc
+          đối tác.
         </p>
         <p>
-          Người truy cập: Tài liệu được phân quyền theo vai trò và mức độ tham
-          gia làm việc với đối tác. Các thông tin liên quan đến đối tác được
-          kiểm soát truy cập chặt chẽ.
+          Vùng bảo mật: Dữ liệu đối ngoại (Thông tin liên hệ VIP, hợp đồng tài
+          trợ, biên bản MOU) được kiểm soát và bảo mật tuyệt đối.
         </p>
       </div>
     </div>

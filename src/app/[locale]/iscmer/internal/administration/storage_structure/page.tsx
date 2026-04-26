@@ -5,7 +5,9 @@ import React from "react";
 export default function page() {
   return (
     <div>
-      <h1 className="text-center uppercase">Tổng quan cấu trúc lưu trữ</h1>
+      <h1 className="text-center uppercase">
+        QUY ĐỊNH LƯU TRỮ VÀ PHÂN QUYỀN TRUY CẬP DỮ LIỆU
+      </h1>
 
       <div className="content-body mt-5">
         <p>
@@ -22,9 +24,57 @@ export default function page() {
         </p>
 
         <p>
-          Sơ đồ/cấu trúc, hướng dẫn của các folder lưu trữ/ sử dụng, ai được
-          quyền truy cập như thế nào
+          Hệ thống dữ liệu nội bộ của ISCM được tổ chức khoa học nhằm đảm bảo
+          tính bảo mật, tối ưu không gian lưu trữ và dễ dàng tra cứu.
         </p>
+
+        <ol className="list-decimal! pl-4">
+          <li className="list-item!">
+            Sơ đồ cấu trúc thư mục
+            <ul className="list-disc! pl-4">
+              <li className="list-item!">
+                Hệ thống thư mục được phân chia rành mạch theo các nhóm chức
+                năng (O&F, Giáo dục, Nghiên cứu, Engagement, Partnership,
+                Communication) và theo từng Dự án/Sự kiện cụ thể.
+              </li>
+              <li className="list-item!">
+                Yêu cầu: Thành viên phải lưu trữ tài liệu vào đúng thư mục
+                chuyên trách, không để file rời rạc bên ngoài.
+              </li>
+            </ul>
+          </li>
+          <li className="list-item!">
+            Hướng dẫn lưu trữ
+            <ul className="list-disc! pl-4">
+              <li className="list-item!">
+                Tất cả tài liệu phải tuân thủ quy tắc đặt tên file đồng bộ (Ví
+                dụ: [Ngày][Tên dự án][Tên tài liệu]).
+              </li>
+              <li className="list-item!">
+                Đảm bảo dọn dẹp các tệp nháp (drafts) không cần thiết và chỉ lưu
+                trữ các tệp đã hoàn chỉnh (final) hoặc đang cập nhật chính thức.
+              </li>
+            </ul>
+          </li>
+          <li className="list-item!">
+            Quy định phân quyền truy cập <br /> Dữ liệu được bảo mật và phân
+            quyền theo nguyên tắc "đúng người, đúng việc":
+            <ul className="list-disc! pl-4">
+              <li className="list-item!">
+                Truy cập chung (Public/All members): Các nội quy, biểu mẫu
+                (templates), quy trình dùng chung mở quyền Xem/Tải về cho toàn
+                bộ thành viên Viện.
+              </li>
+              <li className="list-item!">
+                Truy cập giới hạn (Restricted): Các dữ liệu mang tính bảo mật
+                (tài chính, nhân sự, dự án chưa công bố...) chỉ cấp quyền Xem
+                (View) hoặc Chỉnh sửa (Edit) cho những cá nhân/nhóm chức năng
+                trực tiếp tham gia, dưới sự phê duyệt của Viện trưởng hoặc các
+                Trưởng nhóm (Heads).
+              </li>
+            </ul>
+          </li>
+        </ol>
       </div>
     </div>
   );

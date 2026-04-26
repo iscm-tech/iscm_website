@@ -254,9 +254,9 @@ export default function Header() {
                   onChange={handleRedirectLocale}
                 />
 
-                <div className="ml-3 h-full py-3">
+                {/* <div className="ml-3 h-full py-3">
                   <SearchBar />
-                </div>
+                </div> */}
               </ul>
               {session?.AT && iscmerMenu?.subMenu && (
                 <div className="flex items-center">

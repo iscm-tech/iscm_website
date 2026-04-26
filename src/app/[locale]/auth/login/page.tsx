@@ -63,7 +63,7 @@ const LoginWithUsernameAndPassword = () => {
 
   return (
     <div>
-      <h3 className="w-fit text-4xl font-extrabold mb-7 relative left-1/2 -translate-x-1/2 after:w-[50%] after:h-[3px] after:bg-black after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-3">
+      <h3 className="w-fit text-4xl font-extrabold mb-10! relative left-1/2 -translate-x-1/2 after:w-[50%] after:h-[3px] after:bg-black after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-3">
         {locale === "en"
           ? "Adminstrator Page Login"
           : "Đăng nhập trang quản trị"}
@@ -133,7 +133,7 @@ const LoginWithGoogle = () => {
   return (
     <div
       id="customBtn"
-      className="customGPlusSignIn w-full inline-block text-center bg-white text-[#444] rounded-lg border-[0.2px] hover:border border-[#888] shadow-md shadow-[grey] cursor-pointer hover:shadow-none transition-all "
+      className="customGPlusSignIn w-full inline-block text-center bg-white text-[#444] rounded-lg border-[0.2px] hover:border border-[#888] shadow-md shadow-[grey] cursor-pointer hover:shadow-none transition-all"
       onClick={() => {
         signIn("google", { callbackUrl: "/iscmer" });
       }}
@@ -156,68 +156,68 @@ const LoginWithGoogle = () => {
 const Auth = () => {
   const locale = useLocale();
 
-  const [modal, contextHolder] = Modal.useModal();
-
   return (
-    <div className="row w-screen h-screen overflow-hidden px-[15px] bg-[#890a17]">
-      <figure className="col-8 h-full !p-0">
-        <Image
-          src="/images/backgrounds/ISCM_Group.png"
-          width={2000}
-          height={2000}
-          alt=""
-          className="w-full h-full object-contain opacity-95"
-          quality={100}
-        />
-      </figure>
+    <div className="wrapper bg-[#5a0000] w-screen h-screen">
+      <div className="container">
+        <div className="row rounded-b-md overflow-hidden">
+          <figure className="w-full h-full !p-0 !m-0">
+            <Image
+              src="/images/backgrounds/background.png"
+              width={2000}
+              height={2000}
+              alt=""
+              className="w-full h-full object-contain opacity-95"
+              quality={100}
+            />
+          </figure>
+        </div>
+        <div className="row">
+          <div className="!py-4 w-full h-full z-10">
+            <div
+              className="rounded-lg bg-white flex flex-col gap-3 w-full h-full p-3"
+              style={{
+                boxShadow: "0 0 10px rgba(255,255,255,0.4)",
+                backdropFilter: "blur(2px)",
+              }}
+            >
+              <LoginWithUsernameAndPassword />
+              <div className="flex items-center justify-between gap-2 mt-5">
+                <div className="flex-1 h-[1px] w-full bg-black"></div>
+                <p className="mb-0!">
+                  {locale === "en"
+                    ? "For ISCMer Page"
+                    : "Truy cập trang ISCMer"}
+                </p>
+                <div className="flex-1 h-[1px] w-full bg-black"></div>
+              </div>
+              <LoginWithGoogle />
+              <div className="flex items-center justify-between gap-2 mt-3">
+                <div className="flex-1 h-[1px] w-full bg-black"></div>
+                <p className="mb-0!">{locale === "en" ? "Or" : "Hoặc"}</p>
+                <div className="flex-1 h-[1px] w-full bg-black"></div>
+              </div>
 
-      <div className="col-4 !py-4 w-full h-full z-10">
-        <div
-          className="rounded-lg bg-white flex flex-col gap-3 w-full h-full p-3"
-          style={{
-            boxShadow: "0 0 10px rgba(255,255,255,0.4)",
-            backdropFilter: "blur(2px)",
-          }}
-        >
-          <LoginWithUsernameAndPassword />
-          <div className="flex items-center justify-between gap-2 mt-5">
-            <div className="flex-1 h-[1px] w-full bg-black"></div>
-            <p className="mb-0!">
-              {locale === "en" ? "For ISCMer Page" : "Truy cập trang ISCMer"}
-            </p>
-            <div className="flex-1 h-[1px] w-full bg-black"></div>
-          </div>
-          <LoginWithGoogle />
+              <Link
+                href={"https://forms.gle/FNLB57d2qoa7Zyc2A"}
+                className="py-2 w-full inline-block text-center bg-white text-[#444] rounded-lg border-[0.2px] hover:border border-[#888] shadow-md shadow-[grey] cursor-pointer hover:shadow-none transition-all"
+              >
+                {locale === "en" ? "Sign up" : "Đăng ký"}
+              </Link>
 
-          <div className="text-sm! italic mt-2">
-            *{" "}
-            {locale === "en" ? (
-              <>
-                New personnel who do not yet have access to the ISCMer website
-                are required to fill out the{" "}
-                <Link
-                  href={"https://forms.gle/FNLB57d2qoa7Zyc2A"}
-                  target="_blank"
-                  className="mb-0 text-sm! text-[#cd2027]! hover:underline! inline-flex items-center gap-1"
-                >
-                  form <LinkIcon size={12} />
-                </Link>{" "}
-                to be granted access.
-              </>
-            ) : (
-              <>
-                Nhân sự mới hoàn toàn, chưa truy cập được vào ISCMer Website cần
-                phải điền vào{" "}
-                <Link
-                  href={"https://forms.gle/FNLB57d2qoa7Zyc2A"}
-                  target="_blank"
-                  className="mb-0 text-sm! text-[#cd2027]! hover:underline! inline-flex items-center gap-1"
-                >
-                  form <LinkIcon size={12} />
-                </Link>{" "}
-                để được cấp quyền truy cập trang.
-              </>
-            )}
+              <div className="text-base! text-[#cd2027]!">
+                {locale === "en" ? (
+                  <>
+                    * New personnel who do not yet have access to the ISCMer
+                    page are required to sign up to be granted access.
+                  </>
+                ) : (
+                  <>
+                    * Nhân sự mới hoàn toàn, chưa truy cập được vào trang ISCMer
+                    cần phải đăng ký để được cấp quyền truy cập trang.
+                  </>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

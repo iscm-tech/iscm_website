@@ -232,12 +232,12 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/administration/rules",
         },
         {
-          name: "Internal Financial Policy",
-          url: "/iscmer/internal/administration/financial_policy",
+          name: "Finance & Payments",
+          url: "/iscmer/internal/administration/finance&payments",
         },
         {
-          name: "Minute Report",
-          url: "/iscmer/internal/administration/minute_report",
+          name: "Internal Meeting Regulations",
+          url: "/iscmer/internal/administration/meeting_regulations",
         },
         {
           name: "Event Procedure",

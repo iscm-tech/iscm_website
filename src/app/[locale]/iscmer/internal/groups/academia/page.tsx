@@ -25,13 +25,13 @@ export default function page() {
           chuyên môn và phát triển chương trình đào tạo của ISCM.
         </p>
         <p>
-          Mục tiêu: Nâng cao chất lượng học thuật, chuẩn hóa nội dung đào tạo và
-          đảm bảo tính ứng dụng trong thực tiễn.
+          Cơ chế truy cập: Linh hoạt theo vai trò giảng dạy và mức độ tham gia
+          môn học/dự án.
         </p>
         <p>
-          Người truy cập: Quyền truy cập được phân theo vai trò và mức độ tham
-          gia vào chương trình. Một số tài liệu chuyên môn chỉ dành cho nhóm phụ
-          trách và các vị trí liên quan.
+          Vùng bảo mật: Tài liệu cốt lõi (Đề thi, bản quyền chương trình, chiến
+          lược đào tạo) được bảo mật tuyệt đối; chỉ dành cho Giám đốc chương
+          trình và Giảng viên phụ trách môn.
         </p>
       </div>
     </div>

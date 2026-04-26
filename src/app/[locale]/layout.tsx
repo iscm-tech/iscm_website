@@ -6,8 +6,8 @@ import NextTopLoader from "nextjs-toploader";
 import envConfig from "@/config";
 
 import "@/assets/plugins/bootstrap/bootstrap.min.css";
-import "@/assets/scss/style.scss";
 import "ldrs/react/Mirage.css";
+import "@/assets/scss/style.scss";
 import "../style.css";
 
 export default async function LocaleLayout({

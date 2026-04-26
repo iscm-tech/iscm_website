@@ -21,18 +21,17 @@ export default function page() {
         </p>
 
         <p>
-          Giới thiệu:Nhóm Operation & Finance phụ trách toàn bộ hoạt động vận
-          hành nội bộ và quản lý tài chính của ISCM, bao gồm quy trình, ngân
-          sách và kiểm soát chi phí.
+          Nhóm Operation & Finance phụ trách toàn bộ hoạt động vận hành nội bộ
+          và quản lý tài chính của ISCM, bao gồm quy trình, ngân sách và kiểm
+          soát chi phí.
         </p>
         <p>
-          Mục tiêu: Đảm bảo hoạt động diễn ra trơn tru, minh bạch tài chính và
-          tối ưu hóa nguồn lực trong quá trình triển khai.
+          Cơ chế truy cập: Phân cấp nghiêm ngặt theo vai trò (Head &rarr;
+          Coordinator &rarr; Member).
         </p>
         <p>
-          Người truy cập: Tùy theo vai trò (Head, Coordinator, Member), quyền
-          truy cập tài liệu sẽ được phân quyền khác nhau. Các nội dung tài chính
-          và vận hành nhạy cảm chỉ giới hạn cho các vị trí phụ trách.
+          Vùng bảo mật: Các hồ sơ tài chính và thông tin vận hành nhạy cảm chỉ
+          được cấp quyền cho nhân sự trực tiếp phụ trách xử lý.
         </p>
       </div>
     </div>

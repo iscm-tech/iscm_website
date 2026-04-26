@@ -25,12 +25,9 @@ export default function page() {
           cộng đồng, tổ chức sự kiện và phát triển mạng lưới sinh viên.
         </p>
         <p>
-          Mục tiêu: Tăng cường sự gắn kết, mở rộng cộng đồng và nâng cao trải
-          nghiệm tham gia của sinh viên.
-        </p>
-        <p>
-          Người truy cập: Các tài liệu được mở theo từng hoạt động/sự kiện, với
-          quyền truy cập phân theo vai trò và phạm vi tham gia.
+          Cơ chế truy cập: Linh hoạt theo từng chiến dịch/sự kiện ngoại khóa.
+          Thành viên nhận quyền truy cập đúng với phạm vi công việc (task) được
+          giao trong dự án đó.
         </p>
       </div>
     </div>

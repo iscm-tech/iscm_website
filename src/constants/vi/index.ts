@@ -230,12 +230,12 @@ export const iscmerMenuVi: MenuType = {
           url: "/iscmer/internal/administration/rules",
         },
         {
-          name: "Quy chế chi tiêu nội bộ",
-          url: "/iscmer/internal/administration/financial_policy",
+          name: "Tài chính và Thanh toán",
+          url: "/iscmer/internal/administration/finance&payments",
         },
         {
-          name: "Biên bản họp",
-          url: "/iscmer/internal/administration/minute_report",
+          name: "Quy chế họp nội bộ",
+          url: "/iscmer/internal/administration/meeting_regulations",
         },
         {
           name: "Quản trị Tổ chức sự kiện",
@@ -279,11 +279,11 @@ export const iscmerMenuVi: MenuType = {
           url: "/iscmer/internal/groups/community_engagement",
         },
         {
-          name: "Nhóm Truyền thông & Quan hệ Công chúng",
+          name: "Nhóm Truyền thông",
           url: "/iscmer/internal/groups/pr_communication",
         },
         {
-          name: "Nhóm Hợp tác",
+          name: "Nhóm Quan hệ đối tác",
           url: "/iscmer/internal/groups/partnership",
         },
       ],

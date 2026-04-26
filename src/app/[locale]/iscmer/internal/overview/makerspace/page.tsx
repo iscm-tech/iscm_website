@@ -8,11 +8,6 @@ export default function page() {
 
       <div className="content-body mt-5">
         <p>
-          Các folder, thông tin chung về như Chiến lược phát triển và các hoạt
-          động làm chung.
-        </p>
-
-        <p>
           Link truy cập:{" "}
           <Link
             href="https://drive.google.com/drive/folders/1UOcQtZVpSmxsVARqNzeVvAeTrsxoJ9r2"
@@ -21,6 +16,10 @@ export default function page() {
           >
             [Nhấn vào đây]
           </Link>
+        </p>
+        <p>
+          Các folder, thông tin chung về như Chiến lược phát triển và các hoạt
+          động làm chung.
           <span className="block italic font-bold! text-[#cd2027]!">
             * Chỉ những thành viên làm chính trong hoạt động MS mới access được.
           </span>
