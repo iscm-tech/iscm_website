@@ -234,7 +234,7 @@ export default function Header() {
                 {/* ISCMer Menu */}
                 <Fragment>
                   {!session?.AT && (
-                    <NavMenuItemWithoutSubMenu name="ISCMer" url="iscmer" />
+                    <NavMenuItemWithoutSubMenu name="ISCMer" url="/iscmer" />
                   )}
                   {session?.AT && iscmerMenu?.subMenu && (
                     <NavMenuItemWithSubMenu

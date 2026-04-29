@@ -3,6 +3,7 @@
 import { barlow } from "@/app/fontDeclare";
 import { Image, Timeline } from "antd";
 import { SquareArrowOutUpRight } from "lucide-react";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -40,12 +41,16 @@ const plans = {
 type Year = keyof typeof plans;
 
 export default function Page() {
+  const locale = useLocale();
+
   const [yearPlan, setYearPlan] = useState<Year>("2026");
 
   return (
     <div>
       <h1 className="text-center uppercase">
-        Chiến lược phát triển và kế hoạch vận hành ISCM
+        {locale === "en"
+          ? "ISCM Development Strategy and Operational Plan"
+          : "Chiến lược phát triển và kế hoạch vận hành ISCM"}
       </h1>
 
       <div className="content-body mt-5">
@@ -55,44 +60,107 @@ export default function Page() {
             target="_blank"
             className="text-[#cd2027]! flex items-center gap-2"
           >
-            Chiến lược phát triển ISCM
+            {locale === "vi"
+              ? "Chiến lược phát triển ISCM"
+              : "ISCM Development Strategy"}
             <SquareArrowOutUpRight size={20} />
           </Link>
         </h2>
         <p className="text-justify">
-          Chiến lược phát triển là kim chỉ nam cho mọi hoạt động nghiên cứu, đào
-          tạo và kết nối cộng đồng tại ISCM. Tầm nhìn dài hạn của Viện là trở
-          thành đơn vị tiên phong về Đô thị thông minh & Quản lý bền vững, đồng
-          thời khẳng định vị thế trên bản đồ học thuật quốc tế.
+          {locale === "en" ? (
+            <>
+              The ISCM Development Strategy serves as the master roadmap for all
+              research, training, and community engagement activities. This
+              framework outlines the Institute&apos;s long-term vision to become a
+              pioneer in Smart Cities and Sustainable Management. Furthermore,
+              it reinforces ISCM&apos;s position on the international knowledge map
+              through key strategic projects.
+            </>
+          ) : (
+            <>
+              Chiến lược phát triển là kim chỉ nam cho mọi hoạt động nghiên cứu,
+              đào tạo và kết nối cộng đồng tại ISCM. Tầm nhìn dài hạn của Viện
+              là trở thành đơn vị tiên phong về Đô thị thông minh & Quản lý bền
+              vững, đồng thời khẳng định vị thế trên bản đồ học thuật quốc tế.
+            </>
+          )}
         </p>
-        <p>Hệ thống tài liệu định hướng bao gồm 4 phần chính:</p>
+        <p>
+          {locale === "en"
+            ? "The guidance document system consists of four main parts:"
+            : "Hệ thống tài liệu định hướng bao gồm 4 phần chính:"}
+        </p>
         <ul className="list-disc! pl-4">
-          <li className="list-item!">
-            Chiến lược phát triển theo giai đoạn: Tầm nhìn và mục tiêu dài hạn.
-          </li>
-          <li className="list-item!">
-            Kế hoạch hoạt động thường niên: Các mục tiêu và công việc cụ thể
-            theo từng năm.
-          </li>
-          <li className="list-item!">
-            Định hướng truyền thông (PR/Storytelling): Thông điệp và hình ảnh
-            thương hiệu.
-          </li>
-          <li className="list-item!">
-            Kế hoạch tổ chức sự kiện (Master Event Plan): Danh mục tổng hợp các
-            sự kiện của Viện.
-          </li>
+          {locale === "vi" && (
+            <>
+              <li className="list-item!">
+                Chiến lược phát triển theo giai đoạn: Tầm nhìn và mục tiêu dài
+                hạn.
+              </li>
+              <li className="list-item!">
+                Kế hoạch hoạt động thường niên: Các mục tiêu và công việc cụ thể
+                theo từng năm.
+              </li>
+              <li className="list-item!">
+                Định hướng truyền thông (PR/Storytelling): Thông điệp và hình
+                ảnh thương hiệu.
+              </li>
+              <li className="list-item!">
+                Kế hoạch tổ chức sự kiện (Master Event Plan): Danh mục tổng hợp
+                các sự kiện của Viện.
+              </li>
+            </>
+          )}
+          {locale === "en" && (
+            <>
+              <li className="list-item!">
+                Phased development strategy: Long-term vision and objectives.
+              </li>
+              <li className="list-item!">
+                Annual operational plan: Specific goals and tasks for each year.
+              </li>
+              <li className="list-item!">
+                Communication orientation (PR/Storytelling): Brand messaging and
+                identity.
+              </li>
+              <li className="list-item!">
+                Event organization plan (Master Event Plan): A comprehensive
+                portfolio of the Institute’s events.
+              </li>
+            </>
+          )}
         </ul>
         <p>
-          Lưu ý riêng cho Kế hoạch sự kiện 2026: Vui lòng xem hướng dẫn trong
-          file Excel đính kèm và chủ động cập nhật thông tin sự kiện thông qua
-          Form đăng ký tương ứng.
+          {locale === "en" ? (
+            <>
+              Note for the 2026 Event Plan: Please refer to the instructions in
+              the attached Excel file and proactively update event information
+              via the corresponding registration form.
+            </>
+          ) : (
+            <>
+              Lưu ý riêng cho Kế hoạch sự kiện 2026: Vui lòng xem hướng dẫn
+              trong file Excel đính kèm và chủ động cập nhật thông tin sự kiện
+              thông qua Form đăng ký tương ứng.
+            </>
+          )}
         </p>
         <p>
-          Yêu cầu: Tất cả thành viên có trách nhiệm thường xuyên tra cứu, cập
-          nhật và tuân thủ các tài liệu định hướng này nhằm đảm bảo mọi hoạt
-          động cá nhân/nhóm luôn đồng bộ với chiến lược phát triển chung của
-          ISCM.
+          {locale === "en" ? (
+            <>
+              Requirement: All members are responsible for regularly reviewing,
+              updating, and complying with these guidance documents to ensure
+              that all individual and team activities remain aligned with ISCM’s
+              overall development strategy.
+            </>
+          ) : (
+            <>
+              Yêu cầu: Tất cả thành viên có trách nhiệm thường xuyên tra cứu,
+              cập nhật và tuân thủ các tài liệu định hướng này nhằm đảm bảo mọi
+              hoạt động cá nhân/nhóm luôn đồng bộ với chiến lược phát triển
+              chung của ISCM.
+            </>
+          )}
         </p>
         <h2>
           <Link
@@ -100,19 +168,33 @@ export default function Page() {
             target="_blank"
             className="text-[#cd2027]! flex items-center gap-2"
           >
-            Kế hoạch năm
+            {locale === "en" ? "Year Plan" : "Kế hoạch năm"}
             <SquareArrowOutUpRight size={20} />
           </Link>
         </h2>
         <p className="text-justify">
-          Để hiện thực hóa các mục tiêu đã đề ra, ISCM xây dựng một hệ sinh thái
-          hoạt động đa dạng xuyên suốt trong năm. Lộ trình này thể hiện rõ sự
-          kết hợp chặt chẽ giữa học thuật, sáng tạo và các chương trình thực
-          tiễn với mục tiêu tạo ra một môi trường mở, nơi các ý tưởng đột phá
-          được nuôi dưỡng và triển khai thực tế.
-          <br />
-          Kế hoạch gồm 7 trụ cột chính: Event; Conference; Webinar; Show; Design
-          Studio; Workshop; Competition.
+          {locale === "en" ? (
+            <>
+              To realize the established goals, ISCM builds a diverse
+              operational ecosystem throughout the year. This roadmap reflects a
+              strong integration of academic activities, creativity, and
+              practical programs, aiming to create an open environment where
+              innovative ideas are nurtured and implemented in practice.
+              <br />
+              The plan consists of seven key pillars: Event; Conference;
+              Webinar; Show; Design Studio; Workshop; Competition.
+            </>
+          ) : (
+            <>
+              Để hiện thực hóa các mục tiêu đã đề ra, ISCM xây dựng một hệ sinh
+              thái hoạt động đa dạng xuyên suốt trong năm. Lộ trình này thể hiện
+              rõ sự kết hợp chặt chẽ giữa học thuật, sáng tạo và các chương
+              trình thực tiễn với mục tiêu tạo ra một môi trường mở, nơi các ý
+              tưởng đột phá được nuôi dưỡng và triển khai thực tế. <br /> Kế
+              hoạch gồm 7 trụ cột chính: Event; Conference; Webinar; Show;
+              Design Studio; Workshop; Competition.
+            </>
+          )}
         </p>
         <div>
           <Timeline

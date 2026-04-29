@@ -16,7 +16,10 @@ export const mainMenuEn: Array<MenuType> = [
       },
       {
         name: "More",
-        group: [{ name: "Library", url: "/library" }],
+        group: [
+          { name: "Library", url: "/library" },
+          { name: "Order Design", url: "https://forms.gle/9ZeiYxVvBkgpyYrh8" },
+        ],
       },
     ],
   },
@@ -177,12 +180,12 @@ export const iscmerMenuEn: MenuType = {
         { name: "Finance & Accounting", url: "/iscmer/ueh/finance&accounting" },
         { name: "Knowledge Hub", url: "/iscmer/ueh/knowledge_hub" },
         {
-          name: "Training Programme Finder",
+          name: "Training Program Search System",
           url: "/iscmer/ueh/program_finder",
         },
         {
-          name: "Program Duration & Timeline",
-          url: "/iscmer/ueh/program_duration",
+          name: "Academic Calendar",
+          url: "/iscmer/ueh/academic_calendar",
         },
       ],
     },
@@ -215,7 +218,7 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/overview/makerspace",
         },
         {
-          name: "Organizational Structure",
+          name: "Company Organization",
           url: "/iscmer/internal/overview/company_organization",
         },
         {

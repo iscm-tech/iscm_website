@@ -1,29 +1,46 @@
+import { getLocale } from "next-intl/server";
 import Link from "next/link";
 import React from "react";
 
-export default function page() {
+export default async function page() {
+  const locale = await getLocale();
+
   return (
     <div>
       <h1 className="text-center uppercase">ISCM & CTD</h1>
 
       <div className="content-body mt-5">
         <p>
-          Link truy cập:{" "}
+          {locale === "en" ? "Access Link:" : "Link truy cập:"}{" "}
           <Link
             href="https://drive.google.com/drive/folders/1pOjBvEW-ccYC4NbUW_TtZINMb4kw9Zts"
             target="_blank"
             className="text-[#cd2027]!"
           >
-            [Nhấn vào đây]
+            {locale === "en" ? "[Click here]" : "[Nhấn vào đây]"}
           </Link>
         </p>
         <p>
-          Các folder, thông tin chung về CTD như Chiến lược phát triển UEH,
-          chuẩn đầu ra và các hoạt động làm chung cho CTD.
-          <span className="block italic font-bold! text-[#cd2027]!">
-            * Chỉ nhưng thành viên làm chính trong hoạt động CTD mới access
-            được.
-          </span>
+          {locale === "en" ? (
+            <>
+              General folders and information about CTD, including UEH’s
+              development strategy, expected learning outcomes, and shared
+              activities across CTD.
+              <span className="block italic font-bold! text-[#cd2027]!">
+                * Only members who are directly involved in CTD activities can
+                access.
+              </span>
+            </>
+          ) : (
+            <>
+              Các folder, thông tin chung về CTD như Chiến lược phát triển UEH,
+              chuẩn đầu ra và các hoạt động làm chung cho CTD.
+              <span className="block italic font-bold! text-[#cd2027]!">
+                * Chỉ nhưng thành viên làm chính trong hoạt động CTD mới access
+                được.
+              </span>
+            </>
+          )}
         </p>
       </div>
     </div>

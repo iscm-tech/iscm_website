@@ -17,7 +17,13 @@ export const mainMenuVi: Array<MenuType> = [
       },
       {
         name: "Khác",
-        group: [{ name: "Thư viện", url: "/library" }],
+        group: [
+          { name: "Thư viện", url: "/library" },
+          {
+            name: "Order Design",
+            url: "https://forms.gle/9ZeiYxVvBkgpyYrh8",
+          },
+        ],
       },
     ],
   },
@@ -180,7 +186,7 @@ export const iscmerMenuVi: MenuType = {
         },
         {
           name: "Khung thời gian đào tạo",
-          url: "/iscmer/ueh/program_duration",
+          url: "/iscmer/ueh/academic_calendar",
         },
       ],
     },
@@ -201,7 +207,7 @@ export const iscmerMenuVi: MenuType = {
           url: "/iscmer/internal/overview/ctd",
         },
         {
-          name: "ISCM & UEH Bền vững",
+          name: "ISCM & UEH Sustainability",
           url: "/iscmer/internal/overview/ueh_sustainability",
         },
         {
