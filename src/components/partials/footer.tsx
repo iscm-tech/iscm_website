@@ -125,8 +125,8 @@ export default function Footer() {
             <div className="col-12 col-lg-6 mt-4 mt-lg-0 items-center">
               <h3 className="text-center text-lg">
                 {locale === "en"
-                  ? "Explore UEH Facilities"
-                  : "Khám phá Cơ sở vật chất UEH"}
+                  ? "Explore UEH Information"
+                  : "Khám phá các thông tin UEH"}
               </h3>
               <ul
                 className="list-unstyled mt-4 flex flex-wrap gap-y-5 gap-x-4 justify-center"
