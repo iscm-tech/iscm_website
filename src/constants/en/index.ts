@@ -228,6 +228,10 @@ export const iscmerMenuEn: MenuType = {
       ],
     },
     {
+      name: "New Members",
+      url: "/iscmer/internal/onboarding_guide",
+    },
+    {
       name: "General Administration",
       group: [
         {
