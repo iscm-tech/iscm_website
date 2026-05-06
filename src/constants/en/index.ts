@@ -1,3 +1,4 @@
+import envConfig from "@/config";
 import { MenuType } from "@/types/menu.type";
 export const address = "232/6 Vo Thi Sau St., Xuan Hoa Ward, HCMC, Vietnam";
 export const copyright = "© Copyright by ISCM";
@@ -111,10 +112,15 @@ export const mainMenuEn: Array<MenuType> = [
           },
         ],
       },
-      // {
-      //   name: "LivingLab",
-      //   group: [{ name: "Smart Hub", url: "/livinglab/smarthub" }],
-      // },
+      {
+        name: "LivingLab",
+        group: [
+          {
+            name: "Move System",
+            url: `${envConfig.PRODUCTION_DOMAIN}/move-system`,
+          },
+        ],
+      },
       {
         name: "Competition",
         url: "/competition",
@@ -153,10 +159,10 @@ export const mainMenuEn: Array<MenuType> = [
             name: "Members",
             url: "/members",
           },
-          {
-            name: "Adjunct Professors",
-            url: "/adjunctprofessors",
-          },
+          // {
+          //   name: "Adjunct Professors",
+          //   url: "/adjunctprofessors",
+          // },
           {
             name: "Glocal Experts",
             url: "/network",

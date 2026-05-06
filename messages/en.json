@@ -59,5 +59,176 @@
   "online": "Online",
   "hydrid": "Hybrid",
   "vie": "Vietnamese",
-  "en": "English"
+  "en": "English",
+  "move-system": {
+    "nav": {
+      "about": "About",
+      "structure": "Structure",
+      "people": "People",
+      "funding": "Funding",
+      "tech": "Technology",
+      "labs": "Labs"
+    },
+    "hero": {
+      "eyebrow": "INSTITUTE OF SMART CITY & MANAGEMENT · UEH",
+      "title": "MOVE <em>System</em>",
+      "sub": "Mobility-oriented, Operations, Visualization & Environment System — a flagship research and innovation platform advancing traffic safety, net-zero transport, and smart city development in Vietnam.",
+      "hint": "Drag to orbit · Scroll to zoom · Click a district to explore"
+    },
+    "about": {
+      "eyebrow": "ABOUT",
+      "title": "A flagship platform for applied urban research",
+      "body1": "MOVE System is developed by the Institute of Smart City and Management (ISCM) at the University of Economics Ho Chi Minh City (UEH). Its core objectives are to conduct applied research in road safety, urban mobility, rail systems, and low-carbon transition.",
+      "body2": "The System supports project-based education and develops fit-for-purpose technological solutions to generate robust, evidence-based insights that directly support decision-making and policymaking at city and national levels.",
+      "body3": "MOVE advances traffic safety, net-zero emissions, and smart city development in line with UEH's 2025–2030 Strategy, strengthening UEH's role as a leading University-City Innovation Hub in Asia.",
+      "pillar": {
+        "behaviors": "Behaviors",
+        "ops": "Operation Management",
+        "env": "Environment"
+      },
+      "roles": {
+        "title": "Core Roles",
+        "list": "Research · Raising Fund · Consultancy · Education Support (Undergraduate, Graduate, Non-Degree)"
+      },
+      "techNote": "Applies VR, AR, AI, Machine Learning, Data Analysis & Interactive Simulation"
+    },
+    "structure": {
+      "eyebrow": "STRUCTURE",
+      "title": "Four integrated laboratories",
+      "sub": "Each lab addresses a distinct dimension of the urban system — from human behavior on the road to carbon in the air — while sharing tooling, data, and people across MOVE."
+    },
+    "lab": {
+      "see": {
+        "short": "Road safety for Vietnamese road users through VR, eye-tracking, machine learning and gamification.",
+        "name": "SEE Living Lab"
+      },
+      "smart": {
+        "short": "Intelligent transportation, MaaS, smart routing, and the Campus EV Micro-Mobility (CE-M) Program.",
+        "name": "Smart Mobility Lab"
+      },
+      "rail": {
+        "short": "Railway lab with rolling stock mock-ups, signalling simulators, PTC/CBTC and SCADA for smart rail capacity building.",
+        "name": "CE-Rail@UEH"
+      },
+      "ctr": {
+        "short": "Carbon Transition Lab — decarbonization, emission profiling, digital twins, and net-zero pathways.",
+        "name": "CtrLab"
+      }
+    },
+    "people": {
+      "eyebrow": "PEOPLE",
+      "title": "The team behind MOVE",
+      "sub": "Faculty, researchers, and PhD candidates from ISCM and partner institutions worldwide."
+    },
+    "funding": {
+      "eyebrow": "FUNDING",
+      "title": "Potential funds for 2026+",
+      "lead": "A staged funding portfolio connecting international research calls, national programmes, and private innovation capital to MOVE's four labs.",
+      "intl": "International joint research",
+      "intl_list": "FWO (Belgium) · KOICA (Korea) · JICA (Japan) · DFG (Germany)",
+      "intl_desc": "Bilateral and development-partner calls for applied research, pilots, and regional knowledge transfer.",
+      "national": "National grants",
+      "national_list": "NAFOSTED · Ministry-level · Department-level · UEH grants",
+      "national_desc": "Competitive Vietnamese research grants for evidence generation, policy testing, and lab infrastructure.",
+      "private": "Private",
+      "private_list": "VinIF and others",
+      "private_desc": "Innovation funding and industry sponsorship for productisation, demo deployments, and scale-up.",
+      "purpose": "Research Implementation · Capacity Building · PhD Student · Postdoc",
+      "scale_global": "Global",
+      "scale_vn": "Vietnam",
+      "scale_market": "Market",
+      "ministry": "Ministry-level",
+      "department": "Department-level",
+      "corporate": "Corporate CSR",
+      "industry": "Industry partners",
+      "flow1": "Research implementation",
+      "flow2": "Capacity building",
+      "flow3": "PhD student support",
+      "flow4": "Postdoc recruitment"
+    },
+    "tech": {
+      "eyebrow": "TECHNOLOGY & TOOLS",
+      "title": "Technology & Tools",
+      "items": "Digital Twin · Hologram · AR / VR · Agent-based Models · Machine Learning, AI · Big Data"
+    },
+    "contact": {
+      "visit": "Visit the ISCM website",
+      "address": "232/6 Vo Thi Sau, Xuan Hoa Ward, Ho Chi Minh City",
+      "phone": "(+84) 283 930 9589",
+      "site": "iscm.ueh.edu.vn",
+      "email": "iscm@ueh.edu.vn"
+    },
+    "see": {
+      "back": "Back to MOVE hub",
+      "h1": "SEE Living Lab",
+      "lead": "A pioneering platform designed to strengthen road safety for road users in Vietnam — through gamification, immersive VR, eye-tracking, and machine learning.",
+      "sense": "Sense",
+      "engage": "Engage",
+      "evolve": "Evolve",
+      "extension": "Extension",
+      "p1_name": "R2S Education",
+      "p1_type": "Virtual platform",
+      "p1_body": "Enhance traffic rules knowledge, situation-awareness skills, risk detection and risk management.",
+      "p2_name": "R2S VR Cycling",
+      "p2_type": "Hybrid platform",
+      "p2_body": "Improve hazard-perception skills and virtual cycling behavior in controlled, realistic environments.",
+      "p3_name": "R2S Map",
+      "p3_type": "Virtual platform",
+      "p3_body": "Improve traffic safety and mobility by mapping and visualizing safe routes for vulnerable road users.",
+      "p4_name": "Spatial Problem–Solution Mapping",
+      "p4_type": "Virtual platform",
+      "p4_body": "Support decision making and policy design through spatial problem-to-solution mapping.",
+      "demo_title": "Hazard-spotting challenge",
+      "demo_sub": "Click every hazard you can see before the 20-second timer runs out — inspired by the R2S Education gamified module."
+    },
+    "smart": {
+      "back": "Back to MOVE hub",
+      "h1": "Smart Mobility Lab",
+      "lead": "Advancing intelligent transportation systems and sustainable urban mobility — MaaS, smart routing, traffic operations, last-mile and micro-mobility.",
+      "t1": "Mobility as a Service & Smart Routing",
+      "t1_body": "Real-time transportation platform, integrated payments, transparency data from stakeholders, and demand modelling informed by urban structure.",
+      "t2": "Smart Mobility & Traffic Operation",
+      "t2_body": "Adaptive signal control, AI-based demand forecasting, and route optimization tailored to HCMC's mixed-traffic environment.",
+      "t3": "Last-Mile & Micro-Mobility",
+      "t3_body": "Micro-mobility hub/stop planning, data efficiency and small-vehicle safety.",
+      "cem_title": "CE-M Program — Campus EV Micro-Mobility",
+      "cem_body": "A real-world testbed for electric and shared mobility: e-motorbike + e-shuttle bus network, campus-first incentives, and partnerships with fleet suppliers and charging providers.",
+      "demo_title": "MaaS Route Planner",
+      "demo_sub": "Pick an origin and a destination on the campus map — the planner stitches walking, e-motorbike and e-shuttle legs into one optimized multimodal route."
+    },
+    "rail": {
+      "back": "Back to MOVE hub",
+      "h1": "CE-Rail@UEH",
+      "lead": "A dedicated railway laboratory building capacity in modern rail systems through small-scale simulation testbeds and a rail–city smart corridor living lab.",
+      "s1": "Rail Systems Lab",
+      "s1_body": "Rolling stock mock-up, signalling simulator, PTC/CBTC training modules, and a SCADA supervisory control sandbox for hands-on training and certification.",
+      "s2": "Rail-City Smart Corridor Living Lab",
+      "s2_body": "Transit-Oriented Development prototypes, passenger-flow experiments, and last-mile integration with e-mobility and micro-mobility solutions. Inspired by collaborative city-operator research programs such as Tokyo Metro.",
+      "demo_title": "Rail-City Corridor explorer",
+      "demo_sub": "Drag the slider to travel the corridor — see how TOD density, last-mile integration, and passenger flow evolve from station core to the urban edge."
+    },
+    "ctr": {
+      "back": "Back to MOVE hub",
+      "h1": "CtrLab — Carbon Transition Lab",
+      "lead": "Understand, quantify, and control carbon emissions and their impacts through data-driven science — integrating emissions, exposure, energy and climate into one unified system.",
+      "track_air": "Air Quality",
+      "track_air_body": "PM2.5 spatial distribution in HCMC, interactions between urban morphology and air pollution, and resident exposure-risk maps using WRF-CMAQ modelling.",
+      "track_climate": "Climate Change Adaptation",
+      "track_climate_body": "Integrated urban digital twin linking transportation, pollution emission, and urban heat — development of scenarios and a digital twin platform.",
+      "track_energy": "Energy Efficiency",
+      "track_energy_body": "Long-term analysis of electricity consumption efficiency in Vietnam and the economic drivers of energy intensity turning points.",
+      "demo_title": "Exposure risk explorer",
+      "demo_sub": "Use the time slider to see PM2.5 concentration and exposure risk across HCMC, and toggle between air-quality, urban-heat and energy layers."
+    },
+    "common": {
+      "publications": "Publications",
+      "projects": "Projects",
+      "stakeholders": "Stakeholders & Benefits",
+      "timeline": "Timeline",
+      "students": "Students",
+      "universities": "Universities & Institutions",
+      "gov": "Authorities & Government",
+      "industry": "Industry Partners"
+    }
+  }
 }

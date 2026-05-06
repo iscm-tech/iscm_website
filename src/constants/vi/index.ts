@@ -1,3 +1,4 @@
+import envConfig from "@/config";
 import { MenuType } from "@/types/menu.type";
 
 export const address = "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. Hồ Chí Minh";
@@ -112,10 +113,15 @@ export const mainMenuVi: Array<MenuType> = [
           },
         ],
       },
-      // {
-      //   name: "LivngLab",
-      //   group: [{ name: "Smart Hub", url: "/livinglab/smarthub" }],
-      // },
+      {
+        name: "LivingLab",
+        group: [
+          {
+            name: "Move System",
+            url: `${envConfig.PRODUCTION_DOMAIN}/move-system`,
+          },
+        ],
+      },
       {
         name: "Cuộc thi",
         url: "/competition",
@@ -154,10 +160,10 @@ export const mainMenuVi: Array<MenuType> = [
             name: "Thành viên",
             url: "/members",
           },
-          {
-            name: "Adjunct Professors",
-            url: "/adjunctprofessors",
-          },
+          // {
+          //   name: "Adjunct Professors",
+          //   url: "/adjunctprofessors",
+          // },
           {
             name: "Mạng lưới chuyên gia",
             url: "/network",
