@@ -15,8 +15,10 @@ export default function Page() {
     script.async = true;
 
     document.body.appendChild(script);
+    console.log("alsdkjfalskjdf");
 
     return () => {
+      document.body.removeChild(script);
       window.__HUB3D__?.destroy();
     };
   }, []);
@@ -556,18 +558,18 @@ export default function Page() {
           </div>
 
           <div
-            className="tech-showcase"
+            className="tech-bento"
             aria-label="MOVE technology and tools from the research deck"
           >
-            <article className="tech-feature tech-feature--agent">
-              <div className="tech-media">
+            {/* <!-- 01 ABM — hero, spans both rows on the left --> */}
+            <article className="tech-tile tech-tile--abm">
+              <div className="tech-tile-media">
                 <img
                   src="/images/center&lab/move-system/tech/image47.gif"
-                  alt="Agent-based Model simulation visual"
-                  loading="lazy"
+                  alt="Agent-based Model simulation"
                 />
               </div>
-              <div className="tech-copy">
+              <div className="tech-tile-overlay">
                 <span className="tech-index">01</span>
                 <h3>Agent-based Model</h3>
                 <p>
@@ -583,21 +585,20 @@ export default function Page() {
               </div>
             </article>
 
-            <article className="tech-feature tech-feature--ai">
-              <div className="tech-media">
+            {/* <!-- 02 ML / AI — top right --> */}
+            <article className="tech-tile tech-tile--ai">
+              <div className="tech-tile-media">
                 <img
                   src="/images/center&lab/move-system/tech/image48.jpg"
-                  alt="Machine Learning AI and Big Data visual"
-                  loading="lazy"
+                  alt="Machine Learning AI and Big Data"
                 />
               </div>
-              <div className="tech-copy">
+              <div className="tech-tile-overlay">
                 <span className="tech-index">02</span>
-                <h3>Machine Learning, AI - Big Data</h3>
+                <h3>Machine Learning, AI – Big Data</h3>
                 <p>
                   Data-driven prediction, classification, and insight generation
-                  across safety, mobility demand, environmental monitoring, and
-                  rail operations.
+                  across safety, mobility demand, and rail operations.
                 </p>
                 <div className="tech-tools">
                   <span>Machine learning</span>
@@ -607,54 +608,15 @@ export default function Page() {
               </div>
             </article>
 
-            <article className="tech-feature tech-feature--twin">
-              <div className="tech-image-stack tech-image-stack--three">
-                <img
-                  src="/images/center&lab/move-system/tech/image27.png"
-                  alt="Digital Twin and Hologram platform image"
-                  loading="lazy"
-                />
-                <img
-                  src="/images/center&lab/move-system/tech/image28.png"
-                  alt="Digital Twin interaction image"
-                  loading="lazy"
-                />
-                <img
-                  src="/images/center&lab/move-system/tech/image29.png"
-                  alt="Hologram demonstration image"
-                  loading="lazy"
-                />
-              </div>
-              <div className="tech-copy">
-                <span className="tech-index">03</span>
-                <h3>Digital Twin, Hologram</h3>
-                <p>
-                  Shared spatial models for explaining network operations,
-                  street experiments, environmental risk, and infrastructure
-                  decisions in a more tangible format.
-                </p>
-                <div className="tech-tools">
-                  <span>Digital twin</span>
-                  <span>Hologram</span>
-                  <span>Spatial visualisation</span>
-                </div>
-              </div>
-            </article>
-
-            <article className="tech-feature tech-feature--immersive">
-              <div className="tech-image-stack tech-image-stack--two">
-                <img
-                  src="/images/center&lab/move-system/tech/image30.png"
-                  alt="AR VR immersive system image"
-                  loading="lazy"
-                />
+            {/* <!-- 04 AR/VR — bottom right --> */}
+            <article className="tech-tile tech-tile--immersive">
+              <div className="tech-tile-media">
                 <img
                   src="/images/center&lab/move-system/tech/image31.png"
-                  alt="VR and Hologram training environment image"
-                  loading="lazy"
+                  alt="AR VR and Hologram training environment"
                 />
               </div>
-              <div className="tech-copy">
+              <div className="tech-tile-overlay">
                 <span className="tech-index">04</span>
                 <h3>AR, VR and Hologram</h3>
                 <p>
@@ -667,6 +629,38 @@ export default function Page() {
                   <span>Eye-tracking</span>
                   <span>VISSIM / AIMSUN</span>
                   <span>360 camera</span>
+                </div>
+              </div>
+            </article>
+
+            {/* <!-- 03 Digital Twin — full width, image mosaic + text panel --> */}
+            <article className="tech-tile tech-tile--twin">
+              <div className="tech-tile-images">
+                <img
+                  src="/images/center&lab/move-system/tech/image27.png"
+                  alt="Digital Twin hologram table model"
+                />
+                <img
+                  src="/images/center&lab/move-system/tech/image28.png"
+                  alt="Digital Twin interactive platform"
+                />
+                <img
+                  src="/images/center&lab/move-system/tech/image29.png"
+                  alt="Hologram demonstration"
+                />
+              </div>
+              <div className="tech-tile-twin-copy">
+                <span className="tech-index">03</span>
+                <h3>Digital Twin, Hologram</h3>
+                <p>
+                  Shared spatial models for explaining network operations,
+                  street experiments, environmental risk, and infrastructure
+                  decisions in a more tangible format.
+                </p>
+                <div className="tech-tools">
+                  <span>Digital twin</span>
+                  <span>Hologram</span>
+                  <span>Spatial visualisation</span>
                 </div>
               </div>
             </article>

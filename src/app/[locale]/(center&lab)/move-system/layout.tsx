@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import LangSwitch from "./langSwitch";
 import Link from "next/link";
+import Nav from "./components/nav";
 
 export const metadata: Metadata = {
   title: "MOVE System — ISCM · UEH",
@@ -16,43 +16,7 @@ export default async function ContentLayout({
 
   return (
     <div id="move-system__container">
-      <nav className="nav">
-        <Link className="nav-brand" href="/move-system">
-          <span className="logo-box">ISCM</span>
-          <span>
-            <div
-              style={{
-                fontWeight: 700,
-                fontSize: ".86rem",
-                color: "var(--burgundy)",
-              }}
-            >
-              MOVE System
-            </div>
-            <div className="logo-caption">
-              INSTITUTE OF SMART CITY &amp; MANAGEMENT
-            </div>
-          </span>
-        </Link>
-        <div className="nav-links" id="navLinks">
-          <Link href="#about" data-i18n="nav.about">
-            {i18n("move-system.nav.about")}
-          </Link>
-          <Link href="#structure" data-i18n="nav.structure">
-            {i18n("move-system.nav.structure")}
-          </Link>
-          <Link href="#people" data-i18n="nav.people">
-            {i18n("move-system.nav.people")}
-          </Link>
-          <Link href="#funding" data-i18n="nav.funding">
-            {i18n("move-system.nav.funding")}
-          </Link>
-          <Link href="#tech" data-i18n="nav.tech">
-            {i18n("move-system.nav.tech")}
-          </Link>
-        </div>
-        <LangSwitch />
-      </nav>
+      <Nav />
 
       {children}
 

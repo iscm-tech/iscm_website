@@ -16,6 +16,7 @@ export default function View() {
 
     return () => {
       document.body.removeChild(script);
+      window.__RAIL3D_CLEANUP__?.();
     };
   }, []);
 
@@ -44,7 +45,7 @@ export default function View() {
             {i18n("move-system.rail.lead")}
           </p>
 
-          <div className="">
+          <div className="flex flex-wrap gap-[.4rem] mt-[1rem]">
             <span className="pill">Rail Systems Lab</span>
             <span className="pill">Smart Corridor Living Lab</span>
             <span className="pill">TOD &amp; Green Finance</span>
@@ -515,124 +516,70 @@ export default function View() {
           {/* <!-- Lab lead strip --> */}
           <div
             style={{
-              borderTop: "1px solid rgba(184, 146, 100, 0.2)",
-              paddingTop: "1.8rem",
               display: "flex",
               alignItems: "center",
               gap: "2rem",
               flexWrap: "wrap",
+              borderTop: "1px solid rgba(255,255,255,.12)",
+              paddingTop: "2rem",
+              marginTop: "2rem",
             }}
           >
-            <div
+            <img
+              src="/images/center&lab/move-system/slide47_img12.png"
+              alt="Pham Nguyen Hoai"
               style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: "0.68rem",
-                letterSpacing: "0.18em",
-                color: "rgba(245, 242, 238, 0.4)",
-                textTransform: "uppercase",
+                width: "90px",
+                height: "90px",
+                borderRadius: "50%",
+                objectFit: "cover",
+                objectPosition: "top center",
+                border: "3px solid rgba(184,146,100,.4)",
+                flexShrink: 0,
               }}
-            >
-              Lab Lead
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.9rem",
-              }}
-            >
+            />
+            <div>
+              <div
+                className="eyebrow"
+                style={{
+                  color: "rgba(245,242,238,.5)",
+                  marginBottom: ".3rem",
+                }}
+              >
+                LAB LEAD
+              </div>
               <div
                 style={{
-                  width: "56px",
-                  height: "56px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                  border: "2px solid rgba(184, 146, 100, 0.5)",
-                  flexShrink: 0,
+                  color: "#F5F2EE",
+                  fontWeight: 700,
+                  fontSize: "1.1rem",
                 }}
               >
-                <img
-                  src="/images/center&lab/move-system/slide47_img12.png"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    objectPosition: "top center",
-                  }}
-                  alt="Pham Nguyen Hoai"
-                />
+                Pham Nguyen Hoai, PhD
               </div>
-              <div>
-                <div
-                  style={{
-                    fontWeight: 600,
-                    color: "#f5f2ee",
-                    fontSize: "0.95rem",
-                  }}
-                >
-                  Pham Nguyen Hoai, PhD
-                </div>
-                <div
-                  style={{
-                    fontSize: "0.78rem",
-                    color: "rgba(245, 242, 238, 0.55)",
-                    marginTop: "1px",
-                  }}
-                >
-                  Director of BMOM · Lecturer
-                </div>
-                <div
-                  style={{
-                    fontSize: "0.75rem",
-                    color: "#b89264",
-                    marginTop: "2px",
-                    fontFamily: "var(--font-mono)",
-                  }}
-                >
-                  hoaipm@ueh.edu.vn
-                </div>
+              <div
+                style={{
+                  color: "rgba(245,242,238,.6)",
+                  fontSize: ".88rem",
+                  margin: ".15rem 0 .5rem",
+                }}
+              >
+                CE-Rail@UEH · ISCM–UEH
               </div>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "0.6rem",
-                marginLeft: "auto",
-              }}
-            >
-              <span
+              <div
                 style={{
-                  fontSize: "0.78rem",
-                  color: "rgba(245, 242, 238, 0.55)",
+                  color: "rgba(245,242,238,.5)",
+                  fontSize: ".82rem",
                 }}
               >
-                Research team:
-              </span>
-              <span
-                style={{
-                  fontSize: "0.78rem",
-                  color: "rgba(245, 242, 238, 0.72)",
-                }}
-              >
-                Nguyen Duc Thanh Binh, M.Sc
-              </span>
-              <span
-                style={{
-                  fontSize: "0.78rem",
-                  color: "rgba(245, 242, 238, 0.55)",
-                }}
-              >
-                ·
-              </span>
-              <span
-                style={{
-                  fontSize: "0.78rem",
-                  color: "rgba(245, 242, 238, 0.72)",
-                }}
-              >
-                An Le, PhD Candidate
-              </span>
+                <span
+                  style={{
+                    marginRight: "1.2rem",
+                  }}
+                >
+                  Nguyen Duc Thanh Binh, M.Sc · An Le, PhD Candidate
+                </span>
+              </div>
             </div>
           </div>
 
@@ -799,20 +746,20 @@ export default function View() {
             >
               <defs>
                 <linearGradient id="railS1" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="rgba(122,184,232,0.16)" />
-                  <stop offset="100%" stop-color="rgba(122,184,232,0.03)" />
+                  <stop offset="0%" stopColor="rgba(122,184,232,0.16)" />
+                  <stop offset="100%" stopColor="rgba(122,184,232,0.03)" />
                 </linearGradient>
                 <linearGradient id="railS2" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="rgba(242,201,76,0.15)" />
-                  <stop offset="100%" stop-color="rgba(242,201,76,0.03)" />
+                  <stop offset="0%" stopColor="rgba(242,201,76,0.15)" />
+                  <stop offset="100%" stopColor="rgba(242,201,76,0.03)" />
                 </linearGradient>
                 <linearGradient id="railS3" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="rgba(235,143,111,0.14)" />
-                  <stop offset="100%" stop-color="rgba(235,143,111,0.03)" />
+                  <stop offset="0%" stopColor="rgba(235,143,111,0.14)" />
+                  <stop offset="100%" stopColor="rgba(235,143,111,0.03)" />
                 </linearGradient>
                 <linearGradient id="railS4" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="rgba(111,207,151,0.14)" />
-                  <stop offset="100%" stop-color="rgba(111,207,151,0.03)" />
+                  <stop offset="0%" stopColor="rgba(111,207,151,0.14)" />
+                  <stop offset="100%" stopColor="rgba(111,207,151,0.03)" />
                 </linearGradient>
               </defs>
               {/* <!-- CBTC SIMULATION --> */}
@@ -824,7 +771,7 @@ export default function View() {
                 rx="6"
                 fill="url(#railS1)"
                 stroke="rgba(122,184,232,0.28)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- Track rails + colored block sections --> */}
               <line
@@ -833,7 +780,7 @@ export default function View() {
                 x2="195"
                 y2="50"
                 stroke="rgba(122,184,232,0.55)"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <line
                 x1="30"
@@ -841,7 +788,7 @@ export default function View() {
                 x2="195"
                 y2="58"
                 stroke="rgba(122,184,232,0.55)"
-                stroke-width="2"
+                strokeWidth="2"
               />
               {/* <!-- sleepers --> */}
               <line
@@ -850,7 +797,7 @@ export default function View() {
                 x2="35"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="47"
@@ -858,7 +805,7 @@ export default function View() {
                 x2="47"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="59"
@@ -866,7 +813,7 @@ export default function View() {
                 x2="59"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="71"
@@ -874,7 +821,7 @@ export default function View() {
                 x2="71"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="83"
@@ -882,7 +829,7 @@ export default function View() {
                 x2="83"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="95"
@@ -890,7 +837,7 @@ export default function View() {
                 x2="95"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="107"
@@ -898,7 +845,7 @@ export default function View() {
                 x2="107"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="119"
@@ -906,7 +853,7 @@ export default function View() {
                 x2="119"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="131"
@@ -914,7 +861,7 @@ export default function View() {
                 x2="131"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="143"
@@ -922,7 +869,7 @@ export default function View() {
                 x2="143"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="155"
@@ -930,7 +877,7 @@ export default function View() {
                 x2="155"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <line
                 x1="167"
@@ -938,7 +885,7 @@ export default function View() {
                 x2="167"
                 y2="61"
                 stroke="rgba(122,184,232,0.30)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- Colored block sections --> */}
               <rect
@@ -949,7 +896,7 @@ export default function View() {
                 rx="1"
                 fill="rgba(60,200,60,0.30)"
                 stroke="rgba(60,200,60,0.5)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <rect
                 x="72"
@@ -959,7 +906,7 @@ export default function View() {
                 rx="1"
                 fill="rgba(242,201,76,0.35)"
                 stroke="rgba(242,201,76,0.55)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <rect
                 x="108"
@@ -969,7 +916,7 @@ export default function View() {
                 rx="1"
                 fill="rgba(224,60,60,0.30)"
                 stroke="rgba(224,60,60,0.5)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <rect
                 x="144"
@@ -979,7 +926,7 @@ export default function View() {
                 rx="1"
                 fill="rgba(60,200,60,0.25)"
                 stroke="rgba(60,200,60,0.4)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               {/* <!-- signal lights --> */}
               <circle
@@ -988,7 +935,7 @@ export default function View() {
                 r="5"
                 fill="rgba(60,200,60,0.6)"
                 stroke="rgba(122,184,232,0.3)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <line
                 x1="176"
@@ -996,20 +943,20 @@ export default function View() {
                 x2="176"
                 y2="44"
                 stroke="rgba(122,184,232,0.35)"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <text
                 x="216"
                 y="36"
                 fill="#7ab8e8"
-                font-size="8.5"
-                font-weight="700"
-                letter-spacing="1.8"
-                font-family="monospace"
+                fontSize="8.5"
+                fontWeight="700"
+                letterSpacing="1.8"
+                fontFamily="monospace"
               >
                 CBTC SIMULATION · MOVING BLOCK TRAIN CONTROL
               </text>
-              <text x="216" y="54" fill="rgba(245,242,238,0.45)" font-size="8">
+              <text x="216" y="54" fill="rgba(245,242,238,0.45)" fontSize="8">
                 Block section management · ATP/ATO logic · Train position
                 tracking · Headway optimisation
               </text>
@@ -1017,9 +964,9 @@ export default function View() {
                 x="20"
                 y="65"
                 fill="rgba(122,184,232,0.50)"
-                font-size="7.5"
-                font-style="italic"
-                font-family="monospace"
+                fontSize="7.5"
+                fontStyle="italic"
+                fontFamily="monospace"
               >
                 CBTC
               </text>
@@ -1032,7 +979,7 @@ export default function View() {
                 rx="6"
                 fill="url(#railS2)"
                 stroke="rgba(242,201,76,0.28)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- Train silhouette (3 cars) --> */}
               <rect
@@ -1043,7 +990,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(242,201,76,0.22)"
                 stroke="rgba(242,201,76,0.45)"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <rect
                 x="64"
@@ -1053,7 +1000,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(242,201,76,0.18)"
                 stroke="rgba(242,201,76,0.38)"
-                stroke-width="0.7"
+                strokeWidth="0.7"
               />
               <rect
                 x="94"
@@ -1063,7 +1010,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(242,201,76,0.18)"
                 stroke="rgba(242,201,76,0.38)"
-                stroke-width="0.7"
+                strokeWidth="0.7"
               />
               {/* <!-- windows on train --> */}
               <rect
@@ -1097,7 +1044,7 @@ export default function View() {
                 x2="44"
                 y2="90"
                 stroke="rgba(242,201,76,0.50)"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <line
                 x1="44"
@@ -1105,7 +1052,7 @@ export default function View() {
                 x2="122"
                 y2="90"
                 stroke="rgba(242,201,76,0.50)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- bogies --> */}
               <circle cx="42" cy="118" r="3.5" fill="rgba(242,201,76,0.40)" />
@@ -1121,7 +1068,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(242,201,76,0.08)"
                 stroke="rgba(242,201,76,0.22)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <line
                 x1="140"
@@ -1129,7 +1076,7 @@ export default function View() {
                 x2="192"
                 y2="97"
                 stroke="rgba(242,201,76,0.18)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <line
                 x1="140"
@@ -1137,7 +1084,7 @@ export default function View() {
                 x2="192"
                 y2="106"
                 stroke="rgba(242,201,76,0.18)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <line
                 x1="140"
@@ -1145,7 +1092,7 @@ export default function View() {
                 x2="192"
                 y2="115"
                 stroke="rgba(242,201,76,0.18)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <line
                 x1="160"
@@ -1153,7 +1100,7 @@ export default function View() {
                 x2="160"
                 y2="124"
                 stroke="rgba(242,201,76,0.15)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <line
                 x1="178"
@@ -1161,20 +1108,20 @@ export default function View() {
                 x2="178"
                 y2="124"
                 stroke="rgba(242,201,76,0.15)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <text
                 x="216"
                 y="98"
                 fill="#f2c94c"
-                font-size="8.5"
-                font-weight="700"
-                letter-spacing="1.8"
-                font-family="monospace"
+                fontSize="8.5"
+                fontWeight="700"
+                letterSpacing="1.8"
+                fontFamily="monospace"
               >
                 TRAIN OPERATIONS · TIMETABLING &amp; ENERGY
               </text>
-              <text x="216" y="116" fill="rgba(245,242,238,0.45)" font-size="8">
+              <text x="216" y="116" fill="rgba(245,242,238,0.45)" fontSize="8">
                 Dwell time optimisation · Regenerative braking energy · Driver
                 advisory system · Incident management
               </text>
@@ -1182,9 +1129,9 @@ export default function View() {
                 x="20"
                 y="128"
                 fill="rgba(242,201,76,0.50)"
-                font-size="7.5"
-                font-style="italic"
-                font-family="monospace"
+                fontSize="7.5"
+                fontStyle="italic"
+                fontFamily="monospace"
               >
                 Operations
               </text>
@@ -1197,7 +1144,7 @@ export default function View() {
                 rx="6"
                 fill="url(#railS3)"
                 stroke="rgba(235,143,111,0.22)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- City skyline + rail connection --> */}
               <rect
@@ -1247,7 +1194,7 @@ export default function View() {
                 r="5"
                 fill="rgba(235,143,111,0.45)"
                 stroke="rgba(235,143,111,0.65)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <circle
                 cx="100"
@@ -1255,7 +1202,7 @@ export default function View() {
                 r="5"
                 fill="rgba(235,143,111,0.45)"
                 stroke="rgba(235,143,111,0.65)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- transit rail line through city --> */}
               <line
@@ -1264,7 +1211,7 @@ export default function View() {
                 x2="195"
                 y2="194"
                 stroke="rgba(235,143,111,0.60)"
-                stroke-width="2.2"
+                strokeWidth="2.2"
               />
               {/* <!-- intermodal connections --> */}
               <line
@@ -1273,8 +1220,8 @@ export default function View() {
                 x2="58"
                 y2="172"
                 stroke="rgba(235,143,111,0.38)"
-                stroke-width="0.8"
-                stroke-dasharray="2,1.5"
+                strokeWidth="0.8"
+                strokeDasharray="2,1.5"
               />
               <line
                 x1="100"
@@ -1282,8 +1229,8 @@ export default function View() {
                 x2="100"
                 y2="172"
                 stroke="rgba(235,143,111,0.38)"
-                stroke-width="0.8"
-                stroke-dasharray="2,1.5"
+                strokeWidth="0.8"
+                strokeDasharray="2,1.5"
               />
               {/* <!-- bus connection nodes --> */}
               <rect
@@ -1294,7 +1241,7 @@ export default function View() {
                 rx="1"
                 fill="rgba(235,143,111,0.20)"
                 stroke="rgba(235,143,111,0.38)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <line
                 x1="154"
@@ -1302,8 +1249,8 @@ export default function View() {
                 x2="170"
                 y2="191"
                 stroke="rgba(235,143,111,0.30)"
-                stroke-width="0.8"
-                stroke-dasharray="2,1.5"
+                strokeWidth="0.8"
+                strokeDasharray="2,1.5"
               />
               <rect
                 x="170"
@@ -1313,20 +1260,20 @@ export default function View() {
                 rx="1"
                 fill="rgba(235,143,111,0.18)"
                 stroke="rgba(235,143,111,0.30)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <text
                 x="216"
                 y="162"
                 fill="#eb8f6f"
-                font-size="8.5"
-                font-weight="700"
-                letter-spacing="1.8"
-                font-family="monospace"
+                fontSize="8.5"
+                fontWeight="700"
+                letterSpacing="1.8"
+                fontFamily="monospace"
               >
                 RAIL-CITY CORRIDOR · INTERMODAL CONNECTIVITY
               </text>
-              <text x="216" y="180" fill="rgba(245,242,238,0.45)" font-size="8">
+              <text x="216" y="180" fill="rgba(245,242,238,0.45)" fontSize="8">
                 TOD station catchment · Bus-rail interchange · Urban rail demand
                 modelling · Smart corridor design
               </text>
@@ -1334,9 +1281,9 @@ export default function View() {
                 x="20"
                 y="192"
                 fill="rgba(235,143,111,0.50)"
-                font-size="7.5"
-                font-style="italic"
-                font-family="monospace"
+                fontSize="7.5"
+                fontStyle="italic"
+                fontFamily="monospace"
               >
                 Corridor
               </text>
@@ -1349,7 +1296,7 @@ export default function View() {
                 rx="6"
                 fill="url(#railS4)"
                 stroke="rgba(111,207,151,0.28)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               {/* <!-- Graduation cap --> */}
               <rect
@@ -1360,7 +1307,7 @@ export default function View() {
                 rx="1"
                 fill="rgba(111,207,151,0.18)"
                 stroke="rgba(111,207,151,0.38)"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <polygon
                 points="26,228 51,220 76,228 51,232"
@@ -1372,7 +1319,7 @@ export default function View() {
                 x2="76"
                 y2="240"
                 stroke="rgba(111,207,151,0.45)"
-                stroke-width="1.2"
+                strokeWidth="1.2"
               />
               <circle cx="76" cy="242" r="3" fill="rgba(111,207,151,0.50)" />
               {/* <!-- certification document --> */}
@@ -1384,7 +1331,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(111,207,151,0.12)"
                 stroke="rgba(111,207,151,0.30)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <line
                 x1="96"
@@ -1392,7 +1339,7 @@ export default function View() {
                 x2="116"
                 y2="228"
                 stroke="rgba(111,207,151,0.40)"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <line
                 x1="96"
@@ -1400,7 +1347,7 @@ export default function View() {
                 x2="116"
                 y2="234"
                 stroke="rgba(111,207,151,0.30)"
-                stroke-width="0.7"
+                strokeWidth="0.7"
               />
               <line
                 x1="96"
@@ -1408,7 +1355,7 @@ export default function View() {
                 x2="108"
                 y2="240"
                 stroke="rgba(111,207,151,0.25)"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
               <polygon
                 points="104,248 108,244 112,248"
@@ -1421,7 +1368,7 @@ export default function View() {
                 r="5"
                 fill="rgba(111,207,151,0.25)"
                 stroke="rgba(111,207,151,0.40)"
-                stroke-width="0.7"
+                strokeWidth="0.7"
               />
               <rect
                 x="135"
@@ -1431,7 +1378,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(111,207,151,0.18)"
                 stroke="rgba(111,207,151,0.30)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <circle
                 cx="158"
@@ -1439,7 +1386,7 @@ export default function View() {
                 r="5"
                 fill="rgba(111,207,151,0.22)"
                 stroke="rgba(111,207,151,0.38)"
-                stroke-width="0.7"
+                strokeWidth="0.7"
               />
               <rect
                 x="153"
@@ -1449,7 +1396,7 @@ export default function View() {
                 rx="2"
                 fill="rgba(111,207,151,0.15)"
                 stroke="rgba(111,207,151,0.28)"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
               <line
                 x1="145"
@@ -1457,21 +1404,21 @@ export default function View() {
                 x2="153"
                 y2="227"
                 stroke="rgba(111,207,151,0.25)"
-                stroke-width="0.6"
-                stroke-dasharray="1.5,1"
+                strokeWidth="0.6"
+                strokeDasharray="1.5,1"
               />
               <text
                 x="216"
                 y="228"
                 fill="#6fcf97"
-                font-size="8.5"
-                font-weight="700"
-                letter-spacing="1.8"
-                font-family="monospace"
+                fontSize="8.5"
+                fontWeight="700"
+                letterSpacing="1.8"
+                fontFamily="monospace"
               >
                 CAPACITY BUILDING · PROFESSIONAL TRAINING
               </text>
-              <text x="216" y="246" fill="rgba(245,242,238,0.45)" font-size="8">
+              <text x="216" y="246" fill="rgba(245,242,238,0.45)" fontSize="8">
                 Rail engineer certification · Train driver simulation · Regional
                 knowledge transfer · Industry curriculum
               </text>
@@ -1479,9 +1426,9 @@ export default function View() {
                 x="20"
                 y="256"
                 fill="rgba(111,207,151,0.50)"
-                font-size="7.5"
-                font-style="italic"
-                font-family="monospace"
+                fontSize="7.5"
+                fontStyle="italic"
+                fontFamily="monospace"
               >
                 Training
               </text>
@@ -1492,8 +1439,8 @@ export default function View() {
                 x2="588"
                 y2="148"
                 stroke="rgba(122,184,232,0.42)"
-                stroke-width="1.3"
-                stroke-dasharray="4,3"
+                strokeWidth="1.3"
+                strokeDasharray="4,3"
               />
               <line
                 x1="546"
@@ -1501,8 +1448,8 @@ export default function View() {
                 x2="588"
                 y2="153"
                 stroke="rgba(242,201,76,0.42)"
-                stroke-width="1.3"
-                stroke-dasharray="4,3"
+                strokeWidth="1.3"
+                strokeDasharray="4,3"
               />
               <line
                 x1="546"
@@ -1510,8 +1457,8 @@ export default function View() {
                 x2="588"
                 y2="160"
                 stroke="rgba(235,143,111,0.38)"
-                stroke-width="1.3"
-                stroke-dasharray="4,3"
+                strokeWidth="1.3"
+                strokeDasharray="4,3"
               />
               <line
                 x1="546"
@@ -1519,8 +1466,8 @@ export default function View() {
                 x2="588"
                 y2="168"
                 stroke="rgba(111,207,151,0.42)"
-                stroke-width="1.3"
-                stroke-dasharray="4,3"
+                strokeWidth="1.3"
+                strokeDasharray="4,3"
               />
               <polygon
                 points="588,148 582,143 582,153"
@@ -1547,17 +1494,17 @@ export default function View() {
                 rx="10"
                 fill="rgba(78,18,28,0.25)"
                 stroke="rgba(122,184,232,0.35)"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
               <text
                 x="718"
                 y="143"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="#7ab8e8"
-                font-size="9.5"
-                font-weight="700"
-                letter-spacing="1.8"
-                font-family="monospace"
+                fontSize="9.5"
+                fontWeight="700"
+                letterSpacing="1.8"
+                fontFamily="monospace"
               >
                 CE-RAIL PLATFORM
               </text>
@@ -1567,32 +1514,32 @@ export default function View() {
                 x2="830"
                 y2="150"
                 stroke="rgba(122,184,232,0.2)"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <text
                 x="718"
                 y="164"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.72)"
-                font-size="8.5"
+                fontSize="8.5"
               >
                 Rail Systems Research &amp; Training
               </text>
               <text
                 x="718"
                 y="178"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.58)"
-                font-size="8"
+                fontSize="8"
               >
                 Simulation · Certification · Policy Evidence
               </text>
               <text
                 x="718"
                 y="196"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.45)"
-                font-size="7.5"
+                fontSize="7.5"
               >
                 Urban Rail · CBTC · Smart Corridor
               </text>
@@ -1605,38 +1552,38 @@ export default function View() {
                 rx="6"
                 fill="rgba(122,184,232,0.10)"
                 stroke="rgba(122,184,232,0.28)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <text
                 x="632"
                 y="242"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="#7ab8e8"
-                font-size="8"
-                font-weight="700"
-                letter-spacing="1"
-                font-family="monospace"
+                fontSize="8"
+                fontWeight="700"
+                letterSpacing="1"
+                fontFamily="monospace"
               >
                 TRAIN
               </text>
               <text
                 x="632"
                 y="254"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="#7ab8e8"
-                font-size="8"
-                font-weight="700"
-                letter-spacing="1"
-                font-family="monospace"
+                fontSize="8"
+                fontWeight="700"
+                letterSpacing="1"
+                fontFamily="monospace"
               >
                 SIM
               </text>
               <text
                 x="632"
                 y="268"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.5)"
-                font-size="7.5"
+                fontSize="7.5"
               >
                 CBTC testbed
               </text>
@@ -1648,35 +1595,35 @@ export default function View() {
                 rx="6"
                 fill="rgba(242,201,76,0.10)"
                 stroke="rgba(242,201,76,0.25)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <text
                 x="716"
                 y="242"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="#f2c94c"
-                font-size="8"
-                font-weight="700"
-                letter-spacing="1"
-                font-family="monospace"
+                fontSize="8"
+                fontWeight="700"
+                letterSpacing="1"
+                fontFamily="monospace"
               >
                 CERT
               </text>
               <text
                 x="716"
                 y="256"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.5)"
-                font-size="7.5"
+                fontSize="7.5"
               >
                 rail engineer
               </text>
               <text
                 x="716"
                 y="268"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.5)"
-                font-size="7.5"
+                fontSize="7.5"
               >
                 certification
               </text>
@@ -1688,38 +1635,38 @@ export default function View() {
                 rx="6"
                 fill="rgba(111,207,151,0.10)"
                 stroke="rgba(111,207,151,0.25)"
-                stroke-width="1"
+                strokeWidth="1"
               />
               <text
                 x="802"
                 y="240"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="#6fcf97"
-                font-size="8"
-                font-weight="700"
-                letter-spacing="1"
-                font-family="monospace"
+                fontSize="8"
+                fontWeight="700"
+                letterSpacing="1"
+                fontFamily="monospace"
               >
                 URBAN
               </text>
               <text
                 x="802"
                 y="252"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="#6fcf97"
-                font-size="8"
-                font-weight="700"
-                letter-spacing="1"
-                font-family="monospace"
+                fontSize="8"
+                fontWeight="700"
+                letterSpacing="1"
+                fontFamily="monospace"
               >
                 RAIL
               </text>
               <text
                 x="802"
                 y="266"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.5)"
-                font-size="7.5"
+                fontSize="7.5"
               >
                 policy guidance
               </text>
@@ -1729,8 +1676,8 @@ export default function View() {
                 x2="632"
                 y2="222"
                 stroke="rgba(122,184,232,0.35)"
-                stroke-width="1"
-                stroke-dasharray="2,2"
+                strokeWidth="1"
+                strokeDasharray="2,2"
               />
               <line
                 x1="718"
@@ -1738,8 +1685,8 @@ export default function View() {
                 x2="716"
                 y2="222"
                 stroke="rgba(242,201,76,0.35)"
-                stroke-width="1"
-                stroke-dasharray="2,2"
+                strokeWidth="1"
+                strokeDasharray="2,2"
               />
               <line
                 x1="775"
@@ -1747,17 +1694,17 @@ export default function View() {
                 x2="800"
                 y2="222"
                 stroke="rgba(111,207,151,0.35)"
-                stroke-width="1"
-                stroke-dasharray="2,2"
+                strokeWidth="1"
+                strokeDasharray="2,2"
               />
               <text
                 x="430"
                 y="293"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="rgba(245,242,238,0.22)"
-                font-size="7.5"
-                letter-spacing="1.5"
-                font-family="monospace"
+                fontSize="7.5"
+                letterSpacing="1.5"
+                fontFamily="monospace"
               >
                 RAIL SYSTEMS INTELLIGENCE FOR VIETNAM&apos;S URBAN TRANSIT
                 FUTURE
@@ -1947,7 +1894,7 @@ export default function View() {
                   min="0"
                   max="100"
                   step="1"
-                  value="50"
+                  // value="50"
                 />
               </label>
 
@@ -2093,7 +2040,7 @@ export default function View() {
                 min="0.3"
                 max="3"
                 step="0.1"
-                value="1"
+                // value="1"
                 style={{
                   flex: 1,
                   accentColor: "#7a1f2e",

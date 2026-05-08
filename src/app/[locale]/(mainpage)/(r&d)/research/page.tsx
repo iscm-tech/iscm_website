@@ -2,7 +2,6 @@ import { ibm_plex_sans } from "@/app/fontDeclare";
 import { getLocale } from "next-intl/server";
 import ResearchCategory from "./category";
 import { Metadata } from "next";
-import Image from "next/image";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
@@ -15,15 +14,15 @@ export default async function ResearchPage() {
 
   return (
     <section className="py-24">
-      <div id="mainstream" className="container !max-w-full">
-        <div className="row">
-          <div className="col-12 col-lg-5">
+      <div id="mainstream" className="container">
+        <div className="row relative!">
+          <div className="col-12 col-lg-6 lg:sticky! lg:top-[90px] h-fit">
             <h2
               className={`text-[#971919] uppercase ${ibm_plex_sans.className} text-center`}
             >
               {locale === "en"
                 ? "research mainstream"
-                : "xu hướng nghiên cứu chính"}
+                : "các hướng nghiên cứu chính"}
             </h2>
             <span className="flex w-full justify-center mt-6">
               <p className="text-black text-justify leading-6">
@@ -110,7 +109,7 @@ export default async function ResearchPage() {
               </p>
             </span>
 
-            <div className="flex gap-3">
+            <div className="flex flex-col gap-3">
               <Link
                 href="/research/publications"
                 className="!flex !w-fit h-full items-center gap-2 btn btn-primary"
@@ -133,8 +132,7 @@ export default async function ResearchPage() {
               </Link>
             </div>
           </div>
-
-          <div className="col-12 col-lg-7 overflow-hidden">
+          <div className="col-12 col-lg-6 lg:!max-w-[80%] mt-4">
             <ResearchCategory />
           </div>
         </div>

@@ -112,10 +112,10 @@ export default function View() {
               </strong>{" "}
               that integrates atmospheric science, climate systems, and energy
               transition to understand, measure, and manage the environmental
-              pressures on Vietnam&apos;s rapidly urbanising cities. The lab develops
-              scientific tools and policy evidence across air quality, climate
-              adaptation, and low-carbon energy — treating the urban environment
-              as an interconnected system.
+              pressures on Vietnam&apos;s rapidly urbanising cities. The lab
+              develops scientific tools and policy evidence across air quality,
+              climate adaptation, and low-carbon energy — treating the urban
+              environment as an interconnected system.
             </p>
             <p
               style={{

@@ -31,6 +31,9 @@ export default async function page({ searchParams, params }: RequestProps) {
                       objectPosition: "top center",
                       height: "300px",
                     }}
+                    subTitleStyle={{
+                      fontSize: "14px",
+                    }}
                   />
                 </div>
               ))}

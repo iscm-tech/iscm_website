@@ -19,7 +19,7 @@ export default async function page({ searchParams, params }: RequestProps) {
             <div className="row items-stretch md:justify-stretch justify-center">
               {data.map(({ name, image, title, id }) => (
                 <div
-                  className="col-lg-3 col-sm-6 max-w-[350px] mb-4 h-[450px] lg:h-[530px]"
+                  className="col-lg-4 col-sm-6 max-w-[350px] mb-4 h-[350px] lg:h-[500px]"
                   key={name}
                 >
                   <MemberCard
@@ -29,8 +29,12 @@ export default async function page({ searchParams, params }: RequestProps) {
                     subTitle={title}
                     id={id}
                     imageStyle={{
+                      objectFit: "contain",
                       objectPosition: "top center",
-                      height: "40%",
+                      height: "50%",
+                    }}
+                    subTitleStyle={{
+                      fontSize: "14px",
                     }}
                     isDisabled
                   />

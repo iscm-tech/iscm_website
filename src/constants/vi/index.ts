@@ -197,6 +197,10 @@ export const iscmerMenuVi: MenuType = {
       ],
     },
     {
+      name: "Thành viên mới",
+      url: "/iscmer/internal/onboarding_guide",
+    },
+    {
       name: "Thông tin tổng thể",
       url: "/iscmer",
       group: [
@@ -233,10 +237,6 @@ export const iscmerMenuVi: MenuType = {
           url: "/iscmer/internal/overview/iscm_members_evaluation",
         },
       ],
-    },
-    {
-      name: "Thành viên mới",
-      url: "/iscmer/internal/onboarding_guide",
     },
     {
       name: "Quản trị chung",

@@ -15,6 +15,7 @@ export default function Card({
   thumbH = 450,
   style = {},
   titleStyle = {},
+  subTitleStyle = {},
   imageStyle = {},
   isShowTitle = true,
   isDisabled = false,
@@ -31,6 +32,7 @@ export default function Card({
   style?: React.CSSProperties;
   isShowTitle?: boolean;
   titleStyle?: React.CSSProperties;
+  subTitleStyle?: React.CSSProperties;
   imageStyle?: React.CSSProperties;
   isDisabled?: boolean;
   classname?: string;
@@ -76,7 +78,7 @@ export default function Card({
                   maxHeight: "50px",
                   fontWeight: "bold",
                   color: "#141414",
-                  fontSize: "16px",
+                  fontSize: "17px",
                   fontFamily: "Barlow, sans-serif",
                   display: "-webkit-box",
                   WebkitLineClamp: 2,
@@ -90,7 +92,7 @@ export default function Card({
               >
                 {title}
               </h4>
-              <p className="mt-3 mb-0 text-base!">
+              <p className="mt-3 mb-0 text-base!" style={subTitleStyle}>
                 {typeof subTitle === "string"
                   ? DOMParser(subTitle || "")
                   : subTitle}
@@ -126,7 +128,7 @@ export default function Card({
                   maxHeight: "50px",
                   fontWeight: "bold",
                   color: "#141414",
-                  fontSize: "16px",
+                  fontSize: "17px",
                   fontFamily: "Barlow, sans-serif",
                   display: "-webkit-box",
                   WebkitLineClamp: 2,
@@ -140,7 +142,7 @@ export default function Card({
               >
                 {title}
               </h4>
-              <p className="mt-3 mb-0 text-base">
+              <p className="mt-3 mb-0 text-base" style={subTitleStyle}>
                 {typeof subTitle === "string"
                   ? DOMParser(subTitle || "")
                   : subTitle}

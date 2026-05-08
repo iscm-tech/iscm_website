@@ -16,6 +16,7 @@ export default function View() {
 
     return () => {
       document.body.removeChild(script);
+      window.__SMARTLL_CLEANUP__?.();
     };
   }, []);
 

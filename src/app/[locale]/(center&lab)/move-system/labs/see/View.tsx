@@ -17,6 +17,7 @@ export default function View() {
 
     return () => {
       document.body.removeChild(script);
+      window.__SEE3D_CLEANUP__?.();
     };
   }, []);
 
@@ -40,6 +41,22 @@ export default function View() {
           <p className="lead" data-i18n="see.lead">
             {i18n("move-system.see.lead")}
           </p>
+
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: ".4rem",
+              marginTop: "1rem",
+            }}
+            aria-label="focus areas"
+          >
+            <span className="pill">Road Safety</span>
+            <span className="pill">VR Training</span>
+            <span className="pill">Eye-Tracking</span>
+            <span className="pill">Gamification</span>
+            <span className="pill">Spatial Analytics</span>
+          </div>
         </div>
       </section>
 
@@ -1395,7 +1412,8 @@ export default function View() {
                 letter-spacing="1.5"
                 font-family="monospace"
               >
-                ROAD SAFETY INTELLIGENCE FOR VIETNAM&apos;S YOUTH AND COMMUNITIES
+                ROAD SAFETY INTELLIGENCE FOR VIETNAM&apos;S YOUTH AND
+                COMMUNITIES
               </text>
             </svg>
           </div>

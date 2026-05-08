@@ -196,6 +196,10 @@ export const iscmerMenuEn: MenuType = {
       ],
     },
     {
+      name: "New Members",
+      url: "/iscmer/internal/onboarding_guide",
+    },
+    {
       name: "Overview",
       url: "/iscmer",
       group: [
@@ -232,10 +236,6 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/overview/iscm_members_evaluation",
         },
       ],
-    },
-    {
-      name: "New Members",
-      url: "/iscmer/internal/onboarding_guide",
     },
     {
       name: "General Administration",
