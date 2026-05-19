@@ -27,7 +27,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+        with:
+          lfs: true
+      - name: Pull Git LFS Files
+        run: |
+          git lfs install
+          git lfs pull
+          
       - name: Detect package manager
         id: detect-package-manager
         run: |
