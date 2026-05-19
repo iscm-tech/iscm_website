@@ -62,6 +62,19 @@ jobs:
 
       - name: Build Next.js App
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
+        env:
+          NEXT_PUBLIC_API_PROTOCOL: ${{ secrets.NEXT_PUBLIC_API_PROTOCOL }}
+          NEXT_PUBLIC_SERVER_DOMAIN: ${{ secrets.NEXT_PUBLIC_SERVER_DOMAIN }}
+          NEXT_PUBLIC_SERVER_PORT: ${{ secrets.NEXT_PUBLIC_SERVER_PORT }}
+          NEXT_PUBLIC_API_ENDPOINT: ${{ secrets.NEXT_PUBLIC_API_ENDPOINT }}
+          NEXT_PUBLIC_PRODUCTION_DOMAIN: ${{ secrets.NEXT_PUBLIC_PRODUCTION_DOMAIN }}
+          NEXT_PUBLIC_EMAIL_APP_USERNAME: ${{ secrets.NEXT_PUBLIC_EMAIL_APP_USERNAME }}
+          NEXT_PUBLIC_EMAIL_APP_PASS: ${{ secrets.NEXT_PUBLIC_EMAIL_APP_PASS }}
+          NEXT_PUBLIC_EMAIL_RECEIVER: ${{ secrets.NEXT_PUBLIC_EMAIL_RECEIVER }}
+          NEXT_PUBLIC_GG_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GG_ANALYTICS_ID }}
+          NEXT_PUBLIC_GG_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_GG_CLIENT_ID }}
+          NEXT_PUBLIC_GG_SCERET: ${{ secrets.NEXT_PUBLIC_GG_SCERET }}
+          NEXT_PUBLIC_NEXTAUTH_SECRET: ${{ secrets.NEXT_PUBLIC_NEXTAUTH_SECRET }}
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
