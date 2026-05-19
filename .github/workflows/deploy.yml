@@ -147,5 +147,6 @@ jobs:
             rm -f deploy.tar.gz
 
             npm ci --omit=dev
+            pkill -u ${{ secrets.SSH_USER }}
             mkdir -p tmp
             touch tmp/restart.txt
