@@ -155,7 +155,7 @@ jobs:
 
             npm ci --omit=dev
             echo "Stopping Node.js app processes..."
-            pkill -f "lsnode:${{ secrets.APP_PATH }}" || true
+            pkill -f "[l]snode:${{ secrets.APP_PATH }}" || true
             echo "Restarting app..."
             mkdir -p tmp
             touch tmp/restart.txt
