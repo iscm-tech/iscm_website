@@ -80,6 +80,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nextjs-build
+          include-hidden-files: true
           path: |
             .next
             public
@@ -103,6 +104,11 @@ jobs:
           name: nextjs-build
           path: ./
 
+      - name: Check downloaded artifact
+        run: |
+          ls -la
+          ls -la .next || true
+          
       - name: Pack build artifact
         run: |
           tar -czf deploy.tar.gz \
