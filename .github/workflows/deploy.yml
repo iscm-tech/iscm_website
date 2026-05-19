@@ -5,19 +5,17 @@ on:
   push:
     branches: ["master"]
 
-    # Allows you to run this workflow manually from the Actions tab
-    # workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to Github Pages
 permissions: 
   contents: read
-  pages: write
-  id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: "deploy-iscm-shared-hosting"
   cancel-in-progress: false
 
 jobs:
@@ -25,41 +23,93 @@ jobs:
   build:
     name: Build Next.js
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "$(( github.workspace )) / yarn.lock" ]; then
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "${{ github.workspace }} / package.json" ]; then
+          elif [ -f "${{ github.workspace }}/package-lock.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
             exit 0
           else
             echo "Unable to determine package manager"
             exit 1
           fi
+          
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      # - name: Install deps
-        
-      # - name: Upload project via rsync (SSH)
-      #   uses: burnett01/rsync-deployments@7.1.0
-      #   with:
-      #     switches: -az --exclude=".env" --exclude="storage/**" --exclude="bootstrap/cache/**" --exclude=".git" --exclude=".htaccess"
-      #     path: ./
-      #     remote_path: ${{ secrets.APP_PATH }}
-      #     remote_host: ${{ secrets.SSH_HOST }}
-      #     remote_user: ${{ secrets.SSH_USER }}
-      #     remote_key: ${{ secrets.SSH_KEY }}
-      #     remote_port: ${{ secrets.SSH_PORT }}
           
+      - name: Install deps
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+
+      - name: Build Next.js App
+        run: ${{ steps.detect-package-manager.outputs.manager }} run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nextjs-build
+          path: |
+            .next
+            public
+            messages
+            server.js
+            package.json
+            package-lock.json
+            next.config.js
+          retention-days: 1
+
+  #Deploy job
+  deploy: 
+    name: Deploy to cPanel Shared Hosting
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: nextjs-build
+          path: ./
+
+      - name: Upload project via rsync
+        uses: burnett01/rsync-deployments@7.1.0
+        with:
+          switches: -az --delete --exclude=".env" --exclude="node_modules" --exclude="tmp"
+          path: ./
+          remote_path: ${{ secrets.APP_PATH }}
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
+          remote_port: ${{ secrets.SSH_PORT }}
+
+      - name: Install dependencies and restart app
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd ${{ secrets.APP_PATH }}
+            # npm ci --omit=dev
+            mkdir -p tmp
+            touch tmp/restart.txt 
