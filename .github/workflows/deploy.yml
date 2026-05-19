@@ -103,18 +103,28 @@ jobs:
           name: nextjs-build
           path: ./
 
-      - name: Upload project via rsync
-        uses: burnett01/rsync-deployments@7.1.0
+      - name: Pack build artifact
+        run: |
+          tar -czf deploy.tar.gz \
+            .next \
+            public \
+            messages \
+            server.js \
+            package.json \
+            package-lock.json \
+            next.config.js
+            
+      - name: Upload package via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          switches: -az --delete --exclude=".env" --exclude="node_modules" --exclude="tmp"
-          path: ./
-          remote_path: ${{ secrets.APP_PATH }}
-          remote_host: ${{ secrets.SSH_HOST }}
-          remote_user: ${{ secrets.SSH_USER }}
-          remote_key: ${{ secrets.SSH_KEY }}
-          remote_port: ${{ secrets.SSH_PORT }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "deploy.tar.gz"
+          target: ${{ secrets.APP_PATH }}
 
-      - name: Install dependencies and restart app
+      - name: Extract package, install dependencies and restart app
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -123,6 +133,13 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd ${{ secrets.APP_PATH }}
-            # npm ci --omit=dev
+
+            rm -rf .next public messages
+            rm -f server.js package.json package-lock.json next.config.js
+
+            tar -xzf deploy.tar.gz
+            rm -f deploy.tar.gz
+
+            npm ci --omit=dev
             mkdir -p tmp
-            touch tmp/restart.txt 
+            touch tmp/restart.txt
