@@ -154,6 +154,8 @@ jobs:
             rm -f deploy.tar.gz
 
             npm ci --omit=dev
-            pkill -u ${{ secrets.SSH_USER }}
+            echo "Stopping Node.js app processes..."
+            pkill -f "lsnode:${{ secrets.APP_PATH }}" || true
+            echo "Restarting app..."
             mkdir -p tmp
             touch tmp/restart.txt
