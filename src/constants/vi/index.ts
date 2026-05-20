@@ -19,10 +19,14 @@ export const mainMenuVi: Array<MenuType> = [
       {
         name: "Khác",
         group: [
-          { name: "Thư viện", url: "/library" },
+          { name: "Bộ nhận diện thương hiệu", url: "/brand_identity" },
           {
             name: "Order Design",
             url: "https://forms.gle/9ZeiYxVvBkgpyYrh8",
+          },
+          {
+            name: "Đăng ký mượn thiết bị",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSfK4QSXLES1zIWIJYo-ETp4gAfMymGv-czIDAhjtJ_LaKH4ew/viewform",
           },
         ],
       },
@@ -197,10 +201,6 @@ export const iscmerMenuVi: MenuType = {
       ],
     },
     {
-      name: "Thành viên mới",
-      url: "/iscmer/internal/onboarding_guide",
-    },
-    {
       name: "Thông tin tổng thể",
       url: "/iscmer",
       group: [
@@ -221,13 +221,17 @@ export const iscmerMenuVi: MenuType = {
           url: "/iscmer/internal/overview/ueh_sustainability",
         },
         {
-          name: "ISCM & Covergence Tech Hub",
+          name: "ISCM & Convergence Tech Hub",
           url: "/iscmer/internal/overview/convergence_tech_hub",
         },
         {
           name: "ISCM & MakerSpace",
           url: "/iscmer/internal/overview/makerspace",
         },
+        // {
+        //   name: "Thành viên mới",
+        //   url: "/iscmer/internal/overview/onboarding_guide",
+        // },
         {
           name: "Cơ cấu tổ chức",
           url: "/iscmer/internal/overview/company_organization",

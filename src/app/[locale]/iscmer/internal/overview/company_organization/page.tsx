@@ -350,7 +350,7 @@ export default async function page() {
 
         <figure className="w-full flex items-center justify-center mt-4">
           <Image
-            src={"/images/about/company_organization.png"}
+            src={"/images/about/company_organization.jpg"}
             alt="Company Organization"
             width={2400}
             height={1200}

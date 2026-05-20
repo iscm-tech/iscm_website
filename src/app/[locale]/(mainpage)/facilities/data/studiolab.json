@@ -81,30 +81,6 @@
   },
   {
     "en": {
-      "title": "Design Cell",
-      "location": [
-        {
-          "campus": "UEH Campus V",
-          "addr": "232/6 Vo Thi Sau St., Xuan Hoa Ward, Ho Chi Minh City, Vietnam"
-        }
-      ],
-      "introduction": "Design Cell is a space for design and innovation activities, where students can collaborate on projects and develop their creative skills."
-    },
-    "vi": {
-      "title": "Design Cell",
-      "location": [
-        {
-          "campus": "UEH Cơ sở V",
-          "addr": "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. HCM"
-        }
-      ],
-      "introduction": "Design Cell là không gian dành cho các hoạt động thiết kế và đổi mới sáng tạo, nơi sinh viên có thể hợp tác trong các dự án và phát triển kỹ năng sáng tạo của mình."
-    },
-    "thumb": "/images/studiolab/design_cell.jpg",
-    "path": "/facilities/design_cell"
-  },
-  {
-    "en": {
       "title": "Living Lab",
       "location": [
         {
@@ -115,14 +91,14 @@
       "introduction": "Living Lab is an open innovation ecosystem centered on users, where users, businesses, researchers, and government collaboratively co-create and test solutions within real-life everyday environments, aiming to generate user value and sustainable business models."
     },
     "vi": {
-      "title": "Living Lab",
+      "title": "smartHub",
       "location": [
         {
           "campus": "UEH Cơ sở V",
           "addr": "232/6 Võ Thị Sáu, phường Xuân Hòa, TP. HCM"
         }
       ],
-      "introduction": "Phòng Thí Nghiệm Sống (Living Lab) là hệ sinh thái đổi mới mở, lấy người dùng làm trung tâm, trong đó người dùng, doanh nghiệp, nhà nghiên cứu và chính quyền cùng đồng sáng tạo (co-creation) và thử nghiệm giải pháp ngay trong môi trường đời sống thực tế hàng ngày, nhằm tạo ra giá trị người dùng và mô hình kinh doanh bền vững."
+      "introduction": "smartHub là hệ sinh thái đổi mới mở, lấy người dùng làm trung tâm, trong đó người dùng, doanh nghiệp, nhà nghiên cứu và chính quyền cùng đồng sáng tạo (co-creation) và thử nghiệm giải pháp ngay trong môi trường đời sống thực tế hàng ngày, nhằm tạo ra giá trị người dùng và mô hình kinh doanh bền vững."
     },
     "thumb": "/images/studiolab/livinglab.jpg",
     "path": "/facilities/living_lab"

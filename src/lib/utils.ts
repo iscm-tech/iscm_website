@@ -55,3 +55,20 @@ export function normalizeFile(originalFile: File): File {
     lastModified: originalFile.lastModified,
   });
 }
+
+export function mappingTableToPage(table: string) {
+  switch (table) {
+    case "news":
+      return "iscm_life";
+    case "student_life":
+      return "student_life";
+    case "open_admission":
+      return "open_admission";
+    case "evolving_research":
+      return "expert_insight";
+    case "events":
+      return "events";
+    default:
+      return "";
+  }
+}

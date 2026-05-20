@@ -12,8 +12,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ id: string; locale: string }>;
 }) {
-  const locale = (await params).locale;
-  const postID = (await params).id;
+  const { locale, id: postID } = await params;
 
   const {
     payload: { data },
@@ -24,13 +23,13 @@ export async function generateMetadata({
     openGraph: {
       title: data.metadata.title,
       images: [{ url: data.metadata.thumbnail }],
-      url: `https://iscm.ueh.edu.vn/${locale}/news/${data.metadata.slug}`,
+      url: `https://iscm.ueh.edu.vn/${locale}/iscm_life/${data.metadata.slug}`,
       type: "article",
       locale: locale,
       article: {
         publishedTime: data.metadata.publishDate,
         authors: ["https://iscm.ueh.edu.vn"],
-        section: "News",
+        section: "ISCM Life",
       },
     },
   };

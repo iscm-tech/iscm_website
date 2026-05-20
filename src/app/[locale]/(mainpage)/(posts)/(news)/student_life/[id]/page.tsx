@@ -13,8 +13,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ id: string; locale: string }>;
 }) {
-  const locale = (await params).locale;
-  const postID = (await params).id;
+  const { locale, id: postID } = await params;
 
   const {
     payload: { data },
@@ -71,7 +70,7 @@ export default async function page({
                         : "dd 'tháng' MM 'năm' yyyy",
                       {
                         locale: locale === "en" ? enUS : vi,
-                      }
+                      },
                     )}
                   </em>
                 </div>

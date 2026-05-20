@@ -9,6 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import DomParser from "@/components/domParser";
+import Link from "next/link";
+import envConfig from "@/config";
+import { SquareArrowOutUpRightIcon } from "lucide-react";
 
 const ProgramSubjectStyled = styled.div`
   .ant-pagination-next,
@@ -41,7 +44,7 @@ export default function ProgramSubject({
 }: {
   subjectLists: {
     module: string;
-    subjects: { name: string; credits: number; desc?: string }[];
+    subjects: { name: string; url: string }[];
   };
 }) {
   const subPerPage = 4;
@@ -51,8 +54,7 @@ export default function ProgramSubject({
   const [subList, setSubList] = useState<
     {
       name: string;
-      credits: number;
-      desc?: string;
+      url: string;
     }[]
   >([]);
   const [scope] = useAnimate();
@@ -114,18 +116,20 @@ export default function ProgramSubject({
                 }}
                 className="subject-item gap-4 flex justify-between mb-0 items-end"
               >
-                <span className="uppercase flex-1 leading-tight text-black font-bold">
+                <Link
+                  href={`${envConfig.API_ENDPOINT}${sub.url}`}
+                  target="_blank"
+                  className="flex items-center gap-2 transition-colors hover:text-[#cd2027]! uppercase flex-1 leading-tight text-black! font-bold"
+                >
                   {sub.name}
-                </span>
-                {/* <span className="flex-shrink-0 flex items-end text-sm">
-                  {sub.credits} {locale === "en" ? "credits" : "tín chỉ"}
-                </span> */}
+                  <SquareArrowOutUpRightIcon size={18} />
+                </Link>
               </motion.p>
             </AnimatePresence>
           ),
-          children: <p className="text-justify leading-normal">{sub.desc}</p>,
-          collapsible: sub.desc ? undefined : "disabled",
-          showArrow: !!sub.desc,
+          // children: <p className="text-justify leading-normal">{sub.desc}</p>,
+          collapsible: "disabled",
+          showArrow: false,
           styles: {
             header: {
               borderBottom: "1px solid #cd2027",

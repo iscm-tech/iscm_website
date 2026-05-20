@@ -14,38 +14,30 @@ export async function generateMetadata({
 }: {
   params: Promise<{ id: string; locale: string }>;
 }) {
-  const locale = (await params).locale;
-  const postID = (await params).id;
+  const { locale, id: postID } = await params;
 
-  try {
-    const {
-      payload: { data },
-    } = await getPostServices.getPost("events", postID, locale);
+  const {
+    payload: { data },
+  } = await getPostServices.getPost("events", postID, locale);
 
-    return {
+  return {
+    title: data.metadata.title,
+    // description: data.metadata.description,
+    openGraph: {
       title: data.metadata.title,
       // description: data.metadata.description,
-      openGraph: {
-        title: data.metadata.title,
-        // description: data.metadata.description,
-        images: [{ url: data.metadata.thumbnail }],
-        url: `https://iscm.ueh.edu.vn/${locale}/events/${data.metadata.slug}`,
-        type: "article",
-        locale: locale === "vi" ? "vi_VN" : "en_US",
-        article: {
-          publishedTime: data.metadata.publishDate,
-          authors: ["https://iscm.ueh.edu.vn"],
-          section: "Events",
-          // tags: data.metadata.tags || [], // nếu có
-        },
+      images: [{ url: data.metadata.thumbnail }],
+      url: `https://iscm.ueh.edu.vn/${locale}/events/${data.metadata.slug}`,
+      type: "article",
+      locale: locale === "vi" ? "vi_VN" : "en_US",
+      article: {
+        publishedTime: data.metadata.publishDate,
+        authors: ["https://iscm.ueh.edu.vn"],
+        section: "Events",
+        // tags: data.metadata.tags || [], // nếu có
       },
-    };
-  } catch (error) {
-    console.log(error);
-    return {
-      title: "Not found",
-    };
-  }
+    },
+  };
 }
 
 export default async function page({ params }: RequestProps) {
@@ -74,7 +66,7 @@ export default async function page({ params }: RequestProps) {
                         : "dd 'tháng' MM 'năm' yyyy",
                       {
                         locale: locale === "en" ? enUS : vi,
-                      }
+                      },
                     )}
                   </em>
                 </div>

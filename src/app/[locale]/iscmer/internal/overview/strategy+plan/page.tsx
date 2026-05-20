@@ -2,7 +2,7 @@
 
 import { barlow } from "@/app/fontDeclare";
 import { Image, Timeline } from "antd";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { FileTextIcon, SquareArrowOutUpRight } from "lucide-react";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -54,27 +54,20 @@ export default function Page() {
       </h1>
 
       <div className="content-body mt-5">
-        <h2>
-          <Link
-            href="https://docs.google.com/spreadsheets/d/1Cz1AINenNEsRqOc4BFRsiHqxOWEoGNYfss3g5km4LNQ/edit?gid=228169785#gid=228169785"
-            target="_blank"
-            className="text-[#cd2027]! flex items-center gap-2"
-          >
-            {locale === "vi"
-              ? "Chiến lược phát triển ISCM"
-              : "ISCM Development Strategy"}
-            <SquareArrowOutUpRight size={20} />
-          </Link>
+        <h2 className="text-[#cd2027]! flex items-center gap-2">
+          {locale === "vi"
+            ? "Chiến lược phát triển ISCM"
+            : "ISCM Development Strategy"}
         </h2>
         <p className="text-justify">
           {locale === "en" ? (
             <>
               The ISCM Development Strategy serves as the master roadmap for all
               research, training, and community engagement activities. This
-              framework outlines the Institute&apos;s long-term vision to become a
-              pioneer in Smart Cities and Sustainable Management. Furthermore,
-              it reinforces ISCM&apos;s position on the international knowledge map
-              through key strategic projects.
+              framework outlines the Institute&apos;s long-term vision to become
+              a pioneer in Smart Cities and Sustainable Management. Furthermore,
+              it reinforces ISCM&apos;s position on the international knowledge
+              map through key strategic projects.
             </>
           ) : (
             <>
@@ -162,15 +155,57 @@ export default function Page() {
             </>
           )}
         </p>
-        <h2>
-          <Link
-            href="https://docs.google.com/spreadsheets/d/17XtJZfIEQXePCUySQ0743pzRDQFR5-whS8tWmp0ARL0/edit?gid=1302269365#gid=1302269365"
-            target="_blank"
-            className="text-[#cd2027]! flex items-center gap-2"
-          >
-            {locale === "en" ? "Year Plan" : "Kế hoạch năm"}
-            <SquareArrowOutUpRight size={20} />
-          </Link>
+
+        <ul className="my-4">
+          <h4>
+            {locale === "en" ? "List of Links" : "Danh mục các liên kết"}:
+          </h4>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={
+                "https://docs.google.com/spreadsheets/d/1Cz1AINenNEsRqOc4BFRsiHqxOWEoGNYfss3g5km4LNQ/edit?gid=228169785#gid=228169785"
+              }
+            >
+              <FileTextIcon />
+              {locale === "en"
+                ? "ISCM Strategy 2025 - 2030"
+                : "ISCM Chiến lược 2025 - 2030"}
+            </Link>
+          </li>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={
+                "https://docs.google.com/document/d/1IjnsN6KX4Ebpdr3so_Mru1N4TrRzI2iZZXeVY4pHNTw/edit?usp=sharing"
+              }
+            >
+              <FileTextIcon />
+              {locale === "en"
+                ? "ISCM - Information & Strategy"
+                : "ISCM - Thông tin & Chiến lược"}
+            </Link>
+          </li>
+          <li className="list-item! mt-3">
+            <Link
+              className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+              target="_blank"
+              href={
+                "https://docs.google.com/spreadsheets/d/17XtJZfIEQXePCUySQ0743pzRDQFR5-whS8tWmp0ARL0/edit?gid=1302269365#gid=1302269365"
+              }
+            >
+              <FileTextIcon />
+              {locale === "en"
+                ? "2026 ISCM - Event Year"
+                : "ISCM - Kế hoạch năm 2026"}
+            </Link>
+          </li>
+        </ul>
+
+        <h2 className="text-[#cd2027]! flex items-center gap-2">
+          {locale === "en" ? "Year Plan" : "Kế hoạch năm"}
         </h2>
         <p className="text-justify">
           {locale === "en" ? (

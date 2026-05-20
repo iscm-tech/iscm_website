@@ -18,8 +18,12 @@ export const mainMenuEn: Array<MenuType> = [
       {
         name: "More",
         group: [
-          { name: "Library", url: "/library" },
+          { name: "Brand Identity", url: "/brand_identity" },
           { name: "Order Design", url: "https://forms.gle/9ZeiYxVvBkgpyYrh8" },
+          {
+            name: "Borrow Equipment",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSfK4QSXLES1zIWIJYo-ETp4gAfMymGv-czIDAhjtJ_LaKH4ew/viewform",
+          },
         ],
       },
     ],
@@ -195,10 +199,7 @@ export const iscmerMenuEn: MenuType = {
         },
       ],
     },
-    {
-      name: "New Members",
-      url: "/iscmer/internal/onboarding_guide",
-    },
+
     {
       name: "Overview",
       url: "/iscmer",
@@ -227,6 +228,10 @@ export const iscmerMenuEn: MenuType = {
           name: "ISCM & MakerSpace",
           url: "/iscmer/internal/overview/makerspace",
         },
+        // {
+        //   name: "New Members",
+        //   url: "/iscmer/internal/overview/onboarding_guide",
+        // },
         {
           name: "Company Organization",
           url: "/iscmer/internal/overview/company_organization",

@@ -1,0 +1,221 @@
+[
+  {
+    "module": "Tiếng Anh",
+    "subjects": [
+      {
+        "name": "Tiếng Anh tổng quát",
+        "url": "/public/static/pdf/General Business English.pdf"
+      },
+      {
+        "name": "Tiếng Anh chuyên ngành 1",
+        "url": "/public/static/pdf/baud/English for Technology, Communication and Design 2.pdf"
+      },
+      {
+        "name": "Tiếng Anh chuyên ngành 2",
+        "url": "/public/static/pdf/baud/English for Technology, Communication and Design 1.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Môn chung",
+    "subjects": [
+      {
+        "name": "Kỹ năng mềm",
+        "url": "/public/static/pdf/baud/Soft skills.pdf"
+      },
+      {
+        "name": "Tư duy Thiết kế",
+        "url": "/public/static/pdf/baud/Design Thinking.pdf"
+      },
+      {
+        "name": "Nhập môn Tâm lý học",
+        "url": "/public/static/pdf/baud/Introduction to Psychology.pdf"
+      },
+      {
+        "name": "Tư duy doanh nghiệp và Khởi nghiệp",
+        "url": "/public/static/pdf/baud/Entrepreneurship.pdf"
+      },
+      {
+        "name": "Phát triển Bền vững",
+        "url": "/public/static/pdf/baud/Sustainable Development.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Khoa học xã hội, Khoa học chính trị và Luật",
+    "subjects": [
+      {
+        "name": "Tư tưởng Hồ Chí Minh",
+        "url": "/public/static/pdf/baud/Ho Chi Minh’s Ideology.pdf"
+      },
+      {
+        "name": "Triết học Mác-Lênin",
+        "url": "/public/static/pdf/baud/Marxist - Leninist Philosophy.pdf"
+      },
+      {
+        "name": "Kinh tế Chính trị Mác-Lênin",
+        "url": "/public/static/pdf/baud/Marxist - Leninist Political Economics.pdf"
+      },
+      {
+        "name": "Lịch sử Đảng Cộng sản Việt Nam",
+        "url": "/public/static/pdf/baud/History of Vietnamese Communist Party.pdf"
+      },
+      {
+        "name": "Chủ nghĩa Xã hội Khoa học",
+        "url": "/public/static/pdf/baud/Scientific Socialism.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Lý thuyết thiết kế",
+    "subjects": [
+      {
+        "name": "Nguyên lý Thiết kế Kiến trúc",
+        "url": "/public/static/pdf/baud/Theories of Architecture Design.pdf"
+      },
+      {
+        "name": "Cấu tạo Công trình",
+        "url": "/public/static/pdf/baud/Building Structure.pdf"
+      },
+      {
+        "name": "Vật lý kiến trúc",
+        "url": "/public/static/pdf/baud/Architectural Physics.pdf"
+      },
+      {
+        "name": "Phân tích và Thiết kế Kiến trúc",
+        "url": "/public/static/pdf/baud/Analysis and Architecture Design.pdf"
+      },
+      {
+        "name": "Thiết kế Cảnh quan Thông minh và Bền vững",
+        "url": "/public/static/pdf/baud/Smart and Resilient Landscape Design.pdf"
+      },
+      {
+        "name": "Lịch sử Kiến trúc và Đô thị",
+        "url": "/public/static/pdf/baud/History of Architecture and Urbanism.pdf"
+      },
+      {
+        "name": "Thiết kế Đô thị Thông minh",
+        "url": "/public/static/pdf/baud/Smart Urban Design.pdf"
+      },
+      {
+        "name": "Quy hoạch Đô thị",
+        "url": "/public/static/pdf/baud/Urban Planning.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Kỹ thuật và Phát triển Thành phố Thông minh",
+    "subjects": [
+      {
+        "name": "Thành phố Thông minh",
+        "url": "/public/static/pdf/baud/Smart City.pdf"
+      },
+      {
+        "name": "Toán Cơ bản và Nhập môn Kiến trúc Thuật toán",
+        "url": "/public/static/pdf/baud/Basic Mathematics and Introduction to Computational Design.pdf"
+      },
+      {
+        "name": "Công nghệ kỹ thuật số",
+        "url": "/public/static/pdf/baud/Digital Tools.pdf"
+      },
+      {
+        "name": "Lập trình cho Kiến trúc Thuật toán",
+        "url": "/public/static/pdf/baud/Programming for Computational Design.pdf"
+      },
+      {
+        "name": "Thuật toán và Xử lý Dữ liệu Đô thị",
+        "url": "/public/static/pdf/baud/Urban Computation and Spatial Data Analysis.pdf"
+      },
+      {
+        "name": "Mô hình Thông tin Xây dựng",
+        "url": "/public/static/pdf/baud/Building Information Model.pdf"
+      },
+      {
+        "name": "Công nghệ Máy học cho TPTM",
+        "url": "/public/static/pdf/baud/Machine Learning for Smart City.pdf"
+      },
+      {
+        "name": "Đồng sáng tạo",
+        "url": "/public/static/pdf/baud/Co-Creation.pdf"
+      },
+      {
+        "name": "Kinh tế Đô thị Mới & Marketing Thành phố",
+        "url": "/public/static/pdf/baud/New Urban Economics & City Marketing.pdf"
+      },
+      {
+        "name": "Luật và Pháp lý Đô thị",
+        "url": "/public/static/pdf/baud/Urban Law and Legislation.pdf"
+      },
+      {
+        "name": "Công nghệ trong TPTM",
+        "url": "/public/static/pdf/baud/Technology in Smart City.pdf"
+      },
+      {
+        "name": "Quản lý và Bảo tồn Di sản Văn hóa",
+        "url": "/public/static/pdf/baud/Cultural Heritage Management and Conservation.pdf"
+      },
+      {
+        "name": "Tham quan Đô thị",
+        "url": "/public/static/pdf/baud/Study Trip.pdf"
+      },
+      {
+        "name": "Phóng Thí nghiệm Đô thị",
+        "url": "/public/static/pdf/baud/Urban Living Lab.pdf"
+      },
+      {
+        "name": "Tiếp cận bền vững và Di chuyển Thông minh",
+        "url": "/public/static/pdf/baud/Sustainable Accessibility and Smart Mobility.pdf"
+      },
+      {
+        "name": "Quản lý dự án Đô thị Thông minh",
+        "url": "/public/static/pdf/baud/Smart City Project Management.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Đồ án Thiết kế",
+    "subjects": [
+      {
+        "name": "Đồ án cơ bản 1",
+        "url": "/public/static/pdf/baud/Basic StudioLab 1.pdf"
+      },
+      {
+        "name": "Đồ án cơ bản 2 - Hình ảnh hóa đô thị",
+        "url": "/public/static/pdf/baud/Basic StudioLab 2 - Urban Visualization.pdf"
+      },
+      {
+        "name": "Đồ án cơ bản 3 - Bản đồ hóa thành phố",
+        "url": "/public/static/pdf/baud/Basic StudioLab 3 - Mapping the City.pdf"
+      },
+      {
+        "name": "Đồ án Kiến trúc 1 - Dự án nhà ở",
+        "url": "/public/static/pdf/baud/Architecture Studio Lab 1 - Residential project.pdf"
+      },
+      {
+        "name": "Đồ án Kiến trúc 2",
+        "url": "/public/static/pdf/baud/Architecture StudioLab 2.pdf"
+      },
+      {
+        "name": "Đồ án Thiết kế Cảnh quan - Thiết kế Cảnh quan Bền vững",
+        "url": "/public/static/pdf/baud/Landscape Design Studiolab - Resilience Landscape Design.pdf"
+      },
+      {
+        "name": "Đồ án Thiết kế Đô thị Thông minh",
+        "url": "/public/static/pdf/baud/Smart Urban Design StudioLab.pdf"
+      },
+      {
+        "name": "Đồ án Kiến trúc và Thiết kế Đô thị Thông minh",
+        "url": "/public/static/pdf/baud/Architecture and Smart Urban Design StudioLab.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Thực tập và Tốt nghiệp",
+    "subjects": [
+      {
+        "name": "Thực tập và Tốt nghiệp",
+        "url": "/public/static/pdf/baud/Internship and Graduation.pdf"
+      }
+    ]
+  }
+]

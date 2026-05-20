@@ -13,8 +13,8 @@ import "../style.scss";
 // Import Data
 import workPositionVi from "./data/workPositionVi.json";
 import workPositionEn from "./data/workPositionEn.json";
-import subEn from "./data/2025/programEn.json";
-import subVi from "./data/2025/programVi.json";
+import subEn from "./data/curriculum/programEn.json";
+import subVi from "./data/curriculum/programVi.json";
 import programStructure from "./data/programStucture.json";
 
 // Import Components
@@ -42,7 +42,7 @@ export default function UndergraduateCoursePage() {
   const locale = useLocale();
   const program: {
     module: string;
-    subjects: { name: string; credits: number; desc?: string }[];
+    subjects: { name: string; url: string }[];
   }[] = locale === "en" ? subEn : subVi;
   const jobList = locale === "en" ? workPositionEn : workPositionVi;
   const [programStructureImage, setProgramStructureImage] = useState<string>(
@@ -52,7 +52,7 @@ export default function UndergraduateCoursePage() {
   const [jobDesc, setJobDesc] = useState<WorkPositionType>(jobList[0]);
   const [subjectList, setSubjectLsit] = useState<{
     module: string;
-    subjects: { name: string; credits: number; desc?: string }[];
+    subjects: { name: string; url: string }[];
   }>(program[0]);
 
   const scrollToSection = useCallback(
@@ -389,13 +389,13 @@ export default function UndergraduateCoursePage() {
               {locale === "en" ? (
                 <>
                   <h2 className="uppercase">Program Structure</h2>
-                  Comprising 5 core knowledge domains{" "}
+                  Main curriculum components{" "}
                   <span className="text-base font-normal">123 credits</span>
                 </>
               ) : (
                 <>
                   <h2 className="uppercase">Tổng quan chương trình</h2>
-                  Với 5 nhóm kiến thức cốt lõi{" "}
+                  Với các nhóm kiến thức cốt lõi{" "}
                   <span className="text-base font-normal">123 tín chỉ</span>
                 </>
               )}

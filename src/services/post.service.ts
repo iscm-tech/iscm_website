@@ -13,6 +13,7 @@ import {
   PostCardType,
   PostListResType,
   PostResType,
+  SearchPostResType,
   UpdatePostBodyType,
 } from "@/schemaValidations/post.schema";
 
@@ -90,6 +91,16 @@ const getPostServices = {
       options,
     ),
 };
+
+const searchPostServices = (
+  lang: string,
+  searchString: string,
+  options?: { [key: string]: any },
+) =>
+  http.get<SearchPostResType>(
+    `/api/utils/search?q=${searchString}${lang ? `&lang=${lang}` : ""}`,
+    options,
+  );
 
 const createUpdatePostServices = {
   createPost: (
@@ -192,6 +203,7 @@ const rejectPendingPost = (
 export {
   getPendingPost,
   getPostServices,
+  searchPostServices,
   createUpdatePostServices,
   deletePostServices,
   acceptPendingPost,

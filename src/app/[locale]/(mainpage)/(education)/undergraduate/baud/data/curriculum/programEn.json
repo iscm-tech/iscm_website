@@ -1,0 +1,221 @@
+[
+  {
+    "module": "English",
+    "subjects": [
+      {
+        "name": "English for Technology, Communication and Design 1",
+        "url": "/public/static/pdf/baud/English for Technology, Communication and Design 1.pdf"
+      },
+      {
+        "name": "English for Technology, Communication and Design 2",
+        "url": "/public/static/pdf/baud/English for Technology, Communication and Design 2.pdf"
+      },
+      {
+        "name": "General Business English",
+        "url": "/public/static/pdf/General Business English.pdf"
+      }
+    ]
+  },
+  {
+    "module": "General Module",
+    "subjects": [
+      {
+        "name": "Soft skills",
+        "url": "/public/static/pdf/baud/Soft skills.pdf"
+      },
+      {
+        "name": "Design Thinking",
+        "url": "/public/static/pdf/baud/Design Thinking.pdf"
+      },
+      {
+        "name": "Introduction to Psychology",
+        "url": "/public/static/pdf/baud/Introduction to Psychology.pdf"
+      },
+      {
+        "name": "Entrepreneurship",
+        "url": "/public/static/pdf/baud/Entrepreneurship.pdf"
+      },
+      {
+        "name": "Sustainable Development",
+        "url": "/public/static/pdf/baud/Sustainable Development.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Social Science, Political Science and Law Module",
+    "subjects": [
+      {
+        "name": "Ho Chi Minh’s Ideology",
+        "url": "/public/static/pdf/baud/Ho Chi Minh’s Ideology.pdf"
+      },
+      {
+        "name": "Marxist - Leninist Philosophy",
+        "url": "/public/static/pdf/baud/Marxist - Leninist Philosophy.pdf"
+      },
+      {
+        "name": "Marxist - Leninist Political Economics",
+        "url": "/public/static/pdf/baud/Marxist - Leninist Political Economics.pdf"
+      },
+      {
+        "name": "History of Vietnamese Communist Party",
+        "url": "/public/static/pdf/baud/History of Vietnamese Communist Party.pdf"
+      },
+      {
+        "name": "Scientific Socialism",
+        "url": "/public/static/pdf/baud/Scientific Socialism.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Design Theories Module",
+    "subjects": [
+      {
+        "name": "Theories of Architecture Design",
+        "url": "/public/static/pdf/baud/Theories of Architecture Design.pdf"
+      },
+      {
+        "name": "Building Structure",
+        "url": "/public/static/pdf/baud/Building Structure.pdf"
+      },
+      {
+        "name": "Architectural Physics",
+        "url": "/public/static/pdf/baud/Architectural Physics.pdf"
+      },
+      {
+        "name": "Analysis and Architecture Design",
+        "url": "/public/static/pdf/baud/Analysis and Architecture Design.pdf"
+      },
+      {
+        "name": "Smart and Resilient Landscape Design",
+        "url": "/public/static/pdf/baud/Smart and Resilient Landscape Design.pdf"
+      },
+      {
+        "name": "History of Architecture and Urbanism",
+        "url": "/public/static/pdf/baud/History of Architecture and Urbanism.pdf"
+      },
+      {
+        "name": "Smart Urban Design",
+        "url": "/public/static/pdf/baud/Smart Urban Design.pdf"
+      },
+      {
+        "name": "Urban Planning",
+        "url": "/public/static/pdf/baud/Urban Planning.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Smart City Engineering and Development Module",
+    "subjects": [
+      {
+        "name": "Smart City",
+        "url": "/public/static/pdf/baud/Smart City.pdf"
+      },
+      {
+        "name": "Basic Mathematics and Introduction to Computational Design",
+        "url": "/public/static/pdf/baud/Basic Mathematics and Introduction to Computational Design.pdf"
+      },
+      {
+        "name": "Digital Tools",
+        "url": "/public/static/pdf/baud/Digital Tools.pdf"
+      },
+      {
+        "name": "Programming for Computational Design",
+        "url": "/public/static/pdf/baud/Programming for Computational Design.pdf"
+      },
+      {
+        "name": "Urban Computation and Spatial Data Analysis",
+        "url": "/public/static/pdf/baud/Urban Computation and Spatial Data Analysis.pdf"
+      },
+      {
+        "name": "Building Information Model",
+        "url": "/public/static/pdf/baud/Building Information Model.pdf"
+      },
+      {
+        "name": "Machine Learning for Smart City",
+        "url": "/public/static/pdf/baud/Machine Learning for Smart City.pdf"
+      },
+      {
+        "name": "Co-Creation",
+        "url": "/public/static/pdf/baud/Co-Creation.pdf"
+      },
+      {
+        "name": "New Urban Economics & City Marketing",
+        "url": "/public/static/pdf/baud/New Urban Economics & City Marketing.pdf"
+      },
+      {
+        "name": "Urban Law and Legislation",
+        "url": "/public/static/pdf/baud/Urban Law and Legislation.pdf"
+      },
+      {
+        "name": "Technology in Smart City",
+        "url": "/public/static/pdf/baud/Technology in Smart City.pdf"
+      },
+      {
+        "name": "Cultural Heritage Management and Conservation",
+        "url": "/public/static/pdf/baud/Cultural Heritage Management and Conservation.pdf"
+      },
+      {
+        "name": "Study Trip",
+        "url": "/public/static/pdf/baud/Study Trip.pdf"
+      },
+      {
+        "name": "Urban Living Lab",
+        "url": "/public/static/pdf/baud/Urban Living Lab.pdf"
+      },
+      {
+        "name": "Sustainable Accessibility and Smart Mobility",
+        "url": "/public/static/pdf/baud/Sustainable Accessibility and Smart Mobility.pdf"
+      },
+      {
+        "name": "Smart City Project Management",
+        "url": "/public/static/pdf/baud/Smart City Project Management.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Design StudioLab Module",
+    "subjects": [
+      {
+        "name": "Basic StudioLab 1",
+        "url": "/public/static/pdf/baud/Basic StudioLab 1.pdf"
+      },
+      {
+        "name": "Basic StudioLab 2 - Urban Visualization",
+        "url": "/public/static/pdf/baud/Basic StudioLab 2 - Urban Visualization.pdf"
+      },
+      {
+        "name": "Basic StudioLab 3 - Mapping the City",
+        "url": "/public/static/pdf/baud/Basic StudioLab 3 - Mapping the City.pdf"
+      },
+      {
+        "name": "Architecture Studio Lab 1 - Residential project",
+        "url": "/public/static/pdf/baud/Architecture Studio Lab 1 - Residential project.pdf"
+      },
+      {
+        "name": "Architecture StudioLab 2",
+        "url": "/public/static/pdf/baud/Architecture StudioLab 2.pdf"
+      },
+      {
+        "name": "Landscape Design Studiolab - Resilience Landscape Design",
+        "url": "/public/static/pdf/baud/Landscape Design Studiolab - Resilience Landscape Design.pdf"
+      },
+      {
+        "name": "Smart Urban Design StudioLab",
+        "url": "/public/static/pdf/baud/Smart Urban Design StudioLab.pdf"
+      },
+      {
+        "name": "Architecture and Smart Urban Design StudioLab",
+        "url": "/public/static/pdf/baud/Architecture and Smart Urban Design StudioLab.pdf"
+      }
+    ]
+  },
+  {
+    "module": "Internship and Graduation Project",
+    "subjects": [
+      {
+        "name": "Internship and Graduation",
+        "url": "/public/static/pdf/baud/Internship and Graduation.pdf"
+      }
+    ]
+  }
+]

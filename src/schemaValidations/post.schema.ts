@@ -81,6 +81,23 @@ export type LatestAdmissionCardType = z.TypeOf<
   typeof LatestAdmissionCardSchema
 >;
 
+export const SearchPostItemSchema = z.object({
+  org_id: z.string(),
+  table: z.string(),
+  slug: z.string(),
+  publishDate: z.date(),
+  sdgs: z.string().array().nonempty().max(3),
+  title: z.string(),
+  snippet: z.string(),
+});
+export type SearchPostItemType = z.TypeOf<typeof SearchPostItemSchema>;
+
+export const SearchPostResSchema = z.object({
+  data: z.array(SearchPostItemSchema),
+  message: z.string(),
+});
+export type SearchPostResType = z.TypeOf<typeof SearchPostResSchema>;
+
 export const PostListResSchema = <T = PostCardType>(
   schema: z.ZodType<T, any, any>,
 ) =>
