@@ -37,8 +37,8 @@ jobs:
               console.log(key, value ? 'exists, length=' + value.length : 'missing');
             }
           "
-          env:
-            NEXT_PUBLIC_NEXTAUTH_SECRET: ${{ secrets.NEXT_PUBLIC_NEXTAUTH_SECRET }}
+        env:
+          NEXT_PUBLIC_NEXTAUTH_SECRET: ${{ secrets.NEXT_PUBLIC_NEXTAUTH_SECRET }}
         
   #     - name: Checkout code
   #       uses: actions/checkout@v4
