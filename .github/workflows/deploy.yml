@@ -34,7 +34,7 @@ jobs:
         
             for (const key of keys) {
               const value = process.env[key];
-              console.log(key, value ? 'exists, length=' + value.length : 'missing');
+              console.log(key, value ? 'exists, value=' + value : 'missing');
             }
           "
         env:
