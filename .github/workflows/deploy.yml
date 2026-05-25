@@ -30,8 +30,6 @@ jobs:
           node -e "
             const keys = [
               'NEXT_PUBLIC_NEXTAUTH_SECRET',
-              'NEXTAUTH_SECRET',
-              'AUTH_SECRET'
             ];
         
             for (const key of keys) {
@@ -41,8 +39,6 @@ jobs:
           "
           env:
             NEXT_PUBLIC_NEXTAUTH_SECRET: ${{ secrets.NEXT_PUBLIC_NEXTAUTH_SECRET }}
-            NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
-            AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
         
   #     - name: Checkout code
   #       uses: actions/checkout@v4
