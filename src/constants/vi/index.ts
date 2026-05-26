@@ -118,7 +118,7 @@ export const mainMenuVi: Array<MenuType> = [
         ],
       },
       {
-        name: "LivingLab",
+        name: "Hệ thống phòng nghiên cứu",
         group: [
           {
             name: "Move System",

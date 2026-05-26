@@ -30,7 +30,7 @@ export const MemberResSchema = z.object({
 export type MemberResType = z.TypeOf<typeof MemberResSchema>;
 
 export const MemberCardSchema = z.object({
-  id: z.string(),
+  id: z.string().or(z.number().transform((num) => num.toString())),
   name: z.string(),
   title: z.string(),
   order: z.number().default(-1),

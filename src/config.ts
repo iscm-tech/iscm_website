@@ -35,6 +35,8 @@ if (!configProject.success) {
   throw new Error("Các giá trị khai báo trong file .env không hợp lệ");
 }
 
+console.log("Config loaded successfully: ", process.env.NEXTAUTH_URL);
+
 const envConfig = configProject.data;
 
 export default envConfig;

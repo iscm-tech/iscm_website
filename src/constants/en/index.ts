@@ -117,7 +117,7 @@ export const mainMenuEn: Array<MenuType> = [
         ],
       },
       {
-        name: "LivingLab",
+        name: "Center & Hub",
         group: [
           {
             name: "Move System",

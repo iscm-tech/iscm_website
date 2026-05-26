@@ -10,23 +10,23 @@ const endpointRoot = "api/people";
 
 const getMemberServices = {
   getList: (
-    dirName: "members" | "advisory" | "adjunctprofessors" | "network",
+    dirName: "members" | "advisory" | "intern" | "network",
     type: string | undefined = undefined,
-    lang: string
+    lang: string,
   ) => {
     return http.get<MemberListResType>(
       `${endpointRoot}/${dirName}${lang ? `?lang=${lang}` : ""}${
         type ? `&type=${type}` : ""
-      }`
+      }`,
     );
   },
   getDetail: (
-    dirName: "members" | "advisory" | "adjunctprofessors" | "network",
+    dirName: "members" | "advisory" | "intern" | "network",
     idMember: string,
-    lang: string
+    lang: string,
   ) => {
     return http.get<MemberResType>(
-      `${endpointRoot}/${dirName}/${idMember}${lang ? `?lang=${lang}` : ""}`
+      `${endpointRoot}/${dirName}/${idMember}${lang ? `?lang=${lang}` : ""}`,
     );
   },
 };
@@ -35,7 +35,7 @@ const createUpdateMemberServices = {
   updateMember: (memberID: string, lang: string, body: UpdateMemberBodyType) =>
     http.put<CreateUpdateResType>(
       `/api/people/members/${memberID}${lang ? `?lang=${lang}` : ""}`,
-      body
+      body,
     ),
 };
 

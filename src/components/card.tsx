@@ -26,7 +26,7 @@ export default function Card({
   thumb: string;
   title?: string;
   subTitle?: string | ReactNode;
-  basePath: string;
+  basePath?: string;
   thumbW?: number;
   thumbH?: number;
   style?: React.CSSProperties;
@@ -40,7 +40,7 @@ export default function Card({
 }) {
   return (
     <>
-      {!isDisabled && (
+      {!isDisabled && basePath && (
         <Link
           href={{
             pathname: id ? `${basePath}/${id}` : basePath,
@@ -70,7 +70,7 @@ export default function Card({
             width={thumbW}
             height={thumbH}
           />
-          {isShowTitle && (
+          {isShowTitle && title && (
             <div className="card-body h-[40%]">
               <h4
                 className="card-title leading-6 line-clamp-2"
@@ -78,7 +78,6 @@ export default function Card({
                   maxHeight: "50px",
                   fontWeight: "bold",
                   color: "#141414",
-                  fontSize: "17px",
                   fontFamily: "Barlow, sans-serif",
                   display: "-webkit-box",
                   WebkitLineClamp: 2,
@@ -87,6 +86,7 @@ export default function Card({
                   wordBreak: "keep-all",
                   textDecoration: "none",
                   textOverflow: "ellipsis",
+                  fontSize: title.length > 24 ? "16px" : "17px",
                   ...titleStyle,
                 }}
               >
