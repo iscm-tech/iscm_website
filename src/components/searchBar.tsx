@@ -67,7 +67,7 @@ export default function SearchBar() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="bg-white/60 text-white w-30 h-full rounded-xl flex items-center justify-center gap-1 cursor-pointer hover:opacity-75 transition-opacity">
+        <div className="bg-white/60 py-2! lg:py-0! text-white w-30 h-full rounded-xl flex items-center justify-center gap-1 cursor-pointer hover:opacity-75 transition-opacity">
           <Search size={14} /> {locale === "en" ? "Search" : "Tìm kiếm"}...
         </div>
       </DialogTrigger>

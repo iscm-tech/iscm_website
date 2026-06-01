@@ -47,10 +47,10 @@ export default async function MembersPage({
             <div className="row mt-5">
               <div className="col-12">
                 <div className="row items-center">
-                  <h2 className="col-2 text-4xl!">
+                  <h2 className="col-6 col-lg-3 text-2xl! lg:text-4xl!">
                     {locale === "en" ? "Interns" : "Thực tập sinh"}
                   </h2>
-                  <div className="col-10">
+                  <div className="col-6 col-lg-9">
                     <Divider
                       styles={{
                         root: {

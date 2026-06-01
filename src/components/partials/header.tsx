@@ -180,7 +180,7 @@ export default function Header() {
 
   return (
     <HeaderStyled className="fixed-top header">
-      <div className="navigation overflow-y-scroll lg:overflow-y-visible nav-bg w-100 top-hider">
+      <div className="navigation overflow-y-scroll lg:overflow-y-visible nav-bg w-100 top-hider px-2! py-1.5! lg:py-0! lg:px-0!">
         <nav className="navbar navbar-expand-lg navbar-dark p-0">
           <Link
             href="/"
@@ -210,7 +210,7 @@ export default function Header() {
             className="navbar-collapse bg-[#141414] text-center text-[14px] collapse"
             id="navigation"
           >
-            <div className="relative w-full flex justify-between">
+            <div className="relative w-full lg:flex justify-between">
               <ul className="navbar-nav items-center">
                 {mainMenu.map((item) => (
                   <Fragment key={item.name}>
@@ -259,7 +259,7 @@ export default function Header() {
                 </div>
               </ul>
               {session?.AT && iscmerMenu?.subMenu && (
-                <div className="flex items-center">
+                <div className="flex items-center justify-center py-3">
                   <span className="text-white !mb-0">{session.user.email}</span>
                   <div
                     className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
