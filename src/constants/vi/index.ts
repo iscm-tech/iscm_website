@@ -205,7 +205,7 @@ export const iscmerMenuVi: MenuType = {
       url: "/iscmer",
       group: [
         {
-          name: "Chiến lược/Kế hoạch ISCM",
+          name: "Chiến lược + Kế hoạch ISCM",
           url: "/iscmer/internal/overview/strategy+plan",
         },
         {
@@ -217,8 +217,8 @@ export const iscmerMenuVi: MenuType = {
           url: "/iscmer/internal/overview/ctd",
         },
         {
-          name: "ISCM & UEH Sustainability",
-          url: "/iscmer/internal/overview/ueh_sustainability",
+          name: "ISCM & UEH Co-Lab",
+          url: "/iscmer/internal/overview/ueh_colab",
         },
         {
           name: "ISCM & Convergence Tech Hub",
@@ -233,12 +233,12 @@ export const iscmerMenuVi: MenuType = {
         //   url: "/iscmer/internal/overview/onboarding_guide",
         // },
         {
-          name: "Cơ cấu tổ chức",
-          url: "/iscmer/internal/overview/company_organization",
+          name: "Cơ cấu tổ chức ISCM",
+          url: "/iscmer/internal/overview/organizational_structure",
         },
         {
-          name: "Đánh giá nhân sự",
-          url: "/iscmer/internal/overview/iscm_members_evaluation",
+          name: "Các đánh giá của ISCM",
+          url: "/iscmer/internal/overview/iscm_evaluation",
         },
       ],
     },

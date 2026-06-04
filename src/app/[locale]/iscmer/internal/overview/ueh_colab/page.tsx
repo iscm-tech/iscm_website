@@ -7,13 +7,13 @@ export default async function pgae() {
 
   return (
     <div>
-      <h1 className="text-center uppercase">ISCM & UEH Sustainability</h1>
+      <h1 className="text-center uppercase">ISCM & UEH Co-Lab</h1>
 
       <div className="content-body mt-5">
         <p>
           {locale === "en" ? "Access Link:" : "Link truy cập:"}{" "}
           <Link
-            href="https://drive.google.com/drive/folders/1l-wGBcnLEsInX5ZF-A2UQ_8yfiz7qL5C"
+            href="https://docs.google.com/spreadsheets/d/1uqJ6M9DdCln_xQWPC92hSZmszbkzKuDK1LAfA2a7bs8/"
             target="_blank"
             className="text-[#cd2027]!"
           >

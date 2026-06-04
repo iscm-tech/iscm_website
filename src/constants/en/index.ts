@@ -186,14 +186,17 @@ export const iscmerMenuEn: MenuType = {
       name: "UEH & Other Units",
       group: [
         { name: "UEHer", url: "/iscmer/ueh/ueher" },
-        { name: "Finance & Accounting", url: "/iscmer/ueh/finance&accounting" },
-        { name: "Knowledge Hub", url: "/iscmer/ueh/knowledge_hub" },
+        {
+          name: "Finance & Accounting System",
+          url: "/iscmer/ueh/finance&accounting",
+        },
+        { name: "UEH Knowledge Hub", url: "/iscmer/ueh/knowledge_hub" },
         {
           name: "Training Program Search System",
           url: "/iscmer/ueh/program_finder",
         },
         {
-          name: "Academic Calendar",
+          name: "Academic Training Timeline",
           url: "/iscmer/ueh/academic_calendar",
         },
       ],
@@ -203,7 +206,7 @@ export const iscmerMenuEn: MenuType = {
       url: "/iscmer",
       group: [
         {
-          name: "ISCM Strategy/Plan",
+          name: "ISCM Strategy + Plan",
           url: "/iscmer/internal/overview/strategy+plan",
         },
         {
@@ -227,20 +230,20 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/overview/makerspace",
         },
         {
-          name: "Organizational Structure",
+          name: "ISCM Organizational Structure",
           url: "/iscmer/internal/overview/organizational_structure",
         },
         {
-          name: "Evaluation",
-          url: "/iscmer/internal/overview/iscm_members_evaluation",
+          name: "ISCM Evaluation",
+          url: "/iscmer/internal/overview/iscm_evaluation",
         },
       ],
     },
     {
-      name: "General Administration",
+      name: "General Governance",
       group: [
         {
-          name: "Internal Rules and Regulations",
+          name: "Rules & Regulations",
           url: "/iscmer/internal/administration/rules",
         },
         {
