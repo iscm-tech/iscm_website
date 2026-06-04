@@ -183,8 +183,7 @@ export const iscmerMenuEn: MenuType = {
   url: "/iscmer",
   subMenu: [
     {
-      name: "UEH & Affiliated Units",
-      // url: "/iscmer/ueh",
+      name: "UEH & Other Units",
       group: [
         { name: "UEHer", url: "/iscmer/ueh/ueher" },
         { name: "Finance & Accounting", url: "/iscmer/ueh/finance&accounting" },
@@ -199,7 +198,6 @@ export const iscmerMenuEn: MenuType = {
         },
       ],
     },
-
     {
       name: "Overview",
       url: "/iscmer",
@@ -217,8 +215,8 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/overview/ctd",
         },
         {
-          name: "ISCM & UEH Sustainability",
-          url: "/iscmer/internal/overview/ueh_sustainability",
+          name: "ISCM & UEH Co-Lab",
+          url: "/iscmer/internal/overview/ueh_colab",
         },
         {
           name: "ISCM & Covergence Tech Hub",
@@ -228,16 +226,12 @@ export const iscmerMenuEn: MenuType = {
           name: "ISCM & MakerSpace",
           url: "/iscmer/internal/overview/makerspace",
         },
-        // {
-        //   name: "New Members",
-        //   url: "/iscmer/internal/overview/onboarding_guide",
-        // },
         {
-          name: "Company Organization",
-          url: "/iscmer/internal/overview/company_organization",
+          name: "Organizational Structure",
+          url: "/iscmer/internal/overview/organizational_structure",
         },
         {
-          name: "Review and Assessment of ISCM Members",
+          name: "Evaluation",
           url: "/iscmer/internal/overview/iscm_members_evaluation",
         },
       ],
@@ -258,15 +252,15 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/administration/meeting_regulations",
         },
         {
-          name: "Event Procedure",
+          name: "Event Organization Management",
           url: "/iscmer/internal/administration/event",
         },
         {
-          name: "Equipment Procedure",
+          name: "Equipment Management",
           url: "/iscmer/internal/administration/equipment",
         },
         {
-          name: "Book Procedure",
+          name: "Book Management",
           url: "/iscmer/internal/administration/book",
         },
         {
@@ -274,7 +268,7 @@ export const iscmerMenuEn: MenuType = {
           url: "/iscmer/internal/administration/templates",
         },
         {
-          name: "Storage Structure",
+          name: "Data Structure Overview",
           url: "/iscmer/internal/administration/storage_structure",
         },
       ],
