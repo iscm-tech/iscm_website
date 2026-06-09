@@ -18,6 +18,7 @@ import Booklet from "../../../facilities/student_studiolab/[slug]/components/Boo
 import jury from "./data/jury.json";
 import booklet from "./data/booklet.json";
 import { useLocale } from "next-intl";
+import DomParser from "@/components/domParser";
 
 export default function Page() {
   const locale = useLocale();
@@ -115,7 +116,7 @@ export default function Page() {
       >
         <div className="row">
           <div className="col-12 col-lg-4">
-            <figure className="h-24 flex w-full justify-center">
+            <figure className="h-20 flex w-full justify-center">
               <Image
                 src={`${envConfig.API_ENDPOINT}/public/static/images/competitive/4th-international/4th_compe_logo.png`}
                 width={100}
@@ -126,32 +127,32 @@ export default function Page() {
             </figure>
           </div>
           <div className="col-12 col-lg-8">
-            <h2 className="text-lg-right text-center text-white lg:text-5xl text-3xl mb-2">
+            <h2 className="text-lg-right text-center text-white lg:text-5xl! text-3xl! mb-2">
               (Re)Engaging Cities’ Landscape <br />
               for Cultural and Economics Vibrancy
             </h2>
-            <div className="d-flex justify-content-lg-end justify-content-center">
+            <div className="d-flex justify-content-lg-end justify-content-center mt-4">
               <div className="subTitle text-right max-w-[572px]">
-                <span className="p-1 bg-black text-white w-fit text-lg lg:text-xl inline box-decoration-clone">
+                <span className="p-1 bg-black text-white w-fit text-lg! lg:text-xl! inline box-decoration-clone">
                   Smart and integrated solution for Nha Trang towards vibrant
                   and sustainable city.
                 </span>
               </div>
             </div>
-            <div className="row mt-4 header__info">
-              <div className="col-lg-5 col-12 mb-2 align-items-center d-flex flex-column justify-between">
-                <h3 className="text-uppercase text-white font-weight-light text-xl mb-2 w-fit whitespace-nowrap">
+            <div className="w-full flex flex-wrap mt-9 header__info">
+              <div className="w-full xl:w-1/2 mb-2 align-items-center d-flex flex-column justify-between">
+                <h3 className="text-uppercase text-white font-weight-light text-xl! mb-0 text-center w-fit whitespace-nowrap">
                   {locale === "en" ? "total prize" : "tổng giá trị giải thưởng"}
                 </h3>
-                <p className="text-white flex-1 font-weight-bold text-4xl w-fit">
+                <p className="text-white flex-1 font-weight-bold text-4xl! w-fit text-center">
                   $5,700
                 </p>
               </div>
-              <div className="col-lg-7 col-12">
-                <h3 className="text-uppercase text-white font-weight-light text-xl mb-2 text-center text-lg-left">
+              <div className="w-full xl:w-1/2">
+                <h3 className="text-uppercase text-white font-weight-light text-xl! mb-0 text-center text-lg-left">
                   {locale === "en" ? "AWARD CEREMONY" : "Ngày trao giải"}
                 </h3>
-                <p className="text-white font-weight-bold text-4xl !leading-7 text-center text-lg-left">
+                <p className="text-white font-weight-bold text-4xl! text-center text-lg-left">
                   {locale === "en" ? (
                     <>
                       OCTOBER 1
@@ -195,36 +196,36 @@ export default function Page() {
         </div>
       </section>
       <section className="mt-[67px]" style={{ padding: "0 20px 0 15px" }}>
-        <div className="w-fit ml-[35px]">
-          <p className="font-italic text-center text-[32px] max-w-[755px] leading-[38px]">
-            “
-            {locale === "en" ? (
-              <>
-                From Ponagar Tower to the foot of San Mountain, Nha Trang -
-                Khanh Hoa will soon have a heritage route along the Cai River.
-              </>
-            ) : (
-              <>
-                Từ Tháp Bà Ponagar đến chân núi San, Nha Trang - Khánh Hòa sẽ
-                sớm có tuyến đường di sản dọc theo sông Cái.
-              </>
-            )}
-            ”
-          </p>
-          <p className="font-weight-bold text-right max-w-[755px] text-[15px]">
-            {locale === "en"
-              ? "People’s Committee of Khanh Hoa Province"
-              : "Ủy ban Nhân dân tỉnh Khánh Hòa"}
-          </p>
-        </div>
-        <div className="row justify-content-end">
-          <div className="text-justify mt-[35px] max-w-[829px] mr-[75px] ml-5">
+        <div className="row px-8">
+          <div className="col-12 col-md-6">
+            <p className="font-italic text-center text-xl! max-w-[755px]">
+              “
+              {locale === "en" ? (
+                <>
+                  From Ponagar Tower to the foot of San Mountain, Nha Trang -
+                  Khanh Hoa will soon have a heritage route along the Cai River.
+                </>
+              ) : (
+                <>
+                  Từ Tháp Bà Ponagar đến chân núi San, Nha Trang - Khánh Hòa{" "}
+                  <br /> sẽ sớm có tuyến đường di sản dọc theo sông Cái.
+                </>
+              )}
+              ”
+            </p>
+            <p className="font-weight-bold text-right max-w-[755px] text-[15px]">
+              {locale === "en"
+                ? "People’s Committee of Khanh Hoa Province"
+                : "Ủy ban Nhân dân tỉnh Khánh Hòa"}
+            </p>
+          </div>
+          <div className="col-12 col-md-6 text-justify text-base lg:text-xl">
             {locale === "en" ? (
               <>
                 Following the success of the 2023 International Design
                 Competition, which focused on Bac Phuoc Thang - Vung Tau, the
-                competition is officially returning with the theme
-                <b>
+                competition is officially returning with the theme{" "}
+                <b className="text-[#324C5B]">
                   (Re)engaging Cities’ Landscape for Cultural and Economic
                   Vibrancy
                 </b>
@@ -238,18 +239,19 @@ export default function Page() {
                 inspire the next generation to envision future cities that
                 harmoniously blend innovation and tradition. <br />
                 <br />
-                <b>Location:</b> Nha Trang City, Khanh Hoa Province, Vietnam
+                <b className="text-[#324C5B]">Location:</b> Nha Trang City,
+                Khanh Hoa Province, Vietnam
                 <br />
-                <b>Participants eligibility:</b> University students and master
-                students all around the world (maximum 3 students can form a
-                team)
+                <b className="text-[#324C5B]">Participants eligibility:</b>{" "}
+                University students and master students all around the world
+                (maximum 3 students can form a team)
               </>
             ) : (
               <>
                 Tiếp nối thành công của Cuộc thi Thiết kế Quốc tế năm 2023 – tập
                 trung vào khu vực Bắc Phước Thắng, Vũng Tàu – cuộc thi chính
                 thức trở lại với chủ đề{" "}
-                <b>
+                <b className="text-[#324C5B]">
                   (Re)engaging Cities’ Landscape for Cultural and Economic
                   Vibrancy
                 </b>
@@ -268,83 +270,118 @@ export default function Page() {
                 hòa quyện hài hòa giữa đổi mới và truyền thống.
                 <br />
                 <br />
-                <b>Địa điểm:</b> Thành phố Nha Trang, tỉnh Khánh Hòa, Việt Nam
+                <b className="text-[#324C5B]">Địa điểm:</b> Thành phố Nha Trang,
+                tỉnh Khánh Hòa, Việt Nam
                 <br />
-                <b>Đối tượng tham gia:</b> Sinh viên đại học và học viên cao học
-                trên toàn thế giới (mỗi đội tối đa 3 thành viên)
+                <b className="text-[#324C5B]">Đối tượng tham gia:</b> Sinh viên
+                đại học và học viên cao học trên toàn thế giới (mỗi đội tối đa 3
+                thành viên)
               </>
             )}
           </div>
         </div>
         <div className="row mt-[55px]">
           <div className="col-12 col-md-6 d-flex flex-column align-items-center">
-            <h2 className="text-uppercase text-center font-weight-bold w-fit text-[#324c5b]">
+            <h2 className="text-uppercase text-center font-weight-bold! w-fit text-[#324c5b]!">
               {locale === "en" ? "AWARD" : "giải thưởng"}
             </h2>
             <p
-              className="text-center mt-4 border-t border-[#9eb9c5] max-w-[400px]"
+              className="text-center text-base! xl:text-lg! leading-10 mt-2 border-t-2 border-[#9eb9c5] max-w-[500px]"
               style={{ padding: "20px 25px 0 25px" }}
             >
               {locale === "en" ? (
                 <>
-                  <b>$ 3,000</b> to 1st Award <br />
-                  <b>$ 1,000</b> to 2nd Award <br />
-                  <b>$ 700</b> to 3rd Award <br />
-                  <b>$ 500</b> to Most Popular Award <br />
-                  <b>$ 500</b> to Sponsor Favourite Award
-                  <br />
-                  10 Honourable Mentions <br />
-                  15 Finalists
+                  <p className="text-xs! lg:text-lg!">
+                    <b>$ 3,000</b> to 1st Award
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>$ 1,000</b> to 2nd Award
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>$ 700</b> to 3rd Award
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>$ 500</b> to Most Popular Award
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>$ 500</b> to Sponsor Favourite Award
+                  </p>
+                  <p className="text-xs! lg:text-lg!">10 Honourable Mentions</p>
+                  <p className="text-xs! lg:text-lg!"> 15 Finalists</p>
                 </>
               ) : (
                 <>
-                  Giải Nhất: <b>$ 3,000</b>
-                  <br />
-                  Giải Nhì: <b>$ 1,000</b> <br />
-                  Giải Ba: <b>$ 700</b> <br />
-                  Giải được bình chọn: <b>$ 500</b> <br />
-                  Giải Yêu thích của Nhà tài trợ<b>$ 500</b>
-                  <br />
-                  10 Giải khuyến khích <br />
-                  15 Tác phẩm lọt vào vòng Chung kết
+                  <p className="text-xs! lg:text-lg!">
+                    Giải Nhất: <b>$ 3,000</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Giải Nhì: <b>$ 1,000</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Giải Ba: <b>$ 700</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Giải được bình chọn: <b>$ 500</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Giải Yêu thích của Nhà tài trợ<b>$ 500</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!"> 10 Giải khuyến khích </p>
+                  <p className="text-xs! lg:text-lg!">
+                    15 Tác phẩm lọt vào vòng Chung kết
+                  </p>
                 </>
               )}
             </p>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column align-items-center w-fit">
-            <h2 className="text-uppercase text-center font-weight-bold w-full text-[#324c5b]">
-              {locale === "en" ? (
-                <>RECOGNITION AND MORE BENEFITS</>
-              ) : (
-                "Các quyền lợi khác"
-              )}
+            <h2 className="text-uppercase text-center font-weight-bold! w-full text-[#324c5b]!">
+              {locale === "en" ? <>RECOGNITIONS</> : "Các quyền lợi khác"}
             </h2>
             <p
-              className="text-center mt-4 border-t border-[#9eb9c5] max-w-[400px]"
+              className="text-center leading-10 mt-2 border-t-2 border-[#9eb9c5] max-w-[640px]"
               style={{ padding: "20px 25px 0 25px" }}
             >
               {locale === "en" ? (
                 <>
-                  <b>Feature</b> in A special session of Smart Urbanisms &
-                  Beyond Book series <br />
-                  <b>published by UEH Press</b>
-                  <br />
-                  <b>Experiment</b> and Exploring Tour <br />
-                  <b>Exhibition</b> and sharing with partners <br />
-                  Opportunity to be supported with flight tickets and
-                  accomodation in Nha Trang City <br />
-                  Opportunity to receive special awards from sponsors
+                  <p className="text-xs! lg:text-lg!">
+                    <b>Feature</b> in A special session of Smart Urbanisms &
+                    Beyond Book series
+                    <br />
+                    <b>published by UEH Press</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>Experiment</b> and Exploring Tour
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>Exhibition</b> and sharing with partners Opportunity to
+                    be supported with <br /> flight tickets and accomodation in
+                    Nha Trang City
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Opportunity to receive special awards from sponsors
+                  </p>
                 </>
               ) : (
                 <>
-                  <b>Được giới thiệu</b> trong một phiên đặc biệt của loạt sách{" "}
-                  <b>Smart Urbanisms & Beyond xuất bản bởi UEH Press</b> <br />
-                  <br />
-                  <b>Thực nghiệm và Tham quan Khám phá</b> <br />
-                  <b>Triển lãm và chia sẻ cùng các đối tác</b> <br />
-                  Cơ hội được hỗ trợ vé máy bay và chỗ ở tại Thành phố Nha Trang{" "}
-                  <br />
-                  Cơ hội nhận giải thưởng đặc biệt từ các nhà tài trợ
+                  <p className="text-xs! lg:text-lg!">
+                    <b>Được giới thiệu</b> trong một phiên đặc biệt của loạt
+                    sách <br />
+                    <b>Smart Urbanisms & Beyond xuất bản bởi UEH Press</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>Thực nghiệm và Tham quan Khám phá</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    <b>Triển lãm và chia sẻ cùng các đối tác</b>
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Cơ hội được hỗ trợ vé máy bay và chỗ ở
+                    <br className="lg:hidden" /> tại Thành phố Nha Trang
+                  </p>
+                  <p className="text-xs! lg:text-lg!">
+                    Cơ hội nhận giải thưởng đặc biệt từ các nhà tài trợ
+                  </p>
                 </>
               )}
             </p>
@@ -361,12 +398,15 @@ export default function Page() {
             alt="timeline"
             quality={100}
           />
+          <figcaption className="text-[#9F7361] text-xs md:text-4xl lg:text-5xl absolute top-0 left-0 -translate-x-1/3 translate-y-[250%] -rotate-90 tracking-widest">
+            TIMELINES
+          </figcaption>
         </figure>
       </section>
       <section>
         <div className="d-flex justify-content-center">
           <h2
-            className="text-uppercase text-[#324c5b] border-b-[5px] border-[#9eb9c5] w-fit"
+            className="text-uppercase text-4xl! text-[#324c5b]! border-b-[5px] border-[#9eb9c5] w-fit!"
             style={{ padding: "0 40px 10px" }}
           >
             {locale === "en" ? " jury" : "HỘI ĐỒNG GIÁM KHẢO"}
@@ -378,8 +418,8 @@ export default function Page() {
             {jury.map(
               ({ name, title, image, country, affiliation, faculty }) => (
                 <div
-                  className="col-12 col-lg-6 col-xl-4 my-3 h-[300px]"
                   key={name}
+                  className="col-12 col-lg-6 col-xl-4 my-3 h-[280px]!"
                 >
                   <div className="row h-full">
                     <div className="col-5 h-full">
@@ -390,17 +430,23 @@ export default function Page() {
                           height={289}
                           src={`${envConfig.API_ENDPOINT}/public/static/${image}`}
                           alt={name}
-                          quality={50}
+                          quality={80}
                         />
                       </figure>
                     </div>
-                    <div className="col-7">
-                      <h4 className="text-base">{name}</h4>
-                      <p className="text-sm mb-[5px]">{title}</p>
-                      <p className="text-sm mb-[5px]">
-                        {(faculty ?? "" + " " + affiliation).trim()}
+                    <div className="col-7 t">
+                      <h4 className="text-base! text-[#324C5B]!">{name}</h4>
+                      <p className="text-base! mb-[5px] text-[#9EB9C5]!">
+                        {title}
                       </p>
-                      <p className="text-sm mb-[5px]">{country}</p>
+                      <p className="text-base! mb-[5px] text-[#9EB9C5]!">
+                        <DomParser
+                          content={(faculty ?? "" + " " + affiliation).trim()}
+                        />
+                      </p>
+                      <p className="text-base! mb-[5px] text-[#9EB9C5]!">
+                        {country}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -503,7 +549,7 @@ export default function Page() {
 
       {/* Vote Section */}
       <section className="mb-52" id="archive-of-2025">
-        <h2 className="flex gap-2 items-center uppercase text-4xl lg:text-5xl ml-2 md:ml-16 mb-[55px]">
+        <h2 className="flex gap-2 items-center uppercase text-4xl! lg:text-5xl! ml-2 md:ml-16 mb-[55px]">
           <span className="hidden md:flex items-center">
             <span className="text-5xl leading-relaxed text-[#9F736142]">
               {">"}
@@ -527,14 +573,15 @@ export default function Page() {
           )}
         </h2>
 
-        <div className="text-center text-[#324C5B] mb-28">
-          <h4 className="text-2xl text-current">
+        <div className="text-center text-[#324C5B]! mb-28">
+          <h4 className="text-base! lg:text-xl! text-current!">
             {locale === "en"
               ? "The next generation always perceive the vision toward"
               : "Thế hệ trẻ luôn nhận thức rõ ràng về tầm nhìn hướng tới"}
           </h4>
-          <h3 className="text-2xl lg:text-4xl text-current font-bold">
-            (Re)engaging Cities’ Landscape for Cultural and Economic Vibrancy
+          <h3 className="text-2xl! lg:text-4xl! text-current! font-bold!">
+            (Re)engaging Cities’ Landscape for <br /> Cultural and Economic
+            Vibrancy
           </h3>
         </div>
 
@@ -549,19 +596,24 @@ export default function Page() {
             className="w-full md:flex-1 opacity-0 translate-y-7"
           >
             <div>
-              <p className="text-[#9F7361] text-center font-extrabold text-5xl">
-                56000+
+              <p className="text-[#9F7361]! text-center font-extrabold! text-5xl!">
+                56115+
               </p>
-              <p className="uppercase text-2xl text-center mb-4">
-                {locale === "en" ? "audience" : "người theo dõi"}
+              <p className="uppercase text-2xl! text-center mb-4">
+                {locale === "en" ? "STUDENTS & EXPERTS" : "người theo dõi"}
               </p>
 
-              <h4 className="text-[#324C5B] text-center">
-                {locale === "en"
-                  ? "Follow us on this journey of future cities"
-                  : "Theo dõi chúng tôi trên hành trình kiến tạo những thành phố tương lai"}
+              <h4 className="text-[#324C5B]! text-center">
+                {locale === "en" ? (
+                  <>
+                    Follow us on <br />
+                    the journey of future cities
+                  </>
+                ) : (
+                  "Theo dõi chúng tôi trên hành trình kiến tạo những thành phố tương lai"
+                )}
               </h4>
-              <p className="text-justify text-xl text-[#324C5B]">
+              <p className="text-justify text-xl! text-[#324C5B]!">
                 {locale === "en" ? (
                   <>
                     With urbanization on the rise, cities face growing
@@ -603,20 +655,20 @@ export default function Page() {
             className="w-full md:flex-1 opacity-0 translate-y-7"
           >
             <div>
-              <p className="text-[#9F7361] text-center font-extrabold text-5xl">
+              <p className="text-[#9F7361]! text-center font-extrabold! text-5xl!">
                 {/* <NumberFlow value="492+" /> */}
-                500+
+                492+
               </p>
-              <p className="uppercase text-2xl text-center mb-4">
+              <p className="uppercase text-2xl! text-center mb-4">
                 {locale === "en" ? " YOUNG TALENTS" : "TÀI NĂNG TRẺ"}
               </p>
 
-              <h4 className="text-[#324C5B] text-center">
+              <h4 className="text-[#324C5B]! text-center">
                 {locale === "en"
                   ? "Choose to take action towards sustainable city"
                   : "Chọn hành động hướng tới thành phố bền vững"}
               </h4>
-              <p className="text-justify text-xl text-[#324C5B]">
+              <p className="text-justify text-xl! text-[#324C5B]!">
                 {locale === "en" ? (
                   <>
                     By participating in the journey to{" "}
@@ -659,14 +711,14 @@ export default function Page() {
             className="w-full md:flex-1 opacity-0 translate-y-7"
           >
             <div>
-              <p className="text-[#9F7361] text-center font-extrabold text-5xl">
+              <p className="text-[#9F7361]! text-center font-extrabold! text-5xl!">
                 30+
               </p>
-              <p className="uppercase text-2xl text-center mb-4">
+              <p className="uppercase text-2xl! text-center mb-4">
                 {locale === "en" ? "countries" : "quốc gia"}
               </p>
 
-              <h4 className="text-[#324C5B] text-center">
+              <h4 className="text-[#324C5B]! text-center">
                 {locale === "en" ? (
                   <>
                     {" "}
@@ -745,7 +797,7 @@ export default function Page() {
       </section>
 
       <section className="d-flex flex-column align-items-center logo">
-        <h2 className="text-uppercase font-weight-normal mb-4 text-center text-xl text-[#9eb9c5]">
+        <h2 className="text-uppercase font-weight-normal mb-4 text-center text-[#9eb9c5]!">
           {locale === "en" ? "in co-organizer with" : "Đồng tổ chức cùng"}
         </h2>
         <div className="w-100 d-flex justify-content-center flex-wrap">
@@ -919,7 +971,7 @@ export default function Page() {
         </div>
       </section>
       <section className="d-flex flex-column align-items-center mt-5 logo">
-        <h2 className="text-uppercase font-weight-normal mb-4 text-xl text-center text-[#9eb9c5]">
+        <h2 className="text-uppercase font-weight-normal mb-4 text-center text-[#9eb9c5]!">
           {locale === "en" ? "With Sponsorship from" : "Với sự tài trợ từ"}
         </h2>
         <div className="d-flex justify-content-center flex-wrap">
@@ -1056,7 +1108,7 @@ export default function Page() {
         </div>
       </section>
       <section className="d-flex justify-content-center flex-wrap logo mt-5">
-        <h2 className="text-uppercase font-weight-normal mb-4 text-xl text-center text-[#9eb9c5]">
+        <h2 className="text-uppercase font-weight-normal mb-4 text-center text-[#9eb9c5]!">
           {locale === "en"
             ? "With MEDIA SPONSORSHIP FROM"
             : "Tài trợ truyền thông bởi"}
