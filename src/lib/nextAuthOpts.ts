@@ -8,7 +8,7 @@ export const authOpts: AuthOptions = {
   providers: [
     GoogleProvider({
       clientId: envConfig.GG_CLIENT_ID,
-      clientSecret: envConfig.GG_SCERET,
+      clientSecret: envConfig.GG_SECRET,
     }),
   ],
   session: {

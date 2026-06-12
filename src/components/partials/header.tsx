@@ -259,10 +259,10 @@ export default function Header() {
                 </div>
               </ul>
               {session?.AT && iscmerMenu?.subMenu && (
-                <div className="flex items-center justify-center py-3">
+                <div className="flex items-center justify-center">
                   <span className="text-white !mb-0">{session.user.email}</span>
                   <div
-                    className="cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
+                    className="ml-2 cursor-pointer hover:bg-[#cd2027]/60 align-self-lg-stretch items-center flex px-3 transition-all"
                     onClick={() => signOut({ callbackUrl: "/" })}
                     title="logout"
                   >

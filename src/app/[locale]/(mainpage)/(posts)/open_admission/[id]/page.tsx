@@ -20,10 +20,8 @@ export async function generateMetadata({
 
   return {
     title: data.metadata.title,
-    // description: data.metadata.description,
     openGraph: {
       title: data.metadata.title,
-      // description: data.metadata.description,
       images: [{ url: data.metadata.thumbnail }],
       url: `https://iscm.ueh.edu.vn/${locale}/open_admission/${data.metadata.slug}`,
       type: "article",
@@ -32,7 +30,6 @@ export async function generateMetadata({
         publishedTime: data.metadata.publishDate,
         authors: ["https://iscm.ueh.edu.vn"],
         section: "Open Admission",
-        // tags: data.metadata.tags || [], // nếu có
       },
     },
   };

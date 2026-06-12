@@ -24,8 +24,7 @@ const getPostServices = {
       | "student_life"
       | "open-admission"
       | "events"
-      | "evolving-research"
-      | "iscm_in_the_media",
+      | "evolving-research",
     page: number | undefined = undefined,
     lang: string,
     options?: { [key: string]: any },
@@ -65,8 +64,7 @@ const getPostServices = {
       | "student_life"
       | "open-admission"
       | "events"
-      | "evolving-research"
-      | "iscm_in_the_media",
+      | "evolving-research",
   ) =>
     http.get<LatestPostListResType>(
       `api/${category}/latest-posts${lang ? "?lang=" + lang : ""}`,
@@ -78,8 +76,7 @@ const getPostServices = {
       | "student_life"
       | "open-admission"
       | "events"
-      | "evolving-research"
-      | "iscm_in_the_media",
+      | "evolving-research",
     idPost: string | null,
     lang: string,
     options?: { [key: string]: any },
@@ -109,8 +106,7 @@ const createUpdatePostServices = {
       | "student_life"
       | "open-admission"
       | "events"
-      | "evolving-research"
-      | "iscm_in_the_media",
+      | "evolving-research",
     idPost: string,
     lang: string,
     body: CreatePostBodyType | CreateEventBodyType,
@@ -152,8 +148,7 @@ const deletePostServices = {
       | "student_life"
       | "open-admission"
       | "events"
-      | "evolving-research"
-      | "iscm_in_the_media",
+      | "evolving-research",
     idPost: string,
     lang: string,
   ) => {

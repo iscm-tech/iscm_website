@@ -11,7 +11,7 @@ const configSchema = z.object({
   PRODUCTION_DOMAIN: z.string(),
   GG_ANALYTICS_ID: z.string(),
   GG_CLIENT_ID: z.string(),
-  GG_SCERET: z.string(),
+  GG_SECRET: z.string(),
   NEXTAUTH_SECRET: z.string(),
 });
 
@@ -26,7 +26,7 @@ const configProject = configSchema.safeParse({
   PRODUCTION_DOMAIN: process.env.NEXT_PUBLIC_PRODUCTION_DOMAIN,
   GG_ANALYTICS_ID: process.env.NEXT_PUBLIC_GG_ANALYTICS_ID,
   GG_CLIENT_ID: process.env.NEXT_PUBLIC_GG_CLIENT_ID,
-  GG_SCERET: process.env.NEXT_PUBLIC_GG_SCERET,
+  GG_SECRET: process.env.NEXT_PUBLIC_GG_SECRET,
   NEXTAUTH_SECRET: process.env.NEXT_PUBLIC_NEXTAUTH_SECRET,
 });
 

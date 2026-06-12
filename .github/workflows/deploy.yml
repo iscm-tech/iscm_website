@@ -168,7 +168,7 @@ jobs:
             tar -xzf deploy.tar.gz
             rm -f deploy.tar.gz
 
-            npm ci --omit=dev
+            # npm ci --omit=dev
             echo "Stopping Node.js app processes..."
             pkill -f "[l]snode:${{ secrets.APP_PATH }}" || true
             echo "Restarting app..."
