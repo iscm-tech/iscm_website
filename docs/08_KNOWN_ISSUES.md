@@ -28,8 +28,8 @@ Shared hosting may limit CPU, RAM, process count, or execution time.
 The project can run in different Node.js environments:
 
 - GitHub Actions uses Node.js `20`.
-- The Dockerfile uses Node.js `22.12.0-alpine`.
 - cPanel Node.js version is configured outside this repository.
+- Docker-related files exist but are outside the active shared-hosting deployment flow.
 
 ### Impact
 
@@ -50,7 +50,7 @@ The project can run in different Node.js environments:
 
 ### Problem
 
-Some cPanel environments manage `node_modules` through a virtual environment or symlink.
+The shared hosting/cPanel environment may manage `node_modules` through a virtual environment or symlink.
 
 The active workflow currently runs:
 
@@ -108,7 +108,7 @@ OAuth or authentication may work locally but fail on shared hosting because of n
 - Verify `NEXTAUTH_URL`.
 - Verify Google OAuth callback URL.
 - Verify `NEXT_PUBLIC_GG_CLIENT_ID`.
-- Verify `NEXT_PUBLIC_GG_SECRET`.
+- Verify `NEXT_PUBLIC_GG_SCERET` using the current misspelled environment variable name.
 - Verify `NEXT_PUBLIC_NEXTAUTH_SECRET`.
 - Check SSL certificate.
 - Check DNS resolution.

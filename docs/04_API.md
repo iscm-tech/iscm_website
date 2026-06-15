@@ -115,11 +115,10 @@ The `payload` shape depends on the response type used by each service call.
 ```ts
 {
   message: string;
-  errors: {
+  errors: Array<{
     field: string;
     message: string;
-  }
-  [];
+  }>;
 }
 ```
 
@@ -167,6 +166,14 @@ Current post service keys:
 
 Known UI labels or page concepts may include names such as `iscm_life` or `expert insight`. These should be documented as UI aliases only, not as service/database keys unless source code confirms they are sent to the backend.
 
+Example mapping guidance:
+
+| Service/API key | UI-facing label or concept | Documentation note |
+| --- | --- | --- |
+| `evolving-research` | `expert insight` | Treat as a UI label/alias, not as a persisted service key. |
+| `network` | `Glocal Experts` | Treat as a UI label/alias for the people/network area. |
+| `news` | `iscm_life` | Treat as a UI label/alias only when confirmed by page or component copy. |
+
 ## Endpoint Groups Used by Frontend
 
 ### Auth
@@ -202,8 +209,8 @@ Source:
 | `DELETE` | `/api/{category}/{id}?lang={lang}`              | Wrapper sends `"{}"`                          | `{ message: string; data: PostCardType }`  |
 | `GET`    | `api/portal?lang={lang}`                        | None                                          | `AllPendingPostResType`                    |
 | `GET`    | `api/portal/{id}`                               | None                                          | `PendingPostResType`                       |
-| `PUT`    | `api/portal/accept/{category}/{id}?lang={lang}` | `{}`                                          | Untyped/generic response in service        |
-| `DELETE` | `api/portal/reject/{id}?lang={lang}`            | Wrapper sends `"{}"`                          | Untyped/generic response in service        |
+| `PUT`    | `api/portal/accept/{category}/{id}?lang={lang}` | `{}`                                          | Untyped or generic response in the service        |
+| `DELETE` | `api/portal/reject/{id}?lang={lang}`            | Wrapper sends `"{}"`                          | Untyped or generic response in the service        |
 
 ### People and Members
 

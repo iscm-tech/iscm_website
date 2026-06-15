@@ -6,7 +6,7 @@
 | ------------------ | --------------------------------------- |
 | Project name       | `ISCM Website`                          |
 | Source version     | `0.1.0`                                 |
-| Project type       | Frontend website                        |
+| Project type       | Frontend web application                |
 | Framework          | Next.js                                 |
 | Language           | TypeScript                              |
 | Deployment target  | Shared hosting / cPanel                 |
@@ -17,31 +17,31 @@
 
 ## 2. Project Description
 
-This project is a frontend web application built with **Next.js** and deployed to a **shared hosting/cPanel environment** using **GitHub Actions**, a packaged build artifact, **SCP**, and **SSH**.
+This project is a **Next.js frontend web application** deployed to a **shared hosting/cPanel environment** through **GitHub Actions**, a packaged tar artifact, **SCP**, and **SSH**.
 
-The website provides a maintainable, production-ready frontend platform with localized routes, reusable components, SEO-friendly pages, static assets, authentication integration, and external backend API integration.
+The website provides a maintainable production frontend with localized routes, reusable components, SEO-oriented pages, static assets, authentication integration, and integration with an external backend API.
 
-Backend APIs and database implementation are external responsibilities. This repository consumes backend data through frontend service modules in `src/services/`.
+Backend APIs and database implementation are outside the scope of this repository. This frontend consumes backend data through service modules in `src/services/`.
 
 ## 3. Main Objectives
 
-- Build a modern and maintainable website.
+- Build a modern, maintainable institutional website.
 - Support localized public pages for English and Vietnamese content.
 - Support admin-facing content management workflows.
 - Reuse shared UI components across pages.
 - Integrate with an external backend API.
 - Improve SEO, performance, and accessibility.
 - Automate deployment from GitHub to shared hosting.
-- Keep the production setup compatible with cPanel limitations.
+- Keep the production setup compatible with shared-hosting/cPanel constraints.
 
 ## 4. Target Users
 
 | User group       | Purpose                                                                                   |
 | ---------------- | ----------------------------------------------------------------------------------------- |
-| Public visitors  | View website content and information                                                      |
-| Internal members | View internal summary content and information                                             |
-| Developers       | Maintain source code and deployment flow. Monitor website operation and production issues |
-| Administrators   | In charge of managing content, information, posts... published on website                 |
+| Public visitors  | View public website content and institutional information                                  |
+| Internal members | View internal-facing summary content and information                                      |
+| Developers       | Maintain the source code, deployment flow, and production troubleshooting process          |
+| Administrators   | Manage website content, posts, and related published information                          |
 
 ## 5. Tech Stack
 
@@ -69,7 +69,7 @@ Backend APIs and database implementation are external responsibilities. This rep
 
 ## 7. Repository Boundary
 
-This repository contains the frontend/client application.
+This repository contains the frontend/client application only.
 
 It does not contain:
 
@@ -80,7 +80,7 @@ It does not contain:
 - ORM models
 - authoritative backend API contracts
 
-Those concerns should be documented in the backend repository or backend deployment documentation.
+Those concerns should be documented in the backend repository, external API documentation, or backend deployment documentation.
 
 ## 8. Node.js Versions
 

@@ -4,7 +4,7 @@
 
 This repository is a frontend/client application built with Next.js App Router, TypeScript, `next-intl`, and `next-auth`.
 
-It does not contain the backend implementation or database layer. Backend data is consumed through external API endpoints from service modules in `src/services/`.
+It does not contain the backend implementation or database layer. Backend data is consumed through external API endpoints via service modules in `src/services/`.
 
 ## Architecture Summary
 
@@ -57,7 +57,7 @@ Browser
 | Internationalization | `src/i18n/`, `messages/`, `src/middleware.ts`                        | Locale routing, request message loading, and middleware for localized public routes.                                                 |
 | Validation/types     | `src/schemaValidations/`, `src/types/`                               | Zod schemas and TypeScript types used by the frontend.                                                                               |
 | Styling/assets       | `src/assets/`, `public/`, `src/app/style.css`                        | SCSS, plugin CSS, public images, static JS, fonts, PDFs, and global styles.                                                          |
-| Runtime config       | `src/config.ts`, `.env`                                              | Validates and exposes environment configuration used by the frontend.                                                                |
+| Runtime config       | `src/config.ts`, `.env`                                              | Validates and exposes environment configuration used by the frontend. Do not copy real `.env` values into documentation.             |
 
 ## Routing Architecture
 
@@ -385,14 +385,9 @@ flowchart TD
   NpmCI --> Restart["Restart Node.js app"]
 ```
 
-The repository also contains:
+The repository also contains Docker-related files, but Docker is not part of the active deployment flow. The current production deployment path is the GitHub Actions shared-hosting workflow described above.
 
-- `Dockerfile`
-- `.dockerignore`
-
-The GitHub Actions workflow deploys to shared hosting. The Dockerfile is a separate container-oriented runtime option.
-
-Note: the Dockerfile copies `.next/standalone`, but `next.config.js` does not currently configure `output: "standalone"`. Docker is not part of the active deployment flow and should be verified separately before use.
+If Docker deployment is reactivated later, validate the Dockerfile and Next.js build output separately before using it for production.
 
 ## What This Repository Does Not Contain
 
@@ -406,4 +401,4 @@ This repository does not include:
 - backend deployment infrastructure
 - authoritative backend API contracts
 
-Those concerns should be documented in the backend repository or backend deployment documentation.
+Those concerns should be documented in the backend repository, external API documentation, or backend deployment documentation.

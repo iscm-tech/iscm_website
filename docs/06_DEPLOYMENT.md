@@ -8,7 +8,7 @@ Active workflow:
 
 - `.github/workflows/deploy.yml`
 
-This document describes the active shared-hosting deployment flow only. Docker is not part of the active deployment flow.
+This document describes the active shared-hosting deployment flow only. Docker-related files may exist in the repository, but Docker is not part of the active deployment flow.
 
 ## 2. Deployment Flow
 
@@ -221,7 +221,7 @@ process.env.PORT || 3000
 
 ## 11. cPanel `node_modules` Symlink Warning
 
-Some cPanel environments manage `node_modules` through a Node.js Selector virtual environment or symlink.
+The shared hosting/cPanel environment may manage `node_modules` through a Node.js Selector virtual environment or symlink.
 
 This repository's active workflow currently runs:
 
@@ -229,7 +229,7 @@ This repository's active workflow currently runs:
 npm ci --omit=dev
 ```
 
-on the remote host after extracting the artifact. Before changing dependency install behavior, confirm how the hosting environment manages `node_modules`. If cPanel owns `node_modules` as a symlink, overwriting it can break the hosted Node.js app.
+on the remote host after extracting the artifact. Before changing dependency install behavior, confirm how the hosting environment manages `node_modules`. If cPanel owns `node_modules` as a symlink, overwriting it can break the hosted Node.js app. Treat dependency installation on the server as a hosting-sensitive operation.
 
 ## 12. Pre-Deployment Checklist
 

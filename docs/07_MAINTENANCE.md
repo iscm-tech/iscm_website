@@ -127,7 +127,7 @@ Regularly check:
 - Lighthouse score.
 - Core Web Vitals.
 
-Database query speed is an external backend responsibility and should not be maintained from this frontend repo.
+Database query performance is an external backend responsibility and should not be maintained from this frontend repository.
 
 ## 9. SEO Maintenance
 

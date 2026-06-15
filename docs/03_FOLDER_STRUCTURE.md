@@ -13,7 +13,9 @@ client/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml
+├── .dockerignore
 ├── .next/
+├── Dockerfile
 ├── docs/
 ├── messages/
 ├── node_modules/
@@ -107,8 +109,8 @@ Important route areas inside `src/app/[locale]/`:
 
 Important admin route areas:
 
-- `src/app/admins/dashboard/(posts)/` contains admin management screens for post-like content such as news, events, open admission, student life, and evolving research. Some UI labels may present these categories with different public names.
-- `src/app/admins/dashboard/(people)/` contains admin management screens for people-related content such as members, advisory, and network. UI labels may differ from service keys.
+- `src/app/admins/dashboard/(posts)/` contains admin management screens for post-like content such as news, events, open admission, student life, and evolving research. Some UI labels may present these categories with different display names.
+- `src/app/admins/dashboard/(people)/` contains admin management screens for people-related content such as members, advisory, and network. UI labels may differ from service keys, for example `network` may be displayed as a public-facing label such as Glocal Experts.
 - `src/app/admins/dashboard/components/` contains dashboard-specific UI components, forms, tables, and editor components.
 - `src/app/admins/dashboard/pending/` contains pending-content (posts are posted from UEH Portal) review/edit/accept/reject pages.
 
@@ -168,11 +170,11 @@ Contains shared library code and framework integrations.
 
 #### `src/schemaValidations/`
 
-Contains Zod validation schemas for application domains such as account, activities, auth, competition, course, member, page header, partner, post, research, and studiolab.
+Contains Zod validation schemas for application domains such as account, auth, competition, course, member, page header, post, research, and studiolab.
 
 #### `src/services/`
 
-Contains service modules for backend/API interactions. Existing services cover activities, auth, competition, course, member, partner, post, recruitment, research, studiolab, and image upload behavior.
+Contains service modules for external backend/API interactions. Current service modules cover auth, competition, course, member, post, recruitment, research, studiolab, and image upload behavior.
 
 #### `src/types/`
 
@@ -254,6 +256,10 @@ Generated Next.js TypeScript environment declaration file.
 ### `tsconfig.tsbuildinfo`
 
 Generated TypeScript incremental build metadata.
+
+### `Dockerfile` and `.dockerignore`
+
+Docker-related files are present for reference or future container-oriented deployment. They are not part of the active shared-hosting deployment path.
 
 ### `.gitattributes`
 

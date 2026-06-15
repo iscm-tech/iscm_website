@@ -18,8 +18,8 @@ Do not commit real secret values into documentation. This file documents variabl
 
 The following variables are currently used by the application.
 
-| Variable                         |          Required | Used by                                    | Purpose                                                                                     |
-| -------------------------------- | ----------------: | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| Variable                         | Required          | Used by                                    | Purpose                                                                                     |
+| -------------------------------- | ----------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
 | `NEXT_PUBLIC_API_PROTOCOL`       |               Yes | `src/config.ts`                            | API protocol. The current validation allows `http` or `https`.                              |
 | `NEXT_PUBLIC_SERVER_DOMAIN`      |               Yes | `src/config.ts`                            | Backend/server domain setting.                                                              |
 | `NEXT_PUBLIC_SERVER_PORT`        |               Yes | `src/config.ts`                            | Backend/server port setting.                                                                |
@@ -40,24 +40,24 @@ The following variables are currently used by the application.
 Use this as a shape reference only. Replace placeholder values per environment.
 
 ```env
-NEXT_PUBLIC_API_PROTOCOL = https
-NEXT_PUBLIC_SERVER_DOMAIN = example.com
-NEXT_PUBLIC_SERVER_PORT = 443
-NEXT_PUBLIC_API_ENDPOINT = https://api.example.com
-NEXT_PUBLIC_PRODUCTION_DOMAIN = https://example.com
+NEXT_PUBLIC_API_PROTOCOL=https
+NEXT_PUBLIC_SERVER_DOMAIN=example.com
+NEXT_PUBLIC_SERVER_PORT=443
+NEXT_PUBLIC_API_ENDPOINT=https://api.example.com
+NEXT_PUBLIC_PRODUCTION_DOMAIN=https://example.com
 
-NEXT_PUBLIC_EMAIL_APP_USERNAME = your-email-username
-NEXT_PUBLIC_EMAIL_APP_PASS = your-email-app-password
-NEXT_PUBLIC_EMAIL_RECEIVER = receiver@example.com
+NEXT_PUBLIC_EMAIL_APP_USERNAME=your-email-username
+NEXT_PUBLIC_EMAIL_APP_PASS=your-email-app-password
+NEXT_PUBLIC_EMAIL_RECEIVER=receiver@example.com
 
-NEXT_PUBLIC_GG_ANALYTICS_ID = G-XXXXXXXXXX
-NEXT_PUBLIC_GG_CLIENT_ID = your-google-client-id
-NEXT_PUBLIC_GG_SCERET = your-google-client-secret
+NEXT_PUBLIC_GG_ANALYTICS_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GG_CLIENT_ID=your-google-client-id
+NEXT_PUBLIC_GG_SCERET=your-google-client-secret
 
-NEXTAUTH_URL = https://example.com
-NEXT_PUBLIC_NEXTAUTH_SECRET = your-nextauth-secret
+NEXTAUTH_URL=https://example.com
+NEXT_PUBLIC_NEXTAUTH_SECRET=your-nextauth-secret
 
-PORT = 3000
+PORT=3000
 ```
 
 ## Frontend API Configuration
@@ -151,7 +151,7 @@ Deployment-only secrets used by `.github/workflows/deploy.yml`:
 | `APP_PATH`  | Remote application path on hosting                        |
 | `NODE_PATH` | Shell snippet/path sourced before remote Node.js commands |
 
-`NEXTAUTH_URL` is not part of the `src/config.ts` Zod schema and is not passed in the workflow build step. It should still be configured wherever NextAuth expects it in the deployment/runtime environment.
+`NEXTAUTH_URL` is not part of the `src/config.ts` Zod schema and is not passed in the workflow build step. It should still be configured in the hosting/runtime environment wherever NextAuth expects it.
 
 ## Notes
 
