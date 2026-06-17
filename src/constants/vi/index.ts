@@ -64,7 +64,7 @@ export const mainMenuVi: Array<MenuType> = [
       {
         name: "Đại học",
         group: [
-          { name: "BAUD", url: "/undergraduate/baud" },
+          { name: "BAUD - Song bằng", url: "/undergraduate/baud" },
           { name: "BAUD - Kiến trúc sư", url: "/undergraduate/baud-arch" },
           { name: "BMOM", url: "/undergraduate/bmom" },
         ],

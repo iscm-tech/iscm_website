@@ -147,7 +147,7 @@ const LoginWithGoogle = () => {
         }}
       ></span>
       <span className="inline-block px-11 align-middle text-base">
-        {locale === "en" ? "Login with UEH Email" : "Đăng nhập bằng email UEH"}
+        {locale === "en" ? "Login with Google" : "Đăng nhập bằng Google"}
       </span>
     </div>
   );

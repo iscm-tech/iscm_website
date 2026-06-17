@@ -60,7 +60,7 @@ export const mainMenuEn: Array<MenuType> = [
       {
         name: "Undergraduate",
         group: [
-          { name: "BAUD", url: "/undergraduate/baud" },
+          { name: "BAUD - Dual Degree", url: "/undergraduate/baud" },
           { name: "BAUD - Architect", url: "/undergraduate/baud-arch" },
           { name: "BMOM", url: "/undergraduate/bmom" },
         ],
