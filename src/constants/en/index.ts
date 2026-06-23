@@ -123,6 +123,10 @@ export const mainMenuEn: Array<MenuType> = [
             name: "Move System",
             url: `${envConfig.PRODUCTION_DOMAIN}/move-system`,
           },
+          {
+            name: "Public Space Living Lab",
+            url: `${envConfig.PRODUCTION_DOMAIN}/public-space-living-lab`,
+          },
         ],
       },
       {
