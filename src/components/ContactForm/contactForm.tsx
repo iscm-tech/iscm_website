@@ -66,20 +66,27 @@ export default function ContactForm({
         </ul>
       `;
 
-    await SendmailTransport(message, `THẮC MẮC VỀ ${category.toUpperCase()}`);
+    try {
+      await SendmailTransport(message, `THẮC MẮC VỀ ${category.toUpperCase()}`, recaptchaToken);
 
-    messageApi.open({
-      type: "success",
-      content: "Your question is sent Successfully!",
-    });
+      messageApi.open({
+        type: "success",
+        content: "Your question is sent Successfully!",
+      });
 
-    setSendMailLoading(false);
-    formEle.getElementsByTagName("textarea")[0].value = "";
-
-    if (recaptchaRef.current) {
-      recaptchaRef.current.reset();
+      formEle.getElementsByTagName("textarea")[0].value = "";
+    } catch (error) {
+      messageApi.open({
+        type: "error",
+        content: locale === "en" ? "reCAPTCHA verification failed. Please try again." : "Xác thực reCAPTCHA thất bại. Vui lòng thử lại.",
+      });
+    } finally {
+      setSendMailLoading(false);
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
+      setRecaptchaToken(null);
     }
-    setRecaptchaToken(null);
   }
 
   useEffect(() => {
