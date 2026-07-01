@@ -1,8 +1,9 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { CSSProperties, FormEvent, useEffect, useState } from "react";
+import { CSSProperties, FormEvent, useEffect, useState, useRef } from "react";
 import { Mirage } from "ldrs/react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 // Services
 import SendmailTransport from "@/lib/mail";
@@ -33,9 +34,21 @@ export default function ContactForm({
   const [messageApi, contextHolder] = message.useMessage();
 
   const [sendMailLoading, setSendMailLoading] = useState<boolean>(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   async function sendMail(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    if (!recaptchaToken) {
+      messageApi.warning(
+        locale === "en"
+          ? "Please complete the reCAPTCHA first!"
+          : "Vui lòng xác nhận reCAPTCHA trước khi gửi!"
+      );
+      return;
+    }
+
     setSendMailLoading(true);
 
     const formEle = e.currentTarget;
@@ -43,8 +56,8 @@ export default function ContactForm({
 
     const message = `Thân gửi các thầy/cô ISCM, <br/>
         Bạn ${form.get(
-          "name",
-        )} có một số thắc mắc về ${category} như sau: <br/><br/>
+      "name",
+    )} có một số thắc mắc về ${category} như sau: <br/><br/>
         <p style="padding-left: 16px">${form.get("message")}</p> <br />
         Thông tin liên hệ bạn ${form.get("name")}: <br />
         <ul>
@@ -62,6 +75,11 @@ export default function ContactForm({
 
     setSendMailLoading(false);
     formEle.getElementsByTagName("textarea")[0].value = "";
+
+    if (recaptchaRef.current) {
+      recaptchaRef.current.reset();
+    }
+    setRecaptchaToken(null);
   }
 
   useEffect(() => {
@@ -160,6 +178,13 @@ export default function ContactForm({
                   {locale === "en" ? "Message" : "Câu hỏi"}
                 </label>
                 <span>{locale === "en" ? "Message" : "Câu hỏi"}</span>
+              </div>
+              <div className="mb-6 flex justify-center">
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+                  onChange={(token) => setRecaptchaToken(token)}
+                />
               </div>
               <button
                 type="submit"
