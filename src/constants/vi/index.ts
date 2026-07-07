@@ -129,8 +129,8 @@ export const mainMenuVi: Array<MenuType> = [
             url: `${envConfig.PRODUCTION_DOMAIN}/public-space-living-lab`,
           },
           {
-            name: "smART Hub Living Lab",
-            url: `${envConfig.PRODUCTION_DOMAIN}/smart-hub-living-lab`,
+            name: "smART Hub Living Labs",
+            url: `${envConfig.PRODUCTION_DOMAIN}/smart-hub-living-labs`,
           },
         ],
       },
