@@ -4,13 +4,15 @@ import NotFound from "@/components/not-found";
 import DesignStudio from "./designStudio";
 import { getLocale } from "next-intl/server";
 import DomParser from "@/components/domParser";
+import booklets from "./data/studio.json";
 
 export default async function page({
   searchParams,
 }: {
   searchParams: Promise<{ year?: string }>;
 }) {
-  const year = (await searchParams).year || "2025";
+  const defaultYear = booklets.length > 0 ? booklets[0].year : "2025";
+  const year = (await searchParams).year || defaultYear;
   const locale = await getLocale();
 
   try {

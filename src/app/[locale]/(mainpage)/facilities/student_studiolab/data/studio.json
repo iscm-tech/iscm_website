@@ -1,5 +1,88 @@
 [
   {
+    "year": "2026",
+    "studio": [
+      {
+        "title": "Graduation Projects",
+        "titleVie": "Đồ án tốt nghiệp",
+        "topics": [
+          {
+            "title": "Graduation Projects 2026",
+            "titleVie": "Đồ án tốt nghiệp 2026",
+            "thumb": "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/thumb-project-2026.png",
+            "description": "",
+            "groups": [
+              {
+                "id": "graduation-projects-second-phase-of-k48",
+                "title": "Graduation Projects - Second phase of K48",
+                "titleVie": "Đồ án tốt nghiệp - Đợt 2 Khóa K48",
+                "thumb": "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/thumb.png",
+                "type": "booklet",
+                "gallery": [
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/thumb.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_01.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_02.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_03.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_04.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_05.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_06.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_07.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_08.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_09.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_10.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_11.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_12.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_13.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_14.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_15.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_16.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_17.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_18.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_19.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_20.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_21.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder3_Page_22.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_01.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_02.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_03.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_04.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_05.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_06.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_07.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_08.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_09.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_10.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_11.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_12.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_13.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_14.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_15.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder4_Page_16.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_01.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_02.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_03.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_04.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_05.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_06.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_07.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_08.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_09.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_10.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_11.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_12.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_13.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_14.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_15.png",
+                  "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2026/graduation-projects-second-phase-of-k48/Binder5_Page_16.png"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "year": "2025",
     "studio": [
       {
@@ -865,7 +948,6 @@
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen tan sang-13.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen tan sang-14.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen tan sang-15.jpg",
-
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen thi phuong trang-01.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen thi phuong trang-02.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen thi phuong trang-03.jpg",
@@ -888,7 +970,6 @@
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen thi phuong trang-20.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen thi phuong trang-21.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen thi phuong trang-22.jpg",
-
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen vinh hoai-01.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen vinh hoai-02.jpg",
                   "https://iscm-api.ueh.edu.vn/public/static/images/studiolab/design_studio/2024/graduation_projects/nguyen vinh hoai-03.jpg",
