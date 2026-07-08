@@ -48,11 +48,11 @@ const ComponentStyled = styled.ul`
 
     & {
       a {
-        transform: translateX(-2px) translateY(-2px);
+        transform: translateX(-3px) translateY(-3px);
         background: #ce2027;
         border-color: #ce2027;
         color: #fff;
-        transition: none !important;
+        transition: transform 0.15s ease-out, filter 0.2s !important;
 
         h4 {
           color: #fff;
@@ -70,7 +70,9 @@ const ComponentStyled = styled.ul`
     }
 
     &:hover {
-      filter: brightness(0.8);
+      a {
+        transform: translateX(0px) translateY(0px);
+      }
     }
   }
 `;
