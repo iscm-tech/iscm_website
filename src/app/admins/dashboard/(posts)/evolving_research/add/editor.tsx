@@ -71,23 +71,50 @@ export default function Editor({ locale }: { locale: string }) {
 
       const meta: { [key: string]: any } = {};
 
-      let thumb: File | undefined;
+      let thumb: File | undefined,
+        portal_thumb: File | undefined,
+        portal_background: File | undefined;
 
-      for (const f of metaDataForm.keys()) {
-        if (metaDataForm.get(f) instanceof File) {
-          const file = normalizeFile(metaDataForm.get(f) as File);
+      for (const field of metaDataForm.keys()) {
+        if (metaDataForm.get(field) instanceof File) {
+          const file = normalizeFile(metaDataForm.get(field) as File);
           if (file.name) {
-            thumb = file;
-            imageUploads.push(thumb);
+            if (field === "thumbnail") {
+              thumb = file;
+            } else if (field === "portal_thumbnail") {
+              portal_thumb = file;
+            } else if (field === "portal_background") {
+              portal_background = file;
+            }
+            imageUploads.push(file);
           }
         } else {
-          meta[f] = metaDataForm.get(f);
+          meta[field] = metaDataForm.get(field);
         }
       }
 
       if (!(thumb && thumb?.name)) {
         toast({ title: "Please upload thumbnail!", variant: "destructive" });
         return;
+      }
+
+      // If the "Post to UEH portal" option is checked, images of appropriate size must be uploaded.
+      if (isPostPortal) {
+        if (!(portal_thumb && portal_thumb?.name)) {
+          toast({
+            title: "Please upload portal thumbnail (1499x600px)!",
+            variant: "destructive",
+          });
+          return;
+        }
+
+        if (!(portal_background && portal_background?.name)) {
+          toast({
+            title: "Please upload portal background (500x333px)!",
+            variant: "destructive",
+          });
+          return;
+        }
       }
 
       meta.sdgs = sdgsSelected.map((sdg) => Number(sdg.split("SDG ")[1]));
@@ -131,6 +158,8 @@ export default function Editor({ locale }: { locale: string }) {
 
         portal.id = data.id;
         portal.publishDate = formattedDate;
+        portal.thumbnail = `/images/evolving-research/${folderName}/${portal_thumb?.name}`;
+        portal.background = `/images/evolving-research/${folderName}/${portal_background?.name}`;
         portal.categories = portalCates.map((cate) => Number(cate));
         portal.content = await processPortalHTMLContent(portal.content);
         portal.local_cate = "evolving_research";
@@ -241,7 +270,7 @@ export default function Editor({ locale }: { locale: string }) {
           date={date ?? new Date()}
           setDate={setDate}
         />
-        <FilesInput field="thumbnail" name="image" />
+        <FilesInput field="thumbnail" name="thumbnail" />
         <CheckboxList
           field="SDGs"
           name="sdg"
@@ -274,21 +303,25 @@ export default function Editor({ locale }: { locale: string }) {
         </div>
 
         {isPostPortal && (
-          <CheckboxList
-            field="Portal Categories"
-            name="categories"
-            valueArr={Object.keys(portalCatesVi).map((val: string) => ({
-              value: val,
-              icon: (
-                <p className="text-sm">
-                  {String(portalCatesVi[val]).replaceAll("_", " ")}
-                </p>
-              ),
-            }))}
-            state={portalCates}
-            setState={setPortalCates}
-            castValType={(val) => String(val)}
-          />
+          <>
+            <CheckboxList
+              field="Portal Categories"
+              name="categories"
+              valueArr={Object.keys(portalCatesVi).map((val: string) => ({
+                value: val,
+                icon: (
+                  <p className="text-sm">
+                    {String(portalCatesVi[val]).replaceAll("_", " ")}
+                  </p>
+                ),
+              }))}
+              state={portalCates}
+              setState={setPortalCates}
+              castValType={(val) => String(val)}
+            />
+            <FilesInput field="portal thumbnail" name="portal_thumbnail" />
+            <FilesInput field="portal background" name="portal_background" />
+          </>
         )}
       </form>
     </RichtextEditor>

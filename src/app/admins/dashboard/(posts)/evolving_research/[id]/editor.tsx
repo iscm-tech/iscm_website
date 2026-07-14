@@ -232,7 +232,7 @@ export default function Editor({
             });
           }}
         />
-        <FilesInput field="thumbnail" name="image" />
+        <FilesInput field="thumbnail" name="thumbnail" />
         <div className="w-full">
           <Image
             src={post.metadata.thumbnail}
