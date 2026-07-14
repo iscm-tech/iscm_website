@@ -21,7 +21,7 @@ export class HttpError extends Error {
     [key: string]: any;
   };
   constructor({ status, payload }: { status: number; payload: any }) {
-    super("Http Error");
+    super(payload?.message || "Http Error");
     this.status = status;
     this.payload = payload;
   }
