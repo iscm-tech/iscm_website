@@ -132,6 +132,7 @@ export type PendingPostSchema = z.TypeOf<typeof PendingPostSchema>;
 
 export const AllPendingPostResSchema = z.object({
   data: z.array(PendingPostSchema),
+  totalPage: z.number().default(1),
   message: z.string(),
 });
 export type AllPendingPostResType = z.TypeOf<typeof AllPendingPostResSchema>;

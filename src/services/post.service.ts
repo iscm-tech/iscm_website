@@ -159,9 +159,11 @@ const deletePostServices = {
 };
 
 const getPendingPost = {
-  getList: (lang: string, options?: { [key: string]: any }) => {
+  getList: (page: number, lang: string, options?: { [key: string]: any }) => {
     return http.get<AllPendingPostResType>(
-      `api/portal${lang ? `?lang=${lang}` : ""}`,
+      `api/portal?${lang ? `lang=${lang}` : ""}${
+        page ? `&page=${page}` : ""
+      }`,
       { ...options },
     );
   },

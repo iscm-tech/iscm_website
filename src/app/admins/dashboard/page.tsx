@@ -11,40 +11,54 @@ import RejectPending from "./pending/[id]/rejectPending";
 import EditPending from "./pending/[id]/editPending";
 import { Empty, Tag } from "antd";
 import { getTranslations } from "next-intl/server";
+import { RequestProps } from "@/types/page.type";
 
-export default async function page() {
+export default async function page({ searchParams }: RequestProps) {
+  const page = (await searchParams).page || 1;
+  const lang = (await searchParams).lang;
   const i18n = await getTranslations();
   try {
     const cookieStorage = await cookies();
 
-    const {
-      payload: { data: dataEn },
-    } = await getPendingPost.getList("en", {
-      headers: {
-        authorization: cookieStorage.get("sessionToken")?.value,
-      },
-    });
+    let data = [], totalPage = 1;
 
-    const {
-      payload: { data: dataVi },
-    } = await getPendingPost.getList("vi", {
-      headers: {
-        authorization: cookieStorage.get("sessionToken")?.value,
-      },
-    });
+    if (lang) {
+      const { payload } = await getPendingPost.getList(page, lang, {
+        headers: {
+          authorization: cookieStorage.get("sessionToken")?.value,
+        },
+      });
+      data = payload.data;
+      totalPage = payload.totalPage;
+    } else {
+      const { payload: payloadEn } = await getPendingPost.getList(page, "en", {
+        headers: {
+          authorization: cookieStorage.get("sessionToken")?.value,
+        },
+      });
 
-    const data = dataEn.concat(dataVi);
+      const { payload: payloadVi } = await getPendingPost.getList(page, "vi", {
+        headers: {
+          authorization: cookieStorage.get("sessionToken")?.value,
+        },
+      });
 
-    data.sort(
-      (a, b) =>
-        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
-    );
+      data = payloadEn.data.concat(payloadVi.data);
+      totalPage = Math.max(payloadEn.totalPage, payloadVi.totalPage);
+
+      data.sort(
+        (a, b) =>
+          new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
+      );
+    }
 
     return (
       <>
         {data.length > 0 && (
           <DataTable
-            totalPage={1}
+            totalPage={totalPage}
+            currentPage={page}
+            lang={lang}
             tableHead={[
               "ID",
               "Title",
