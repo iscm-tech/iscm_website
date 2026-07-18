@@ -51,6 +51,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { Level } from "@tiptap/extension-heading";
+import { normalizeFile } from "@/lib/utils";
 
 const HeadingIcon = [
   <Heading1 key="heading 1" />,
@@ -87,8 +88,8 @@ export default function Menubar({
 
     if (files && editor) {
       for (let i = 0; i < files.length; i++) {
-        const file: File = files[i];
-        const url = URL.createObjectURL(files[i]);
+        const file: File = normalizeFile(files[i]);
+        const url = URL.createObjectURL(file);
 
         editor.commands.setImage({
           src: url,
