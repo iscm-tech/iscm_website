@@ -47,14 +47,14 @@ const getPostServices = {
       `api/events/latest-posts${lang ? "?lang=" + lang : ""}`,
     ),
 
-  getLatestPost: (lang: string) =>
+  getLatestPost: (lang: string, page?: number, limit?: number) =>
     http.get<LatestPostListResType>(
-      `api/utils/latest-posts${lang ? "?lang=" + lang : ""}`,
+      `api/utils/latest-posts?lang=${lang}${page ? `&page=${page}` : ""}${limit ? `&postPerPage=${limit}` : ""}`,
     ),
 
-  getLatestPortal: (lang: string) =>
+  getLatestPortal: (lang: string, page?: number, limit?: number) =>
     http.get<PostListResType<LatestAdmissionCardType>>(
-      `api/utils/latest-portal${lang ? "?lang=" + lang : ""}`,
+      `api/utils/latest-portal?lang=${lang}${page ? `&page=${page}` : ""}${limit ? `&postPerPage=${limit}` : ""}`,
     ),
 
   getLatestPostByCategory: (

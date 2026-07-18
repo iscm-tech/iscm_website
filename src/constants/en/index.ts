@@ -442,4 +442,12 @@ Meanwhile, students can participate in international design studios, summer cour
     title: "Books",
     shortDesc: "",
   },
+  news: {
+    title: "Highlights",
+    shortDesc: "Stay updated on the latest news, events, and outstanding activities happening at ISCM. A place to share important information, notable achievements, and memorable moments of students, faculty, and partners.",
+  },
+  ueh_news: {
+    title: "News from UEH",
+    shortDesc: "A comprehensive page for the latest news, events, and announcements from the University of Economics Ho Chi Minh City (UEH). Stay updated on outstanding activities, scientific research, and the achievements of faculty and students.",
+  },
 };

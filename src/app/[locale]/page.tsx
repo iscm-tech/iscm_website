@@ -121,13 +121,14 @@ export default async function Home() {
                     </h2>
                     <Link
                       href="/events"
-                      className="flex items-center gap-3 text-base whitespace-nowrap hover:text-[#981919]"
+                      className="group flex items-center gap-3 text-base whitespace-nowrap hover:text-[#981919]"
                     >
                       {i18n("read_more")}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="500"
                         height="500"
+                        className="transition-transform duration-300 ease-in-out group-hover:translate-x-2"
                         style={{
                           width: "25px",
                           height: "fit-content",
@@ -207,6 +208,76 @@ export default async function Home() {
                   >
                     {i18n("highlights")}
                   </h2>
+                  <Link
+                    href="/news"
+                    className="group flex items-center gap-3 text-base whitespace-nowrap hover:text-[#981919]"
+                  >
+                    {i18n("read_more")}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="500"
+                      height="500"
+                      className="transition-transform duration-300 ease-in-out group-hover:translate-x-2"
+                      style={{
+                        width: "25px",
+                        height: "fit-content",
+                        transform: "translate3d(0,0,0)",
+                        contentVisibility: "visible",
+                      }}
+                      viewBox="0 0 500 500"
+                    >
+                      <g clipPath="url(#a)">
+                        <g className="primary design" clipPath="url(#b)">
+                          <path className="primary" />
+                        </g>
+                        <g clipPath="url(#c)">
+                          <g className="primary design">
+                            <path className="primary" />
+                          </g>
+                          <g className="primary design">
+                            <path className="primary" />
+                          </g>
+                        </g>
+                        <g clipPath="url(#d)">
+                          <g fill="none" className="primary design">
+                            <path className="primary" />
+                            <path className="primary" />
+                          </g>
+                          <g className="primary design">
+                            <path fill="none" className="primary" />
+                          </g>
+                          <g className="primary design">
+                            <path fill="none" className="primary" />
+                          </g>
+                          <g className="primary design">
+                            <path
+                              fill="currentColor"
+                              d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
+                              className="primary"
+                            />
+                          </g>
+                          <g className="primary design">
+                            <path
+                              fill="currentColor"
+                              d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
+                              className="primary"
+                            />
+                          </g>
+                        </g>
+                        <g clipPath="url(#e)">
+                          <g className="primary design">
+                            <path fill="none" className="primary" />
+                          </g>
+                          <g className="primary design">
+                            <path fill="none" className="primary" />
+                          </g>
+                          <g className="primary design">
+                            <path className="primary" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </Link>
                 </span>
                 <Divider className="bg-[#DCD9D1] mt-0 mb-0" />
               </div>
@@ -339,17 +410,91 @@ export default async function Home() {
             <section className="section">
               <div className="container">
                 <div className="row mb-2">
-                  <h2
-                    className="section-title mb-2 text-nowrap uppercase text-[#ce2027]"
-                    style={ibm_plex_sans.style}
-                  >
-                    {locale === "en" ? <>News from UEH</> : <>Tin tức từ UEH</>}
-                  </h2>
+                  <span className="flex w-full px-3 justify-between items-center">
+                    <h2
+                      className="section-title mb-2 text-nowrap uppercase text-[#ce2027]"
+                      style={ibm_plex_sans.style}
+                    >
+                      {locale === "en" ? <>News from UEH</> : <>Tin tức từ UEH</>}
+                    </h2>
+                    <Link
+                      href="/ueh_news"
+                      className="group flex items-center gap-3 text-base whitespace-nowrap hover:text-[#981919]"
+                    >
+                      {i18n("read_more")}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="500"
+                        height="500"
+                        className="transition-transform duration-300 ease-in-out group-hover:translate-x-2"
+                        style={{
+                          width: "25px",
+                          height: "fit-content",
+                          transform: "translate3d(0,0,0)",
+                          contentVisibility: "visible",
+                        }}
+                        viewBox="0 0 500 500"
+                      >
+                        <g clipPath="url(#a)">
+                          <g className="primary design" clipPath="url(#b)">
+                            <path className="primary" />
+                          </g>
+                          <g clipPath="url(#c)">
+                            <g className="primary design">
+                              <path className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path className="primary" />
+                            </g>
+                          </g>
+                          <g clipPath="url(#d)">
+                            <g fill="none" className="primary design">
+                              <path className="primary" />
+                              <path className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path
+                                fill="currentColor"
+                                d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
+                                className="primary"
+                              />
+                            </g>
+                            <g className="primary design">
+                              <path
+                                fill="currentColor"
+                                d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
+                                className="primary"
+                              />
+                            </g>
+                          </g>
+                          <g clipPath="url(#e)">
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path className="primary" />
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </Link>
+                  </span>
                   <Divider className="bg-[#DCD9D1] mt-0 mb-0" />
                 </div>
 
                 <div className="row">
-                  <NewsList admissions={portal} />
+                  <div className="col-12">
+                    <NewsList admissions={portal} />
+                  </div>
                 </div>
               </div>
             </section>

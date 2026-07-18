@@ -437,4 +437,12 @@ export const breadcrumb: {
     title: "Sách xuất bản",
     shortDesc: "",
   },
+  news: {
+    title: "Tin tức nổi bật",
+    shortDesc: "Cập nhật các tin tức, sự kiện và hoạt động nổi bật nhất đang diễn ra tại ISCM. Nơi chia sẻ những thông tin quan trọng, thành tựu đáng chú ý và những khoảnh khắc đáng nhớ của sinh viên, giảng viên và đối tác.",
+  },
+  ueh_news: {
+    title: "Tin tức từ UEH",
+    shortDesc: "Trang tổng hợp các tin tức, sự kiện và thông báo mới nhất từ Đại học Kinh tế Thành phố Hồ Chí Minh (UEH). Nơi cập nhật các hoạt động nổi bật, nghiên cứu khoa học và thành tựu của giảng viên, sinh viên trường.",
+  },
 };

@@ -61,7 +61,7 @@ export default async function page({
                       <span className="text-base text-[#ce2027]">
                         {locale === "vi" ? "Đợt 3" : "Period 3"}
                       </span>
-                      : 06/2026
+                      : 07/2026
                     </p>
                   </div>
                 </div>
