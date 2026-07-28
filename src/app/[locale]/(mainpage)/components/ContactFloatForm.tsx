@@ -9,7 +9,7 @@ export default function ContactFloatForm() {
       className="rounded-lg overflow-hidden"
       style={{ boxShadow: "0 0 20px rgba(0,0,0,.6)" }}
     >
-      <ContactForm category="Test" />
+      <ContactForm category="ISCM" />
     </div>
   );
 }
