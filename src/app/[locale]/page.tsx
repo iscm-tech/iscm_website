@@ -308,7 +308,7 @@ export default async function Home() {
                       </div>
                     </div>
                     <div className="row">
-                      {secondaryPosts.map((post) => (
+                      {secondaryPosts.map((post, index) => (
                         <div
                           className="col-12 col-lg-4 !pl-1 !pr-1 mt-2 mt-lg-0"
                           key={post.id}
@@ -319,7 +319,9 @@ export default async function Home() {
                             publishDate={post.publishDate}
                             sdgs={post.sdgs}
                             thumb={post.thumbnail}
-                            thumbStyle={{ height: "fit-content" }}
+                            thumbStyle={
+                              index === 0 ? { height: "fit-content" } : {}
+                            }
                             title={post.title}
                             cardStyle={{
                               backgroundColor: "#f9f9f9",
