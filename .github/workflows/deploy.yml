@@ -42,12 +42,6 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          lfs: true
-      - name: Pull Git LFS Files
-        run: |
-          git lfs install
-          git lfs pull
 
       - name: Detect package manager
         id: detect-package-manager
@@ -105,7 +99,6 @@ jobs:
           include-hidden-files: true
           path: |
             .next
-            public
             messages
             server.js
             package.json
@@ -135,7 +128,6 @@ jobs:
         run: |
           tar -czf deploy.tar.gz \
             .next \
-            public \
             messages \
             server.js \
             package.json \
@@ -163,7 +155,7 @@ jobs:
             source ${{ secrets.NODE_PATH }}
             cd ${{ secrets.APP_PATH }}
 
-            rm -rf .next public messages
+            rm -rf .next messages
             rm -f server.js package.json package-lock.json next.config.js
 
             tar -xzf deploy.tar.gz

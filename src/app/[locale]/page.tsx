@@ -38,17 +38,25 @@ export default async function Home() {
   const partnerSeperateIndex = Math.floor(partnerLists.length / 2);
 
   try {
-    const {
-      payload: { data: posts },
-    } = await getPostServices.getLatestPost(locale);
+    const [postsResult, eventsResult, portalResult] = await Promise.allSettled([
+      getPostServices.getLatestPost(locale),
+      getPostServices.getFeatureEvent(locale),
+      getPostServices.getLatestPortal(locale),
+    ]);
 
-    const {
-      payload: { data: events },
-    } = await getPostServices.getFeatureEvent(locale);
-
-    const {
-      payload: { data: portal },
-    } = await getPostServices.getLatestPortal(locale);
+    const posts =
+      postsResult.status === "fulfilled" ? postsResult.value.payload.data : [];
+    const events =
+      eventsResult.status === "fulfilled"
+        ? eventsResult.value.payload.data
+        : [];
+    const portal =
+      portalResult.status === "fulfilled"
+        ? portalResult.value.payload.data
+        : [];
+    const featuredPost = posts[0];
+    const secondaryPosts = posts.slice(1, 4);
+    const sidePost = posts[4];
 
     return (
       <>
@@ -198,212 +206,186 @@ export default async function Home() {
           )}
 
           {/* Highlight Posts */}
-          <section className="section">
-            <div className="container">
-              <div className="row mb-2">
-                <span className="flex w-full px-3 justify-between">
-                  <h2
-                    className="section-title mb-2 text-nowrap uppercase text-[#ce2027]"
-                    style={ibm_plex_sans.style}
-                  >
-                    {i18n("highlights")}
-                  </h2>
-                  <Link
-                    href="/news"
-                    className="group flex items-center gap-3 text-base whitespace-nowrap hover:text-[#981919]"
-                  >
-                    {i18n("read_more")}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="500"
-                      height="500"
-                      className="transition-transform duration-300 ease-in-out group-hover:translate-x-2"
-                      style={{
-                        width: "25px",
-                        height: "fit-content",
-                        transform: "translate3d(0,0,0)",
-                        contentVisibility: "visible",
-                      }}
-                      viewBox="0 0 500 500"
+          {featuredPost && (
+            <section className="section">
+              <div className="container">
+                <div className="row mb-2">
+                  <span className="flex w-full px-3 justify-between">
+                    <h2
+                      className="section-title mb-2 text-nowrap uppercase text-[#ce2027]"
+                      style={ibm_plex_sans.style}
                     >
-                      <g clipPath="url(#a)">
-                        <g className="primary design" clipPath="url(#b)">
-                          <path className="primary" />
-                        </g>
-                        <g clipPath="url(#c)">
-                          <g className="primary design">
-                            <path className="primary" />
-                          </g>
-                          <g className="primary design">
-                            <path className="primary" />
-                          </g>
-                        </g>
-                        <g clipPath="url(#d)">
-                          <g fill="none" className="primary design">
-                            <path className="primary" />
-                            <path className="primary" />
-                          </g>
-                          <g className="primary design">
-                            <path fill="none" className="primary" />
-                          </g>
-                          <g className="primary design">
-                            <path fill="none" className="primary" />
-                          </g>
-                          <g className="primary design">
-                            <path
-                              fill="currentColor"
-                              d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
-                              className="primary"
-                            />
-                          </g>
-                          <g className="primary design">
-                            <path
-                              fill="currentColor"
-                              d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
-                              className="primary"
-                            />
-                          </g>
-                        </g>
-                        <g clipPath="url(#e)">
-                          <g className="primary design">
-                            <path fill="none" className="primary" />
-                          </g>
-                          <g className="primary design">
-                            <path fill="none" className="primary" />
-                          </g>
-                          <g className="primary design">
-                            <path className="primary" />
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                  </Link>
-                </span>
-                <Divider className="bg-[#DCD9D1] mt-0 mb-0" />
-              </div>
-              <div className="row mt-3 flex items-stretch">
-                <div className="col-lg-9 col-12 flex flex-col justify-between gap-3">
-                  <div className="row flex-1">
-                    <div className="col-12 !pl-1 !pr-1">
-                      <HighlightPost
-                        key={posts[0].id}
-                        basePath={posts[0].category}
-                        id={posts[0].slug}
-                        publishDate={posts[0].publishDate}
-                        sdgs={posts[0].sdgs}
-                        thumb={posts[0].thumbnail}
-                        title={posts[0].title}
-                        category={posts[0].category}
-                        desc={posts[0].description || ""}
-                      />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-12 col-lg-4 !pl-1 !pr-1 mt-2 mt-lg-0">
-                      <DateCard
-                        key={posts[1].id}
-                        basePath={posts[1].category}
-                        id={posts[1].slug}
-                        publishDate={posts[1].publishDate}
-                        sdgs={posts[1].sdgs}
-                        thumb={posts[1].thumbnail}
-                        thumbStyle={{ height: "fit-content" }}
-                        title={posts[1].title}
-                        cardStyle={{
-                          backgroundColor: "#f9f9f9",
+                      {i18n("highlights")}
+                    </h2>
+                    <Link
+                      href="/news"
+                      className="group flex items-center gap-3 text-base whitespace-nowrap hover:text-[#981919]"
+                    >
+                      {i18n("read_more")}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="500"
+                        height="500"
+                        className="transition-transform duration-300 ease-in-out group-hover:translate-x-2"
+                        style={{
+                          width: "25px",
+                          height: "fit-content",
+                          transform: "translate3d(0,0,0)",
+                          contentVisibility: "visible",
                         }}
-                        bodyStyle={{ flex: 1 }}
-                        isBorder={false}
-                        imgQuality={100}
-                        category={posts[1].category}
-                      />
-                    </div>
-                    <div className="col-12 col-lg-4 !pl-1 !pr-1 mt-2 mt-lg-0">
-                      <DateCard
-                        key={posts[2].id}
-                        basePath={posts[2].category}
-                        id={posts[2].slug}
-                        publishDate={posts[2].publishDate}
-                        sdgs={posts[2].sdgs}
-                        thumb={posts[2].thumbnail}
-                        title={posts[2].title}
-                        cardStyle={{
-                          backgroundColor: "#f9f9f9",
-                        }}
-                        bodyStyle={{ flex: 1 }}
-                        isBorder={false}
-                        imgQuality={100}
-                        category={posts[2].category}
-                      />
-                    </div>
-                    <div className="col-12 col-lg-4 !pl-1 !pr-1 mt-2 mt-lg-0">
-                      <DateCard
-                        key={posts[3].id}
-                        basePath={posts[3].category}
-                        id={posts[3].slug}
-                        publishDate={posts[3].publishDate}
-                        sdgs={posts[3].sdgs}
-                        thumb={posts[3].thumbnail}
-                        title={posts[3].title}
-                        cardStyle={{
-                          backgroundColor: "#f9f9f9",
-                        }}
-                        bodyStyle={{ flex: 1 }}
-                        isBorder={false}
-                        imgQuality={100}
-                        category={posts[3].category}
-                      />
-                    </div>
-                  </div>
-
-                  <Divider className="bg-[#DCD9D1] d-none d-lg-block mt-auto mb-0" />
-
-                  {posts.slice(4).map((post) => (
-                    <div className="row mt-2 mt-lg-0 d-lg-none" key={post.id}>
-                      <div className="col-12">
-                        <DateCard
-                          basePath={post.category}
-                          id={post.slug}
-                          publishDate={post.publishDate}
-                          sdgs={post.sdgs}
-                          thumb={post.thumbnail}
-                          title={post.title}
-                          cardStyle={{
-                            backgroundColor: "#f9f9f9",
-                          }}
-                          bodyStyle={{ flex: 1 }}
-                          isBorder={false}
-                          imgQuality={100}
-                          category={post.category}
+                        viewBox="0 0 500 500"
+                      >
+                        <g clipPath="url(#a)">
+                          <g className="primary design" clipPath="url(#b)">
+                            <path className="primary" />
+                          </g>
+                          <g clipPath="url(#c)">
+                            <g className="primary design">
+                              <path className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path className="primary" />
+                            </g>
+                          </g>
+                          <g clipPath="url(#d)">
+                            <g fill="none" className="primary design">
+                              <path className="primary" />
+                              <path className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path
+                                fill="currentColor"
+                                d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
+                                className="primary"
+                              />
+                            </g>
+                            <g className="primary design">
+                              <path
+                                fill="currentColor"
+                                d="m453.856 239.015-82.167-83.334c-6.065-6.153-15.976-6.224-22.132-.156-6.154 6.068-6.224 15.978-.155 22.132l55.901 56.696H57.294c-8.644 0-15.651 7.007-15.651 15.65s7.007 15.649 15.651 15.649h348.01l-55.902 56.697c-6.069 6.154-5.999 16.064.155 22.132a15.6 15.6 0 0 0 10.988 4.505c4.042 0 8.082-1.557 11.144-4.662l82.167-83.334c6.009-6.093 6.009-15.882 0-21.975"
+                                className="primary"
+                              />
+                            </g>
+                          </g>
+                          <g clipPath="url(#e)">
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path fill="none" className="primary" />
+                            </g>
+                            <g className="primary design">
+                              <path className="primary" />
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </Link>
+                  </span>
+                  <Divider className="bg-[#DCD9D1] mt-0 mb-0" />
+                </div>
+                <div className="row mt-3 flex items-stretch">
+                  <div className="col-lg-9 col-12 flex flex-col justify-between gap-3">
+                    <div className="row flex-1">
+                      <div className="col-12 !pl-1 !pr-1">
+                        <HighlightPost
+                          key={featuredPost.id}
+                          basePath={featuredPost.category}
+                          id={featuredPost.slug}
+                          publishDate={featuredPost.publishDate}
+                          sdgs={featuredPost.sdgs}
+                          thumb={featuredPost.thumbnail}
+                          title={featuredPost.title}
+                          category={featuredPost.category}
+                          desc={featuredPost.description || ""}
                         />
                       </div>
                     </div>
-                  ))}
-                </div>
+                    <div className="row">
+                      {secondaryPosts.map((post) => (
+                        <div
+                          className="col-12 col-lg-4 !pl-1 !pr-1 mt-2 mt-lg-0"
+                          key={post.id}
+                        >
+                          <DateCard
+                            basePath={post.category}
+                            id={post.slug}
+                            publishDate={post.publishDate}
+                            sdgs={post.sdgs}
+                            thumb={post.thumbnail}
+                            thumbStyle={{ height: "fit-content" }}
+                            title={post.title}
+                            cardStyle={{
+                              backgroundColor: "#f9f9f9",
+                            }}
+                            bodyStyle={{ flex: 1 }}
+                            isBorder={false}
+                            imgQuality={100}
+                            category={post.category}
+                          />
+                        </div>
+                      ))}
+                    </div>
 
-                <div className="col-lg-3 !pl-1 !pr-1 hidden d-lg-flex flex-col">
-                  <div className="mb-2" key={posts[4].id}>
-                    <DateCard
-                      key={posts[4].id}
-                      basePath={posts[4].category}
-                      id={posts[4].slug}
-                      publishDate={posts[4].publishDate}
-                      sdgs={posts[4].sdgs}
-                      thumb={posts[4].thumbnail}
-                      title={posts[4].title}
-                      cardStyle={{ backgroundColor: "#f9f9f9" }}
-                      isBorder={false}
-                      category={posts[4].category}
-                    />
+                    <Divider className="bg-[#DCD9D1] d-none d-lg-block mt-auto mb-0" />
+
+                    {posts.slice(4).map((post) => (
+                      <div className="row mt-2 mt-lg-0 d-lg-none" key={post.id}>
+                        <div className="col-12">
+                          <DateCard
+                            basePath={post.category}
+                            id={post.slug}
+                            publishDate={post.publishDate}
+                            sdgs={post.sdgs}
+                            thumb={post.thumbnail}
+                            title={post.title}
+                            cardStyle={{
+                              backgroundColor: "#f9f9f9",
+                            }}
+                            bodyStyle={{ flex: 1 }}
+                            isBorder={false}
+                            imgQuality={100}
+                            category={post.category}
+                          />
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <Divider className="bg-[#DCD9D1] d-none d-lg-block mt-2 mb-2" />
-                  <div className="px-2 h-full flex items-center">
-                    <InternalLinks />
+
+                  <div className="col-lg-3 !pl-1 !pr-1 hidden d-lg-flex flex-col">
+                    {sidePost && (
+                      <>
+                        <div className="mb-2" key={sidePost.id}>
+                          <DateCard
+                            key={sidePost.id}
+                            basePath={sidePost.category}
+                            id={sidePost.slug}
+                            publishDate={sidePost.publishDate}
+                            sdgs={sidePost.sdgs}
+                            thumb={sidePost.thumbnail}
+                            title={sidePost.title}
+                            cardStyle={{ backgroundColor: "#f9f9f9" }}
+                            isBorder={false}
+                            category={sidePost.category}
+                          />
+                        </div>
+                        <Divider className="bg-[#DCD9D1] d-none d-lg-block mt-2 mb-2" />
+                      </>
+                    )}
+                    <div className="px-2 h-full flex items-center">
+                      <InternalLinks />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          )}
 
           {/* Portal News */}
           {portal.length > 0 && (
