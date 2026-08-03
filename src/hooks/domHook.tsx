@@ -3,8 +3,25 @@
 import Image from "next/image";
 import parse, { HTMLReactParserOptions } from "html-react-parser";
 import { DomUtils, parseDocument } from "htmlparser2";
+import { useEffect } from "react";
+
+function AutoRedirect({ url }: { url: string }) {
+  useEffect(() => {
+    if (url) window.location.href = url;
+  }, [url]);
+
+  return null;
+}
+
+function decodeHTMLEntities(text: string) {
+  return (text || "")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"');
+}
 
 export const useDOMParser = (htmlString: string, safe: boolean = false) => {
+  const decodedString = decodeHTMLEntities(htmlString);
   const options: HTMLReactParserOptions = {
     replace(node) {
       if (node.type === "tag") {
@@ -16,6 +33,10 @@ export const useDOMParser = (htmlString: string, safe: boolean = false) => {
         ) {
           console.warn("Meta redirect bị chặn:", node.attribs);
           return <></>;
+        }
+
+        if (node.name === "div" && node.attribs?.["data-url"]) {
+          return <AutoRedirect url={node.attribs["data-url"]} />;
         }
 
         // Render images with Next.js Image component
@@ -42,10 +63,14 @@ export const useDOMParser = (htmlString: string, safe: boolean = false) => {
     },
   };
 
-  return parse(htmlString || "", options);
+  return parse(decodedString, options);
 };
 
 export const getInnerText = (htmlString: string) => {
-  const doc = parseDocument(htmlString);
+  const decodedString = decodeHTMLEntities(htmlString);
+
+  const cleanHtml = decodedString.replace(/<div[^>]*data-url[^>]*>.*?<\/div>/gi, "");
+
+  const doc = parseDocument(cleanHtml);
   return DomUtils.textContent(doc);
 };
