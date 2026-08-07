@@ -233,7 +233,7 @@ export default function Editor({ locale }: { locale: string }) {
           date={date ?? new Date()}
           setDate={setDate}
         />
-        <FilesInput field="thumbnail" name="image" />
+        <FilesInput field="thumbnail" name="thumbnail" />
         <CheckboxList
           field="SDGs"
           name="sdg"

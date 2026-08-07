@@ -229,7 +229,7 @@ export default function Editor({
             });
           }}
         />
-        <FilesInput field="thumbnail" name="Thumbnail" />
+        <FilesInput field="thumbnail" name="thumbnail" />
         <div className="w-full">
           <Image
             src={post.metadata.thumbnail}
