@@ -42,6 +42,8 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Detect package manager
         id: detect-package-manager
@@ -104,6 +106,7 @@ jobs:
             package.json
             package-lock.json
             next.config.js
+            public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png
           retention-days: 1
 
   #Deploy job
@@ -132,7 +135,8 @@ jobs:
             server.js \
             package.json \
             package-lock.json \
-            next.config.js
+            next.config.js \
+            public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png
 
       - name: Upload package via SCP
         uses: appleboy/scp-action@v0.1.7

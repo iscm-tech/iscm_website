@@ -7,7 +7,6 @@ import $ from "jquery";
 
 // Import Utils
 import { ibm_plex_sans } from "@/app/fontDeclare";
-import envConfig from "@/config";
 import "../style.scss";
 
 // Import Data
@@ -20,7 +19,6 @@ import programStructure from "./data/programStucture.json";
 // Import Components
 import Link from "next/link";
 import * as motion from "motion/react-client";
-import ImageNext from "next/image";
 import { Collapse, Image } from "antd";
 import { RevealWrapper } from "next-reveal";
 import { AnimatePresence } from "motion/react";
@@ -118,7 +116,7 @@ export default function BAUDArchPage() {
     return () => {
       window.onscroll = null;
     };
-  }, [document.body.clientWidth]);
+  }, []);
 
   return (
     <section className="course_undergraduate course_undergraduate-baud-arch pr-[15px]">
@@ -418,7 +416,7 @@ export default function BAUDArchPage() {
                 className="w-full min-h-[300px] mt-3"
               >
                 <Image
-                  src={`${envConfig.API_ENDPOINT}/public/static${programStructureImage}`}
+                  src={programStructureImage}
                   alt=""
                   width="100%"
                   className="w-full"
