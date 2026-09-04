@@ -101,12 +101,12 @@ jobs:
           include-hidden-files: true
           path: |
             .next
+            public
             messages
             server.js
             package.json
             package-lock.json
             next.config.js
-            public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png
           retention-days: 1
 
   #Deploy job
@@ -131,12 +131,12 @@ jobs:
         run: |
           tar -czf deploy.tar.gz \
             .next \
+            public \
             messages \
             server.js \
             package.json \
             package-lock.json \
-            next.config.js \
-            public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png
+            next.config.js
 
       - name: Upload package via SCP
         uses: appleboy/scp-action@v0.1.7
@@ -159,13 +159,13 @@ jobs:
             source ${{ secrets.NODE_PATH }}
             cd ${{ secrets.APP_PATH }}
 
-            rm -rf .next messages
+            rm -rf .next public messages
             rm -f server.js package.json package-lock.json next.config.js
 
             tar -xzf deploy.tar.gz
             rm -f deploy.tar.gz
 
-            # npm ci --omit=dev
+            npm ci --omit=dev
             echo "Stopping Node.js app processes..."
             pkill -f "[l]snode:${{ secrets.APP_PATH }}" || true
             echo "Restarting app..."
