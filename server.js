@@ -1,6 +1,7 @@
 const { createServer } = require('http')
 const { parse } = require('url')
-const next = require('next')
+const path = require('path')
+const next = require(path.join(__dirname, 'node_modules', 'next'))
 
 const dev = false
 const hostname = 'localhost'
