@@ -37,7 +37,7 @@ export default async function page() {
             </p>
 
             <p className="text-justify">
-              The goal-setting and evaluation process is built upon five core
+              The goal-setting and evaluation process is built upon six core
               pillars:
             </p>
 
@@ -168,7 +168,7 @@ export default async function page() {
             </p>
 
             <p className="text-justify">
-              Quy trình thiết lập mục tiêu và đánh giá được thực hiện dựa trên 5
+              Quy trình thiết lập mục tiêu và đánh giá được thực hiện dựa trên 6
               trụ cột cốt lõi:
             </p>
 
