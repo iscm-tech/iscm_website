@@ -482,8 +482,8 @@ export default async function page() {
 
         <figure className="w-full flex items-center justify-center mt-4">
           <Image
-            src={"/images/about/company_organization.jpg"}
-            alt="Company Organization"
+            src={"/images/iscmer/organization_diagram/To_chuc_8_2026.png"}
+            alt="ISCM Organizational Structure — August 2026"
             width={2400}
             height={1200}
             className="w-full object-contain"
