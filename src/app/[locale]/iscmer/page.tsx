@@ -721,8 +721,8 @@ export default async function page() {
                         professors (Contracted with UEH).
                       </li>
                       <li className="list-item!">
-                        Interns: Supporting administration or project tasks
-                        (Internship agreement signed with ISCM).
+                        Interns: Participate in research groups, projects, and research
+                        activities (sign an internship agreement with ISCM).
                       </li>
                     </ul>
                   </li>
