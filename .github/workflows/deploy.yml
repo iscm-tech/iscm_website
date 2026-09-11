@@ -108,6 +108,7 @@ jobs:
             next.config.js
             public/move-system
             public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png
+            public/images/iscmer/organization_diagram/To_chuc_8_2026.png
           retention-days: 1
 
   #Deploy job
@@ -138,7 +139,8 @@ jobs:
             package-lock.json \
             next.config.js \
             public/move-system \
-            public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png
+            public/images/courses/structure/baud-arch/BAUD-Arch-2026-curriculum.png \
+            public/images/iscmer/organization_diagram/To_chuc_8_2026.png
 
       - name: Upload package via SCP
         uses: appleboy/scp-action@v0.1.7
