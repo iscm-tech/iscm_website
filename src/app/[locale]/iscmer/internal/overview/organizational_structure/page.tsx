@@ -16,8 +16,8 @@ export default async function page() {
         <br />
         <span className="text-base">
           {locale === "en"
-            ? "(Officially applied from January 2026)"
-            : "(Áp dụng chính thức từ tháng 01/2026)"}
+            ? "(Officially effective from August 2026)"
+            : "(Áp dụng chính thức từ tháng 08/2026)"}
         </span>
       </h1>
 
@@ -40,46 +40,56 @@ export default async function page() {
             <p className="text-justify">
               ISCM vận hành theo mô hình linh hoạt, kết hợp giữa quản lý theo
               chức năng (Functional) và quản lý theo dự án/sự kiện
-              (Matrix/Project-based). Nhằm đảm bảo tính minh bạch và hiệu quả,
-              quy tắc làm việc được quy định như sau:
+              (Matrix/Project-based). Mô hình này nhằm bảo đảm tính minh bạch,
+              hiệu quả và khả năng phối hợp liên ngành, liên nhóm trong toàn
+              Viện.
             </p>
-            <ul className="list-disc! pl-4 mb-4">
+            <ol className="list-decimal! pl-4 mb-4">
               <li className="list-item!">
-                Thẩm quyền của Viện trưởng: Viện trưởng là người nắm quyền điều
-                hành tối cao tại ISCM; trực tiếp phân công, bổ nhiệm các vị trí:
-                Head, Lead, Manager, Coordinator, Host;
+                <b>Thẩm quyền của Viện trưởng:</b> Là người nắm quyền điều hành
+                tối cao tại ISCM, chịu trách nhiệm cuối cùng về chiến lược phát
+                triển, nhân sự, học thuật, tài chính, đối ngoại và chất lượng
+                vận hành chung của Viện. Viện trưởng trực tiếp phân công, bổ
+                nhiệm các vị trí: Head, Manager, Coordinator và Host.
               </li>
               <li className="list-item!">
-                Quy định về cấp báo cáo và giao việc chéo (Cross-functional):
+                <b>Vai trò của Viện phó:</b> Là người hỗ trợ trực tiếp Viện
+                trưởng, phụ trách toàn bộ các hoạt động nội bộ của ISCM, đặc
+                biệt là vận hành nội bộ, tài chính, nhân sự, hành chính, truyền
+                thông nội bộ và bên ngoài, đồng thời phối hợp các hoạt động hỗ
+                trợ Viện trưởng. Viện phó chịu trách nhiệm trực tiếp đối với
+                chuyên viên Operation & Finance, chuyên viên Truyền thông và các
+                đầu việc nội bộ khác do Viện trưởng giao.
+              </li>
+              <li className="list-item!">
+                <b>
+                  Quy định về cấp báo cáo và giao việc chéo
+                  (Cross-functional):
+                </b>{" "}
                 Thành viên thuộc nhóm chức năng nào sẽ làm việc theo ngành dọc
                 và báo cáo trực tiếp cho Trưởng nhóm (Head) đó. Khi cần thiết,
-                thành viên có thể báo cáo vượt cấp trực tiếp cho Viện trưởng.{" "}
-                <br />
-                <span className="text-[#cd2027]">
-                  <b>Đặc biệt:</b> Trưởng nhóm chức năng không được quyền tự ý
-                  điều động nhân sự của nhóm khác. Chỉ có Viện trưởng mới có
-                  quyền phân công một thành viên làm việc chéo (cross-line) sang
-                  các dự án hoặc nhóm chức năng khác;
-                </span>
+                thành viên có thể báo cáo vượt cấp trực tiếp cho Viện trưởng.
+                Trưởng nhóm chức năng không được quyền tự ý điều động nhân sự
+                của nhóm khác. Chỉ có Viện trưởng mới có quyền phân công một
+                thành viên làm việc chéo sang nhóm chức năng khác hoặc dự án
+                khác.
               </li>
               <li className="list-item!">
-                Tính linh hoạt trong vai trò: Một cá nhân có thể đảm nhiệm nhiều
-                vai trò cùng lúc (ví dụ: vừa là Manager dự án A, Coordinator lab
-                B, Host sự kiện C, và là Member của dự án D);
+                <b>Tính linh hoạt trong vai trò:</b> Một cá nhân có thể đảm
+                nhiệm nhiều vai trò cùng lúc, ví dụ: vừa là Manager của một dự
+                án, vừa là Coordinator của một lab, vừa là Host của một sự kiện,
+                vừa là Member của một dự án khác. Khi tham gia vào bất kỳ dự
+                án/nhóm nào, cá nhân phải tuân thủ tuyệt đối sự phân công và
+                điều hành của người đứng đầu dự án/nhóm đó, bất kể cấp bậc hành
+                chính của cá nhân đó ở nhóm gốc là cao hay thấp.
               </li>
               <li className="list-item!">
-                Nguyên tắc tuân thủ: Khi tham gia vào bất kỳ dự án/nhóm nào, cá
-                nhân phải tuân thủ tuyệt đối sự phân công, điều hành của người
-                đứng đầu dự án/nhóm đó (bất kể cấp bậc hành chính của cá nhân đó
-                ở nhóm chức năng gốc là cao hay thấp);
+                <b>Viện phó, Giám đốc chương trình đào tạo:</b> Do Viện trưởng
+                phân công, nhưng bắt buộc phải được Ban Giám đốc UEH ra quyết
+                định công nhận chính thức mới có hiệu lực.
               </li>
-              <li className="list-item!">
-                Giám đốc Chương trình đào tạo: Đây là vị trí mang tính học thuật
-                đặc thù. Dù do Viện trưởng phân công nhưng bắt buộc phải được
-                Ban Giám đốc UEH ra quyết định công nhận chính thức mới có hiệu
-                lực.
-              </li>
-            </ul>
+            </ol>
+
             <h3>Phần II: Phân tầng và Mô tả các vị trí quản lý</h3>
             <p>
               Hệ thống nhân sự tại ISCM được phân tầng rõ ràng với các vai trò
@@ -90,21 +100,37 @@ export default async function page() {
                 Viện trưởng (Institute Director)
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Vai trò: Quản lý cấp cao, chịu trách nhiệm trực tiếp trước
-                    Viện trưởng về một mảng nghiệp vụ cốt lõi của Viện.
+                    Vai trò: Người đứng đầu, nắm quyền ra quyết định về chiến
+                    lược, nhân sự và tài chính của Viện.
                   </li>
                   <li className="list-item!">
-                    Trách nhiệm: Định hướng, ra quyết định, quản lý tổng thể và
-                    triển khai các hoạt động của nhóm. Có trách nhiệm phối hợp
-                    với các Head khác trong các dự án/sự kiện chung theo phân
-                    công của Viện trưởng.
+                    Trách nhiệm: Định hướng tầm nhìn, dẫn dắt toàn bộ hoạt động
+                    của ISCM, trực tiếp quản lý các cấp quản lý cấp trung, phê
+                    duyệt các quyết định nhân sự, chiến lược, tài chính và hoạt
+                    động triển khai liên viện/liên đơn vị, đồng thời giám sát
+                    chất lượng tổng thể.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Viện phó (Deputy Director)
+                <ul className="list-disc! pl-4">
+                  <li className="list-item!">
+                    Vai trò: Người hỗ trợ trực tiếp Viện trưởng, phụ trách toàn
+                    bộ hoạt động nội bộ và hỗ trợ điều hành thường nhật của
+                    Viện.
                   </li>
                   <li className="list-item!">
-                    Cơ cấu: Gồm 06 nhóm chức năng: Operation and Finance (Vận
-                    hành và Tài chính), Academia (Đào tạo học thuật), Research
-                    (Nghiên cứu khoa học), Partnership (Đối tác chiến lược),
-                    Engagement (Kết nối cộng đồng), Communication & PR (Truyền
-                    thông và Quan hệ công chúng)
+                    Trách nhiệm: Điều phối nội bộ; theo dõi và hỗ trợ vận hành;
+                    phụ trách chuyên viên O&F và chuyên viên Truyền thông; theo
+                    dõi tiến độ công việc nội bộ; hỗ trợ Viện trưởng kiểm soát
+                    kế hoạch, nhắc thời hạn, phân luồng công việc và bảo đảm các
+                    hoạt động nội bộ vận hành thông suốt.
+                  </li>
+                  <li className="list-item!">
+                    Phạm vi quản lý: Quản lý trực tiếp các đầu việc hỗ trợ nội
+                    bộ, đặc biệt là nhân sự hỗ trợ nội bộ, tài chính – hậu cần,
+                    truyền thông và các công việc hành chính phối hợp.
                   </li>
                 </ul>
               </li>
@@ -112,13 +138,21 @@ export default async function page() {
                 Trưởng nhóm chức năng (Head)
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Vai trò: Người đứng đầu, nắm quyền ra quyết định tối cao về
-                    chiến lược, nhân sự và tài chính của Viện.
+                    Vai trò: Quản lý cấp cao, chịu trách nhiệm trực tiếp trước
+                    Viện trưởng về một mảng nghiệp vụ cốt lõi của Viện.
                   </li>
                   <li className="list-item!">
-                    Trách nhiệm: Định hướng tầm nhìn, dẫn dắt toàn bộ hoạt động
-                    của ISCM và trực tiếp quản lý các cấp quản lý cấp trung
-                    (Head, Lead, Manager).
+                    Trách nhiệm: Định hướng nhóm; ra quyết định trong phạm vi
+                    chức năng; quản lý tổng thể hoạt động của nhóm; phối hợp với
+                    các Head khác trong các dự án/sự kiện chung theo phân công
+                    của Viện trưởng; chịu trách nhiệm về kết quả đầu ra của
+                    nhóm.
+                  </li>
+                  <li className="list-item!">
+                    Cơ cấu: Gồm 05 nhóm chức năng: Operation and Finance (Vận
+                    hành và Tài chính); Academia (Đào tạo học thuật); Research
+                    (Nghiên cứu khoa học); Partnership (Đối tác chiến lược);
+                    Engagement (Kết nối cộng đồng).
                   </li>
                 </ul>
               </li>
@@ -131,11 +165,15 @@ export default async function page() {
                   </li>
                   <li className="list-item!">
                     Trách nhiệm: Trực tiếp định hướng, quản lý tổng thể, ra
-                    quyết định và báo cáo với Viện trưởng. Phụ trách việc dẫn
-                    dắt các: Nhóm học phần (Course modules), Phòng thí nghiệm
-                    (Lab), Trung tâm trực thuộc (Center), Các dự án quy mô lớn
-                    (Large-scale projects). Nếu đã có những vị trí này thì sẽ
-                    không có Coordinator nữa.
+                    quyết định trong phạm vi phụ trách, báo cáo với Viện trưởng
+                    và dẫn dắt các nhóm học phần (Course modules), phòng thí
+                    nghiệm (Lab), trung tâm trực thuộc (Center) hoặc các dự án
+                    quy mô lớn (Large-scale projects).
+                  </li>
+                  <li className="list-item!">
+                    Nguyên tắc: Nếu đã có vị trí Lead/Manager cho một cấu phần
+                    thì không cần Coordinator cho cùng cấu phần đó, trừ khi Viện
+                    trưởng quyết định khác.
                   </li>
                 </ul>
               </li>
@@ -148,27 +186,31 @@ export default async function page() {
                     có cấu trúc bền vững.
                   </li>
                   <li className="list-item!">
-                    Trách nhiệm: Lập kế hoạch, theo dõi tiến độ và điều phối các
-                    nguồn lực hoạt động hàng ngày của: Các nhóm nghiên cứu, Lab,
-                    Center, Dự án vừa và nhỏ, hoặc các Sáng kiến (Initiatives).
-                    Trực tiếp báo cáo tiến độ cho Viện trưởng hoặc cấp quản lý
-                    trực tiếp.
+                    Trách nhiệm: Lập kế hoạch, theo dõi tiến độ, điều phối nguồn
+                    lực và hỗ trợ vận hành hằng ngày.
+                  </li>
+                  <li className="list-item!">
+                    Phạm vi điều phối: Các nhóm nghiên cứu, lab, center, dự án
+                    vừa và nhỏ, và các sáng kiến (initiatives).
+                  </li>
+                  <li className="list-item!">
+                    Báo cáo: Trực tiếp báo cáo tiến độ cho Viện trưởng hoặc cấp
+                    quản lý trực tiếp.
                   </li>
                 </ul>
               </li>
               <li>
-                Trưởng ban tổ chức / Phụ trách sự kiện (Host)
+                Người phụ trách sự kiện (Host)
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
                     Vai trò: Đầu mối chịu trách nhiệm cao nhất đối với các hoạt
-                    động, sự kiện có tính thời vụ (có ngày bắt đầu và kết thúc
-                    rõ ràng).
+                    động, sự kiện có tính thời vụ.
                   </li>
                   <li className="list-item!">
-                    Trách nhiệm: Lập kế hoạch, điều phối nhân sự, ngân sách và
-                    tổ chức triển khai các sự kiện/hoạt động được giao. Chịu
-                    trách nhiệm đảm bảo sự kiện diễn ra thành công và báo cáo
-                    kết quả trực tiếp với Viện trưởng.
+                    Trách nhiệm: Lập kế hoạch, điều phối nhân sự, điều phối ngân
+                    sách, tổ chức triển khai hoạt động/sự kiện được giao, bảo
+                    đảm sự kiện diễn ra thành công và báo cáo kết quả trực tiếp
+                    với Viện trưởng.
                   </li>
                 </ul>
               </li>
@@ -180,12 +222,36 @@ export default async function page() {
                     môn.
                   </li>
                   <li className="list-item!">
-                    Trách nhiệm: Triển khai các đầu việc được giao theo đúng
-                    chất lượng và tiến độ. Báo cáo kết quả công việc cho Viện
-                    trưởng hoặc Trưởng nhóm (Head/Lead/Manager/Host/Coordinator)
-                    mà mình được phân công.
+                    Trách nhiệm: Triển khai các đầu việc được giao, bảo đảm chất
+                    lượng và tiến độ, báo cáo kết quả công việc cho Viện trưởng
+                    hoặc Trưởng nhóm mà mình được phân công.
                   </li>
                 </ul>
+              </li>
+            </ol>
+
+            <h3>Phần III: Cơ chế Phối hợp và Báo cáo</h3>
+            <ol className="list-decimal! pl-4">
+              <li className="list-item!">
+                <b>Phối hợp theo ngành dọc:</b> Thành viên làm việc theo nhóm
+                chức năng chính và báo cáo theo tuyến quản lý trực tiếp. Trưởng
+                nhóm chịu trách nhiệm tổng hợp và báo cáo cho Viện trưởng.
+              </li>
+              <li className="list-item!">
+                <b>Phối hợp liên nhóm:</b> Khi một nhiệm vụ liên quan nhiều
+                nhóm, Viện trưởng là người phân công đầu mối chính. Các nhóm
+                khác chỉ tham gia theo đúng phần việc được giao.
+              </li>
+              <li className="list-item!">
+                <b>Nguyên tắc “1 đầu mối – 1 trách nhiệm”:</b> Mỗi đầu việc lớn
+                phải có một người chịu trách nhiệm chính; tránh chồng chéo trách
+                nhiệm giữa các nhóm và tránh tình trạng nhiều người cùng làm
+                nhưng không ai chịu trách nhiệm cuối cùng.
+              </li>
+              <li className="list-item!">
+                <b>Cơ chế báo cáo:</b> Báo cáo định kỳ theo tuần, tháng hoặc
+                giai đoạn. Báo cáo cần ngắn gọn, rõ ràng: việc đã làm, việc đang
+                làm, việc còn vướng và việc cần quyết định.
               </li>
             </ol>
           </>
@@ -194,155 +260,221 @@ export default async function page() {
           <>
             <h3>Part I: General Principles of Organization and Operations</h3>
             <p className="text-justify">
-              ISCM operates under a flexible model, combining Functional
-              management and Matrix/Project-based management. To ensure
-              transparency and efficiency, the working principles are defined as
-              follows:
+              ISCM operates under a flexible model combining functional
+              management and matrix/project-based management. This model is
+              designed to ensure transparency, efficiency, and interdisciplinary
+              and cross-team coordination throughout the Institute.
             </p>
-            <ul className="list-disc! pl-4 mb-4">
+            <ol className="list-decimal! pl-4 mb-4">
               <li className="list-item!">
-                Authority of the Institute Director: The Institute Director
-                holds the highest executive authority at ISCM; directly assigns
-                and appoints positions including Head, Lead, Manager,
-                Coordinator, and Host;
+                <b>Authority of the Institute Director:</b> The Institute
+                Director holds the highest executive authority at ISCM and has
+                ultimate responsibility for the Institute&apos;s development
+                strategy, personnel, academic affairs, finance, external
+                relations, and overall operational quality. The Institute
+                Director directly assigns and appoints Heads, Managers,
+                Coordinators, and Hosts.
               </li>
+              <li className="list-item!">
+                <b>Role of the Deputy Director:</b> The Deputy Director directly
+                supports the Institute Director and oversees ISCM&apos;s
+                internal activities, particularly internal operations, finance,
+                human resources, administration, internal and external
+                communications, and other support activities for the Institute
+                Director. The Deputy Director is directly responsible for the
+                Operation & Finance Officer, Communications Officer, and other
+                internal assignments delegated by the Institute Director.
+              </li>
+              <li className="list-item!">
+                <b>Reporting lines and cross-functional assignments:</b>{" "}
+                Members work within their functional reporting lines and report
+                directly to their respective Head. When necessary, they may
+                report directly to the Institute Director. Functional Heads may
+                not independently reassign personnel from other groups. Only the
+                Institute Director may assign a member to work across another
+                functional group or project.
+              </li>
+              <li className="list-item!">
+                <b>Role flexibility:</b> An individual may hold multiple roles
+                simultaneously—for example, serving as a Project Manager, Lab
+                Coordinator, Event Host, and Member of another project. When
+                participating in any project or group, the individual must
+                strictly follow the assignments and direction of that
+                project&apos;s or group&apos;s leader, regardless of the
+                individual&apos;s administrative rank in their original group.
+              </li>
+              <li className="list-item!">
+                <b>Deputy Director and Academic Program Directors:</b> These
+                positions are assigned by the Institute Director but become
+                effective only after formal recognition by the UEH Board of
+                Directors.
+              </li>
+            </ol>
 
-              <li className="list-item!">
-                Reporting and Cross-functional Assignment Rules: Members of a
-                functional group work within a vertical structure and report
-                directly to their respective Head. When necessary, members may
-                report directly to the Institute Director. <br />
-                <span className="text-[#cd2027]">
-                  <b>Special note:</b> Functional Heads are not allowed to
-                  independently assign personnel from other groups. Only the
-                  Institute Director has the authority to assign
-                  cross-functional (cross-line) tasks or reallocate members
-                  across projects or functional groups;
-                </span>
-              </li>
-
-              <li className="list-item!">
-                Role Flexibility: An individual may take on multiple roles
-                simultaneously (e.g., Project Manager of Project A, Lab
-                Coordinator of Lab B, Event Host C, and Member of Project D);
-              </li>
-
-              <li className="list-item!">
-                Compliance Principle: When participating in any project or
-                group, individuals must strictly follow the assignment and
-                direction of the project/group leader, regardless of their
-                hierarchical position in their home functional group;
-              </li>
-
-              <li className="list-item!">
-                Program Director: This is a specialized academic position.
-                Although appointed by the Institute Director, it must be
-                officially approved by the UEH Board of Directors to take
-                effect.
-              </li>
-            </ul>
-            <h3>Part II: Organizational Levels and Role Descriptions</h3>
+            <h3>Part II: Organizational Levels and Management Roles</h3>
             <p>
-              The personnel system at ISCM is clearly structured with defined
-              roles and levels of responsibility as follows:
+              ISCM&apos;s personnel system is organized into clearly defined
+              levels, with specific roles and degrees of responsibility as
+              follows:
             </p>
             <ol className="list-decimal! pl-4">
               <li>
                 Institute Director
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Role: Senior executive responsible for overseeing a core
-                    functional domain of the Institute.
+                    Role: Head of the Institute, with decision-making authority
+                    over its strategy, personnel, and finance.
                   </li>
                   <li className="list-item!">
-                    Responsibilities: Strategic direction, decision-making,
-                    overall management, and execution of group activities.
-                    Coordinates with other Heads in joint projects/events as
-                    assigned by the Institute Director.
-                  </li>
-                  <li className="list-item!">
-                    Structure: Comprises 06 functional groups: Operations &
-                    Finance, Academia, Research, Partnership, Engagement,
-                    Communication & PR.
+                    Responsibilities: Sets the vision; leads all ISCM
+                    activities; directly manages middle-management positions;
+                    approves personnel, strategic, and financial decisions and
+                    inter-institute/inter-unit initiatives; and oversees overall
+                    quality.
                   </li>
                 </ul>
               </li>
-
+              <li>
+                Deputy Director
+                <ul className="list-disc! pl-4">
+                  <li className="list-item!">
+                    Role: Directly supports the Institute Director, oversees all
+                    internal activities, and assists with the Institute&apos;s
+                    day-to-day management.
+                  </li>
+                  <li className="list-item!">
+                    Responsibilities: Coordinates internal activities; monitors
+                    and supports operations; supervises the O&F Officer and
+                    Communications Officer; tracks internal work progress;
+                    assists the Institute Director with plan control, deadline
+                    reminders, and work allocation; and ensures smooth internal
+                    operations.
+                  </li>
+                  <li className="list-item!">
+                    Management scope: Directly manages internal support work,
+                    especially internal support personnel, finance and
+                    logistics, communications, and coordinated administrative
+                    tasks.
+                  </li>
+                </ul>
+              </li>
               <li>
                 Functional Head
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Role: The highest authority within a functional group,
-                    responsible for strategic decisions, personnel, and budget.
+                    Role: Senior manager directly accountable to the Institute
+                    Director for one of the Institute&apos;s core functional
+                    areas.
                   </li>
                   <li className="list-item!">
-                    Responsibilities: Defines vision, leads ISCM-wide
-                    activities, and directly manages mid-level roles such as
-                    Lead, Manager, and Coordinator.
+                    Responsibilities: Sets the group&apos;s direction; makes
+                    decisions within its functional scope; manages all group
+                    activities; coordinates with other Heads on joint
+                    projects/events as assigned by the Institute Director; and
+                    remains accountable for the group&apos;s outputs.
+                  </li>
+                  <li className="list-item!">
+                    Structure: Five functional groups—Operation and Finance,
+                    Academia, Research, Partnership, and Engagement.
                   </li>
                 </ul>
               </li>
-
               <li>
-                Senior Project/Expert Management (Lead / Manager)
+                Senior Project/Specialist Management (Lead / Manager)
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Role: Leads major strategic or specialized units.
+                    Role: Leads major strategic components or areas requiring
+                    specialized expertise.
                   </li>
                   <li className="list-item!">
-                    Responsibilities: Overall leadership, decision-making, and
-                    reporting to the Institute Director. Responsible for Course
-                    Modules, Labs, Centers, and large-scale projects. When these
-                    roles exist, Coordinators may not be assigned.
+                    Responsibilities: Provides direction, overall management,
+                    and decision-making within the assigned scope; reports to
+                    the Institute Director; and leads course modules, labs,
+                    affiliated centers, or large-scale projects.
+                  </li>
+                  <li className="list-item!">
+                    Principle: When a component already has a Lead/Manager, a
+                    Coordinator is not required for that same component unless
+                    otherwise decided by the Institute Director.
                   </li>
                 </ul>
               </li>
-
               <li>
                 Coordinator
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Role: Operational focal point for long-term or structured
-                    activities.
+                    Role: Primary operational lead and information focal point
+                    for long-term or sustainably structured activities.
                   </li>
                   <li className="list-item!">
-                    Responsibilities: Planning, progress tracking, and resource
-                    coordination for research groups, labs, centers,
-                    small-to-medium projects, and initiatives. Reports directly
-                    to the Institute Director or assigned manager.
+                    Responsibilities: Plans activities, tracks progress,
+                    coordinates resources, and supports daily operations.
+                  </li>
+                  <li className="list-item!">
+                    Coordination scope: Research groups, labs, centers,
+                    small-to-medium projects, and initiatives.
+                  </li>
+                  <li className="list-item!">
+                    Reporting: Reports progress directly to the Institute
+                    Director or immediate manager.
                   </li>
                 </ul>
               </li>
-
               <li>
                 Event Host
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Role: Highest responsible person for time-bound events or
-                    activities.
+                    Role: The primary person accountable for seasonal or
+                    time-bound activities and events.
                   </li>
                   <li className="list-item!">
-                    Responsibilities: Planning, personnel coordination,
-                    budgeting, and execution of assigned events. Ensures
-                    successful delivery and reports directly to the Institute
-                    Director.
+                    Responsibilities: Plans activities, coordinates personnel
+                    and budgets, implements assigned activities/events, ensures
+                    successful delivery, and reports results directly to the
+                    Institute Director.
                   </li>
                 </ul>
               </li>
-
               <li>
                 Members
                 <ul className="list-disc! pl-4">
                   <li className="list-item!">
-                    Role: Execution-level personnel.
+                    Role: Personnel who directly perform professional duties.
                   </li>
                   <li className="list-item!">
-                    Responsibilities: Carry out assigned tasks with required
-                    quality and deadlines. Report work results to the Institute
-                    Director or assigned leader
-                    (Head/Lead/Manager/Host/Coordinator).
+                    Responsibilities: Carry out assigned tasks, ensure quality
+                    and timely completion, and report work results to the
+                    Institute Director or the group leader to whom they are
+                    assigned.
                   </li>
                 </ul>
+              </li>
+            </ol>
+
+            <h3>Part III: Coordination and Reporting Mechanisms</h3>
+            <ol className="list-decimal! pl-4">
+              <li className="list-item!">
+                <b>Vertical coordination:</b> Members work within their primary
+                functional groups and follow direct reporting lines. Heads
+                consolidate information and report to the Institute Director.
+              </li>
+              <li className="list-item!">
+                <b>Cross-group coordination:</b> When a task involves multiple
+                groups, the Institute Director appoints the primary focal point.
+                Other groups participate only within their assigned scope.
+              </li>
+              <li className="list-item!">
+                <b>“One focal point – one accountability” principle:</b> Each
+                major task must have one person with primary responsibility.
+                Responsibilities should not overlap across groups, and multiple
+                contributors should not result in the absence of final
+                accountability.
+              </li>
+              <li className="list-item!">
+                <b>Reporting mechanism:</b> Reports are submitted weekly,
+                monthly, or by project phase. They should be concise and clear,
+                covering completed work, ongoing work, obstacles, and matters
+                requiring decisions.
               </li>
             </ol>
           </>
