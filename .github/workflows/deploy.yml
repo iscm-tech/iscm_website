@@ -143,6 +143,8 @@ jobs:
             public/images/iscmer/organization_diagram/To_chuc_8_2026.png
 
       - name: Upload package via SCP
+        id: scp_upload
+        continue-on-error: true
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -151,6 +153,28 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           source: "deploy.tar.gz"
           target: ${{ secrets.APP_PATH }}
+          timeout: 180s
+          command_timeout: 20m
+
+      - name: Retry package upload via SCP
+        if: steps.scp_upload.outcome == 'failure'
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "deploy.tar.gz"
+          target: ${{ secrets.APP_PATH }}
+          timeout: 180s
+          command_timeout: 20m
+
+      - name: Extract package, install dependencies and restart app
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
 
       - name: Extract package, install dependencies and restart app
         uses: appleboy/ssh-action@v1.0.3
