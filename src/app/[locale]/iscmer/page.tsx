@@ -687,8 +687,8 @@ export default async function page() {
                         sư thỉnh giảng (Ký hợp đồng với UEH).
                       </li>
                       <li className="list-item!">
-                        Thực tập sinh (Interns): Hỗ trợ Admin hoặc làm dự án (Ký
-                        thỏa thuận thực tập với ISCM).
+                        Thực tập sinh (Interns): Tham gia các nhóm nghiên cứu/
+                        các dự án/ nghiên cứu (Ký thỏa thuận thực tập với ISCM).
                       </li>
                     </ul>
                   </li>
