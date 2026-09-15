@@ -21,7 +21,7 @@ export default async function page() {
             className="text-[#cd2027]!"
             target="_blank"
             href={
-              "https://drive.google.com/file/d/1hb5X0-IJvnf6yvx8H6jH-Ps1F5b1A9OF/view?usp=sharing"
+              "https://docs.google.com/spreadsheets/d/112P21p_p50-FwxPPdHtQbfISmNLEX8Prf_w2K0qyXbI/edit?gid=0#gid=0"
             }
           >
             {locale === "en" ? "[Click here]" : "[Nhấn vào đây]"}
