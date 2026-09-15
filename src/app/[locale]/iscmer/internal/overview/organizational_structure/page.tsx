@@ -281,7 +281,7 @@ export default async function page() {
                 internal activities, particularly internal operations, finance,
                 human resources, administration, internal and external
                 communications, and other support activities for the Institute
-                Director. The Deputy Director is directly responsible for Operations & Finance and Communications work, and other
+                Director. The Deputy Director is directly responsible for O&F and Communications work, and other
                 internal assignments delegated by the Institute Director.
               </li>
               <li className="list-item!">
