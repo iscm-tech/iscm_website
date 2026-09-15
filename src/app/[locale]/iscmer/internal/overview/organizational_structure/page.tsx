@@ -57,9 +57,9 @@ export default async function page() {
                 trưởng, phụ trách toàn bộ các hoạt động nội bộ của ISCM, đặc
                 biệt là vận hành nội bộ, tài chính, nhân sự, hành chính, truyền
                 thông nội bộ và bên ngoài, đồng thời phối hợp các hoạt động hỗ
-                trợ Viện trưởng. Viện phó chịu trách nhiệm trực tiếp đối với
-                chuyên viên Operation & Finance, chuyên viên Truyền thông và các
-                đầu việc nội bộ khác do Viện trưởng giao.
+                trợ Viện trưởng. Viện phó trực tiếp phụ trách công việc O&F và Truyền
+                thông, đồng thời thực hiện các đầu việc nội bộ khác do Viện
+                trưởng giao.
               </li>
               <li className="list-item!">
                 <b>
@@ -343,8 +343,7 @@ export default async function page() {
                   </li>
                   <li className="list-item!">
                     Responsibilities: Coordinates internal activities; monitors
-                    and supports operations; supervises the O&F Officer and
-                    Communications Officer; tracks internal work progress;
+                    and supports operations; handles O&F and Communications work; tracks internal work progress;
                     assists the Institute Director with plan control, deadline
                     reminders, and work allocation; and ensures smooth internal
                     operations.
