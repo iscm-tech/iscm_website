@@ -113,32 +113,9 @@ export default async function page() {
                 <Link
                   className="flex gap-1 hover:text-[#cd2027]! transition-colors"
                   target="_blank"
-                  href={"https://forms.gle/SxMBaT16JRtAxEJH9"}
+                  href={"https://docs.google.com/spreadsheets/d/1EG6fWZM7fgZ7kLRg83fb4pURnkmGsvhYVEIChdFiZ0g/edit?usp=sharing"}
                 >
-                  <FileTextIcon />
-                  ISCM Member Performance Evaluation
-                </Link>
-              </li>
-
-              <li className="list-item! mt-3">
-                <Link
-                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
-                  target="_blank"
-                  href={"https://forms.gle/kzTw93Y4xDw382Do6"}
-                >
-                  <FileTextIcon />
-                  Annual Student Survey
-                </Link>
-              </li>
-
-              <li className="list-item! mt-3">
-                <Link
-                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
-                  target="_blank"
-                  href={"https://forms.gle/TQP4YWTrLTzjq3Vf7"}
-                >
-                  <FileTextIcon />
-                  Feedback Inbox
+                  <FileTextIcon /> ISCM Daily Attendance Checklist
                 </Link>
               </li>
 
@@ -148,8 +125,37 @@ export default async function page() {
                   target="_blank"
                   href={"https://forms.gle/ZCoJaAhjd756RBSi7"}
                 >
-                  <FileTextIcon />
-                  Group Evaluation
+                  <FileTextIcon /> ISCM Team Performance Review (Bilingual)
+                </Link>
+              </li>
+
+              <li className="list-item! mt-3">
+                <Link
+                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+                  target="_blank"
+                  href={"https://forms.gle/ArQrcKjsnthomS748"}
+                >
+                  <FileTextIcon /> ISCM Individual Performance Review (Bilingual)
+                </Link>
+              </li>
+
+              <li className="list-item! mt-3">
+                <Link
+                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+                  target="_blank"
+                  href={"https://forms.gle/kzTw93Y4xDw382Do6"}
+                >
+                  <FileTextIcon /> ISCM Annual Student Survey
+                </Link>
+              </li>
+
+              <li className="list-item! mt-3">
+                <Link
+                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+                  target="_blank"
+                  href={"https://forms.gle/TQP4YWTrLTzjq3Vf7"}
+                >
+                  <FileTextIcon /> ISCM Feedback Box
                 </Link>
               </li>
             </ul>
@@ -234,41 +240,54 @@ export default async function page() {
 
             <ul className="mt-4">
               <h4>Danh mục các forms:</h4>
+
               <li className="list-item! mt-3">
                 <Link
                   className="flex gap-1 hover:text-[#cd2027]! transition-colors"
                   target="_blank"
-                  href={"https://forms.gle/SxMBaT16JRtAxEJH9"}
+                  href={"https://docs.google.com/spreadsheets/d/1EG6fWZM7fgZ7kLRg83fb4pURnkmGsvhYVEIChdFiZ0g/edit?usp=sharing"}
                 >
-                  <FileTextIcon />
-                  Đánh giá hiệu suất thành viên ISCM
+                  <FileTextIcon /> Bảng theo dõi chuyên cần hằng ngày ISCM
                 </Link>
               </li>
-              <li className="list-item! mt-3">
-                <Link
-                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
-                  target="_blank"
-                  href={"https://forms.gle/kzTw93Y4xDw382Do6"}
-                >
-                  <FileTextIcon /> Khảo sát sinh viên thường niên
-                </Link>
-              </li>
-              <li className="list-item! mt-3">
-                <Link
-                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
-                  target="_blank"
-                  href={"https://forms.gle/TQP4YWTrLTzjq3Vf7"}
-                >
-                  <FileTextIcon /> Hòm thư bồ câu
-                </Link>
-              </li>
+
               <li className="list-item! mt-3">
                 <Link
                   className="flex gap-1 hover:text-[#cd2027]! transition-colors"
                   target="_blank"
                   href={"https://forms.gle/ZCoJaAhjd756RBSi7"}
                 >
-                  <FileTextIcon /> Đánh giá nhóm
+                  <FileTextIcon /> Đánh giá hiệu suất nhóm ISCM (Song ngữ)
+                </Link>
+              </li>
+
+              <li className="list-item! mt-3">
+                <Link
+                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+                  target="_blank"
+                  href={"https://forms.gle/ArQrcKjsnthomS748"}
+                >
+                  <FileTextIcon /> Đánh giá hiệu suất cá nhân ISCM (Song ngữ)
+                </Link>
+              </li>
+
+              <li className="list-item! mt-3">
+                <Link
+                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+                  target="_blank"
+                  href={"https://forms.gle/kzTw93Y4xDw382Do6"}
+                >
+                  <FileTextIcon /> Khảo sát sinh viên thường niên ISCM
+                </Link>
+              </li>
+
+              <li className="list-item! mt-3">
+                <Link
+                  className="flex gap-1 hover:text-[#cd2027]! transition-colors"
+                  target="_blank"
+                  href={"https://forms.gle/TQP4YWTrLTzjq3Vf7"}
+                >
+                  <FileTextIcon /> Hòm thư bồ câu ISCM
                 </Link>
               </li>
             </ul>
