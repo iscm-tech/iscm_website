@@ -122,7 +122,7 @@ export default async function page() {
                   </li>
                   <li className="list-item!">
                     Trách nhiệm: Điều phối nội bộ; theo dõi và hỗ trợ vận hành;
-                    phụ trách chuyên viên O&F và chuyên viên Truyền thông; theo
+                    phụ trách công việc O&F và Truyền thông; theo
                     dõi tiến độ công việc nội bộ; hỗ trợ Viện trưởng kiểm soát
                     kế hoạch, nhắc thời hạn, phân luồng công việc và bảo đảm các
                     hoạt động nội bộ vận hành thông suốt.
